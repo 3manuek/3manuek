@@ -1,4 +1,4 @@
-## Welcome, fellow visitant 🧙
+## Welcome, fellow visitor 🧙
 
 My name is Emanuel, commonly named _Tresma_ -- as Spanish shortener of _3manuek_, my native language.
 Located in Madrid, formerly in Buenos Aires.
