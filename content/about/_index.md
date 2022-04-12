@@ -1,7 +1,18 @@
 ---
 title: "Emanuel Calvo"
 subtitle: "A Database Engineer, DBRE, and IT consultant."
-description: "."
+description: "
+My name is Emanuel, commonly named Tresma -- as Spanish shortener of 3manuek, my native language. Located in Madrid, formerly in Buenos Aires.
+
+
+I'm a DataBase Reliability Engineer (DBRE) and large-scale DevOps Engineer, and Consultant. Currently working at OnGres, Founder of ViaDB, and Fundación Apolo IT Director.
+
+
+> _For business inquires, fill up the contact form or through my [LinkedIn Profile](https://www.linkedin.com/in/ecbcbcb)_.
+
+
+Profiles: [GitHub](https://github.com/3manuek) and [Gitlab](https://gitlab.com/3manuek).
+"
 date: 2019-02-18T12:27:33-06:00
 # images:
 #   - img/profile-2.png
@@ -12,17 +23,6 @@ action_type: text # text, button
 type: home
 layout: about
 ---
-
-## Introduction
-
-My name is Emanuel, commonly named Tresma -- as Spanish shortener of 3manuek, my native language. Located in Madrid, formerly in Buenos Aires.
-
-I'm a DataBase Reliability Engineer (DBRE) and large-scale DevOps Engineer, and Consultant. Currently working at OnGres, Founder of ViaDB, and Fundación Apolo IT Director.
-
-> For business inquires, fill up the contact form or through my [LinkedIn Profile](https://www.linkedin.com/in/ecbcbcb).
-
-Profiles: [GitHub](https://github.com/3manuek) and [Gitlab](https://gitlab.com/3manuek).
-
 
 ## Skillset
 
@@ -146,7 +146,7 @@ Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database
 - Member of the Advanced Consulting Team Group (PostgreSQL).
 - Other Technologies: MySQL/MariaDB, xtraDB, Galera, Docker, Ansible, MongoDB, PostgreSQL, Vertica, Oracle.
 - Part of the ACTG for PostgreSQL implementations, solutions and architecture.
-- Lead Database Consultant T73
+- Lead Database Consultant at T73.
 
 Some highlighted customers: Microsoft, Beats (Apple), Adobe Echosign, Fitbit, Sendgrid, Mozilla Foundation, Zendesk, SendGrid.
 
@@ -242,29 +242,32 @@ Some of the 'extra' task was made some Perl scripts for support area.
 As a consultant, I provided independent database consulting services for the following companies (in non-particular order).
 Thanks to every customer that trusted in me!
 
+- Mural (Argentina)
+- Frávega (Argentina)
 - iMedicare (USA)
-- Eloquentix (USA)
-- Ericsson/EDB (USA)
-- Pic-pic (USA)
-- PFA (Argentina)
-- Autofarma (Arg)
-- VSTour (Arg)
-- Jampp (Arg/USA)
-- Cyclelogic (Arg)
-- Avalon Informática (Madrid)
+- Eloquentix (US)
+- 8kdata (Madrid)
+- Avalon Informática (Madrid) 
 - Init (País Vasco)
 - Scienza (Argentina)
 - Syscope (Argentina)
 - Mexane (Argentina)
 - Contenta Mobile (Argentina)
-- Slots Machines (San Luis, Argentina)
+- Slots Machines (Argentina)
 - TreeLogic (Asturias)
 - BTS (Usa - Zaragoza)
 - LCRCOM.net (Madrid)
-- Pampa Business Solutions - Telecentro (Argentina)
-- Sindicato de Pasteleros y afines (Arg)
-- 8kdata (Spain, Madrid)
-
+- Autofarma (Argentina)
+- VsTour (Argentina)
+- CycleLogic (Argentina)
+- Ericsson/EDB (USA)
+- Pic-pic (USA)
+- PFA (Argentina)
+- Jampp (Arg/USA)
+- Contenta Mobile (Argentina)
+- Slots Machines (San Luis, Argentina)
+- Pampa Business Solutions (Argentina)
+- Sindicato de Pasteleros y afines (Argentina)
 
 
 > As a previous and unrelated experience to IT, I worked as Officer and had quit as Adjutor Principal after 8 years of serving at Argentina's Federal Bureau of Prisons (Servicio Penitenciario Federal). I had been in charge of assigned groups at several institutions from medium to high security. I cooperated in the design of some of the security and emergency procedures and designed the operations and personnel capacitation. In the early days of my career, on the External Security Officer role, I managed the weapon capacity and storage of the shifts. I also conducted sanction procedures and crime investigations in several of those establishments. I must highlight that it is not possible to go any further whether you want to change things for good; there will be always someone on top of you trying to keep his/her power. And that was one of the reasons why I quit.
