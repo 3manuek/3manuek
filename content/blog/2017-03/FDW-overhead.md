@@ -65,7 +65,7 @@ and logical decoding, which is used by the `pglogical` tool for providing advanc
 logical replication per table basis.
 
 
-![TPS][2]
+![TPS](/blog/assets/2017-03/fdwsharding.png)
 <figcaption class="caption">[Fig. 1] Manual sharding with FDW current implementation.</figcaption>
 
 ## Foreign tables
@@ -294,4 +294,4 @@ s.setAttribute('data-timestamp', +new Date());
 
 [4]: http://www.3manuek.com/assets/posts/dosequis.jpg
 [1]: http://www.3manuek.com/fdwoverhead
-[2]: {{ site.url }}/assets/posts/fdwsharding1.jpg
+<!-- [2]: {{ site.url }}/assets/2017-03/fdwsharding.png -->
