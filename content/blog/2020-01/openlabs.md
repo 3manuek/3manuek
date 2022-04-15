@@ -6,8 +6,7 @@ date: 2020-01-20
 author: "3manuek"
 draft: false
 images:
-  - /blog/assets/tachyons-thumbnail.png
-  - /blog/assets/tachyons-logo-script-feature.png
+  - /blog/assets/thumbnail_db.png
 series:
   - Getting Started
 tags:
