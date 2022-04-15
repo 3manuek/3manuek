@@ -1,13 +1,12 @@
 ---
 title: "Ansible and Kubernetes"
-subtitle: "."
+subtitle: "Deploying in Kubernetes with Ansible."
 excerpt: ""
 date: 2019-07-18
 author: "3manuek"
 draft: false
 images:
   - /blog/assets/thumbnail_db.png
-  - /blog/assets/tachyons-logo-script-feature.png
 series:
   - Getting Started
 tags:
@@ -25,7 +24,8 @@ layout: single
 [](https://github.com/kubernetes/minikube/releases)
 
 ```
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.2.0/minikube-darwin-amd64 && chmod +x 
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.2.0/minikube-darwin-amd64 &&\
+ chmod +x 
 minikube && sudo cp minikube /usr/local/bin/ && rm minikube
 ```
 

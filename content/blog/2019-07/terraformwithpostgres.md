@@ -26,7 +26,9 @@ This article is not an introductory explanation of docker,however it's scope if 
 Here is the all what you need to do for start:
 
 ```bash
-docker run --name percona57 -e MYSQL_ROOT_PASSWORD=<a_password>  -d percona:5.7
+docker run --name percona57 \
+-e MYSQL_ROOT_PASSWORD=<a_password>  \
+-d percona:5.7
 ```
 
 For checking the container status log, you can execute `docker logs percona57`.
@@ -38,7 +40,10 @@ To start the container is pretty easy, but if you are not very used to Docker, y
 For example, a full logging container will be started with this:
 
 ```bash
-docker run --name percona57  -v /var/log/mysql:/var/log/mysql  -e MYSQL_ROOT_PASSWORD=mysql  -d percona:5.7 --general-log=1 --slow-query-log=1 --long-query-time=0  --log_slow_verbosity='full, profiling, profiling_use_getrusage'
+docker run --name percona57  -v /var/log/mysql:/var/log/mysql  \
+-e MYSQL_ROOT_PASSWORD=mysql  -d percona:5.7 --general-log=1 \
+--slow-query-log=1 --long-query-time=0  \
+--log_slow_verbosity='full, profiling, profiling_use_getrusage'
 ```
 
 Note that the `log_slow_verbosity` is only applicable for the Percona release, and adds extra output that turns very useful when doing complex query reviews. As you can appreciate, all the options are passed after the image name (percona:5.7).

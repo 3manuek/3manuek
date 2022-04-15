@@ -4,7 +4,7 @@ subtitle: "Trends and perspectives of what is going on on the ground."
 excerpt: ""
 date: 2019-07-18
 author: "3manuek"
-draft: false
+draft: true
 images:
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
