@@ -1,7 +1,7 @@
 ---
-title: "Tr3sma"
+title: "Tresma"
 subtitle: "A Database Engineer, and DBRE."
-description: "Hi, I'm Tresma! Welcome to my site, and hope you find useful its content."
+description: "Welcome to my blog site!"
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/profile.gif
