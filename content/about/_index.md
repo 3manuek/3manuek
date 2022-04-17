@@ -98,7 +98,7 @@ Technologies:
 
 - Infra and CD/CI: HCL (Terraform, Packer), Ansible, Kubernetes, Docker.
 - Databases: Postgres (and extensions), MySQL, Oracle (to migrate out *wink, wink*)
-- Languages: Python, Golang, bash
+- Languages: Python, Golang, C, bash
 - Main Cloud Providers: Google Cloud, AWS
 
 
@@ -107,6 +107,35 @@ Technologies:
 > december, 2021 - Current
 
 ViaDB is a boutique services-company for IaC Databases.
+
+List of past and/or current customers:
+
+- Mural (Argentina)
+- Frávega (Argentina)
+- iMedicare (USA)
+- Eloquentix (US)
+- 8kdata (Madrid)
+- Avalon Informática (Madrid) 
+- Init (País Vasco)
+- Scienza (Argentina)
+- Syscope (Argentina)
+- Mexane (Argentina)
+- Contenta Mobile (Argentina)
+- Slots Machines (Argentina)
+- TreeLogic (Asturias)
+- BTS (Usa - Zaragoza)
+- LCRCOM.net (Madrid)
+- Autofarma (Argentina)
+- VsTour (Argentina)
+- CycleLogic (Argentina)
+- Ericsson/EDB (USA)
+- Pic-pic (USA)
+- PFA (Argentina)
+- Jampp (Arg/USA)
+- Contenta Mobile (Argentina)
+- Slots Machines (San Luis, Argentina)
+- Pampa Business Solutions (Argentina)
+- Sindicato de Pasteleros y afines (Argentina)
 
 See more at [ViaDB](https://viadb.ar).
 
@@ -235,39 +264,6 @@ Some of the 'extra' task was made some Perl scripts for support area.
 - MOSAIC debugging and support.
 - Customer Correo Argentino / Siemens.
 
-----
-
-## Customers History
-
-As a consultant, I provided independent database consulting services for the following companies (in non-particular order).
-Thanks to every customer that trusted in me!
-
-- Mural (Argentina)
-- Frávega (Argentina)
-- iMedicare (USA)
-- Eloquentix (US)
-- 8kdata (Madrid)
-- Avalon Informática (Madrid) 
-- Init (País Vasco)
-- Scienza (Argentina)
-- Syscope (Argentina)
-- Mexane (Argentina)
-- Contenta Mobile (Argentina)
-- Slots Machines (Argentina)
-- TreeLogic (Asturias)
-- BTS (Usa - Zaragoza)
-- LCRCOM.net (Madrid)
-- Autofarma (Argentina)
-- VsTour (Argentina)
-- CycleLogic (Argentina)
-- Ericsson/EDB (USA)
-- Pic-pic (USA)
-- PFA (Argentina)
-- Jampp (Arg/USA)
-- Contenta Mobile (Argentina)
-- Slots Machines (San Luis, Argentina)
-- Pampa Business Solutions (Argentina)
-- Sindicato de Pasteleros y afines (Argentina)
-
+---
 
 > As a previous and unrelated experience to IT, I worked as Officer and had quit as Adjutor Principal after 8 years of serving at Argentina's Federal Bureau of Prisons (Servicio Penitenciario Federal). I had been in charge of assigned groups at several institutions from medium to high security. I cooperated in the design of some of the security and emergency procedures and designed the operations and personnel capacitation. In the early days of my career, on the External Security Officer role, I managed the weapon capacity and storage of the shifts. I also conducted sanction procedures and crime investigations in several of those establishments. I must highlight that it is not possible to go any further whether you want to change things for good; there will be always someone on top of you trying to keep his/her power. And that was one of the reasons why I quit.
