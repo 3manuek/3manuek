@@ -120,7 +120,7 @@ See more at [ViaDB](https://viadb.ar).
 
 - [PostgreSQL 9.4 Associate Certification](http://www.enterprisedb.com/store/products/dba-training/01t50000001Nyi7AAC), `EDB33986`.
 - [PostgreSQL 11 Professional Certification](https://www.youracclaim.com/badges/9ea58cfa-2da5-4614-9d5e-2eb1be46dd95/linked_in_profile)
-- [Azure Data Engineer]() and Microsoft Certified Trainer.
+- [Azure Data Engineer](https://www.credly.com/badges/004a64e2-d3ef-4f56-96b0-3040f475ef29/linked_in) and [Microsoft Certified Trainer](https://www.credly.com/badges/423cc463-9e30-4adb-9189-0779891c79dc/linked_in).
 
 Other certifications related to DataScience Specialization:
 
