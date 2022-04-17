@@ -23,8 +23,8 @@ layout: about
 
 ## Skillset
 
-- A considerable experience around large scaled Database systems, including but not limited to Postgres, MySQL, ClickHouse, and Elastic. Most of the systems are/were business-critical. Knowledge on Scalability, Reliability, and Performance.
-- Deploy and Infrastructure: Terraform/Packer, Ansible, Kubernetes, bare metal, etc.
+- A considerable experience on scalability, reliability, architecturing and maintaining large scaled Database systems, including but not limited to Postgres, MySQL, ClickHouse, and Elastic. Most of the systems are/were business-critical.
+- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using Terraform/Packer, Ansible, Kubernetes, etc. 
 - Consistent experience in almost every mayor Cloud provider. Azure certified, GCloud, and AWS.
 - A skilled communicator, managing Customer accounts worlwide.
 - Hard-problem solving, and with aveced dealing of complex Production incidents.
@@ -34,7 +34,7 @@ I design reliable, scalable and ready-for-production Database infrastructures fo
 
 Other things that I love to do:
 
-- I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites and I do have both implemented.
+- I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
 - I'm an amateur musician, the typical string set plus some keyboards. Drawing is also a hobby.
 - Love reading, particularly around polithical, econocomics and social affairs. An active Libertarian working from his basement :)
 
@@ -144,7 +144,9 @@ Other certifications related to DataScience Specialization:
 
 Full description of the role [here](https://www.percona.com/about-percona/careers/senior-technical-services-engineer).
 
-I held the Remote DBA position at Team Atlas.
+At Percona, I worked as a Remote DBA position at Atlas team. The core techology was MySQL and MariaDB, for large scale infrastructures.
+
+Deep understanding of the replication protocol, availability, and sharding.
 
 Some highlighted customers: Hyperwallet, Fitbit, Lookout, Shipwire
 
