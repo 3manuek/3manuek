@@ -41,35 +41,6 @@ Other things that I love to do:
 - I'm an amateur musician, the typical string set plus some keyboards. Drawing is also a hobby.
 - Love reading, particularly around polithical, econocomics and social affairs. An active Libertarian working from his basement :)
 
----
-
-## External publications
-
-- July 2nd, 2013: [AWS - Postgres in AWS](http://media.amazonwebservices.com/AWS_RDBMS_PostgreSQL.pdf)
-    PostgreSQL running over EC2 instances with EBS/PIOPS storage. Minimum architecture, tips and advises. [Download AWS in Postgres from local](/AWS_RDBMS_PostgreSQL.pdf)
-
-## Certifications
-
-- [PostgreSQL 9.4 Associate Certification](http://www.enterprisedb.com/store/products/dba-training/01t50000001Nyi7AAC), `EDB33986`.
-- [PostgreSQL 11 Professional Certification](https://www.youracclaim.com/badges/9ea58cfa-2da5-4614-9d5e-2eb1be46dd95/linked_in_profile)
-- [Azure Data Engineer]() and Microsoft Certified Trainer.
-
-Other certifications related to DataScience Specialization:
-
-- [Toolbox](https://www.coursera.org/account/accomplishments/certificate/6UUQRK9PCE)
-- [R programming](https://www.coursera.org/account/accomplishments/certificate/T48RRJNPG2)
-- [Getting and Cleaning Data](https://www.coursera.org/account/accomplishments/verify/8AT8J4DK2A)
-- [Exploratory Analysis](https://www.coursera.org/account/accomplishments/verify/PJSGHN7A27)
-- [Reproducible Research](https://www.coursera.org/account/accomplishments/verify/J5VEMAG8TM)
-- [Statistical inference](https://www.coursera.org/account/accomplishments/verify/K59SPFAKW2)
-- [Regression Models](https://www.coursera.org/account/accomplishments/verify/DLH75DKK4U)
-- [Big Data, University of San Diego](https://www.coursera.org/account/accomplishments/verify/TFTDEL6ZYX97)
-
-## Education
-
-- ESBA - Developer Analyst
-
----
 
 ## Positions
 
@@ -78,21 +49,20 @@ Other certifications related to DataScience Specialization:
 > Since September 2017 as OnGres, previously working as Consultant in 8kdata
 
 At OnGres, I'm working on Architecture, Reliabiliy and Infrastructure of our customers' production Databases.
-Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM** and **Postmates**.
-
 
 Highlighted projects:
 
-- BBM (Blackberry - Emtek - Google Cloud): Live migration from Oracle to full Patroni automated cluster, from a premise
+- **BBM** (Blackberry - Emtek - Google Cloud): Live migration from Oracle to full Patroni automated cluster, from a premise
   based environment to Google Cloud. PgBouncer-Consul-Postgres
-- Conrad (Google Cloud Partner): Full implementation of Patroni HA using etcd as consensus cluster, Load Balancing through 
+- **Conrad** (Google Cloud Partner): Full implementation of Patroni HA using etcd as consensus cluster, Load Balancing through 
   Google iLB with API configuration with Patroni, and PgBouncer.
-- GitLab as part of the Database Reliability Team and Database Architecture design.
-- Postmates: Patroni Mult-project Terraform implementation with a centralized DCS.
+- **GitLab** as part of the Database Reliability Team and Database Architecture design.
+- **Postmates**: Patroni Mult-project Terraform implementation with a centralized DCS.
 - Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
 - Google Cloud as Partner.
-- ARM.
-- AWS Babelfish project, as a Developer Advocate for the Open Source version.
+- **ARM**.
+- **AWS**'s Babelfish project, as a Developer Advocate for the Open Source version.
+- Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
 
 Technologies:
 
@@ -139,6 +109,33 @@ List of past and/or current customers:
 
 See more at [ViaDB](https://viadb.ar).
 
+---
+
+## External publications
+
+- July 2nd, 2013: [AWS - Postgres in AWS](http://media.amazonwebservices.com/AWS_RDBMS_PostgreSQL.pdf)
+    PostgreSQL running over EC2 instances with EBS/PIOPS storage. Minimum architecture, tips and advises. [Download AWS in Postgres from local](/AWS_RDBMS_PostgreSQL.pdf)
+
+## Certifications
+
+- [PostgreSQL 9.4 Associate Certification](http://www.enterprisedb.com/store/products/dba-training/01t50000001Nyi7AAC), `EDB33986`.
+- [PostgreSQL 11 Professional Certification](https://www.youracclaim.com/badges/9ea58cfa-2da5-4614-9d5e-2eb1be46dd95/linked_in_profile)
+- [Azure Data Engineer]() and Microsoft Certified Trainer.
+
+Other certifications related to DataScience Specialization:
+
+- [Toolbox](https://www.coursera.org/account/accomplishments/certificate/6UUQRK9PCE)
+- [R programming](https://www.coursera.org/account/accomplishments/certificate/T48RRJNPG2)
+- [Getting and Cleaning Data](https://www.coursera.org/account/accomplishments/verify/8AT8J4DK2A)
+- [Exploratory Analysis](https://www.coursera.org/account/accomplishments/verify/PJSGHN7A27)
+- [Reproducible Research](https://www.coursera.org/account/accomplishments/verify/J5VEMAG8TM)
+- [Statistical inference](https://www.coursera.org/account/accomplishments/verify/K59SPFAKW2)
+- [Regression Models](https://www.coursera.org/account/accomplishments/verify/DLH75DKK4U)
+- [Big Data, University of San Diego](https://www.coursera.org/account/accomplishments/verify/TFTDEL6ZYX97)
+
+## Education
+
+- ESBA - Developer Analyst
 
 ---
 
