@@ -18,7 +18,7 @@ preserveTaxonomyNames = true
 
 [params]
   orgName = "tr3sma"
-  orgLocal = "Madrid, ES"
+  orgLocal = "Madrid, Spain"
   favicon = "/img/favicon.ico?v=0"
   logo = "/img/firma.png"
   # font options: sans-serif or serif
@@ -56,7 +56,7 @@ preserveTaxonomyNames = true
   twitter = "3manuek"
   github = "3manuek"
   gitlab = "3manuek"
-  linkedin = "ecbecbecb"
+  linkedin = "ecbcbcb"
 
 [taxonomies]
   category = "categories"

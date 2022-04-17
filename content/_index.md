@@ -1,7 +1,7 @@
 ---
 title: "Tresma"
 subtitle: "A Database Engineer, and DBRE."
-description: "Welcome to my blog site!"
+description: "Welcome to my site! I'm a Database Engineer and an IT Consultant."
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/profile.gif

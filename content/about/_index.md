@@ -9,9 +9,6 @@ I'm a DataBase Reliability Engineer (DBRE) and large-scale DevOps Engineer, and 
 
 
 > _For business inquires, fill up the contact form or through my [LinkedIn Profile](https://www.linkedin.com/in/ecbcbcb)_.
-
-
-Profiles: [GitHub](https://github.com/3manuek) and [Gitlab](https://gitlab.com/3manuek).
 "
 date: 2019-02-18T12:27:33-06:00
 # images:
