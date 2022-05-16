@@ -1,6 +1,6 @@
 ---
-title: "Tresma"
-subtitle: "A Database Engineer, and DBRE."
+title: "3ma"
+subtitle: "[ˈtɾɛs̬ma]"
 description: "Welcome to my site! I'm a Database Engineer and an IT Consultant."
 date: 2019-02-18T12:27:33-06:00
 images:
