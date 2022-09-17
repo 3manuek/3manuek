@@ -8,7 +8,7 @@ of [ViaDB](https://viadb.ar), and [Fundación Apolo](https://fundacionapolo.org)
 
 For looking at my resume and business enquires, follow my [LinkedIn](https://www.linkedin.com/in/ecbcbcb/) profile.
 
-Website? [3manuek.com](https://3manuek.com).
+Website? It's WIP, but it'll be [tr3s.ma](https://tr3s.ma).
 
 ### Skillset
 
