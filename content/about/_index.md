@@ -2,14 +2,15 @@
 title: "Emanuel Calvo"
 subtitle: "A Database Engineer, DBRE, and IT consultant."
 description: "
-My name is Emanuel, commonly named Tresma -- as Spanish shortener of 3manuek, my native language. Located in Madrid, formerly in Buenos Aires.
+My name is Emanuel, commonly named Tresma -- as Spanish shortener for  3manuek. Located in Madrid, and formerly in Buenos Aires.
 
 
-I'm a DataBase Reliability Engineer (DBRE) and large-scale DevOps Engineer, and Consultant. Currently working at OnGres, Founder of ViaDB, and Fundación Apolo IT Director.
+I'm a DataBase Engineer, large-scale DevOps Engineer, and Consultant. Currently working at OnGres, Founder of ViaDB, and Fundación Apolo IT Director.
 
 
 > _For business inquires, fill up the contact form or through my [LinkedIn Profile](https://www.linkedin.com/in/ecbcbcb)_.
 "
+
 date: 2019-02-18T12:27:33-06:00
 # images:
 #   - img/profile-2.png
