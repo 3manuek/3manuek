@@ -35,5 +35,5 @@ jobs:
           #   keep_files: true
           user_name: 3manuek
           user_email: 3manuek@gmail.com
-          publish_branch: devel
+          publish_branch: main
         #   cname: example.com
