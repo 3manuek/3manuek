@@ -13,7 +13,8 @@ series:
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - Go
+  
 # layout options: single or single-sidebar
 layout: single
 

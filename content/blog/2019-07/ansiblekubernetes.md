@@ -12,7 +12,9 @@ series:
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - Ansible
+  - Kubernetes
+  - Projects
 # layout options: single or single-sidebar
 layout: single
 

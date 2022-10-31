@@ -13,7 +13,9 @@ series:
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - RDS
+  - Postgres
+  - AWS
 # layout options: single or single-sidebar
 layout: single
 

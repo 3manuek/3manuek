@@ -1,6 +1,6 @@
 ---
-title: "Playing with Postgres and Kafka."
-subtitle: "Using the dirty way."
+title: "Connecting Postgres and Kafka rawly"
+subtitle: "The dirty way using plain kafkacat"
 excerpt: ""
 date: 2017-02-28
 author: "3manuek"
@@ -13,7 +13,8 @@ series:
 tags:
   - hugo-site
 categories:
-  - Theme Features
+  - Kafka
+  - Postgres
 # layout options: single or single-sidebar
 layout: single
 
