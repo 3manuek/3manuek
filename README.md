@@ -8,7 +8,8 @@ of [ViaDB](https://viadb.ar), and [Fundación Apolo](https://fundacionapolo.org)
 
 For looking at my resume and business enquires, follow my [LinkedIn](https://www.linkedin.com/in/ecbcbcb/) profile.
 
-Website? It's WIP, but it'll be [tr3s.ma](https://tr3s.ma).
+Website? [tr3s.ma](https://tr3s.ma).
+
 
 ### Skillset
 
@@ -19,18 +20,3 @@ Website? It's WIP, but it'll be [tr3s.ma](https://tr3s.ma).
 - Hard-problem solving, and with aveced dealing of complex Production incidents. 
 
 
-
-<!--
-**3manuek/3manuek** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
