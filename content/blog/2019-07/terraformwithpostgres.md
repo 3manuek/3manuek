@@ -4,7 +4,7 @@ subtitle: "How to setup PostgreSQL as a Terraform backend and why you should con
 excerpt: ""
 date: 2019-12-12
 author: "3manuek"
-draft: false
+draft: true
 images:
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
