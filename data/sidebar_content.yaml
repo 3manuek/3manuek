@@ -2,8 +2,7 @@ blog: # must match the slug of your blog
   single_sidebar: # for single-sidebar layout
     image:
     title: Tresma's Blog
-    description: "Welcome to my posts section. Most of the artiles are DAtabase and I
-    infrastructure topics. Enjoy!"
+    description: "Welcome to my posts section. Most of the articles are Database related and infrastructure topics. Enjoy!"
     author: 
     text_link_label: View Recent Posts
     text_link_url: /blog
@@ -11,8 +10,7 @@ blog: # must match the slug of your blog
   list_sidebar: # for list-sidebar layout
     image:
     title: Tresma's blog
-    description: "Welcome to my posts section. Most of the artiles are DAtabase and I
-    infrastructure topics. Enjoy!"
+    description: "Welcome to my posts section. Most of the articles are Database related and infrastructure topics. Enjoy!"
     author: Tresma
     text_link_label: Subscribe via RSS
     text_link_url: /index.xml
