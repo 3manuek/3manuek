@@ -2,13 +2,11 @@
 title: "Emanuel Calvo"
 subtitle: "A Database Engineer, DBRE, and IT consultant."
 description: "
-My name is Emanuel, commonly named Tresma -- as Spanish shortener for  3manuek. Located in Madrid, and formerly in Buenos Aires.
+My name is Emanuel, commonly called Tresma -- as a Spanish shortener for  _3manuek_. Living in Madrid, and formerly in Buenos Aires.
 
 
-I'm a DataBase Engineer, large-scale DevOps Engineer, and Consultant. Currently working at OnGres, Founder of ViaDB, and Fundación Apolo IT Director.
+I'm a DataBase Engineer, large-scale Platform Engineer, and Consultant. Currently working at OnGres, Founder of Plataform3 (ViaDB), and IT Director at Fundación Apolo.
 
-
-> _For business inquires, fill up the contact form or through my [LinkedIn Profile](https://www.linkedin.com/in/ecbcbcb)_.
 "
 
 date: 2019-02-18T12:27:33-06:00
@@ -42,7 +40,7 @@ Other things that I love to do:
 
 ## Positions
 
-### Ongres Inc. - Head of Professional Services / Database Engineer Reliability Engineer 
+### Ongres Inc. - Professional Services Tech Lead / Database Engineer Reliability Engineer 
 > Remote. New York/Madrid
 > Since September 2017 as OnGres, previously working as Consultant in 8kdata
 
@@ -70,7 +68,7 @@ Technologies:
 - Main Cloud Providers: Google Cloud, AWS
 
 
-### ViaDB
+### Plataform3 (formely ViaDB)
 > Madrid, Spain
 > december, 2021 - Current
 
@@ -78,6 +76,7 @@ ViaDB is a boutique services-company for IaC Databases.
 
 List of past and/or current customers:
 
+- Openpass (Argentina)
 - Mural (Argentina)
 - Frávega (Argentina)
 - iMedicare (USA)

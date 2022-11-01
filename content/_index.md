@@ -1,7 +1,7 @@
 ---
-title: "3ma"
+title: "tresma"
 subtitle: "[ˈtɾɛs̬ma]"
-description: "Welcome to my site! I'm a Database Engineer and an IT Consultant."
+description: "Database Engineering. Professional Services Tech Lead at OnGres, Plataform3 founder, and IT Director at Fundación Apolo."
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/profile.gif

@@ -1,7 +1,7 @@
 ---
 title: Contact Me
 name: Contact Me Form
-description: "Please fill up the form for contact."
+description: "Fill up this form for business enquires."
 date: 2019-02-25T13:38:41-06:00
 draft: false
 url: contact
