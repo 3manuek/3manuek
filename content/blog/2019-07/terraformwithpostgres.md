@@ -6,8 +6,9 @@ date: 2019-12-12
 author: "3manuek"
 draft: true
 images:
-  - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
+  - /blog/assets/thumbnail_db.png
+  
 series:
   - Getting Started
 tags:

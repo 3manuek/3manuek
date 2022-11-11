@@ -6,7 +6,7 @@ date: 2020-01-20
 author: "3manuek"
 draft: false
 images:
-  - /blog/assets/thumbnail_db.png
+  - /blog/assets/open-labs.png
 series:
   - Getting Started
 tags:
