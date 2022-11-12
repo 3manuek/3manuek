@@ -6,6 +6,7 @@ date: 2016-07-02
 author: "3manuek"
 draft: false
 images:
+  - /blog/assets/docker-mysql-1.png
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
 series:

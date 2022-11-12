@@ -1,18 +1,24 @@
 <article class="mv4 mv5-l bb">
   {{ if .CurrentSection.Params.show_post_thumbnail }}
   <div class="flex flex-column flex-row-ns mb4 mb5-l">
-    <figure class="mr4-ns ma0 mb2 mb0-l w-100 w-40-ns">
-      <a href="{{ .Permalink }}" class="db">{{ with $.Param "images" }}{{ range first 1 .}}<img src="{{ . | absURL }}" class="db ma0" alt="">{{ end }}{{ end }}</a>
+    <figure class="mr4-ns ma0 mb2 mb0-l w-100 w-40-ns figure-img">
+      <a href="{{ .Permalink }}" class="db img-gen" >{{ with $.Param "images" }}{{ range first 1 .}}<img src="{{ . | absURL }}" class="db ma0" alt="">{{ end }}{{ end }}</a>
     </figure>
     <div class="flex flex-column w-100 w-60-ns pl3-ns">
       <header class="w-100">
         <h1 class="f3 mv2 lh-title underline"><a href="{{ .Permalink }}" class="db">{{ .Title }}</a></h1>
       </header>
       <p class="f6 lh-copy mv2 flex-auto">{{ if .Params.Excerpt }}{{ .Params.Excerpt }}{{ else }}{{ .Summary }}{{ end }}</p>
-      <footer class="w-100">
-        {{ if .CurrentSection.Params.show_author_byline }}<p class="f7 db mv1">{{ if .Params.author }}By {{ .Params.author }}{{ end }}{{ with .Params.categories }} in{{ range . }} <a href="{{ "categories/" | absURL }}{{ . | urlize }}">{{ . }}</a> {{ end }}{{ end }}</p>{{ end }}
-      {{ if .CurrentSection.Params.show_post_date }}<p class="f7 db mv1">{{ .PublishDate.Format "January 2, 2006" }}</p>{{ end }}
+      <footer class="w-100 d-flex">
+        {{ if .CurrentSection.Params.show_author_byline }}<p class="f7 db mv1 flex70">{{ if .Params.author }}By {{ .Params.author }}{{ end }}
+        {{ with .Params.categories }} in{{ range . }} <a href="{{ "categories/" | absURL }}{{ . | urlize  }}" class="btn btn-primary btn-{{lower .}}">{{ . }}</a> {{ end }}{{ end }}</p>{{ end }}
+      {{ if .CurrentSection.Params.show_post_date }}
+        <div class="f7 db mv1 date flex30">
+            {{ .PublishDate.Format "January 2, 2006" }}
+        </div>  
+      {{ end }}
     </footer>
+    
     </div>
   </div>
   {{ else }}

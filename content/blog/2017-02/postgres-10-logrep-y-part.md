@@ -6,6 +6,7 @@ date: 2017-02-18
 author: "3manuek"
 draft: false
 images:
+  - /blog/assets/maintenance.png
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
 series:

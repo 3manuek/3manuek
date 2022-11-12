@@ -6,6 +6,7 @@ date: 2016-05-01
 author: "3manuek"
 draft: false
 images:
+  - /blog/assets/data-postgres.png
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
 series:

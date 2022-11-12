@@ -6,7 +6,7 @@ date: 2019-07-18
 author: "3manuek"
 draft: false
 images:
-  - /blog/assets/thumbnail_db.png
+  - /blog/assets/colorful-storage-containers-logistic-center.jpg
 series:
   - Getting Started
 tags:

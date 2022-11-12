@@ -6,6 +6,7 @@ date: 2016-04-26
 author: "3manuek"
 draft: false
 images:
+  - /blog/assets/mysql-search.png
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
 series:
