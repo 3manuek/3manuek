@@ -38,9 +38,9 @@ Even tho I had in mind to train with other layouts since some time ago, the real
 trigger for the decision, was the acquisition of the [Ergodox No-labeled-keys Split 
 Keyboard][2]. 
 
-When I started practicing, I realized that I was doing some considerable extra effort
-to reach some keys. Not because they were differently arranged, it was that the distance
-was larger. That made me start to investigate about the Typing Effort, and I found 
+When I started practicing, I niticed that I was doing some sensible extra effort
+to reach some keys. They key arragement and aligment, makes the key area is larger. 
+That made me start to investigate about the Typing Effort, and I found 
 that there is no much difference between [Dvorak and Colemak][3]. Moreover, there are
 AI generated layouts, which are very interesting, but they don't have a wide support 
 (see [Carplax Optimizer][4]).
@@ -56,7 +56,19 @@ both keyboards. So, I started training the new layout in this aspects:
 - Reshape my muscle memory with the qwerty layout, to fix the bad habits.
 
 
+
 ## Touch Tapping and the 10-fingers method
+
+Generally, both techniques are mentioned as one, but they are not the same thing. Although,
+using just one wouldn't make sense. The new ortholinear keyboard required to reharse and 
+pulish some skills.
+
+As the keyboard has unlabeled keys, Touch Tapping is needed. Touch Tapping is the techique
+of no doing visual contact with the keyboard -- it it more complex than that, but you 
+will need to investigate and practice this anyway.
+
+The ortholinear disposition is more optimal for the pinky finger access, and corrects the hand
+position considerably. So training the pinky finger would be crucial to speed up typing.
 
 In my case, it wasn't a huge thing. I was already doing Touch Tapping. But in your case,
 if you never heard about, I recommend to:
@@ -112,14 +124,43 @@ Most frequent 2-gram combinations:
 in th er re he an on es or te at ti st en nt ar to nd al it se ed is ea ng ou le co me ne ri ro de ra io ic li of as et ve ta si ha ma ec om ce el ll ca ur la ch hi di ho fo ns ot ac na rs so pr rt sa ss us no il ts em ct ge lo ee be tr ni pe ie pa nc po ol da ad vi un am ut wi mo sh yo ai ew ow os fi ep tt mi op ia we ag su id do oo
 ```
 
-For more information about n-grams, see [Natural Language Corpus Data: Beautiful Data][10] and [N-grams].
+So, the only thing to do here is copy paste these in your typing tool of preference. 
+
+> For more information about n-grams, see [Natural Language Corpus Data: Beautiful Data][10] and [N-grams].
+
+## All letters in the English alphabet
+
+Another nice exercise is to type variants of the following sentence:
+
+> The quick brown fox; jumps, over the lazy -- dog.
+
+The weird punctuation is on purpose: you may want to add symbols in your exercises oftenly.
+But at this point I guess you get the point. This is a little harder than you think, but not
+harder than typing the alphabet. But I think that this is a very good exercise, as you don't 
+miss any letter.
+
+In Spanish you can have things like:
+
+> El veloz murciélago hindú comía feliz cardillo y kiwi. 
+
+> La cigüeña tocaba el saxofón detrás del palenque de paja.
 
 
 ## Training with code
 
 Writing code is way more hard at the beginning, so I'll sugest to practice until you get a decent
 speed before turning into your productive layout. Symbols, and punctuation aren't easy due that 
-they make your hand to change your hands position. This also
+they make your hand to change your hands position. You'll prefer to train code speed later.
+
+
+## _Sensaciones_ 
+
+Switchwhing layouts isn't a thing of weeks, but for months until you get a decent speed to match
+your current. At the begining, it will feel extremely exhausting to _think and type_ in a constant
+manner. 
+
+
+
 
 
 
