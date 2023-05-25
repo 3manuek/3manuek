@@ -1,13 +1,13 @@
 ---
-title: "[WIP] My switching keyboard layout and ortholinear experience (Part 2)"
+title: "My personal Ergodox Keyboard Layout for Colemak and Dvorak"
 subtitle: "."
 excerpt: ""
-date: 2023-02-28
+date: 2023-05-25
 author: "3manuek"
-draft: true
+draft: false
 images:
-  - /blog/assets/tachyons-logo-script-feature.png
-  - /blog/assets/thumbnail_db.png
+  - /blog/assets/ergodox.png
+#  - /blog/assets/thumbnail_db.png
 series:
   - Typing
 tags:
@@ -21,5 +21,11 @@ layout: single
 
 ---
 
+# My Personal Ergodox Layout for Colemak and Dvorak
 
-[MacOS Layout](https://configure.zsa.io/ergodox-ez/layouts/GLL7M/latest/0)
+A few months ago, I bought the Ergodox OrthoLinear Split Keyboard. I found QWERTY layout a little uncomfortable to type in this keyboard, so I started the journey on searching for a better suitable keyboard layout. During a period of time, I switched back and forth between these three layouts, although I picked Colemak at the end.
+
+I really like Dvorak, but I've found that Colemak was better for me as I also use DAWs with a lot of shortcuts and other MacOs utilities.
+
+This is my current [MacOS Layout](https://configure.zsa.io/ergodox-ez/layouts/GLL7M/latest/0).
+

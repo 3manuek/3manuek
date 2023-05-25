@@ -68,9 +68,10 @@ Technologies:
 - Main Cloud Providers: Google Cloud, AWS
 
 
-### Plataform3 (formely ViaDB)
+### ViaDB (under Plataform3 SL)
 > Madrid, Spain
-> december, 2021 - Current
+> Buenos Aires, Argentina
+> December, 2021 - Current
 
 ViaDB is a boutique services-company for IaC Databases.
 
