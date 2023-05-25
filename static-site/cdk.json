@@ -1,0 +1,12 @@
+{
+  "app": "python3 app.py",
+  "context": {
+    "namespace": "static-site",
+    "domain_name": "tr3s.ma",
+    "sub_domain_name": "blog",
+    "enable_s3_website_endpoint": true,
+    "origin_custom_header_parameter_name": "/prod/static-site/origin-custom-header/referer",
+    "hosted_zone_id": "Z09066142CMONMCU4XNG3",
+    "hosted_zone_name": "tr3s.ma."
+  }
+}
