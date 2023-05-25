@@ -34,7 +34,7 @@ I design reliable, scalable and ready-for-production Database infrastructures fo
 Other things that I love to do:
 
 - I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
-- I'm an amateur musician, the typical string set plus some keyboards. Drawing is also a hobby.
+- I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby.
 - Love reading, particularly around polithical, econocomics and social affairs. An active Libertarian working from his basement :)
 
 
