@@ -1,0 +1,10 @@
+= title
+
+[source,mermaid]
+...
+flowchart LR
+
+A[UBI] --> B[Postres-base]
+B[Postgres-base] --> C[Postgres]
+A[UBI] --> D[postgres-build]
+...
