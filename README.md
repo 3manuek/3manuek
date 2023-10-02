@@ -1,7 +1,7 @@
 ## Welcome, fellow visitor 🧙
 
 My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language.
-I'm currently living in Madrid, "80%-formerly" in Buenos Aires.
+I'm currently living in Madrid, and "80%-formerly" in Buenos Aires.
 
 For more information about my CV check out [my site](https://tr3s.ma).
 
