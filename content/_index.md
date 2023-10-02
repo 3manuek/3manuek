@@ -1,7 +1,7 @@
 ---
 title: "3MA"
 subtitle: "[ˈtɾɛs̬ma]"
-description: "Database Engineering. Professional Services Tech Lead at OnGres, root at Plataform3 SL, and IT Director at Fundación Apolo."
+description: "Database Platform Engineering, System Tools Developer and IT Consultant."
 date: 2019-02-18T12:27:33-06:00
 images:
   - img/profile.gif
