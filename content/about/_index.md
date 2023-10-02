@@ -2,14 +2,11 @@
 title: "Emanuel Calvo"
 subtitle: "A Database Engineer, DBRE, and IT consultant."
 description: "
-My name is Emanuel, commonly called Tresma -- as a Spanish shortener for  _3manuek_. Living in Madrid, and formerly in Buenos Aires.
-
-
-I'm a DataBase Engineer, large-scale Platform Engineer, and Consultant. Currently working at OnGres, Founder of Plataform3 (ViaDB), and IT Director at Fundación Apolo.
-
+My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language.
+Currently living in Madrid, but still _roundtripping_ to Buenos Aires. 
 "
 
-date: 2019-02-18T12:27:33-06:00
+date: 2023-02-18T12:27:33-06:00
 # images:
 #   - img/profile-2.png
 show_action_link: true
@@ -19,6 +16,18 @@ action_type: text # text, button
 type: home
 layout: about
 ---
+
+## Bio(graffiti) 
+
+I am a multifaceted professional with excellent communication skills and a strong commitment to principles. 
+
+Currently, I am serving as the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, where I am a valued partner. 
+
+Additionally, as the founder of ViaDB, I specialize in consultancy and tool development, using a variety of programming languages including Go, Python, and Bash. 
+
+
+In commitment with my principles, I collaborate with NGOs such as Fundación Apolo and Fundación Oportunidades to develop and support their IT ecosystems. 
+
 
 ## Skillset
 
@@ -34,17 +43,64 @@ I design reliable, scalable and ready-for-production Database infrastructures fo
 Other things that I love to do:
 
 - I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
-- I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby.
+- I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby. 
 - Love reading, particularly around polithical, econocomics and social affairs. An active Libertarian working from his basement :)
 
 
 ## Positions
 
-### Ongres Inc. - Professional Services Tech Lead / Database Engineer Reliability Engineer 
+### ViaDB (under Plataform3 SL)
+> - Madrid, Spain
+> - Buenos Aires, Argentina
+> - December, 2021 - Current
+
+ViaDB is an Open Source Database Support and System tools development indie-company.
+
+
+<details>
+    <summary>List of past and/or current customers.</summary>
+<ul>
+  <li><span>Maper (Argentina)</span></li>
+  <li><span>Openpass (Argentina)</span></li>
+  <li><span>Mural (Argentina)</span></li>
+  <li><span>Frávega (Argentina)</span></li>
+  <li><span>iMedicare (USA)</span></li>
+  <li><span>Eloquentix (US)</span></li>
+  <li><span>8kdata (Madrid)</span></li>
+  <li><span>Avalon Informática (Madrid)</span></li>
+  <li><span>Init (País Vasco)</span></li>
+  <li><span>Scienza (Argentina)</span></li>
+  <li><span>Syscope (Argentina)</span></li>
+  <li><span>Mexane (Argentina)</span></li>
+  <li><span>Contenta Mobile (Argentina)</span></li>
+  <li><span>Slots Machines (Argentina)</span></li>
+  <li><span>TreeLogic (Asturias)</span></li>
+  <li><span>BTS (Usa - Zaragoza)</span></li>
+  <li><span>LCRCOM.net (Madrid)</span></li>
+  <li><span>Autofarma (Argentina)</span></li>
+  <li><span>VsTour (Argentina)</span></li>
+  <li><span>CycleLogic (Argentina)</span></li>
+  <li><span>Ericsson/EDB (USA)</span></li>
+  <li><span>Pic-pic (USA)</span></li>
+  <li><span>PFA (Argentina)</span></li>
+  <li><span>Jampp (Arg/USA)</span></li>
+  <li><span>Contenta Mobile (Argentina)</span></li>
+  <li><span>Slots Machines (San Luis, Argentina)</span></li>
+  <li><span>Pampa Business Solutions (Argentina)</span></li>
+  <li><span>Sindicato de Pasteleros y afines (Argentina)</span></li>
+</ul>
+</details>
+
+
+See more at [ViaDB](https://viadb.ar).
+
+### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
 > Remote. New York/Madrid
 > Since September 2017 as OnGres, previously working as Consultant in 8kdata
 
-At OnGres, I'm working on Architecture, Reliabiliy and Infrastructure of our customers' production Databases.
+
+As the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, I am currently designing innovative system architectures to implement in our customers' production clusters. In addition, I develop system tools to ensure seamless operation and maximum efficiency.
+
 
 Highlighted projects:
 
@@ -56,56 +112,18 @@ Highlighted projects:
 - **Postmates**: Patroni Mult-project Terraform implementation with a centralized DCS.
 - Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
 - Google Cloud as Partner.
-- **ARM**.
+- **ARM** support and automation implementation.
 - **AWS**'s Babelfish project, as a Developer Advocate for the Open Source version.
 - Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
+- **stcpay** Architecture design and Technical Leader of the Database Project.
 
 Technologies:
 
 - Infra and CD/CI: HCL (Terraform, Packer), Ansible, Kubernetes, Docker.
-- Databases: Postgres (and extensions), MySQL, Oracle (to migrate out *wink, wink*)
-- Languages: Python, Golang, C, bash
-- Main Cloud Providers: Google Cloud, AWS
+- Databases: Postgres (and flavours), MySQL, Oracle (to migrate out *wink, wink*)
+- Languages: Golang, Python, C, bash. Time to time I code in NodeJS.
+- Main Cloud Providers: Google Cloud, AWS, etc.
 
-
-### ViaDB (under Plataform3 SL)
-> Madrid, Spain
-> Buenos Aires, Argentina
-> December, 2021 - Current
-
-ViaDB is a boutique services-company for IaC Databases.
-
-List of past and/or current customers:
-
-- Openpass (Argentina)
-- Mural (Argentina)
-- Frávega (Argentina)
-- iMedicare (USA)
-- Eloquentix (US)
-- 8kdata (Madrid)
-- Avalon Informática (Madrid) 
-- Init (País Vasco)
-- Scienza (Argentina)
-- Syscope (Argentina)
-- Mexane (Argentina)
-- Contenta Mobile (Argentina)
-- Slots Machines (Argentina)
-- TreeLogic (Asturias)
-- BTS (Usa - Zaragoza)
-- LCRCOM.net (Madrid)
-- Autofarma (Argentina)
-- VsTour (Argentina)
-- CycleLogic (Argentina)
-- Ericsson/EDB (USA)
-- Pic-pic (USA)
-- PFA (Argentina)
-- Jampp (Arg/USA)
-- Contenta Mobile (Argentina)
-- Slots Machines (San Luis, Argentina)
-- Pampa Business Solutions (Argentina)
-- Sindicato de Pasteleros y afines (Argentina)
-
-See more at [ViaDB](https://viadb.ar).
 
 ---
 
