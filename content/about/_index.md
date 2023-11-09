@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "A Database Engineer, DBRE, and IT consultant."
+subtitle: "A Database Platform, Reliability and Systems Engineer. IT Consultant."
 description: "
 My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language.
 Currently living in Madrid, but still _roundtripping_ to Buenos Aires. 
@@ -26,7 +26,8 @@ Currently, I am serving as the Professional Services Technical Lead and Database
 Additionally, as the founder of ViaDB, I specialize in consultancy and tool development, using a variety of programming languages including Go, Python, and Bash. 
 
 
-In commitment with my principles, I collaborate with NGOs such as Fundación Apolo and Fundación Oportunidades to develop and support their IT ecosystems. 
+In commitment with my principles, I collaborate with NGOs such as [Fundación Apolo](https://fundacionapolo.org) and [Fundación Oportunidades](https://oportunidades.org.ar) to develop and support their IT ecosystems. 
+
 
 
 ## Skillset
@@ -182,7 +183,7 @@ External technical advisor and consultant for Postgres and other related technol
 Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database specialist.
 
 
-### Pythian - Technical Lead - ACTG (Advanced Consulting Team Group) Member
+### Pythian - Technical Team Lead - ACTG (Advanced Consulting Team Group) Member
 > Ottawa, Canada
 > January 2015 - June 2016
 
@@ -219,7 +220,7 @@ Some highlighted customers: Microsoft, Beats (Apple), Adobe Echosign, Fitbit, Se
 
 Some of the highlighted customers: Adobe Echosign, Fitbit, Zendesk, Chegg, SendGrid
 
-### Aedgency - MySQL/Oracle DBA
+### Aedgency - MySQL/Oracle Database Administrator
 > Barcelona, Spain
 > November 2010 - March 2012
 
@@ -240,7 +241,7 @@ support developers in DB modeling and administration of Postgresql-Informix-Mysq
 - Coordinated teams for database support to enhance the compliant between apps of SIU.
 - Developing the production and pre-prod following plan for all the SIU apps. Server metrics and other stuff for high performance servers.
 
-### Globant - SysAdmin Linux - EA
+### Globant - Unix/Linux Systems Administrator - EA
 > Buenos Aires, Argentina
 > February 2009 -  July 2009
 
@@ -251,12 +252,12 @@ support developers in DB modeling and administration of Postgresql-Informix-Mysq
 - Basic knowledge on deployment / process with Maven - Ant - Hudson.
 - Assigned 50% to another project to provide Engineering Support at EA over Python scripting.
 
-### Correo Argentino - SysAdmin senior Linux and PostgreSQL
+### Correo Argentino - Senior Systems Administrator 
 > Monte Grande, Argentina
 > August 2008  -  February 2009
 
-- I managed production platform at Correo Argentino (over 400 terms with local databases and Linux enviroment).
-- Some machines was enlaced with a AD throw WinBind.
+- Managed production platform at Correo Argentino (over 400 terms with local Postgres databases and Linux enviroment).
+- Some machines was enlaced with a Active Directory throw WinBind.
 - Created an improved deploy tool for scripts, database recovery, control and monitoring, etc.
 - Also managed servers over Centos 5 for the support area's knowledge-base application  (7 DB MySQL 5.1)
 
