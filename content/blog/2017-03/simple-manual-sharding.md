@@ -20,121 +20,260 @@ layout: single
 
 ---
 
-## Before starting the container
 
-This article is not an introductory explanation of docker,however it's scope if for docker's beginners. You can consider it as an extension of the well documented [Percona docker hub doc][1]. For the source code of the image, the repository is at [github][2].
+## Concept
 
-Here is the all what you need to do for start:
+In the current concept, we are going to combine _Foreign tables inheritance_ with
+the `postgres_fdw` extension, both being already available features since 9.5 version.
 
-```bash
-docker run --name percona57 -e MYSQL_ROOT_PASSWORD=<a_password>  -d percona:5.7
+Cross-node partitioning allows a better data locality and a more scalable model
+than keeping local partitions. Being said, the data will be split into several
+nodes and organized using a particular key, which will determine in which _shard_
+data will be allocated. For the current POC, we are going to specify the `shardKey`
+, which is a simple `char(2)` type.
+
+
+### How this was done before
+
+Until today, the only way to perform findings over this method, was from the application
+layer, by issuing queries directly to the nodes by keeping certain deterministic way
+as {1} or using a catalog table as {2} (_NOTE: the bellow examples are using pseudo code_).
+
+{1}
+```
+query = "SELECT name,lastname FROM " + relation + partition " WHERE " id =" + person_id
 ```
 
-For checking the container status log, you can execute `docker logs percona57`.
-
-## Additional MySQL logs
-
-To start the container is pretty easy, but if you are not very used to Docker, you will find a bit lost if you want to enable logging or other features.
-
-For example, a full logging container will be started with this:
-
-```bash
-docker run --name percona57  -v /var/log/mysql:/var/log/mysql  -e MYSQL_ROOT_PASSWORD=mysql  -d percona:5.7 --general-log=1 --slow-query-log=1 --long-query-time=0  --log_slow_verbosity='full, profiling, profiling_use_getrusage'
+{2}:
+```
+shard = query("SELECT shard FROM catalog WHERE key = " + person_id)
+query = "SELECT name,lastname FROM " + relation + shard " WHERE " id =" + person_id
 ```
 
-Note that the `log_slow_verbosity` is only applicable for the Percona release, and adds extra output that turns very useful when doing complex query reviews. As you can appreciate, all the options are passed after the image name (percona:5.7).
+### How we are going to implement this now
 
-Now, the question is: where are the logs? Generally, you can access the container using `docker exec -it percona57 bash` and view the logs inside it, although this is not the most comfortable way to do this.
+As _foreign tables_ (FT) does not hold any data, it is possible to keep copies
+aroud all the databases involved and also in separated instances if this is
+necessary.
 
-In the example bellow, we'll use `jq` (a very handy json parser).
+All the operations against the table will be done through the parent table of
+the FT tree tables and Postgres itself will determine the destination FT using
+the _constraint exclusion_ feature, which will be detailed further.
 
-```bash
-3laptop ~ # docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
-cb740be0743c        percona:5.7         "docker-entrypoint.sh"   35 minutes ago      Up 35 minutes       3306/tcp            percona57
+For HA, you are limited on the data nodes to implement any other replication
+solution available in the core version. To be fair, 9.6 supports _streaming replication_
+and logical decoding, which is used by the `pglogical` tool for providing advanced
+logical replication per table basis.
 
-3laptop ~ # docker inspect percona57 | jq .[].Mounts
-[
-  {
-    "Propagation": "rprivate",
-    "RW": true,
-    "Mode": "",
-    "Destination": "/var/log/mysql",
-    "Source": "/var/log/mysql"
-  },
-  {
-    "Propagation": "",
-    "RW": true,
-    "Mode": "",
-    "Driver": "local",
-    "Destination": "/var/lib/mysql",
-    "Source": "/var/lib/docker/volumes/ceda51de62dac317fcafe9dd9e8f9b6f1dc5d70874466b3faf7cdfbcbbc91154/_data",
-    "Name": "ceda51de62dac317fcafe9dd9e8f9b6f1dc5d70874466b3faf7cdfbcbbc91154"
-  }
-]
 
-3laptop ~ # ls -l /var/lib/docker/volumes/ceda51de62dac317fcafe9dd9e8f9b6f1dc5d70874466b3faf7cdfbcbbc91154/_data
-...
--rw-r----- 1 maxscale docker  26886023 Jul  2 19:10 cb740be0743c.log
--rw-r----- 1 maxscale docker 268834670 Jul  2 19:10 cb740be0743c-slow.log
-...
+![TPS][2]
+<figcaption class="caption">[Fig. 1] Manual sharding with FDW current implementation.</figcaption>
+
+## Foreign tables
+
+Foreign tables do not contain data by itselves and they only reference to a external
+table  on a different Postgres database. There are plenty of different extensions
+allowing external tables on different data store solutions, but in this particular
+article we are going to focus on `postgres_fdw` as we want to explore more about
+condition pushdowns, which makes queries against these tables more performant
+on more complex queries.
+
+A more extensive benchmark can be found at my [next article][1].
+
+The framework underlying for the Foreign Data Wrappers, support both reads and
+write operations. `postgres_fdw` is not the exception and does also support condition
+pushdown for avoiding large scans on the source tables.
+
+On each database holding the FT, you need to invoke the extension creation:
+
+```sql
+CREATE EXTENSION postgres_fdw;
 ```
 
-The logs (general and slow) are using the `container id` in the file name, which can be appreciated when executing `docker ps`.
+FT have two main elements,necessary to point correctly both in source as in user
+privileges. If you are paranoic enough, you'll prefer to use unprivileged users
+with limited grants over the tables that you use.
 
-## Access through network
+- Server
+- User Mapping
 
-Obviously, when using docker in production, you don't want to access it locally.  For getting the host of our container (and all the running containers), we can do the following commands:
+{1}
 
+```sql
+CREATE SERVER shard1_main FOREIGN DATA WRAPPER postgres_fdw
+  OPTIONS(host '127.0.0.1',port '5434',dbname 'shard1');
+CREATE SERVER shard2_main FOREIGN DATA WRAPPER postgres_fdw
+  OPTIONS(host '127.0.0.1',port '5435',dbname 'shard2');
 
-```bash
-3laptop ~ # docker network ls
-NETWORK ID          NAME                DRIVER
-5fddd2e1a80a        bridge              bridge              
-e4e0c655e1aa        host                host                
-565f4a23d95a        none                null  
-
-3laptop ~ # docker network inspect 5fddd2e1a80a | jq .[].Containers
-{
-  "cb740be0743cd662c700f73586fe481dc25e4eb27ef94e075c4668a5421eca13": {
-    "IPv6Address": "",
-    "IPv4Address": "172.17.0.2/16",
-    "MacAddress": "02:42:ac:11:00:02",
-    "EndpointID": "6dbd28900efe2c6f6edffcbbec0ac7d6446b4336e6e31f018f18d00f1005a812",
-    "Name": "percona57"
-  }
-}
+-- Slaves
+CREATE SERVER shard1_main_replica FOREIGN DATA WRAPPER postgres_fdw
+  OPTIONS(host '127.0.0.1',port '7777',dbname 'shard1');
+CREATE SERVER shard2_main_replica FOREIGN DATA WRAPPER postgres_fdw
+    OPTIONS(host '127.0.0.1',port '8888',dbname 'shard2');
 ```
 
-We can see that our container `percona57` is running over `172.17.0.2` IP address. To access it, you only need to do as usual:
+{2}
 
-```bash
-3laptop ~ # mysql -h 172.17.0.2 -p
-....
-mysql>
+```sql
+-- User mapping
+CREATE USER MAPPING FOR postgres SERVER shard1_main OPTIONS(user 'postgres');
+CREATE USER MAPPING FOR postgres SERVER shard2_main OPTIONS(user 'postgres');
+
+CREATE USER MAPPING FOR postgres SERVER shard1_main_replica OPTIONS(user 'postgres');
+CREATE USER MAPPING FOR postgres SERVER shard2_main_replica OPTIONS(user 'postgres');
+```
+
+The FT definition is indeed pretty straightforward if we don't want to do any further
+column filtering:
+
+```sql
+CREATE TABLE main (shardKey char(2), key bigint, avalue text);
+
+CREATE FOREIGN TABLE main_shard01
+       (CHECK (shardKey = '01'))
+       INHERITS (main)
+       SERVER shard1_main;
+
+CREATE FOREIGN TABLE main_shard02
+       (CHECK (shardKey = '02'))
+       INHERITS (main)
+       SERVER shard2_main;
 ```
 
 
-<!-- {% if page.comments %} 
-<div id="disqus_thread"></div>
-<script>
+### Writable FDWs
 
-var disqus_config = function () {
-this.page.url = {{ site.url }};  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = {{ page.title }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+Even if I don't recommend the following approach, it can be very easy to centralize
+the writes _to_ the shards through the FT. Although, it requires to code a trigger
+for managing this. Currently, the minimum transaction level for foreign tables is REPEATABLE READ,
+but it will probably change in future versions.
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//3manuek.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
--->
+A very simplistic approach for an INSERT trigger will be like bellow:
+
+```sql
+CREATE OR REPLACE FUNCTION f_main_part() RETURNS TRIGGER AS
+$FMAINPART$
+DECLARE
+            partition_name text;
+BEGIN
+            partition_name := 'main_shard' || NEW.shardKey;
+            EXECUTE  'INSERT INTO ' ||  quote_ident(partition_name) ||  ' SELECT ($1).*' USING NEW ;
+            RETURN NULL;
+END;
+$FMAINPART$ LANGUAGE plpgsql;
+
+CREATE TRIGGER t_main BEFORE INSERT
+  ON main
+  FOR EACH ROW EXECUTE PROCEDURE f_main_part();
+```
 
 
-[1]: https://hub.docker.com/_/percona/
-[2]: https://github.com/dockerfile/percona
+## Data on shards
+
+As shards contain data, the declaration ends up to be a  common table within
+the necessary suffix for localization:
+
+```sql
+CREATE TABLE main_shard01(  shardKey char(2),
+                            key bigint,
+                            avalue text,
+                            CHECK(shardKey='01'));
+CREATE INDEX ON main_shard01(key);
+```
+
+A simple test could be done by issuing:
+
+```sql
+proxy=# INSERT INTO main
+        SELECT '0' || round(random()*1+1),i.i,random()::text
+        FROM generate_series(1,20000) i(i) ;
+INSERT 0 0
+```
+
+You probably are intuiting that the above statement inserts data on both nodes,
+and the trigger will derive the row accordingly to the corresponding shard.
+
+> NOTE: the shard number is generated by `random()*1+1` which output rounds between
+> 1 and 2.
+
+## _Grab them from the hidden columns_
+
+Querying data can be nicely transparent, as shown bellow. The `tableoid` in this
+particular case can be misleading, as the `oid` reported are those from the nodes,
+not the local machine. It is used just to show that they're effectively different
+tables:
+
+```sql
+proxy=# select tableoid,count(*) from main group by tableoid;
+ tableoid | count
+----------+-------
+    33226 |   104
+    33222 |    96
+(2 rows)
+```
+
+For example, retrieving a single row is easy as:
+
+```sql
+proxy=# SELECT avalue FROM main WHERE key = 1500 and shardKey = '01';
+      avalue       
+-------------------
+ 0.971926014870405
+(1 row)
+```
+
+Behind the scenes, the pushed query to the remote servers contains the corresponding
+filter (`(key = 1500)`) and locally, the constraint exclusion allows to avoid further
+scans into the other child FT.
+
+```sql
+proxy=# explain (VERBOSE true)SELECT avalue
+                               FROM main WHERE key = 1500
+                                                and shardKey = '01';
+                                 QUERY PLAN                                                    
+--------------------------------------------------------------------------------
+ Append  (cost=0.00..131.95 rows=2 width=32)
+   ->  Seq Scan on public.main  (cost=0.00..0.00 rows=1 width=32)
+         Output: main.avalue
+         Filter: ((main.key = 1500) AND (main.shardkey = '01'::bpchar))
+   ->  Foreign Scan on public.main_shard01  (cost=100.00..131.95 rows=1 width=32)
+         Output: main_shard01.avalue
+         Remote SQL: SELECT avalue FROM public.main_shard01 WHERE ((key = 1500))
+             AND ((shardkey = '01'::bpchar))
+(7 rows)
+```
+
+Even if we don't want to provide the shardKey, the `key` filter will be pushed across
+all the shard nodes. If your keys aren't unique across shards, you'll get a multi-row
+result set.
+
+```sql
+proxy=# explain (VERBOSE true)SELECT avalue FROM main WHERE key = 1500;
+                                    QUERY PLAN                                    
+--------------------------------------------------------------------------------
+ Append  (cost=0.00..256.83 rows=15 width=32)
+   ->  Seq Scan on public.main  (cost=0.00..0.00 rows=1 width=32)
+         Output: main.avalue
+         Filter: (main.key = 1500)
+   ->  Foreign Scan on public.main_shard01  (cost=100.00..128.41 rows=7 width=32)
+         Output: main_shard01.avalue
+         Remote SQL: SELECT avalue FROM public.main_shard01 WHERE ((key = 1500))
+   ->  Foreign Scan on public.main_shard02  (cost=100.00..128.41 rows=7 width=32)
+         Output: main_shard02.avalue
+         Remote SQL: SELECT avalue FROM public.main_shard02 WHERE ((key = 1500))
+(10 rows)
+```
+
+## Considerations
+
+Foreign Data Wrappers for Postgres are such a great extension, but it comes at
+a price with a visible [overhead in high intensive transactional workloads][1].
+
+
+Hope you liked the article!
+
+
+
+<!-- [4]: http://www.3manuek.com/assets/posts/dosequis.jpg -->
+[1]: https://tr3s.ma/blog/2017-03/fdw-overhead/ 
+[2]: /blog/assets/2017-03/fdwsharding.png
