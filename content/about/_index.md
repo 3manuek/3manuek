@@ -19,14 +19,68 @@ layout: about
 
 ## Bio(graffiti) 
 
-I am a multifaceted professional with excellent communication skills and a strong commitment to principles. 
+I am a multifaceted professional with excellent communication skills 
+and a strong commitment to principles. 
 
-Currently, I am serving as the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, where I am a valued partner. 
+Currently, I am serving as the Professional Services Technical Lead 
+and Database Platform and Systems Engineering at OnGres, where I am a valued partner. 
 
-Additionally, as the founder of ViaDB, I specialize in consultancy and tool development, using a variety of programming languages including Go, Python, and Bash. 
+Additionally, as the founder of ViaDB, I specialize in consultancy
+ and tool development, using a variety of programming languages including Go, Python, and Bash. 
+
+In commitment with my principles, I collaborate with NGOs such as
+[Fundación Apolo](https://fundacionapolo.org) and [Fundación Oportunidades](https://oportunidades.org.ar) 
+to develop and support their IT ecosystems and lead [CanalDBA](https://canaldba.com) community.
+
+Prior to my incursion on the IT career, between 1998 and 2007 I 
+worked in the Argentina's Fedaral Bureau of Prisons (Servicio 
+Penitenciario Federal) until the Officer's 3rd range. I managed
+operative groups at several institutions from medium to high security.
+
+For more information, see the details.
+
+<details>
+
+## Positions:
+
+### Maximum Security Complex (CPF 1)
+> Complejo Penitenciario Federal 1 (CPF1)
+> 2005-2006
+> Module 6 - Sanctioned Section
+
+Worked as Internal Shift Manager.
+Conducted sanction procedures and crime investigations.
+
+### Unit 31 (Woman's Facility)
+> Complejo Penitenciario de Mujeres 
+> 2004 - 2005
+
+Worked as External Shift, Weapon capacity and Storage management.
+Conducted sanction procedures and crime investigations inside the premises.
+Cooperated in the design of some of the security and emergency procedures.
+Member of the Security Counsil.
+
+### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+> 2003 - 2004
+
+Internal Shift Manager.
 
 
-In commitment with my principles, I collaborate with NGOs such as [Fundación Apolo](https://fundacionapolo.org) and [Fundación Oportunidades](https://oportunidades.org.ar) to develop and support their IT ecosystems. 
+### NCO School
+> Escuela de Suboficiales Cnel. Rómulo Páez
+> 2002 - 2003
+
+Instructor
+
+### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+> January 2000 - 2002
+
+External Shift, Weapon capacity and Storage Manager. 
+Cooperated in the design of some of the security and emergency procedures.
+
+</details>
 
 
 
@@ -128,6 +182,11 @@ Technologies:
 
 ---
 
+## Education
+
+- ESBA - Developer Analyst
+- Escuela Penintenciaria de la Nación (Juán José O'Connor) - 2000 - Criminal Sciences Degree 
+
 ## External publications
 
 - July 2nd, 2013: [AWS - Postgres in AWS](http://media.amazonwebservices.com/AWS_RDBMS_PostgreSQL.pdf)
@@ -149,10 +208,6 @@ Other certifications related to DataScience Specialization:
 - [Statistical inference](https://www.coursera.org/account/accomplishments/verify/K59SPFAKW2)
 - [Regression Models](https://www.coursera.org/account/accomplishments/verify/DLH75DKK4U)
 - [Big Data, University of San Diego](https://www.coursera.org/account/accomplishments/verify/TFTDEL6ZYX97)
-
-## Education
-
-- ESBA - Developer Analyst
 
 ---
 
@@ -280,6 +335,4 @@ Some of the 'extra' task was made some Perl scripts for support area.
 - MOSAIC debugging and support.
 - Customer Correo Argentino / Siemens.
 
----
 
-> As a previous and unrelated experience to IT, I worked as Officer and had quit as Adjutor Principal after 8 years of serving at Argentina's Federal Bureau of Prisons (Servicio Penitenciario Federal). I had been in charge of assigned groups at several institutions from medium to high security. I cooperated in the design of some of the security and emergency procedures and designed the operations and personnel capacitation. In the early days of my career, on the External Security Officer role, I managed the weapon capacity and storage of the shifts. I also conducted sanction procedures and crime investigations in several of those establishments. I must highlight that it is not possible to go any further whether you want to change things for good; there will be always someone on top of you trying to keep his/her power. And that was one of the reasons why I quit.
