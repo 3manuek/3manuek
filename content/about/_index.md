@@ -19,25 +19,29 @@ layout: about
 
 ## Bio(graffiti) 
 
-I am a multifaceted professional with excellent communication skills 
-and a strong commitment to principles. 
 
-Currently, I am serving as the Professional Services Technical Lead 
-and Database Platform and Systems Engineering at OnGres, where I am a valued partner. 
+I am a multifaceted professional with excellent communication skills, a
+strong commitment to principles, and a passion for sharing knowledge and
+tools with others.
 
-Additionally, as the founder of ViaDB, I specialize in consultancy
- and tool development, using a variety of programming languages including Go, Python, and Bash. 
+Currently, I am the Professional Services Technical Lead and Database
+Platform and Systems Engineering at [OnGres](https://ongres.com), where I am
+a valued partner, helping customers to design and operate highly
+available and scalable databases.
 
-In commitment with my principles, I collaborate with NGOs such as
-[Fundación Apolo](https://fundacionapolo.org) and [Fundación Oportunidades](https://oportunidades.org.ar) 
-to develop and support their IT ecosystems and lead [CanalDBA](https://canaldba.com) community.
+In addition, as the founder of [ViaDB](https://viadb.ar), I specialize in
+consultancy and tool development, using a variety of programming
+languages including Go, Python, and Bash.
 
-Prior to my incursion on the IT career, between 1998 and 2007 I 
-worked in the Argentina's Fedaral Bureau of Prisons (Servicio 
-Penitenciario Federal) until the Officer's 3rd range. I managed
-operative groups at several institutions from medium to high security.
+Commitment to my principles and values drives my work, and I collaborate
+with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
 
-For more information, see the details.
+Before transitioning to a career in IT, between 1998 and 2007, I served
+in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
+Federal) as an officer, managing operational groups at institutions
+ranging from medium to high security.
+
+For more details, please see the sections below.
 
 <details>
 
@@ -104,50 +108,14 @@ Other things that I love to do:
 
 ## Positions
 
-### ViaDB (under Plataform3 SL)
-> - Madrid, Spain
-> - Buenos Aires, Argentina
-> - December, 2021 - Current
+### Independent Consultant - Open Source Databases and Architecture
+> Remote. 
 
-ViaDB is an Open Source Database Support and System tools development indie-company.
+- Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
+- Automated Cloud Infrastrucures.
+- HA, Performance, Monitoring,Debugging.
+- Development.
 
-
-<details>
-    <summary>List of past and/or current customers.</summary>
-<ul>
-  <li><span>Maper (Argentina)</span></li>
-  <li><span>Openpass (Argentina)</span></li>
-  <li><span>Mural (Argentina)</span></li>
-  <li><span>Frávega (Argentina)</span></li>
-  <li><span>iMedicare (USA)</span></li>
-  <li><span>Eloquentix (US)</span></li>
-  <li><span>8kdata (Madrid)</span></li>
-  <li><span>Avalon Informática (Madrid)</span></li>
-  <li><span>Init (País Vasco)</span></li>
-  <li><span>Scienza (Argentina)</span></li>
-  <li><span>Syscope (Argentina)</span></li>
-  <li><span>Mexane (Argentina)</span></li>
-  <li><span>Contenta Mobile (Argentina)</span></li>
-  <li><span>Slots Machines (Argentina)</span></li>
-  <li><span>TreeLogic (Asturias)</span></li>
-  <li><span>BTS (Usa - Zaragoza)</span></li>
-  <li><span>LCRCOM.net (Madrid)</span></li>
-  <li><span>Autofarma (Argentina)</span></li>
-  <li><span>VsTour (Argentina)</span></li>
-  <li><span>CycleLogic (Argentina)</span></li>
-  <li><span>Ericsson/EDB (USA)</span></li>
-  <li><span>Pic-pic (USA)</span></li>
-  <li><span>PFA (Argentina)</span></li>
-  <li><span>Jampp (Arg/USA)</span></li>
-  <li><span>Contenta Mobile (Argentina)</span></li>
-  <li><span>Slots Machines (San Luis, Argentina)</span></li>
-  <li><span>Pampa Business Solutions (Argentina)</span></li>
-  <li><span>Sindicato de Pasteleros y afines (Argentina)</span></li>
-</ul>
-</details>
-
-
-See more at [ViaDB](https://viadb.ar).
 
 ### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
 > Remote. New York/Madrid
@@ -212,6 +180,52 @@ Other certifications related to DataScience Specialization:
 ---
 
 ## Past Experience
+
+### ViaDB (under Plataform3 SL)
+> - Madrid, Spain
+> - Buenos Aires, Argentina
+> - December, 2021 - November 2023
+
+ViaDB is an Open Source Database Support and System tools development indie-company. Closed due 
+to relocation.
+
+
+<details>
+    <summary>List of past and/or current customers.</summary>
+<ul>
+  <li><span>Maper (Argentina)</span></li>
+  <li><span>Openpass (Argentina)</span></li>
+  <li><span>Mural (Argentina)</span></li>
+  <li><span>Frávega (Argentina)</span></li>
+  <li><span>iMedicare (USA)</span></li>
+  <li><span>Eloquentix (US)</span></li>
+  <li><span>8kdata (Madrid)</span></li>
+  <li><span>Avalon Informática (Madrid)</span></li>
+  <li><span>Init (País Vasco)</span></li>
+  <li><span>Scienza (Argentina)</span></li>
+  <li><span>Syscope (Argentina)</span></li>
+  <li><span>Mexane (Argentina)</span></li>
+  <li><span>Contenta Mobile (Argentina)</span></li>
+  <li><span>Slots Machines (Argentina)</span></li>
+  <li><span>TreeLogic (Asturias)</span></li>
+  <li><span>BTS (Usa - Zaragoza)</span></li>
+  <li><span>LCRCOM.net (Madrid)</span></li>
+  <li><span>Autofarma (Argentina)</span></li>
+  <li><span>VsTour (Argentina)</span></li>
+  <li><span>CycleLogic (Argentina)</span></li>
+  <li><span>Ericsson/EDB (USA)</span></li>
+  <li><span>Pic-pic (USA)</span></li>
+  <li><span>PFA (Argentina)</span></li>
+  <li><span>Jampp (Arg/USA)</span></li>
+  <li><span>Contenta Mobile (Argentina)</span></li>
+  <li><span>Slots Machines (San Luis, Argentina)</span></li>
+  <li><span>Pampa Business Solutions (Argentina)</span></li>
+  <li><span>Sindicato de Pasteleros y afines (Argentina)</span></li>
+</ul>
+</details>
+
+
+See more at [ViaDB](https://viadb.ar).
 
 ### Percona -  Senior Technical Services Engineer _[main position]_
 > Buenos Aires, Argentina
