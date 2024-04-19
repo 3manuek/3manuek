@@ -1,25 +1,23 @@
 ## Welcome, fellow visitor 🧙
 
-My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language.
-I'm currently located in Madrid and "80%-formerly" in Buenos Aires.
+My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. I am currently located in Madrid and "80%-formerly" in Buenos Aires.
 
-For more information about my resume check out [my site](https://tr3s.ma).
+To get more information about my resume, check out my [personal website](https://tr3s.ma).
 
-I'm a Database Engineer and Consultant. Currently working at [OnGres](https://ongres.com), Founder 
-of [ViaDB](https://viadb.ar), and doing charity work as IT Director in Oportunidades and Apolo Foundations. 
+I am a highly experienced Database Engineer and Consultant, currently working at [OnGres](https://ongres.com), having previously founded [ViaDB](https://viadb.ar), and providing charity IT services as IT Director for [Oportunidades](https://oportunidades.org.ar) and [Apolo](https://fundacionapolo.org) Foundations.
 
-My specialty is Systems Design and Development oriented to highly concurrent, available, and transactional systems. 
-But also, gave consulting for Software Teams dealing with complex data-layer Software refactors for analytics and 
-FTS (Full-Text Search).
+My expertise lies in the design and development of highly concurrent, available, and transactional systems. I have also provided consulting services to Software Teams dealing with complex data-layer Software refactors for analytics and FTS (Full-Text Search).
 
-For looking at my resume and business inquiries, follow my [LinkedIn](https://www.linkedin.com/in/ecbcbcb/) profile.
+For inquiries or to review my resume, you can follow my [LinkedIn](https://www.linkedin.com/in/ecbcbcb/) profile.
 
+## Skillset
 
-### Skillset
+- Databases: extensive experience in Postgres, MySQL, ClickHouse, and Elastic, in production environments mostly in Linux/Unix environments.
+- Languages: Golang, Python, C, and Bash.
+- Deploy and Infrastructure: I have experience with Terraform/Packer, Ansible, Kubernetes, and bare metal.
+- Cloud Providers: I have experience in the most popular Cloud providers, including Azure, GCloud, and AWS.
+- Communication: I am a skilled communicator, managing customer accounts worldwide.
+- Incident Management: I have considerable experience in dealing with complex production incidents.
 
-- Databases: Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
-- Languages I use the most: Golang, Python, C, Bash. 
-- Deploy and Infrastructure: Terraform/Packer, Ansible, Kubernetes, bare metal, etc.
-- Experience in the most popular Cloud providers. Azure certified, GCloud, and AWS.
-- A skilled communicator, managing customers' accounts worldwide.
-- Considerable experience dealing with complex production incidents. 
+ Considerable experience dealing with complex production incidents. 
+
