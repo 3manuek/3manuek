@@ -37,11 +37,11 @@ in order to emulate sort of a DoS attack against the pools. The intention here, 
 study the behavior of 2 very popuplar Postgres Pools in these cases.
 
 The main difference between both pools relies on how they use CPU resources. PgBouncer
-is a single-threaded services, whether Odyssey uses threaded workers. It is expected certain
-overhead on multi-thread in these cases, and that was the moto of this laboratory.
+is a single-threaded services, whether Odyssey uses multiple and configurable workers. It is expected certain
+overhead on multi-workers in these cases, and that was the moto of this laboratory.
 
 The intention here is not to choose one or another, but to study in which cases one could
-use single-threaded or multi-threaded pools. 
+use single-threaded or multi-worker pools. 
 
 The data on this laboratory is outdated, as new versions have been released from both tools,
 so conclusions may be inaccurate for newer versions. Although, I do not expect much difference
