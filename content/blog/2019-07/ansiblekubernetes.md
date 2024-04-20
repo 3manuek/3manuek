@@ -8,13 +8,17 @@ draft: false
 images:
   - /blog/assets/colorful-storage-containers-logistic-center.jpg
 series:
-  - Getting Started
+  - Projects
+  - Labs
+  - Ansible
+  - Kubernetes
 tags:
   - hugo-site
 categories:
   - Ansible
   - Kubernetes
   - Projects
+  - Labs
 # layout options: single or single-sidebar
 layout: single
 

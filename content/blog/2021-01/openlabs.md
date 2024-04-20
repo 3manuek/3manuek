@@ -8,11 +8,12 @@ draft: false
 images:
   - /blog/assets/open-labs.png
 series:
-  - Getting Started
+  - Labs
 tags:
   - hugo-site
 categories:
   - Projects
+  - Labs
 # layout options: single or single-sidebar
 layout: single
 

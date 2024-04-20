@@ -10,11 +10,13 @@ images:
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
 series:
-  - Getting Started
+  - Labs
+  - Projects
 tags:
   - hugo-site
 categories:
   - Projects
+  - Labs
 # layout options: single or single-sidebar
 layout: single
 jemoji: '<img class="emoji" title=":wrench:" alt=":wrench:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f527.png" height="20" width="20" align="absmiddle">'

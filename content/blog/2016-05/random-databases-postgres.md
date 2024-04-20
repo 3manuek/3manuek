@@ -10,10 +10,12 @@ images:
   - /blog/assets/thumbnail_db.png
   - /blog/assets/tachyons-logo-script-feature.png
 series:
-  - Getting Started
+  - Labs
+  - Postgres
 tags:
   - hugo-site
 categories:
+  - Labs
   - Postgres
 # layout options: single or single-sidebar
 layout: single
