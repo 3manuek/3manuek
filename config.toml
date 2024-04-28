@@ -92,6 +92,7 @@ Title = "3manuek"
     table_stripe_color_dark = "#202020"             # default is #202020
     text_color_dark = "#EEE"                        # default is #EEE
 
+    bullet = "●"
     # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
     # remark42 = true
     # remark42_host = "https://yourhost.com"
@@ -105,7 +106,8 @@ Title = "3manuek"
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
     gtag = true
-    gtag_id = 315238990
+    # gtag_id = 315238990
+    gtag_id = "G-GY0KSNNSTL"
 
 [taxonomies]
     series = 'series'
