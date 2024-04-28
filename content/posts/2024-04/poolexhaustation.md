@@ -41,7 +41,31 @@ The data on this laboratory is outdated, as new versions have been released from
 so conclusions may be inaccurate for newer versions. Although, I do not expect much difference
 as the architecture of those components haven't changed radically.
 
+```mermaid
+graph TB
+    odysseyp["Odyssey"] -. Pool Size=32 .-> Postgres
+    pgbouncer["PgBouncer"] -. Pool Size=32 .-> Postgres
+    pgbench["PgBench"] -. unlimited clients .-> odysseyp
+    pgbench["PgBench"] -. max_client_conn=100k .-> pgbouncer
 
+    subgraph CLI["Client Compute"]
+        pgbench["PgBench"]
+        pgbench_N["PgBench...N"]
+    end
+    subgraph PGB["Pgbouncer Compute"]
+        pgbouncer["PgBouncer"]
+    end
+    subgraph ODY["Odyssey Compute"]
+        odysseyp["Odyssey Parent"] -.- odysseysys
+        odysseyp["Odyssey Parent"] -. workers=N .- odysseyworkerN
+        odysseysys["Odyssey System"]
+        odysseyworkerN["Odyssey Workers"]
+    end
+    subgraph PG["Postgres Compute"]
+        Postgres
+        Postgres --- disk("pd-ssd")
+    end
+```
 
 ## Early Conclusions
 
