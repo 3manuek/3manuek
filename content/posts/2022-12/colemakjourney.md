@@ -1,6 +1,6 @@
 ---
-title: "[WIP] My switching keyboard layout and ortholinear experience (Part 1)"
-subtitle: "."
+title: "My switching keyboard layout and ortholinear experience (Part 1)"
+subtitle: "Leaving QWERTY behind"
 excerpt: ""
 date: 2022-12-12
 author: "3manuek"
@@ -12,7 +12,7 @@ tags:
   - Keyboard
 ---
 
-## To whom this article might interest
+## To whom this article might be interesting
 
 This post has no intention to discuss what layout might be better in terms of
 efficiency, or effort. There are a considerable amount of great articles related
@@ -101,21 +101,52 @@ for ignoring or reducing the usage of the backspace.
 
 ## N-grams
 
-One thing that seems easy but it might be harder than you expect, is to train with sets of 2 and 3 grams.
-Any tool that allows you to set your text may serve the purpose.
+One thing that seems easy but it might be harder than you expect, is to train with sets of 2 and 3 grams. Any tool that allows you to set your text may serve the purpose.
 
 
+{{< tabs tabTotal="2">}}
+
+{{% tab tabName="3-gram" %}}
 Most frequent 3-gram combinations in the English language:
 
 ```
-the ing and ion tio ent for ati ter ate ers res her est com pro ere all int men you ons our con are tha ver ess thi rea sta tin hat ist ect ort ear ine age his ted ont nce sto ith nte sin tor ore lin ive ite wit not nth tra ome ica per art ste cti oft oth ice out ill ide eth ies one ser eco era str eve din rat ona ces edi iti eri ran san ity oun nal use ure rin ame act igh ese ave sti nts hes sit der fth les man ant ind new pri ree ble ast nta tur por ght ain anc cha eas par ove nde rom rec ert lan cal sof can orm tes ost cat son tic end hea ina red wor ber lic han mat tat hin nes pre sho ren ein eme ric ust fro rth inc eat ase nti ard rch ndi lea tan ssi nin min ail omp ins cou ell erv tal enc ass tth lle ele mor ean sth tem sea rma als und pla ple eal rie ema ali nda ack hen ial ord ana arc ori che tho eof lis dis een car ngt ire ead eto ene att nto omm pos abl lat nds dat lit gra mes hec kin esa vie ote dth ern sio ono esi inf mer nfo hav mar chi ten uni ime nat des hou rit tim den sco ans hel
+the ing and ion tio ent for ati ter ate ers res her 
+est com pro ere all int men you ons our con are tha 
+ver ess thi rea sta tin hat ist ect ort ear ine age 
+his ted ont nce sto ith nte sin tor ore lin ive ite 
+wit not nth tra ome ica per art ste cti oft oth ice 
+out ill ide eth ies one ser eco era str eve din rat 
+ona ces edi iti eri ran san ity oun nal use ure rin 
+ame act igh ese ave sti nts hes sit der fth les man 
+ant ind new pri ree ble ast nta tur por ght ain anc 
+cha eas par ove nde rom rec ert lan cal sof can orm 
+tes ost cat son tic end hea ina red wor ber lic han 
+mat tat hin nes pre sho ren ein eme ric ust fro rth 
+inc eat ase nti ard rch ndi lea tan ssi nin min ail 
+omp ins cou ell erv tal enc ass tth lle ele mor ean 
+sth tem sea rma als und pla ple eal rie ema ali nda 
+ack hen ial ord ana arc ori che tho eof lis dis een 
+car ngt ire ead eto ene att nto omm pos abl lat nds 
+dat lit gra mes hec kin esa vie ote dth ern sio ono 
+esi inf mer nfo hav mar chi ten uni ime nat des hou 
+rit tim den sco ans hel
 ```
+{{% /tab %}}
+{{% tab tabName="2-gram" %}}
 
 Most frequent 2-gram combinations:
 
 ```
-in th er re he an on es or te at ti st en nt ar to nd al it se ed is ea ng ou le co me ne ri ro de ra io ic li of as et ve ta si ha ma ec om ce el ll ca ur la ch hi di ho fo ns ot ac na rs so pr rt sa ss us no il ts em ct ge lo ee be tr ni pe ie pa nc po ol da ad vi un am ut wi mo sh yo ai ew ow os fi ep tt mi op ia we ag su id do oo
+in th er re he an on es or te at ti st en nt ar to nd 
+al it se ed is ea ng ou le co me ne ri ro de ra io ic 
+li of as et ve ta si ha ma ec om ce el ll ca ur la ch 
+hi di ho fo ns ot ac na rs so pr rt sa ss us no il ts 
+em ct ge lo ee be tr ni pe ie pa nc po ol da ad vi un 
+am ut wi mo sh yo ai ew ow os fi ep tt mi op ia we ag 
+su id do oo
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 So, the only thing to do here is copy paste these in your typing tool of preference. 
 

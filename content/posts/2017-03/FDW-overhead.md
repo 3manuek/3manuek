@@ -36,16 +36,25 @@ Until today, the only way to perform findings over this method, was from the app
 layer, by issuing queries directly to the nodes by keeping certain deterministic way
 as {1} or using a catalog table as {2} (_NOTE: the bellow examples are using pseudo code_).
 
-{1}
+{{< tabs tabTotal="2">}}
+{{% tab tabName="Deterministically"%}}
+```sql
+query = "SELECT name,lastname FROM " + relation + 
+        partition " WHERE " id =" + person_id
 ```
-query = "SELECT name,lastname FROM " + relation + partition " WHERE " id =" + person_id
-```
+{{% /tab %}}
 
-{2}:
-```
+{{% tab tabName="Catalog table technique" %}}
+```sql
 shard = query("SELECT shard FROM catalog WHERE key = " + person_id)
-query = "SELECT name,lastname FROM " + relation + shard " WHERE " id =" + person_id
+query = "SELECT name,lastname FROM " + relation + shard + 
+      " WHERE " id =" + person_id
 ```
+{{% /tab %}}
+{{< /tabs >}}
+
+
+
 
 ### How we are going to implement this now
 

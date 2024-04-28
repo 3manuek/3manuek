@@ -5,16 +5,8 @@ description: "
 My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language.
 Currently living in Madrid, but still _roundtripping_ to Buenos Aires. 
 "
-
 date: 2023-02-18T12:27:33-06:00
-# images:
-#   - img/profile-2.png
-#show_action_link: true
-#action_link: /about
-#action_label: "Read More &rarr;"
-#action_type: text # text, button
-#type: home
-#layout: about
+
 ---
 
 ## Bio(graffiti) 
