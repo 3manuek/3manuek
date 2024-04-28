@@ -5,23 +5,17 @@ excerpt: ""
 date: 2024-04-19
 author: "3manuek"
 draft: false
-images:
-#   - /images/posts/ergodox.png
-  - /images/posts/thumbnail_db.png
+
 series:
   - Postgres
   - Pooling
   - Terraform
   - Labs
 tags:
-  - hugo-site
-categories:
   - Postgres
   - Pooling
   - Terraform
   - Labs
-# layout options: single or single-sidebar
-layout: single
 
 ---
 
