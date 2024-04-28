@@ -4,6 +4,7 @@ theme = "poison"
 author = "Emanuel"
 paginate = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
+Title = "3manuek"
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 # disqusShortname = "yourDisqusShortname"
@@ -104,7 +105,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 
     gtag = true
     gtag_id = 315238990
-    
+
 [taxonomies]
     series = 'series'
     tags = 'tags'
