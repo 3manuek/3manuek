@@ -59,6 +59,9 @@ If you use `SAMPLE > 100`, you'll probably get some dirty results, specially if 
 a distributed umbrella. In the bellow example is possible to see that the SAMPLE is over each
 local table and aggregated later locally (there are 2 shards):
 
+{{< tabs tabTotal="2" >}}
+
+{{% tab tabName="Local Table" %}}
 ```sql
 SELECT count(*)
 FROM database_report.stats_table_local
@@ -67,8 +70,11 @@ SAMPLE 1000
 │    1015 │
 └─────────┘
 1 rows in set. Elapsed: 1.296 sec. Processed 48.21 million rows, 2.07 GB (37.18 million rows/s., 1.60 GB/s.)
+```
+{{% /tab %}}
 
-
+{{% tab tabName="Distributed Table" %}}
+```sql
 SELECT count(*)
 FROM database_report.stats_table_distributed
 SAMPLE 1000
@@ -77,6 +83,15 @@ SAMPLE 1000
 └─────────┘
 1 rows in set. Elapsed: 1.256 sec. Processed 96.41 million rows, 4.15 GB (76.75 million rows/s., 3.30 GB/s.)
 ```
+{{% /tab %}}
+
+
+{{< /tabs >}}
+
+
+
+
+
 
 Instead, by using the relative coefficient format, the aggregations are more accurate/consistent in terms of total rows
 gathered, although you'll need to fix the estimation depending on the coefficient:

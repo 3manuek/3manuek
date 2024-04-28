@@ -41,7 +41,7 @@ The data on this laboratory is outdated, as new versions have been released from
 so conclusions may be inaccurate for newer versions. Although, I do not expect much difference
 as the architecture of those components haven't changed radically.
 
-```mermaid
+{{< mermaid >}}
 graph TB
     odysseyp["Odyssey"] -. Pool Size=32 .-> Postgres
     pgbouncer["PgBouncer"] -. Pool Size=32 .-> Postgres
@@ -65,7 +65,7 @@ graph TB
         Postgres
         Postgres --- disk("pd-ssd")
     end
-```
+{{< /mermaid >}}
 
 ## Early Conclusions
 

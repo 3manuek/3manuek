@@ -10,10 +10,8 @@ images:
   - /images/posts/thumbnail_db.png
   
 series:
-  - Getting Started
+  - Postgres
 tags:
-  - hugo-site
-categories:
   - Terraform
   - Postgres
 # layout options: single or single-sidebar

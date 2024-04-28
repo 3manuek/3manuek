@@ -270,7 +270,7 @@ part of the component, it must be specified to allow services and computes talk 
 source_ranges should match the corresponding subnet setup of all the above resources. If you happen to be in development
 phase, you can use `0.0.0.0/0` for wide opening the rule, although you may want to specify a narrow IP range in production.
 
-```
+```hcl
 resource "google_compute_firewall" "default-lb-fw" {
   project = "${var.project}"
   name    = "${format("%v-%v-fw-ilb",var.name,count.index)}"
