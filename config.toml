@@ -13,7 +13,7 @@ Title = "3manuek"
     brand = "3manuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     brand_image = "/images/profile.png"    # path to the image shown in the sidebar
-    description = "Database and Systems Engineering" # Used as default meta description if not specified in front matter
+    description = "Database Engineering and IT Consultant." # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
@@ -27,8 +27,8 @@ Title = "3manuek"
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 10},
-        {Name = "Portfolio", URL = "/portfolio", HasChildren = true, Limit = 5},
+        {Name = "Posts", URL = "/posts/",  HasChildren = true, Limit = 7}, # Pre = "Recent" --removed
+        # {Name = "Portfolio", URL = "/portfolio", HasChildren = true, Limit = 3},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
@@ -106,7 +106,6 @@ Title = "3manuek"
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
     gtag = true
-    # gtag_id = 315238990
     gtag_id = "G-GY0KSNNSTL"
 
 [taxonomies]
