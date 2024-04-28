@@ -6,8 +6,7 @@ date: 2016-03-23
 author: "3manuek"
 draft: false
 
-series:
-  - Postgres
+series: "Postgres"
 tags:
   - Postgres
 

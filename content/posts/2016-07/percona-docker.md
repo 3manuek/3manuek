@@ -5,8 +5,7 @@ excerpt: ""
 date: 2016-07-02
 author: "3manuek"
 draft: false
-series:
-  - Docker
+series: "Docker"
 tags:
   - Docker
   - MySQL

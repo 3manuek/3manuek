@@ -5,14 +5,13 @@ excerpt: ""
 date: 2024-01-24
 author: "3manuek"
 draft: false
-series:
-  - Typing
+series: "Typing"
 tags:
   - Colemak
   - Oryx
   - Ergodox
   - Keyboard
-
+layout: single
 ---
 
 # My Personal Ergodox Layout for Colemak, QWERTY and Dvorak

@@ -1,25 +1,20 @@
 ---
 title: "Simple and manual sharding on PostgreSQL."
 subtitle: "Foreign Data Wrappers inheritance."
-excerpt: ""
+
 date: 2017-03-06
 author: "3manuek"
 draft: false
-images:
-  - /images/posts/sharding-postgres.png
-  - /images/posts/thumbnail_db.png
-  - /images/posts/tachyons-logo-script-feature.png
-series:
-  - Getting Started
+
+series: "Postgres"
 tags:
-  - hugo-site
-categories:
   - Postgres
 # layout options: single or single-sidebar
 layout: single
 
 ---
 
+![Postgres](/images/posts/sharding-postgres.png)
 
 ## Concept
 
@@ -37,18 +32,31 @@ data will be allocated. For the current POC, we are going to specify the `shardK
 
 Until today, the only way to perform findings over this method, was from the application
 layer, by issuing queries directly to the nodes by keeping certain deterministic way
-as {1} or using a catalog table as {2} (_NOTE: the bellow examples are using pseudo code_).
+as  or using a catalog table:
 
-{1}
-```
-query = "SELECT name,lastname FROM " + relation + partition " WHERE " id =" + person_id
-```
+> _NOTE: the bellow examples are using pseudo code_.
 
-{2}:
+
+{{< tabs tabTotal="2" >}}
+
+{{% tab tabName="Deterministic" %}}
+```sql
+query = "SELECT name,lastname FROM " + 
+    relation + partition + " WHERE " id =" + person_id
 ```
+{{% /tab %}}
+
+{{% tab tabName="Catalog Table" %}}
+```sql
 shard = query("SELECT shard FROM catalog WHERE key = " + person_id)
-query = "SELECT name,lastname FROM " + relation + shard " WHERE " id =" + person_id
+query = "SELECT name,lastname FROM " + relation + shard +
+  " WHERE " id =" + person_id
 ```
+{{% /tab %}}
+
+{{< /tabs >}}
+
+
 
 ### How we are going to implement this now
 
@@ -94,11 +102,10 @@ FT have two main elements,necessary to point correctly both in source as in user
 privileges. If you are paranoic enough, you'll prefer to use unprivileged users
 with limited grants over the tables that you use.
 
-- Server
-- User Mapping
 
-{1}
+{{< tabs tabTotal="2" >}}
 
+{{% tab tabName="1) Server creation" %}}
 ```sql
 CREATE SERVER shard1_main FOREIGN DATA WRAPPER postgres_fdw
   OPTIONS(host '127.0.0.1',port '5434',dbname 'shard1');
@@ -111,9 +118,9 @@ CREATE SERVER shard1_main_replica FOREIGN DATA WRAPPER postgres_fdw
 CREATE SERVER shard2_main_replica FOREIGN DATA WRAPPER postgres_fdw
     OPTIONS(host '127.0.0.1',port '8888',dbname 'shard2');
 ```
+{{% /tab %}}
 
-{2}
-
+{{% tab tabName="2) User Mapping" %}}
 ```sql
 -- User mapping
 CREATE USER MAPPING FOR postgres SERVER shard1_main OPTIONS(user 'postgres');
@@ -122,6 +129,11 @@ CREATE USER MAPPING FOR postgres SERVER shard2_main OPTIONS(user 'postgres');
 CREATE USER MAPPING FOR postgres SERVER shard1_main_replica OPTIONS(user 'postgres');
 CREATE USER MAPPING FOR postgres SERVER shard2_main_replica OPTIONS(user 'postgres');
 ```
+{{% /tab %}}
+
+{{< /tabs >}}
+
+
 
 The FT definition is indeed pretty straightforward if we don't want to do any further
 column filtering:

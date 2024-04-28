@@ -5,19 +5,17 @@ excerpt: ""
 date: 2021-01-20
 author: "3manuek"
 draft: false
-images:
-  - /images/posts/open-labs.png
-series:
-  - Labs
+
+series: "Labs"
 tags:
-  - hugo-site
-categories:
   - Projects
   - Labs
 # layout options: single or single-sidebar
 layout: single
 
 ---
+
+![Open Labs](/images/posts/open-labs.png)
 
 ## Database Laboratories
 

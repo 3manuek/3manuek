@@ -5,10 +5,7 @@ excerpt: ""
 date: 2017-03-06
 author: "3manuek"
 draft: false
-series:
-  - Labs
-  - Projects
-  - Postgres
+series: "Postgres"
 tags:
   - Postgres
   - Labs

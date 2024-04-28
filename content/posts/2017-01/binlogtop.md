@@ -5,9 +5,7 @@ excerpt: ""
 date: 2017-01-23
 author: "3manuek"
 draft: false
-series:
-  - Labs
-  - MySQL
+series: "MySQL"
 tags:
   - Projects
   - MySQL

@@ -6,8 +6,7 @@ date: 2016-04-26
 author: "3manuek"
 draft: false
 
-series:
-  - MySQL
+series: "MySQL"
 tags:
   - MySQL
 

@@ -5,12 +5,8 @@ excerpt: ""
 date: 2017-07-01
 author: "3manuek"
 draft: false
-images:
-  - /images/posts/clickhouse.jpg
-  - /images/posts/thumbnail_db.png
-  - /images/posts/tachyons-logo-script-feature.png
-series:
-  - Clickhouse
+
+series: "Clickhouse"
 tags:
   - Clickhouse
 # layout options: single or single-sidebar

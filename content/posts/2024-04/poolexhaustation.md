@@ -6,17 +6,13 @@ date: 2024-04-19
 author: "3manuek"
 draft: false
 
-series:
-  - Postgres
-  - Pooling
-  - Terraform
-  - Labs
+series: "Postgres"
 tags:
   - Postgres
   - Pooling
   - Terraform
   - Labs
-
+layout: single
 ---
 
 

@@ -5,8 +5,7 @@ excerpt: ""
 date: 2017-02-18
 author: "3manuek"
 draft: false
-series:
-  - Postgres
+series: "Postgres"
 tags:
   - Postgres
 ---

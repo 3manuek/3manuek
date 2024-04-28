@@ -5,8 +5,7 @@ excerpt: ""
 date: 2022-12-12
 author: "3manuek"
 draft: false
-series:
-  - Typing
+series: "Typing"
 tags:
   - Colemak
   - Keyboard

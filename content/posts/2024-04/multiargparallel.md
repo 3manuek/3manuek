@@ -4,8 +4,7 @@ subtitle: "The beauty of parallel"
 date: 2024-04-01
 author: "3manuek"
 draft: false
-series:
-  - Bash
+series: "Bash"
 tags:
   - Bash
   - Parallel

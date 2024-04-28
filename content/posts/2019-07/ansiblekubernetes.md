@@ -7,15 +7,13 @@ author: "3manuek"
 draft: false
 images:
   - /images/posts/colorful-storage-containers-logistic-center.jpg
-series:
-  - Projects
-  - Labs
+series: "Labs"
 tags:
   - Ansible
   - Kubernetes
   - Projects
   - Labs
-
+layout: single
 ---
 
 ## Install minikube or similar
@@ -23,9 +21,10 @@ tags:
 
 [Minikube](https://github.com/kubernetes/minikube/releases)
 
-```
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.2.0/minikube-darwin-amd64 &&\
- chmod +x 
+```bash
+curl -Lo minikube \
+  https://storage.googleapis.com/minikube/releases/v1.2.0/minikube-darwin-amd64\
+  && chmod +x 
 minikube && sudo cp minikube /usr/local/bin/ && rm minikube
 ```
 

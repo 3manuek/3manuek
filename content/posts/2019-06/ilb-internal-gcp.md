@@ -5,12 +5,11 @@ date: 2019-06-19
 summary: "Components and HCL code snippets to plug in iLB with your stateful services through HTTP API and TCP protocol."
 author: "3manuek"
 draft: false
-series:
-  - Getting Started
+series: "GCP"
 tags:
   - GCP
   - Terraform
-
+layout: single
 ---
 
 > _Happy birthday to my lovely wife, Laura!_ 

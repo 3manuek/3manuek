@@ -5,12 +5,9 @@ excerpt: ""
 date: 2019-12-12
 author: "3manuek"
 draft: true
-images:
-  - /images/posts/tachyons-logo-script-feature.png
-  - /images/posts/thumbnail_db.png
+
   
-series:
-  - Postgres
+series: "Postgres"
 tags:
   - Terraform
   - Postgres

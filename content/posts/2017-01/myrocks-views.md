@@ -5,9 +5,7 @@ excerpt: ""
 date: 2017-01-21
 author: "3manuek"
 draft: false
-series:
-  - MySQL
-  - RocksDB
+series: "MySQL"
 tags:
   - MySQL
   - RocksDB

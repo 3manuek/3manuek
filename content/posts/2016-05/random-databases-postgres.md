@@ -6,9 +6,7 @@ date: 2016-05-01
 author: "3manuek"
 draft: false
 
-series:
-  - Labs
-  - Postgres
+series: "Postgres"
 tags:
 
   - Labs

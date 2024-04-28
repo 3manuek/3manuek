@@ -5,8 +5,7 @@ excerpt: ""
 date: 2016-10-05
 author: "3manuek"
 draft: false
-series:
-  - Golang
+series: "Golang"
 tags:
   - Golong
 ---

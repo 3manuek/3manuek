@@ -31,60 +31,17 @@ with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.
 Before transitioning to a career in IT, between 1998 and 2007, I served
 in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
 Federal) as an officer, managing operational groups at institutions
-ranging from medium to high security.
-
-For more details, please see the sections below.
-
-<details>
-
-## Positions:
-
-### Maximum Security Complex (CPF 1)
-> Complejo Penitenciario Federal 1 (CPF1)
-> 2005-2006
-> Module 6 - Sanctioned Section
-
-Worked as Internal Shift Manager.
-Conducted sanction procedures and crime investigations.
-
-### Unit 31 (Woman's Facility)
-> Complejo Penitenciario de Mujeres 
-> 2004 - 2005
-
-Worked as External Shift, Weapon capacity and Storage management.
-Conducted sanction procedures and crime investigations inside the premises.
-Cooperated in the design of some of the security and emergency procedures.
-Member of the Security Counsil.
-
-### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
-> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
-> 2003 - 2004
-
-Internal Shift Manager.
-
-
-### NCO School
-> Escuela de Suboficiales Cnel. Rómulo Páez
-> 2002 - 2003
-
-Instructor
-
-### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
-> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
-> January 2000 - 2002
-
-External Shift, Weapon capacity and Storage Manager. 
-Cooperated in the design of some of the security and emergency procedures.
-
-</details>
-
+ranging from medium to high security. For more details, see at the bottom
+of this page.
 
 
 ## Skillset
 
-- A considerable experience on scalability, reliability, architecturing and maintaining large scaled Database systems, including but not limited to Postgres, MySQL, ClickHouse, and Elastic. Most of the systems are/were business-critical.
-- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using Terraform/Packer, Ansible, Kubernetes, etc. 
-- Consistent experience in almost every mayor Cloud provider. Azure certified, GCloud, and AWS.
+- A considerable experience on scalability, reliability, architecturing and maintaining 
+  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical.
+- Languages: **Go, Python, C, Bash**.
+- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc. 
+- Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
 - A skilled communicator, managing Customer accounts worlwide.
 - Hard-problem solving, and with aveced dealing of complex Production incidents.
 
@@ -342,3 +299,41 @@ Some of the 'extra' task was made some Perl scripts for support area.
 - Customer Correo Argentino / Siemens.
 
 
+## Positions at SPF
+
+### Maximum Security Complex (CPF 1)
+> Complejo Penitenciario Federal 1 (CPF1)
+> 2005-2006
+> Module 6 - Sanctioned Section
+
+Worked as Internal Shift Manager.
+Conducted sanction procedures and crime investigations.
+
+### Unit 31 (Woman's Facility)
+> Complejo Penitenciario de Mujeres 
+> 2004 - 2005
+
+Worked as External Shift, Weapon capacity and Storage management.
+Conducted sanction procedures and crime investigations inside the premises.
+Cooperated in the design of some of the security and emergency procedures.
+Member of the Security Counsil.
+
+### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+> 2003 - 2004
+
+Internal Shift Manager.
+
+
+### NCO School
+> Escuela de Suboficiales Cnel. Rómulo Páez
+> 2002 - 2003
+
+Instructor
+
+### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+> January 2000 - 2002
+
+External Shift, Weapon capacity and Storage Manager. 
+Cooperated in the design of some of the security and emergency procedures.

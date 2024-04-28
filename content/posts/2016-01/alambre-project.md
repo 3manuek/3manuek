@@ -5,9 +5,7 @@ excerpt: ""
 date: 2016-01-30
 author: "3manuek"
 draft: false
-series:
-  - Labs
-  - Projects
+series: "Projects"
 tags:
   - Projects
   - Labs
