@@ -11,23 +11,12 @@ date: 2023-02-18T12:27:33-06:00
 
 ## Bio(graffiti) 
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <img src="/images/profile/profile2.jpg" alt="Profile" class="img-fluid">
-    </div>
-    <div class="col-md-6">
-      <img src="/images/profile/profile3.jpg" alt="Profile" class="img-fluid">
-    </div>
-  </div>
-</div>
-
 I am a multifaceted professional with excellent communication skills, a
 strong commitment to principles, and a passion for sharing knowledge and
 code with others. 
 
-Currently, I am the Professional Services Technical Lead and Database
-Platform and Systems Engineering at [OnGres](https://ongres.com), where I am
+Currently, I am the _Professional Services Technical Lead and Database
+Platform and Systems Engineering_ at [OnGres](https://ongres.com), where I am
 a valued partner, helping customers to design and operate highly
 available and scalable databases.
 
@@ -58,12 +47,6 @@ of this page.
 
 
 I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
-
-Other things that I love to do:
-
-- I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
-- I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby. 
-- Love reading, particularly around polithical, econocomics and social affairs. An active Libertarian working from his basement :)
 
 
 ## Positions
@@ -348,3 +331,11 @@ Instructor
 
 External Shift, Weapon capacity and Storage Manager. 
 Cooperated in the design of some of the security and emergency procedures.
+
+## Hobbies
+
+Other things that I love to do:
+
+- I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
+- I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby. 
+- Love reading, particularly around polithical, econocomics and social affairs. 

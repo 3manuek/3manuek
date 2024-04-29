@@ -7,7 +7,7 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 Title = "3manuek"
 
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
-# disqusShortname = "yourDisqusShortname"
+disqusShortname = "tr3s-ma"
 
 [params]
     brand = "3manuek"                      # name of your site - appears in the sidebar
