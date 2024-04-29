@@ -8,7 +8,6 @@ draft: false
 series: "Typing"
 tags:
   - Colemak
-  - Oryx
   - Ergodox
   - Keyboard
 layout: single
@@ -18,15 +17,16 @@ layout: single
 
 ![Ergodox](/images/posts/ergodox.png)
 
+> This is my current [MacOS Layout](https://configure.zsa.io/ergodox-ez/layouts/GLL7M/latest/0).
+
 A few months ago, I bought the Ergodox OrthoLinear Split Keyboard. I found QWERTY layout a little uncomfortable to type in this keyboard, so I started the journey on searching for a better suitable keyboard layout. During a period of time, I switched back and forth between these three layouts, although I picked Colemak at the end.
 
 I really like Dvorak, but I've found that Colemak was better for me as I also use DAWs with a lot of shortcuts and other MacOs utilities.
 
-This is my current [MacOS Layout](https://configure.zsa.io/ergodox-ez/layouts/GLL7M/latest/0).
-
 ## What has been using a completely new layout?
 
 Even tho I don't have decent stats on what was my previous typing speed before the switch, the overall perception is that speed wasn't much of an improvement. MonkeyType, Keybr.io or other similar might saying differently, as speed not only improved, but also is quite good compared to the average. 
+
 
 However, there is a perceptible comfort on typing, less finger stress at the end of the day. In the other hand, switching time to time to qwerty isn't without some time of catch-up, but not forgotten entirely. The problem of this resides on the fact that I started to practice 10-finger technique (I was doing touch typing tho) _after_ switching setups (from an ISO/QWERTY keyboard to an Split-Ortholinear keyboard with a Colemak layout). 
 
@@ -60,7 +60,7 @@ Definitively for nerds, and marketing.
 
 ## Why not Dvorak?
 
-I took a decent time investigating before jumping into Colemak. Keeping some compatibility with QWERTY pays off, really. Dvorak is more precise in may case, and it wasn't that hard to switch at the beginning, but it felt weird. Don't get me wrong, I'm pretty sure I wouldn't have regreats if the choice was different, but the only thing that matter to me was to have a layout more suitable for ortholinear keyboards, not speed by itself.
+I took a decent time investigating before jumping into Colemak. Keeping some compatibility with QWERTY pays off, really. Dvorak is more precise in my case, and it wasn't that hard to switch at the beginning, but it _felt weird_. Don't get me wrong, I'm pretty sure I wouldn't have regreats if the choice was different, but the only thing that matter to me was to have a layout more suitable for ortholinear keyboards, not speed by itself.
 
 Keep in mind that Dvorak is the only standard alternative to QWERTY, that's something to consider -- ofc, Colemak has been pushing a lot to get it available on most OS distributions.
 
