@@ -31,6 +31,8 @@ Title = "3manuek"
         # {Name = "Portfolio", URL = "/portfolio", HasChildren = true, Limit = 3},
     ]
 
+    aboutPics = ["/images/profile2.jpg", "/images/profile3.jpg"]
+
     # Links to your socials.  Comment or delete any you don't need/use. 
     discord_url = "https://discord.com/3manuek"
     email_url = "mailto://me@tr3s.ma"

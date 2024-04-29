@@ -7,15 +7,33 @@
         {{ if .Pages }}
             {{ range .Pages }}
                 <h1 class="post-title">{{ .Title }}</h1>
+
                 {{ .Content }}
             {{ end }}
         {{ else }}
             <h1 class="post-title">{{ .Title }}</h1>
             {{ .Content }}
         {{ end }}
+
     {{ end }}
     {{ if (.Site.Params.listmonk) }}
         {{ partial "post/listmonk_email_newsletters.html" . }}
     {{ end }}
 </div>
 {{ end }}
+{{ define "sidebar" }}
+    <!-- Custom -->
+    <div class="article-toc">
+        <div class="row">
+          {{ if .Site.Params.aboutPics }}
+            {{ range .Site.Params.aboutPics }}
+              <div class="col-md-6">
+                <img src="{{ . }}" alt="Profile" class="img-fluid" style="max-width: 40%; height: auto; display: block; object-fit: contain;">
+              </div>
+            {{ end}}
+          {{ end }}
+        </div>
+      </div>
+    <!-- Custom -->
+{{ end }}
+

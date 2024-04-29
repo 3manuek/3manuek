@@ -11,22 +11,33 @@ date: 2023-02-18T12:27:33-06:00
 
 ## Bio(graffiti) 
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="/images/profile/profile2.jpg" alt="Profile" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <img src="/images/profile/profile3.jpg" alt="Profile" class="img-fluid">
+    </div>
+  </div>
+</div>
 
 I am a multifaceted professional with excellent communication skills, a
 strong commitment to principles, and a passion for sharing knowledge and
-tools with others.
+code with others. 
 
 Currently, I am the Professional Services Technical Lead and Database
 Platform and Systems Engineering at [OnGres](https://ongres.com), where I am
 a valued partner, helping customers to design and operate highly
 available and scalable databases.
 
-In addition, as the founder of [ViaDB](https://viadb.ar), I specialize in
+In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
 consultancy and tool development, using a variety of programming
-languages including Go, Python, and Bash.
+languages including Go, Python, and Bash. The shop has closed operations in 2023.
 
 Commitment to my principles and values drives my work, and I collaborate
-with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
+with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
+[Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
 
 Before transitioning to a career in IT, between 1998 and 2007, I served
 in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
