@@ -28,7 +28,7 @@ disqusShortname = "tr3s-ma"
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
         {Name = "Posts", URL = "/posts/",  HasChildren = true, Limit = 7}, # Pre = "Recent" --removed
-        # {Name = "Portfolio", URL = "/portfolio", HasChildren = true, Limit = 3},
+        {Name = "Portfolio", URL = "/portfolio", HasChildren = true, Limit = 3},
     ]
 
     aboutPics = ["/images/profile2.jpg", "/images/profile3.jpg"]

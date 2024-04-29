@@ -47,6 +47,7 @@ of this page._
 
 I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
 
+> Moreover, I lectured talks in several Database conferences, some of the slides can be found at [slides](https://github.com/3manuek/slides) repository.
 
 ## Positions
 

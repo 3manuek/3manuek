@@ -63,6 +63,10 @@ graph TB
     end
 {{< /mermaid >}}
 
+## Context 
+
+This laboratory was started after the PGIbz 2019 talk [Pooling Performance](https://github.com/3manuek/slides/blob/master/2019/pgibz/Pooling%20Performance.pdf), and inspired in the work we have done at Gitlab with the OnGres team.
+
 ## Early Conclusions
 
 > See [Docs](https://github.com/3manuek/exhausting_pools/doc/) with the collected stats.
