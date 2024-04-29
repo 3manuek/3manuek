@@ -36,11 +36,11 @@ The full execution with parallel took around **6 minutes** to run, and consider 
 
 ## Addressing the problem using JSON and parallel
 
-The below snippet is a part of a function called `index_container_pages` which is a simple extraction of the
-needed information to scrape image version from the API.
+The below snippet is a part of a function called `index_container_pages` which is a simple extraction of the needed information to scrape image version from the API.
 
 ```bash
-  jq -r  '.[] | {id: .id , name: .name , url: .url} | @json' $(get_container_pages) > ${OUTDIR}/paramix.json
+  jq -r  '.[] | {id: .id , name: .name , url: .url} | @json' \
+    $(get_container_pages) > ${OUTDIR}/paramix.json
 ```
 
 This generated file is the argument list that we are going to use forward to parametrize `parallel`.

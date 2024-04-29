@@ -21,18 +21,17 @@ a valued partner, helping customers to design and operate highly
 available and scalable databases.
 
 In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
-consultancy and tool development, using a variety of programming
-languages including Go, Python, and Bash. The shop has closed operations in 2023.
+consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. The shop has closed operations in 2023 due to the Argentinian crisis.
 
 Commitment to my principles and values drives my work, and I collaborate
 with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
 [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
 
-Before transitioning to a career in IT, between 1998 and 2007, I served
+> _Before transitioning to a career in IT, between 1998 and 2007, I served
 in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
 Federal) as an officer, managing operational groups at institutions
 ranging from medium to high security. For more details, see at the bottom
-of this page.
+of this page._
 
 
 ## Skillset
