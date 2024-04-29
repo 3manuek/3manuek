@@ -81,7 +81,7 @@ that's where there are better techniques for deploying PgBouncer.
 
 It may probably be more recommedable to go with Odyssey (or other multi-threaded solution) when
 spawning pools on dedicted hardware or resources, as it is straightforward to do so. PgBouncer
-supports multi-process in the same machine through [so_reuseport](https://www.pgbouncer.org/config.html#so_reuseport)],
+supports multi-process in the same machine through [so_reuseport](https://www.pgbouncer.org/config.html#so_reuseport),
 but it ties each process to a core, which makes the configuration and core assignment a little
 bit more hackish.
 
