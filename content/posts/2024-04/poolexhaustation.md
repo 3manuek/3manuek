@@ -16,8 +16,6 @@ layout: single
 ---
 
 
-## Context
-
 >
 > To see more details about the code used and the results, see the [code here](https://github.com/3manuek/exhausting_pools).
 >

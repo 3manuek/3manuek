@@ -13,7 +13,7 @@ tags:
 layout: single
 ---
 
-# My Personal Ergodox Layout for Colemak, QWERTY and Dvorak
+
 
 ![Ergodox](/images/posts/ergodox.png)
 

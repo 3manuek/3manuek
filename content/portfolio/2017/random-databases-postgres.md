@@ -1,14 +1,13 @@
 ---
 title: "Random data for PostgreSQL"
 subtitle: "Need some good synthetic data for testing?."
-excerpt: ""
+
 date: 2016-05-01
 author: "3manuek"
 draft: false
 
 series: "Postgres"
 tags:
-
   - Labs
   - Postgres
 ---

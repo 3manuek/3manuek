@@ -27,10 +27,10 @@ disqusShortname = "tr3s-ma"
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/",  HasChildren = true, Limit = 7}, # Pre = "Recent" --removed
+        {Name = "Posts", URL = "/posts/",  HasChildren = true, Limit = 5}, # Pre = "Recent" --removed
         {Name = "Portfolio", URL = "/portfolio", HasChildren = true, Limit = 5},
     ]
-    aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires. "
+    aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires."
     aboutPics = ["/images/profile2.jpg", "/images/profile3.jpg"]
 
     # Links to your socials.  Comment or delete any you don't need/use. 

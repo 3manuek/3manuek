@@ -1,5 +1,5 @@
 ---
-title: "My switching keyboard layout and ortholinear experience (Part 1)"
+title: "Switching layout and key disposition experience"
 subtitle: "Leaving QWERTY behind"
 excerpt: ""
 date: 2022-12-12
@@ -11,7 +11,6 @@ tags:
   - Keyboard
 ---
 
-## To whom this article might be interesting
 
 This post has no intention to discuss what layout might be better in terms of
 efficiency, or effort. There are a considerable amount of great articles related

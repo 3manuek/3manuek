@@ -11,7 +11,6 @@ tags:
 ---
 
 
-# Using parallel with multiple arguments
 
 ## A handy tool for parallelization
 
