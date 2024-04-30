@@ -52,6 +52,9 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Place ads.txt
+        run: |
+          cat ads.txt > ./public/ads.txt
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
