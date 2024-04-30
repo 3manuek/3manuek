@@ -109,6 +109,8 @@ disqusShortname = "tr3s-ma"
 
     gtag = true
     gtag_id = "G-GY0KSNNSTL"
+    adsense = true
+    adsense_id = "ca-pub-6116524078868338"
 
 [taxonomies]
     series = 'series'

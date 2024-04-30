@@ -42,3 +42,8 @@
   gtag('config', "{{ .Site.Params.gtag_id }}");
 </script>
 {{ end }}
+
+{{ if .Site.Params.adsense }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_id }}"
+     crossorigin="anonymous"></script>
+{{ end }}

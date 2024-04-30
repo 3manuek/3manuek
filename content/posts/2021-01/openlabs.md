@@ -54,9 +54,6 @@ a practical example on how to spin resources on it. It uses different techniques
 
 
 
-
----
-
 [1]: https://gitlab.com/ongresinc/benchplatform
 [2]: https://gitlab.com/ongresinc/labs/poc-odyssey
 [3]: https://gitlab.com/canaldba/labs/dockerlab
