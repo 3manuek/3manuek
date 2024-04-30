@@ -1,15 +1,13 @@
 ---
 title: "Emanuel Calvo"
 subtitle: "A Database Platform, Reliability and Systems Engineer. IT Consultant."
-description: "
-My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language.
-Currently living in Madrid, but still _roundtripping_ to Buenos Aires. 
-"
+
 date: 2023-02-18T12:27:33-06:00
 
 ---
 
 ## Bio(graffiti) 
+
 
 I am a multifaceted professional with excellent communication skills, a
 strong commitment to principles, and a passion for sharing knowledge and

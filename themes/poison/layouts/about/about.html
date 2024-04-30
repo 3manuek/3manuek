@@ -33,6 +33,9 @@
             {{ end}}
           {{ end }}
         </div>
+        {{ if .Site.Params.aboutDesc }}
+        {{ .Site.Params.aboutDesc | markdownify  }}
+        {{ end }}
       </div>
     <!-- Custom -->
 {{ end }}
