@@ -1,0 +1,7 @@
+{{ $body := .Inner }}
+{{ $summary := .Get "summary" }}
+
+<details>
+    <summary>{{ $summary  | markdownify | safeHTML }}</summary>
+   {{ $body | markdownify }}
+</details>

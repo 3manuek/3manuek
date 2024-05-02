@@ -8,10 +8,13 @@ draft: false
 
 series: "Postgres"
 tags:
+  - Labs
+  - Terraform
+  - Ansible
   - Postgres
   - Pooling
-  - Terraform
-  - Labs
+  - PGBouncer
+  - Odyssey
 layout: single
 ---
 
@@ -19,6 +22,7 @@ layout: single
 >
 > To see more details about the code used and the results, see the [code here](https://github.com/3manuek/exhausting_pools).
 >
+
 
 This laboratory is a hypothetical scenario, whether application does empty transactions
 in order to emulate sort of a DoS attack against the pools. The intention here, was to 
@@ -31,9 +35,34 @@ overhead on multi-workers in these cases, and that was the moto of this laborato
 The intention here is not to choose one or another, but to study in which cases one could
 use single-threaded or multi-worker pools. 
 
-The data on this laboratory is outdated, as new versions have been released from both tools,
+One of the tests, focused on "single per-worker" benchmark performance. Of course, in a production environment, 
+it would be a terrible design from HA perspective to have a single worker. The idea was to
+isolate the worker performance, as in Kubernetes, services can be allocated easily with a CPU Quota across a multl-node
+cluster orchestration[^1]. So, creating a pool layer with load balancing is trivial. 
+
+In bare-metal setups, that don't use such orchestration, you need to rely on a scalable pool service layer both horizontally 
+(more computes) and vertically (more Cores). In these cases, is more efficient to rely on services
+that are stable and can scale vertically automatically. 
+
+
+> NOTE: The data on this laboratory is outdated, as new versions have been released from both tools,
 so conclusions may be inaccurate for newer versions. Although, I do not expect much difference
-as the architecture of those components haven't changed radically.
+as the architecture of those components haven't changed radically. The solely purpose of this page,
+is to document the architecture of the benchmark.
+
+## Context 
+
+This laboratory a continuation of the PGIbz 2019's talk about [Pooling Performance](https://github.com/3manuek/slides/blob/master/2019/pgibz/Pooling%20Performance.pdf),
+ and was inspired in the work we have done at [Gitlab](https://gitlab.com/) with the [OnGres](https://www.ongres.com/) teams.
+
+We want to repeat the laboratory and publish the results at [OnGres](https://www.ongres.com/) in the future. This
+is just a portfolio of the benchmark architecture. 
+
+
+## Architecture of the benchmark
+
+The architecture was spawn in 4 different machines: Client (to isolate noise in services), the Odyssey compute,
+the PGBouncer compute and the Postgres compute.
 
 {{< mermaid >}}
 graph TB
@@ -61,21 +90,29 @@ graph TB
     end
 {{< /mermaid >}}
 
-## Context 
 
-This laboratory was started after the PGIbz 2019 talk [Pooling Performance](https://github.com/3manuek/slides/blob/master/2019/pgibz/Pooling%20Performance.pdf), and inspired in the work we have done at Gitlab with the OnGres team.
 
-## Early Conclusions
+## Technology Stack
+
+The technology stack is compoused as:
+
+- AWS EC2 Instances.
+- Terraform as the Deployment tool.
+- Ansible as the Provisioning and Configuration tool.
+- Cloud Init. ☠︎ 
+- Bash. Don't blame, this was a PoC, nothing fancy. 
+
+## Very Early Conclusions
 
 > See [Docs](https://github.com/3manuek/exhausting_pools/doc/) with the collected stats.
 
-PgBouncer is more perfomant at single-thread, no surprise. However, the stability of Odyssey
-may be relevant. PgBouncer stalls during a certain period, mostly because its mechanism to 
-put connections in wait state meanwhile the core is fully allocated. Odyssey can be less
-performant, but it didn't stall badly.
 
-Of course, in a production environment, it would be suicidal to go with a single pool, and 
-that's where there are better techniques for deploying PgBouncer.
+PgBouncer is more perfomant at single-thread, no surprise. However, the stability of Odyssey
+may be relevant to consider. PgBouncer stalls during a certain period, mostly because its mechanism to 
+put connections in _wait state_ meanwhile the core capacity is fully allocated. Odyssey can be less
+performant, but it didn't stall badly. That makes it more stable for vertical scalability on the nodes,
+but less relevant on orchestrated environments, where you expect CPU efficiency.
+
 
 It may probably be more recommedable to go with Odyssey (or other multi-threaded solution) when
 spawning pools on dedicted hardware or resources, as it is straightforward to do so. PgBouncer
@@ -87,6 +124,8 @@ However, in automated architectures such as Kubernetes (whether you an assign se
 PgBouncer might be more convenient, as it is more performant whenever it keeps connections out of
 waiting state.
 
+
+
 ## Missing points
 
 - How to deterministically calculate the maximum client-connection capacity of PgBouncer?
@@ -95,3 +134,9 @@ waiting state.
 - The lab lacks of a monitoring, which could shred more information about the behavior observed. That will be in 
   another post with updated versions of all the components (and probably ditch Terraform).
 - PgCat seems to be a very appealing solution for pooling to be compared with PgBouncer.
+
+
+
+[^1]: > Orchestration's CPU cycles _are like Taxes_. As the _Louis XIV's Finance Minister_, _Jean-Baptiste Colbert_,
+ declared: "the art of taxation consists in so plucking the goose as to obtain the largest possible 
+ amount of feathers with the smallest possible amount of hissing.".
