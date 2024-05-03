@@ -19,6 +19,12 @@
 {{/* Personal/custom scripts for codeblocks */}}
 {{ $js = $js | append (resources.Get "js/codeblock.js") }}
 
+{{/* Enable carousel */}}
+{{ if .Site.Params.carousel }}
+{{ $js := $js | append (resources.Get "js/carousel.js")  }}
+{{ end }}
+
+
 {{ $js_bundle := $js | resources.Concat "js/bundle.js" | minify | fingerprint }}
 
 <script defer language="javascript" type="text/javascript" src="{{ $js_bundle.RelPermalink }}"></script>
@@ -46,10 +52,4 @@
 {{ if .Site.Params.adsense }}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_id }}"
      crossorigin="anonymous"></script>
-{{ end }}
-
-{{ if .Site.Params.index_carousel }}
-<script type="text/javascript" src="/js/carousel.js"></script>
-<!-- <link rel="stylesheet" href="/css/carousel.css"> -->
-
 {{ end }}

@@ -8,5 +8,5 @@ layout: single
 
 > Source [at Github](https://github.com/3manuek/complex_ext)
 
-This extension was developed as an exmaple of some of our trainings, with the purpose
-of showcase the creation of a complex datatype extension in Postgres.
+This extension was developed as an example of some of our trainings at [OnGres](https://www.ongres.com/), with the purpose of a showcase the creation of a complex datatype extension in plain PL/pgsql.
+

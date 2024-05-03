@@ -7,6 +7,7 @@
         {{ if .Pages }}
             {{ range .Pages }}
                 <h1 class="post-title">{{ .Title }}</h1>
+                {{ partial "sidebar/socials.html" . }}
 
                 {{ .Content }}
             {{ end }}

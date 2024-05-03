@@ -17,7 +17,7 @@ disqusShortname = "tr3s-ma"
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     index_brand_image = "/images/profile.gif"
-
+    carousel = true # enables data/carousel.yaml
     
     front_page_content = ["posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
