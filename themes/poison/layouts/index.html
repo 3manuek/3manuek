@@ -1,7 +1,7 @@
 {{ define "main" -}}
 
 {{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "7000") }}
-
+<br />
 
 <div class="posts">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
