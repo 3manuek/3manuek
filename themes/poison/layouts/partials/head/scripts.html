@@ -47,3 +47,9 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_id }}"
      crossorigin="anonymous"></script>
 {{ end }}
+
+{{ if .Site.Params.index_carousel }}
+<script type="text/javascript" src="/js/carousel.js"></script>
+<!-- <link rel="stylesheet" href="/css/carousel.css"> -->
+
+{{ end }}

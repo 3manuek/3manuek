@@ -16,7 +16,9 @@ disqusShortname = "tr3s-ma"
     description = "Database Engineering and IT Consultant" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+    index_brand_image = "/images/profile.gif"
 
+    
     front_page_content = ["posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
 
     # MENU PLACEHOLDER
