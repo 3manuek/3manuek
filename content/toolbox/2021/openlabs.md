@@ -36,7 +36,7 @@ Very old but relevant in terms of results (encryption measurements and performan
 efficiency through PgCrypto extension.
 
 
-## Generic POC and 
+## Generic POCs 
 
 Another environment created for a benchmark purpose is [POC-Odyssey][2], which has been developed in Terraform. If you are interested
 in Postgres Pooling, this might be useful for understanding its setup and general practices.
@@ -46,6 +46,9 @@ HA under different engines and databases. Some components are not finished or bu
 Docker with Databases.
 
 As part of CanalDBA, we also started this [dockerlab][3], which does very basic stuff although it is the most up-to-date.
+
+Also, here is a [Yugabyte laboratory](https://gitlab.com/ongresinc/labs/yugabyte-test), for exploring proxying in a sharded environment, using Envoy Proxy.
+
 
 ## Kubernetes and Databases
 
