@@ -1,8 +1,8 @@
 #https://hugocodex.org/add-ons/slider-carousel/
 images: 
-  - image: /images/banner3.png
-    content_html: "Database Consulting and DevOps Posts and Laboratories"
+  - image: /images/banner2.png
+    content_html: ""
     content_link: "https://tr3s.ma/toolbox"
   - image: /images/banner4.jpg
-    content_html: " "
-    content_link: "https://tr3s.ma/posts"
+    content_html: ""
+    content_link: "https://plataform3.com"
