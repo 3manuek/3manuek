@@ -1,15 +1,12 @@
 ---
 title: "MyRocks Views"
-subtitle: "Extending the current catalogs in MyRocks."
+subtitle: "Extending the current catalogs for MyRocks"
 excerpt: ""
 date: 2017-01-21
-author: "3manuek"
 draft: false
-series: "MySQL"
 tags:
   - MySQL
   - RocksDB
-
 ---
 
 ![MyRocks](/images/posts/myRocks.png)
@@ -21,11 +18,7 @@ a 5.6 fork, [repository here][3].
 
 Installing is easy as importing the sql file into your database.
 
-Repository can be found [here][2].
-
----
-
-What has inside?
+Repository can be found [here][2]. What's inside?
 
 - SQL    
 
