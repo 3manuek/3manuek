@@ -28,8 +28,8 @@ disqusShortname = "tr3s-ma"
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/",  HasChildren = true, Limit = 5}, # Pre = "Recent" --removed
+        {Name = "About ⌘", URL = "/about/", HasChildren = false},
+        {Name = "Posts ↩︎", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 5}, # Pre = "Recent" --removed
         {Name = "Toolbox ⚙️", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
     aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires."
@@ -51,6 +51,9 @@ disqusShortname = "tr3s-ma"
     twitter_url = "https://twitter.com/3manuek"
     # xmpp_url = "https://xmpp.org"
     # youtube_url = "https://youtube.com"
+
+    ## XXX Enable when ready
+    # soundcloud_url = "https://soundcloud.com/tr3sma"
 
     # NOTE: If you don't want to use RSS, comment or delete the following lines
     # Adds an RSS icon to the end of the socials which links to {{ .Site.BaseURL }}/index.xml

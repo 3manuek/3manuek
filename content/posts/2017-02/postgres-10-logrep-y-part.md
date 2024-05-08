@@ -178,7 +178,7 @@ FOREIGN TABLE.
 The following DLL resides on a `proxy` database, which does not hold any data of the partitions
 and is only intended to show some relatively new Postgres' capabilities.
 
-```
+```sql
 CREATE EXTENSION postgres_fdw;
 CREATE SERVER shard0 FOREIGN DATA WRAPPER postgres_fdw
   OPTIONS(host '127.0.0.1',port '7777',dbname 'shard0');
@@ -226,25 +226,6 @@ proxy=# EXPLAIN SELECT *
 Hope you liked the article!
 
 
-<!-- {% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-
-
-var disqus_config = function () {
-this.page.url = {{ site.url }};  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = {{ page.title }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//3manuek.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %} -->
 
 
 <!-- [1]: http://www.3manuek.com/assets/posts/logreppart.jpg -->

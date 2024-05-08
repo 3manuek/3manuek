@@ -4,12 +4,11 @@ subtitle: "This is just ugly scripts intended to save time in daily basis."
 excerpt: ""
 date: 2016-01-30
 author: "3manuek"
-draft: false
+draft: true
 series: "Projects"
 tags:
   - Projects
   - Labs
-
 ---
 
 
