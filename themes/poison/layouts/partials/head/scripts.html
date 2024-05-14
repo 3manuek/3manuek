@@ -38,6 +38,7 @@
   {{ template "_internal/google_analytics.html" . -}}
 {{ end -}}
 
+{{ if hugo.IsProduction }}
 {{ if .Site.Params.gtag }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtag_id }}"></script>
 <script>
@@ -47,6 +48,7 @@
 
   gtag('config', "{{ .Site.Params.gtag_id }}");
 </script>
+{{ end }}
 {{ end }}
 
 {{ if .Site.Params.adsense }}
