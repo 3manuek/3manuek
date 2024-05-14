@@ -1,34 +1,54 @@
 ---
 title: "Emanuel Calvo"
 subtitle: "A Database Platform, Reliability and Systems Engineer. IT Consultant."
-
 date: 2023-02-18T12:27:33-06:00
 
 ---
 
-## Bio(graffiti) 
+- [Skillset](#skillset)
+- [Current Positions](#current-positions)
+- [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
+- [Past Experience](#past-experience)
+
+# Bio(graffiti) 
 
 
 I am a multifaceted professional with excellent communication skills, a
 strong commitment to principles, and a passion for sharing knowledge and
 code with others. 
 
-Currently, I am the _Professional Services Technical Lead and Database
-Platform and Systems Engineering_ at [OnGres](https://ongres.com), where I am
+Currently, I am a _Database Platform Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com), where I am
 a valued partner, helping customers to design and operate highly
 available and scalable databases.
 
 In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
 consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. The shop has closed operations in 2023 due to the Argentinian crisis.
 
-Commitment to my principles and values drives my work, and I collaborate
+Committed to my principles and values drives my work, and I collaborate
 with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
 [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
+
+> I lectured talks in several Database and non-database related conferences, some of the slides can be found at [slides](https://github.com/3manuek/slides) repository.
+
+## Skillset
+
+- A considerable experience on scalability, reliability, architecturing and maintaining 
+  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical.
+- Languages: **Go, Python, C, Bash**.
+- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc. 
+- Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
+- A skilled communicator, managing Customer accounts worlwide.
+- Hard-problem solving, and with aveced dealing of complex Production incidents.
+
+
+I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
+
 
 > _Before transitioning to a career in IT, between 1998 and 2007, I served
 in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
 Federal) as an officer, managing operational groups at institutions
 ranging from medium to high security._
+
 
 {{< details summary="Positions at SPF" >}}
 
@@ -71,26 +91,12 @@ Cooperated in the design of some of the security and emergency procedures.
 
 {{< /details >}}
 
+---
 
-## Skillset
-
-- A considerable experience on scalability, reliability, architecturing and maintaining 
-  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical.
-- Languages: **Go, Python, C, Bash**.
-- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc. 
-- Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
-- A skilled communicator, managing Customer accounts worlwide.
-- Hard-problem solving, and with aveced dealing of complex Production incidents.
-
-
-I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
-
-> Moreover, I lectured talks in several Database conferences, some of the slides can be found at [slides](https://github.com/3manuek/slides) repository.
-
-## Current Positions
+# Current Positions
 
 ### Independent Consultant - Open Source Databases and Architecture
-> Remote. 
+> Remote
 
 - Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
 - Automated Cloud Infrastrucures.
@@ -100,6 +106,7 @@ I design reliable, scalable and ready-for-production Database infrastructures fo
 
 ### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
 > Remote. New York/Madrid
+>
 > Since September 2017 as OnGres, previously working as Consultant in 8kdata
 
 
@@ -160,14 +167,14 @@ Other certifications related to DataScience Specialization:
 
 ---
 
-## Past Experience
+# Past Experience
 
-### ViaDB (under Plataform3 SL)
-> - Madrid, Spain
-> - Buenos Aires, Argentina
-> - December, 2021 - November 2023
+### ViaDB
+> Buenos Aires, Argentina
+>
+> December, 2021 - November 2023
 
-ViaDB is an Open Source Database Support and System tools development indie-company. Closed due 
+- ViaDB was an Open Source Database Support and System tools development indie-company. Closed due 
 to relocation.
 
 
@@ -210,24 +217,24 @@ See more at [ViaDB](https://viadb.ar).
 
 ### Percona -  Senior Technical Services Engineer _[main position]_
 > Buenos Aires, Argentina
+>
 > August 2016 - September 2017
 
-Full description of the role [here](https://www.percona.com/about-percona/careers/senior-technical-services-engineer).
-
-At Percona, I worked as a Remote DBA position at Atlas team. The core techology was MySQL and MariaDB, for large scale infrastructures.
-
-Deep understanding of the replication protocol, availability, and sharding.
-
-Some highlighted customers: Hyperwallet, Fitbit, Lookout, Shipwire
+- Full description of the role [here](https://www.percona.com/about-percona/careers/senior-technical-services-engineer).
+- At Percona, I worked as a Remote DBA position at Atlas team. The core techology was MySQL and MariaDB, for large scale infrastructures.
+- Deep understanding of the replication protocol, availability, and sharding.
+- Some highlighted customers: Hyperwallet, Fitbit, Lookout, Shipwire
 
 ### 8kData - Data External Advisor
 > Madrid, Spain
+>
 > January 2016 - September 2017
 
-External technical advisor and consultant for Postgres and other related technologies.
+- External technical advisor and consultant for Postgres and other related technologies.
 
 ### UDE - Open Source Source Undergraduate Degree Associate Professor
 > La Plata, Argentina
+>
 > June 2016
 
 Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database specialist.
@@ -235,6 +242,7 @@ Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database
 
 ### Pythian - Technical Team Lead - ACTG (Advanced Consulting Team Group) Member
 > Ottawa, Canada
+>
 > January 2015 - June 2016
 
 - Support to Pythian’s External Profile.
@@ -247,6 +255,7 @@ Some highlighted customers: Microsoft, Beats (Apple), Adobe Echosign, Fitbit, Se
 
 ### 2ndQuadrant - PostgreSQL Consultant
 > Buenos Aires, Argentina
+>
 > February 2014 - January 2015
 
 - PostgreSQL consultant, support and training.
@@ -255,6 +264,7 @@ Some highlighted customers: Microsoft, Beats (Apple), Adobe Echosign, Fitbit, Se
 
 ### BlackBird IT (ex-PalominoDB) - Database Operations - Professional Services
 > Las Vegas, NV
+>
 > September 2011 - February 2014
 
 - Primary DBA/Teach Lead of the PostgresXC databases.
@@ -272,6 +282,7 @@ Some of the highlighted customers: Adobe Echosign, Fitbit, Zendesk, Chegg, SendG
 
 ### Aedgency - MySQL/Oracle Database Administrator
 > Barcelona, Spain
+>
 > November 2010 - March 2012
 
 - MySQL/Oracle database administration.
@@ -283,6 +294,7 @@ Some of the highlighted customers: Adobe Echosign, Fitbit, Zendesk, Chegg, SendG
 
 ### SIU - DBA & Database Production Consulting
 > Buenos Aires, Argentina
+>
 > July 2009 - July 2010
 
 - Provided traning and support to national universities (as UNLP, UNC, UNNE, UNNOBA, UNCU, UNPA, UNR, etc), 
@@ -293,6 +305,7 @@ support developers in DB modeling and administration of Postgresql-Informix-Mysq
 
 ### Globant - Unix/Linux Systems Administrator - EA
 > Buenos Aires, Argentina
+>
 > February 2009 -  July 2009
 
 - SysAdmin Unix at EA (Electronic Arts) Hydra - GOP project.
@@ -302,8 +315,13 @@ support developers in DB modeling and administration of Postgresql-Informix-Mysq
 - Basic knowledge on deployment / process with Maven - Ant - Hudson.
 - Assigned 50% to another project to provide Engineering Support at EA over Python scripting.
 
-### Correo Argentino - Senior Systems Administrator 
+### Correo Argentino 
+
+_The following roles were at Correo Argentino, under different administrative units._
+
+#### Senior Systems Administrator 
 > Monte Grande, Argentina
+>
 > August 2008  -  February 2009
 
 - Managed production platform at Correo Argentino (over 400 terms with local Postgres databases and Linux enviroment).
@@ -311,16 +329,18 @@ support developers in DB modeling and administration of Postgresql-Informix-Mysq
 - Created an improved deploy tool for scripts, database recovery, control and monitoring, etc.
 - Also managed servers over Centos 5 for the support area's knowledge-base application  (7 DB MySQL 5.1)
 
-### Siemens - PHP developer
+#### Siemens - PHP developer
 > Monte Grande, Argentina
+>
 > January - August 2008
 
-Admitel Platform developer. Consists in  PHP + (Javascript, Ajax, x/Html, xml) - Oracle 8i.
+- Admitel Platform developer. Consists in  PHP + (Javascript, Ajax, x/Html, xml) - Oracle 8i.
 Some of the 'extra' task was made some Perl scripts for support area.
 
 
-### Huenei - Application Support
+#### Huenei - Application Support
 > Monte Grande , Argentina
+>
 > October 2007 - January 2008
 
 

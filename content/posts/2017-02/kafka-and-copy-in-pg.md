@@ -52,8 +52,7 @@ command.
 
 Producing fake data to the Kafka broker, composed by `key` and `payload`:
 
-```sh
-
+```bash
 # Random text
 randtext() {cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1}
 while (true) ;
@@ -99,7 +98,7 @@ COMMIT times will be affected.
 Consuming the topic partitions from the `beginning` and setting a limit of `100`
 documents is easy as:
 
-```sh
+```bash
 bin/psql -p7777 -Upostgres master <<EOF
 COPY main(group_id,payload) FROM PROGRAM 'kafkacat -C -b localhost:9092 -c100 -qeJ -t PGSHARD  -X group.id=1  -o beginning  -p 0 | awk ''{print "P0\t" \$0 }'' ';
 COPY main(group_id,payload) FROM PROGRAM 'kafkacat -C -b localhost:9092 -c100 -qeJ -t PGSHARD  -X group.id=1  -o beginning  -p 1 | awk ''{print "P1\t" \$0 }'' ';
@@ -110,7 +109,7 @@ EOF
 And then using `stored`, in order to consume from the last offset consumed by the
 consumer on the group:
 
-```sh
+```bash
 bin/psql -p7777 -Upostgres master <<EOF
 COPY main(group_id,payload) FROM PROGRAM 'kafkacat -C -b localhost:9092 -c100 -qeJ -t PGSHARD  -X group.id=1  -o stored  -p 0 | awk ''{print "P0\t" \$0 }'' ';
 COPY main(group_id,payload) FROM PROGRAM 'kafkacat -C -b localhost:9092 -c100 -qeJ -t PGSHARD  -X group.id=1  -o stored  -p 1 | awk ''{print "P1\t" \$0 }'' ';
@@ -136,7 +135,7 @@ The bellow example shows how to run a simple query with a very simplistic aggreg
 and publish it in JSON format to the broker:
 
 
-```
+```sql
 master=# COPY (select row_to_json(row(now() ,group_id , count(*))) from main group by group_id)
          TO PROGRAM 'kafkacat -P -b localhost:9092 -qe  -t AGGREGATIONS';
 COPY 3
@@ -145,7 +144,7 @@ COPY 3
 If you have a farm of servers and want to search the topic contents using a key,
 you can do the following tweak:
 
-```
+```sql
 COPY (select inet_server_addr() || ';', row_to_json(row(now() ,group_id , count(*))) from main group by group_id)
    TO PROGRAM 'kafkacat -P -K '';'' -b localhost:9092 -qe  -t AGGREGATIONS';
 ```
@@ -153,7 +152,7 @@ COPY (select inet_server_addr() || ';', row_to_json(row(now() ,group_id , count(
 
 This is how the published payloads look like (without _key_):
 
-```
+```bash
 ➜  PG10 kafkacat -C -b localhost:9092 -qeJ -t AGGREGATIONS -X group.id=1  -o beginning
 {"topic":"AGGREGATIONS","partition":0,"offset":0,"key":"","payload":"{\"f1\":\"2017-02-24T12:34:13.711732-03:00\",\"f2\":\"P1\",\"f3\":172}"}
 {"topic":"AGGREGATIONS","partition":0,"offset":1,"key":"","payload":"{\"f1\":\"2017-02-24T12:34:13.711732-03:00\",\"f2\":\"P0\",\"f3\":140}"}
@@ -162,7 +161,7 @@ This is how the published payloads look like (without _key_):
 
 ... and with _key_:
 
-```
+```json
 {"topic":"AGGREGATIONS","partition":0,"offset":3,"key":"127.0.0.1/32","payload":"\t{\"f1\":\"2017-02-24T12:40:39.017644-03:00\",\"f2\":\"P1\",\"f3\":733}"}
 {"topic":"AGGREGATIONS","partition":0,"offset":4,"key":"127.0.0.1/32","payload":"\t{\"f1\":\"2017-02-24T12:40:39.017644-03:00\",\"f2\":\"P0\",\"f3\":994}"}
 {"topic":"AGGREGATIONS","partition":0,"offset":5,"key":"127.0.0.1/32","payload":"\t{\"f1\":\"2017-02-24T12:40:39.017644-03:00\",\"f2\":\"P2\",\"f3\":716}"}
@@ -176,14 +175,14 @@ to play with your local broker.
 
 Starting everything:
 
-```sh
+```bash
 bin/zookeeper-server-start.sh config/zookeeper.properties 2> zookeper.log &
 bin/kafka-server-start.sh config/server.properties 2> kafka.log &
 ```
 
 Creating topics and others:
 
-```sh
+```bash
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic PGSHARD
 bin/kafka-topics.sh --delete  --zookeeper localhost:2181 --topic PGSHARD
@@ -198,25 +197,6 @@ bin/kafka-topics.sh --delete  --zookeeper localhost:2181 --topic AGGREGATIONS
 Hope you find this useful!
 
 
-<!-- {% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-
-
-var disqus_config = function () {
-this.page.url = {{ site.url }};  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = {{ page.title }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//3manuek.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %} -->
 
 [1]: https://github.com/edenhill/kafkacat
 [2]: https://github.com/edenhill/librdkafka

@@ -86,7 +86,7 @@ setup. This resource manages computes across a region, through several availabil
 Consider an API through port 8008, wether it returns 503/200 response over `master/replica` methods.
 The bellow output shows the responses for both methods over the same **master** node:
 
-```
+```bash
 curl -sSL -D -  http://127.0.0.1:8008/master
 HTTP/1.0 200 OK
 ...
@@ -161,7 +161,7 @@ This resource needs:
 
 An example of this would be the following:
 
-```
+```hcl
 resource "google_compute_region_backend_service" "instance_group_backendservice" {
   name             = "${var.name}-rig-bs"
   description      = "Region Instance Group Backend Service"
@@ -181,7 +181,7 @@ The `backend` block provices the instances created by `google_compute_region_ins
 point to the predefined HC above. One backend service can point to several Health Checks like built in the [google-lb-internal](https://github.com/GoogleCloudPlatform/terraform-google-lb-internal/blob/master/main.tf#L42-L71):
 
 
-```
+```hcl
 resource "google_compute_region_backend_service" "default" {
 ...
   health_checks    = ["${element(compact(concat(google_compute_health_check.tcp.*.self_link,google_compute_health_check.http.*.self_link)), 0)}"]
