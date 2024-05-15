@@ -62,7 +62,7 @@
           {{ range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $cnt := .Count }}
             {{ if  compare.Gt $cnt 1  }}
             <li class="tag-{{ . }}">
-              <a href="{{ "tags/" | absLangURL }}{{ $name | urlize }}"><b>{{ $name }}</b>  {{ $cnt }}</a>
+              <a href="{{ "tags/" | absLangURL }}{{ $name | urlize }}"><b>{{ $name | humanize }}</b>  <sup>{{ $cnt }}</sup></a>
             </li>
             {{ end }}
           {{ end }}
