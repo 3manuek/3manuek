@@ -56,6 +56,18 @@
                 {{ end }}
             {{ end }}
         {{ end }}
-
+        
+        <!-- Menu Tags -->
+        <ul class="tags">
+          {{ range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $cnt := .Count }}
+            {{ if  compare.Gt $cnt 1  }}
+            <li class="tag-{{ . }}">
+              <a href="{{ "tags/" | absLangURL }}{{ $name | urlize }}"><b>{{ $name }}</b>  {{ $cnt }}</a>
+            </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+        <!-- Menu Tags -->
+        
     </ul>
 </nav>

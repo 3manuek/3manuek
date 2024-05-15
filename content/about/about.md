@@ -44,7 +44,7 @@ with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.
 I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
 
 
-> _Before transitioning to a career in IT, between 1998 and 2007, I served
+> _Before transitioning to a career in IT, between 1998 and 2006, I served
 in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
 Federal) as an officer, managing operational groups at institutions
 ranging from medium to high security._
@@ -54,40 +54,46 @@ ranging from medium to high security._
 
 ### Maximum Security Complex (CPF 1)
 > Complejo Penitenciario Federal 1 (CPF1)
+>
 > 2005-2006
+>
 > Module 6 - Sanctioned Section
 
-Worked as Internal Shift Manager.
-Conducted sanction procedures and crime investigations.
+- Worked as Internal Shift Manager.
+- Conducted sanction procedures and crime investigations.
 
 ### Unit 31 (Woman's Facility)
 > Complejo Penitenciario de Mujeres 
+>
 > 2004 - 2005
 
-Worked as External Shift, Weapon capacity and Storage management.
-Conducted sanction procedures and crime investigations inside the premises.
-Cooperated in the design of some of the security and emergency procedures.
-Member of the Security Counsil.
+- Worked as External Shift, Weapon capacity and Storage management.
+- Conducted sanction procedures and crime investigations inside the premises.
+- Cooperated in the design of some of the security and emergency procedures.
+- Member of the Security Counsil.
 
 ### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
 > Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+>
 > 2003 - 2004
 
-Internal Shift Manager.
+- Internal Shift Manager.
 
 
 ### NCO School
 > Escuela de Suboficiales Cnel. Rómulo Páez
+>
 > 2002 - 2003
 
-Instructor
+- Instructor
 
 ### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
 > Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+>
 > January 2000 - 2002
 
-External Shift, Weapon capacity and Storage Manager. 
-Cooperated in the design of some of the security and emergency procedures.
+- External Shift, Weapon capacity and Storage Manager. 
+- Cooperated in the design of some of the security and emergency procedures.
 
 {{< /details >}}
 
