@@ -9,6 +9,7 @@ date: 2023-02-18T12:27:33-06:00
 - [Current Positions](#current-positions)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 - [Past Experience](#past-experience)
+- [Portfolio](/toolbox)
 
 # Bio(graffiti) 
 
