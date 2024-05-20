@@ -23,26 +23,26 @@ a valued partner, helping customers to design and operate highly
 available and scalable databases.
 
 In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
-consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. The shop has closed operations in 2023 due to the Argentinian crisis.
+consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has closed operations in 2023 due to the Argentinian crisis_.
 
 Committed to my principles and values drives my work, and I collaborate
 with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
 [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
 
-> I lectured talks in several Database and non-database related conferences, some of the slides can be found at [slides](https://github.com/3manuek/slides) repository.
+I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
+
+> I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
 
 ## Skillset
 
 - A considerable experience on scalability, reliability, architecturing and maintaining 
-  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical.
+  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. Extensive experience in modern **SQL**.
 - Languages: **Go, Python, C, Bash**.
-- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc. 
+- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc.
+- Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. 
 - Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
 - A skilled communicator, managing Customer accounts worlwide.
 - Hard-problem solving, and with aveced dealing of complex Production incidents.
-
-
-I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
 
 
 > _Before transitioning to a career in IT, between 1998 and 2006, I served

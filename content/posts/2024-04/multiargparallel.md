@@ -83,7 +83,7 @@ The code inside the script, ended up looking like this:
   - _I know it looks weird to use triple-single quotes, but IMHO it is the best way to escape from quotes on the shell._ You can inject 
     whatever you have declared without falling into annoying back-slashes and is more consistent.
 - The `::::` is the `parallel` equivalent of `while`, and we read the parameters from the `paramix.json`  in TSV format. You can use CSV too. In any case, this is controlled by `--colsep '\t'`.
-- The {1}, {2} and {3} are the variables that we feed from the `jq` command. _Duh._
+- The `{1}`, `{2}` and `{3}` are the variables that we feed from the `jq` command. _Duh._
 - The `sleep` isn't strictly necessary, but it controls better the case in which the iteration could be considered suspicious.
   - GH registry was complaining when I tried to issue the command with no sleep.
 - The `name`, returns the name path of the image, so we use that exact name to create the local path.
