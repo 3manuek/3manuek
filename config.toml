@@ -2,7 +2,7 @@ baseURL = "https://tr3s.ma"
 languageCode = "en-us"
 theme = "poison"
 author = "Emanuel"
-paginate = 10
+paginate = 7
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 Title = "3manuek"
 
@@ -32,6 +32,7 @@ disqusShortname = "tr3s-ma"
         {Name = "Posts ↩︎", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 5}, # Pre = "Recent" --removed
         {Name = "Toolbox ⚙️", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
+    tagMenuTitle = "🏷️"
     aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires."
     aboutPics = ["/images/profile2.jpg", "/images/profile3.jpg"]
 

@@ -36,7 +36,7 @@ I design reliable, scalable and ready-for-production Database infrastructures fo
 ## Skillset
 
 - A considerable experience on scalability, reliability, architecturing and maintaining 
-  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. Extensive experience in modern **SQL**.
+  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. Extensive experience in modern **SQL**. Knowledge on Postgres Extensions development  Framework.
 - Languages: **Go, Python, C, Bash**.
 - CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc.
 - Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. 
@@ -179,50 +179,47 @@ Other certifications related to DataScience Specialization:
 ### ViaDB
 > Buenos Aires, Argentina
 >
-> December, 2021 - November 2023
+> December, 2021 - November 2023 (closed)
 
 - ViaDB was an Open Source Database Support and System tools development indie-company. Closed due 
-to relocation.
+to relocation. See more at [ViaDB](https://viadb.ar).
 
 
-<details>
-    <summary>List of past and/or current customers.</summary>
-<ul>
-  <li><span>Maper (Argentina)</span></li>
-  <li><span>Openpass (Argentina)</span></li>
-  <li><span>Mural (Argentina)</span></li>
-  <li><span>Frávega (Argentina)</span></li>
-  <li><span>iMedicare (USA)</span></li>
-  <li><span>Eloquentix (US)</span></li>
-  <li><span>8kdata (Madrid)</span></li>
-  <li><span>Avalon Informática (Madrid)</span></li>
-  <li><span>Init (País Vasco)</span></li>
-  <li><span>Scienza (Argentina)</span></li>
-  <li><span>Syscope (Argentina)</span></li>
-  <li><span>Mexane (Argentina)</span></li>
-  <li><span>Contenta Mobile (Argentina)</span></li>
-  <li><span>Slots Machines (Argentina)</span></li>
-  <li><span>TreeLogic (Asturias)</span></li>
-  <li><span>BTS (Usa - Zaragoza)</span></li>
-  <li><span>LCRCOM.net (Madrid)</span></li>
-  <li><span>Autofarma (Argentina)</span></li>
-  <li><span>VsTour (Argentina)</span></li>
-  <li><span>CycleLogic (Argentina)</span></li>
-  <li><span>Ericsson/EDB (USA)</span></li>
-  <li><span>Pic-pic (USA)</span></li>
-  <li><span>PFA (Argentina)</span></li>
-  <li><span>Jampp (Arg/USA)</span></li>
-  <li><span>Contenta Mobile (Argentina)</span></li>
-  <li><span>Slots Machines (San Luis, Argentina)</span></li>
-  <li><span>Pampa Business Solutions (Argentina)</span></li>
-  <li><span>Sindicato de Pasteleros y afines (Argentina)</span></li>
-</ul>
-</details>
+{{< details summary="ViaDB Customers" >}}
+
+- Maper (Argentina) 
+- Openpass (Argentina) 
+- Mural (Argentina) 
+- Frávega (Argentina) 
+- iMedicare (USA)
+- Eloquentix (US)
+- 8kdata (Madrid)
+- Avalon Informática (Madrid)
+- Init (País Vasco)
+- Scienza (Argentina)
+- Syscope (Argentina)
+- Mexane (Argentina) 
+- Contenta Mobile (Argentina)
+- Slots Machines (Argentina) 
+- TreeLogic (Asturias) 
+- BTS (Usa - Zaragoza) 
+- LCRCOM.net (Madrid)  
+- Autofarma (Argentina)
+- VsTour (Argentina)
+- CycleLogic (Argentina)
+- Ericsson/EDB (USA)
+- Pic-pic (USA)
+- PFA (Argentina)
+- Jampp (Arg/USA)
+- Contenta Mobile (Argentina)
+- Slots Machines (San Luis, Argentina)
+- Pampa Business Solutions (Argentina)
+- Sindicato de Pasteleros y afines (Argentina)
+
+{{< /details >}}
 
 
-See more at [ViaDB](https://viadb.ar).
-
-### Percona -  Senior Technical Services Engineer _[main position]_
+### Percona -  Senior Technical ∏Services Engineer _[main position]_
 > Buenos Aires, Argentina
 >
 > August 2016 - September 2017
