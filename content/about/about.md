@@ -126,12 +126,12 @@ Highlighted projects:
   based environment to Google Cloud. PgBouncer-Consul-Postgres
 - **Conrad** (Google Cloud Partner): Full implementation of Patroni HA using etcd as consensus cluster, Load Balancing through 
   Google iLB with API configuration with Patroni, and PgBouncer.
-- **GitLab** as part of the Database Reliability Team and Database Architecture design.
+- **[Gitlab Migration](https://about.gitlab.com/2018/10/11/gitlab-com-stability-post-gcp-migration/)** as part of the Database Reliability Team and Database Architecture design. 
 - **Postmates**: Patroni Mult-project Terraform implementation with a centralized DCS.
 - Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
 - Google Cloud as Partner.
 - **ARM** support and automation implementation.
-- **AWS**'s Babelfish project, as a Developer Advocate for the Open Source version.
+- **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) project, as a Developer Advocate for the Open Source version.
 - Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
 - **stcpay** Architecture design and Technical Leader of the Database Project.
 
