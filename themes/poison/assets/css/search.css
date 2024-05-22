@@ -1,0 +1,24 @@
+/* static/css/search.css */
+#search-container {
+    position: relative;
+  }
+  
+  #search-results {
+    position: absolute;
+    /* background-color: white; */
+    background-color: var(--sidebar-bg-color);
+    /* border: 1px solid #ccc; */
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+  }
+  
+  .search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+  

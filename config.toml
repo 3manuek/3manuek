@@ -121,3 +121,6 @@ disqusShortname = "tr3s-ma"
 [taxonomies]
     series = 'series'
     tags = 'tags'
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
