@@ -3,7 +3,7 @@
 .PHONY: dev
 
 dev:
-	hugo serve --environment development --bind 0.0.0.0
+	hugo serve --environment development --bind 0.0.0.0 --buildDrafts
 
 .PHONY: build
 
