@@ -1,6 +1,6 @@
 ---
-title: "Customizing Go tests for Postgres service with Testcontainers"
-subtitle: "Beyond the examples and with up-to-date customizers"
+title: "Customizing Postgres Go-Testcontainers' requests "
+subtitle: "Tests showcase with Postgres requirements"
 date: 2024-05-26
 author: "3manuek"
 draft: false

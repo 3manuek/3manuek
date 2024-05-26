@@ -1,6 +1,8 @@
 baseURL = "https://tr3s.ma"
 languageCode = "en-us"
+## Using a modified version of <a href="https://poison.lukeorth.com/posts/introducing-poison/">Poison</a>.
 theme = "poison"
+## 
 author = "Emanuel"
 paginate = 7
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
@@ -17,6 +19,8 @@ disqusShortname = "tr3s-ma"
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     index_brand_image = "/images/profile.gif"
+
+    ## Custom variables over Poison's. Implemented carousel.
     carousel = true # enables data/carousel.yaml
     
     front_page_content = ["posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
@@ -32,6 +36,8 @@ disqusShortname = "tr3s-ma"
         {Name = "Posts ↩︎", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 5}, # Pre = "Recent" --removed
         {Name = "Toolbox ⚙️", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
+
+    ## Custom variables over Poison's. About Page and menu stuff.
     tagMenuTitle = "🏷️"
     aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires."
     aboutPics = ["/images/profile2.jpg", "/images/profile3.jpg"]
@@ -113,6 +119,7 @@ disqusShortname = "tr3s-ma"
                                           # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
     # publisher_icon = ""                 # path to publisher icon - defaults to favicon, used in schema
 
+    ## Custom variables over Poison's.
     gtag = true
     gtag_id = "G-GY0KSNNSTL"
     adsense = true
@@ -122,5 +129,6 @@ disqusShortname = "tr3s-ma"
     series = 'series'
     tags = 'tags'
 
+## Custom variables over Poison's. For searcher.
 [outputs]
     home = ["HTML", "RSS", "JSON"]
