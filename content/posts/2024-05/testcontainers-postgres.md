@@ -1,9 +1,9 @@
 ---
-title: "Customizind Go Postgres testing with Testcontainers"
-subtitle: "Beyond the exmaples and with up-to-date customizers"
-date: 2024-05-22
+title: "Customizing Go tests for Postgres service with Testcontainers"
+subtitle: "Beyond the examples and with up-to-date customizers"
+date: 2024-05-26
 author: "3manuek"
-draft: true
+draft: false
 # series: "Bash"
 tags:
   - Testcontainers
@@ -13,7 +13,7 @@ tags:
 ---
 
 
-Testcontainers allow you to test your code with ephemeral containers right inside your tests. 
+Testcontainers allows you to test your code with _ephemeral containers_ right inside your tests. 
 It provides different modules for simplifying the process, however, sometimes you many need 
 to customize the container beyond the default parameters or it contents.
 
@@ -32,20 +32,28 @@ If you don't have a good idea what Testcontainers can do, I'll try to ellaborate
 
 > Running ephemeral containers of any kind for doing (mostly) integration or functional tests.
 
-It is pretty convinient if you happen to have a large amount of _Services As A Depenpency_, if such a term
+It is very convinient if you happen to have a large amount of _Services As A Depenpency_, if such a term
 exists. The modules documentation used in the laboratory can be found in the following links:
 
 - [Generic Containers](https://golang.testcontainers.org/quickstart/)
 - [Postgres Module](https://golang.testcontainers.org/modules/postgres/)
 - [Docker Compose](https://golang.testcontainers.org/features/docker_compose/)
 
+The laboratory can be executed as follows:
 
+```bash
+go run main.go # generic run, no test
+go test -v generic_test.go --args -imageName=postgres:16-bookworm
+go test -v ts_test.go
+```
 
 ## Using Generic Container request
 
 Building a generic container requires to initialize by creating a _request_ (`ContainerRequest`), and passing 
 the request to the `GenericContainer` constructor. We also set a flag at the test script so it can be possible
 to change the image on each test.
+
+> Full example at [generic_test.go](https://github.com/3manuek/pgtestcontainers/blob/main/generic_test.go).
 
 {{< tabs tabTotal="3">}}
 
@@ -110,6 +118,8 @@ initialization.
 
 The Postgres module allows starting the container in a single step, and provides a set of helper
 functions to extract the container information
+
+> Full example at [ts_test.go](https://github.com/3manuek/pgtestcontainers/blob/main/ts_test.go).
 
 {{< tabs tabTotal="3">}}
 
@@ -196,7 +206,9 @@ functions to extract the container information
 
 ## Using docker compose 
 
-Anothe way would be reusing a Docker Compose definition. 
+Another way would be reusing a Docker Compose definition. 
+
+> Full example at [compose_test.go](https://github.com/3manuek/pgtestcontainers/blob/main/compose_test.go).
 
 {{< tabs tabTotal="2">}}
 
