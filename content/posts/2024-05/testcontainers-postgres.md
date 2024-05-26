@@ -33,7 +33,8 @@ If you don't have a good idea what Testcontainers can do, I'll try to ellaborate
 > Running ephemeral containers of any kind for doing (mostly) integration or functional tests.
 
 It is very convinient if you happen to have a large amount of _Services As A Depenpency_, if such a term
-exists. The modules documentation used in the laboratory can be found in the following links:
+exists. But certainly, it plays a role in test-driven development, simplifying the test for complex service architectures.
+The modules' documentation used in the laboratory can be found in the following links:
 
 - [Generic Containers](https://golang.testcontainers.org/quickstart/)
 - [Postgres Module](https://golang.testcontainers.org/modules/postgres/)
@@ -56,7 +57,7 @@ inside the `test` folder.
 
 Building a generic container requires to initialize by creating a _request_ (`ContainerRequest`), and passing 
 the request to the `GenericContainer` constructor. We also set a flag at the test script so it can be possible
-to change the image on each test.
+to change the image on each test. If you happen to use a non-Postgres-module compatible image, this might be your choice. 
 
 > Full example at [generic_test.go](https://github.com/3manuek/pgtestcontainers/blob/main/generic_test.go).
 

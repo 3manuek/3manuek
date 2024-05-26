@@ -18,7 +18,7 @@ I've been developing an application in Go that uses SQLite as a local cache of t
 story would end there if it wasn't that I decided to go for a distroless image for opmitization purposes,
 and also, why not?
 
-The thing here is that for enabling certain features of the database/sql driver, the artifact should
+The thing here is that for enabling certain features of the `database/sql` driver, the artifact should
 be dynamically linked through `CGO_ENABLED=1` and with the `-tags "fts5"` (for the FTS5 feature support,
 see [this issue comment][2]).
 
@@ -28,7 +28,19 @@ artifact will be static, and you can just use the `static-<distro>` image.
 Since [base images][3] are available in the packages, you can now compose your dinamically linked
 binary in a distroless image. [Base image][4] contains glibc, and libssl.
 
-## Layer Builds
+## Why Distroless?
+
+Aside of the perks of minimalistic images, such as size, there are some benefits from the security perspective.
+Reducing the image dependencies, there is a reduction on inherited security vulnerabilities.
+
+There is software that ain't that straightfoward to implement as a distroless, but eventually, it is possible
+to do so.
+
+Also, some implementations might need tooling or rely on it, which can be a caveat when implementing. Those 
+tools can be implemented as sidecars, along a pod -- if you use k8s, eg. --, but at the cost of a more complex
+deployment. 
+
+## Layer Building
 
 First, keep in mind that you need to build your component in the same distribution as the 
 one you want to use as the distroless. If you take a peek on the [available images for Golang](https://hub.docker.com/_/golang/),
