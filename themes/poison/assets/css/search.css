@@ -1,8 +1,25 @@
 /* static/css/search.css */
 #search-container {
+    /* display: flex; */
     position: relative;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 0.5rem;
   }
-  
+
+  #search-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  #search-input:focus {
+    outline: none;
+  }
+  #search-container:not(:focus-within) #search-results {
+    display: none;
+  }
+
   #search-results {
     position: absolute;
     /* background-color: white; */
