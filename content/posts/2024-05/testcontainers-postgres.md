@@ -47,6 +47,11 @@ go test -v generic_test.go --args -imageName=postgres:16-bookworm
 go test -v ts_test.go
 ```
 
+> The laboratory will load and execute the data migration, see the contents of the initialization scripts
+inside the `test` folder.
+
+----
+
 ## Using Generic Container request
 
 Building a generic container requires to initialize by creating a _request_ (`ContainerRequest`), and passing 
@@ -57,7 +62,7 @@ to change the image on each test.
 
 {{< tabs tabTotal="3">}}
 
-{{% tab tabName="imageName as flag" %}}
+{{% tab tabName="imageName flag" %}}
 ```go
 // go test -v main_test.go -args -imageName=...
 var imageName = flag.String("imageName", "postgres:16-bookworm", "URL of the image")
@@ -65,7 +70,7 @@ var imageName = flag.String("imageName", "postgres:16-bookworm", "URL of the ima
 
 {{% /tab %}}
 
-{{% tab tabName="Building theRequest" %}}
+{{% tab tabName="Request Build" %}}
 
 ```go
 	ctx := context.Background()
@@ -94,7 +99,7 @@ var imageName = flag.String("imageName", "postgres:16-bookworm", "URL of the ima
 
 {{% /tab %}}
 
-{{% tab tabName="Executing the container" %}}
+{{% tab tabName="Container Run" %}}
 ```go
 	postgresC, _ := tc.GenericContainer(ctx, tc.GenericContainerRequest{
 		ContainerRequest: req,
@@ -108,6 +113,9 @@ var imageName = flag.String("imageName", "postgres:16-bookworm", "URL of the ima
 ```
 {{% /tab %}}
 {{< /tabs >}}
+
+
+----
 
 ## Using Postgres Module with a non-vanilla image 
 
@@ -123,8 +131,7 @@ functions to extract the container information
 
 {{< tabs tabTotal="3">}}
 
-{{% tab tabName="Postgres container initialization" %}}
-
+{{% tab tabName="Initialization" %}}
 ```go
 	ctx := context.Background()
 	dbName := "iot"
@@ -169,9 +176,8 @@ functions to extract the container information
 
 {{% /tab %}}
 
-{{% tab tabName="Get connection String helper" %}}
+{{% tab tabName="ConnectionString helper" %}}
 ```go
-
 	// Database pointer creation
 	connStr, err := postgresContainer.ConnectionString(ctx, "sslmode=disable")
 	if err != nil {
@@ -186,8 +192,6 @@ functions to extract the container information
 {{% /tab %}}
 
 {{% tab tabName="Execute command inside the container" %}}
-
-
 ```go
 	if _, out, err := postgresContainer.Exec(ctx, []string{"psql", "-U", dbUser, "-w", dbName, "-c", `SELECT count(*) from devices;`}); err != nil {
 		log.Println(err)
@@ -200,9 +204,9 @@ functions to extract the container information
 
 {{% /tab %}}
 
-
 {{< /tabs >}}
 
+----
 
 ## Using docker compose 
 
@@ -220,7 +224,6 @@ networks:
   data:
 
 services:
-
   timescale:
     image: timescale/timescaledb:latest-pg16
     ## Once in prod
@@ -273,9 +276,8 @@ func TestSomething(t *testing.T) {
 
 	require.NoError(t, compose.Up(ctx, tc.Wait(true)), "compose.Up()")
 
-	// do some testing here
+	// Do tests...
 }
-
 ```
 {{% /tab %}}
 {{< /tabs >}}
