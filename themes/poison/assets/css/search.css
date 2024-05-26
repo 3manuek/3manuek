@@ -28,13 +28,17 @@
     max-height: 200px;
     overflow-y: auto;
     width: 100%;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+    border: 2px solid var(--text-color);
+    box-shadow: 0 0 0.5rem var(--text-color);
   }
   
   .search-result-item {
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    /* cursor: pointer; */
   }
-  
   .search-result-item:last-child {
     border-bottom: none;
   }
