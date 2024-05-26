@@ -51,6 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
             items[currentIndex].querySelector('a').click();
           }
         }
+
+        if (event.key === 'Escape') {
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+          currentIndex = -1;
+        }
       });
 
       function updateSelection(items) {
