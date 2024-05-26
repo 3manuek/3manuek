@@ -1,6 +1,6 @@
 ---
-title: "Customizing Postgres Go-Testcontainers' requests "
-subtitle: "Tests showcase with Postgres requirements"
+title: "Testcontainers' customization for Postgres tests"
+# subtitle: "Showcase tests in different approaches"
 date: 2024-05-26
 author: "3manuek"
 draft: false
