@@ -4,7 +4,7 @@ subtitle: "Go's Testcontainers ephemeral Postgres tests"
 date: 2024-05-26
 author: "3manuek"
 draft: false
-# series: "Bash"
+series: "Testcontainers"
 tags:
   - Testcontainers
   - Postgres
