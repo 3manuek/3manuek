@@ -1,6 +1,6 @@
 ---
 title: "Testcontainers' customization for Postgres tests"
-# subtitle: "Showcase tests in different approaches"
+subtitle: "Go's Testcontainers ephemeral Postgres tests"
 date: 2024-05-26
 author: "3manuek"
 draft: false
