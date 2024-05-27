@@ -40,13 +40,16 @@ The modules' documentation used in the laboratory can be found in the following 
 - [Postgres Module](https://golang.testcontainers.org/modules/postgres/)
 - [Docker Compose](https://golang.testcontainers.org/features/docker_compose/)
 
-The laboratory can be executed as follows:
+The laboratory can be executed as follows
 
 ```bash
 go run main.go # generic run, no test
 go test -v generic_test.go --args -imageName=postgres:16-bookworm
 go test -v ts_test.go
 ```
+ 
+or by executing `./e2e.sh`.
+
 
 > The laboratory will load and execute the data migration, see the contents of the initialization scripts
 inside the `test` folder.

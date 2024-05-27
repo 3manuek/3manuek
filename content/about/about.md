@@ -219,7 +219,7 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 {{< /details >}}
 
 
-### Percona -  Senior Technical ∏Services Engineer _[main position]_
+### Percona -  Senior Technical Services Engineer _[main position]_
 > Buenos Aires, Argentina
 >
 > August 2016 - September 2017
