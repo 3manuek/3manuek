@@ -26,7 +26,7 @@ to customize the container beyond the default parameters or it contents.
 Testcontainers offers a generic container API, and for specific services, it provides modules
 that are helpers with the most common settings. Available modules can be found [here](https://testcontainers.org/modules/).
 
-In this post we will through some of the considerations in the latest API updates in Testcontainers `v0.31.1`.
+In this post we will through some of the considerations in the latest API updates in Testcontainers `v0.31.0`.
 
 If you don't have a good idea what Testcontainers can do, I'll try to ellaborate like this:
 
