@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "A Database Platform, Reliability and Systems Engineer. IT Consultant."
+subtitle: "_Database Platform, Reliability and Systems Engineer. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 
 ---
@@ -14,23 +14,25 @@ date: 2023-02-18T12:27:33-06:00
 # Bio(graffiti) 
 
 
-I am a multifaceted professional with excellent communication skills, a
-strong commitment to principles, and a passion for sharing knowledge and
-code with others. 
-
-Currently, I am a _Database Platform Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com), where I am
-a valued partner, helping customers to design and operate highly
-available and scalable databases.
-
-In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
-consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has closed operations in 2023 due to the Argentinian crisis_.
-
-Committed to my principles and values drives my work, and I collaborate
-with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
-[Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
-
-I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), to highly tweaked environments for performance and complex setups.
-
+> I am a multifaceted professional with excellent communication skills, a
+> strong commitment to principles, and a passion for sharing knowledge and
+> code with others. 
+>
+>Currently, I am a _Database Platform Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com), where I am
+>a valued partner, helping customers to design and operate highly
+>available and scalable databases.
+>
+>In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
+>consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has >closed operations in 2023 due to relocation_.
+>
+>Committed to my principles and values drives my work, and I collaborate
+>with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
+>[Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
+>
+>I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies 
+>from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), 
+>to highly tweaked environments for performance and complex setups.
+>
 > I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
 
 ## Skillset
@@ -356,10 +358,10 @@ Some of the 'extra' task was made some Perl scripts for support area.
 
 
 
-## Hobbies
+<!-- ## Hobbies
 
 Other things that I love to do:
 
 - I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
 - I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby. 
-- Love reading, particularly around polithical, econocomics and social affairs. 
+- Love reading, particularly around polithical, econocomics and social affairs.  -->

@@ -7,6 +7,7 @@
         {{ if .Pages }}
             {{ range .Pages }}
                 <h1 class="post-title">{{ .Title }}</h1>
+                <h2 class="post-subtitle">{{ .Params.subtitle | markdownify }}</h2>
                 {{ partial "sidebar/socials.html" . }}
                 
                 <div>
