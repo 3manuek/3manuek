@@ -1,8 +1,8 @@
 ---
-title: "Pool exhaustion laboratory"
-subtitle: "A study between single and multi-threaded Pools"
+title: "Postgres' Pool exhaustion laboratory"
+subtitle: "A study between single (PgBouncer) and multi-threaded (Odyssey) pools"
 excerpt: ""
-date: 2024-04-19
+date: 2023-04-19
 author: "3manuek"
 draft: false
 
