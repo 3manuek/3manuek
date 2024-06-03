@@ -36,8 +36,8 @@ that there is no much difference between [Dvorak and Colemak][3]. Moreover, ther
 AI generated layouts, which are very interesting, but they don't have a wide support 
 (see [Carplax Optimizer][4]).
 
-Also, it was obvious that I was not using my fingers correctly. I was doing Touch Taping
-in my non-labeled-keys Daskeyboard (standard key dispossisio) wrong, I wasn't properly 
+Also, it was obvious that I was not using my fingers correctly. I was doing Touch Typing
+in my non-labeled-keys Daskeyboard (standard key dispossision) wrong, I wasn't properly 
 using all my fingers.
 
 So, it wasn't only an excuse, I found myself on the decision to switch to Colemak on 
