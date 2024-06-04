@@ -23,7 +23,7 @@ date: 2023-02-18T12:27:33-06:00
 >available and scalable databases.
 >
 >In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
->consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has >closed operations in 2023 due to relocation_.
+>consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
 >
 >Committed to my principles and values drives my work, and I collaborate
 >with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
