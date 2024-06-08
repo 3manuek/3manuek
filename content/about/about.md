@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Database Platform, Reliability and Systems Engineer. Software Development. IT Consultant._"
+subtitle: "_Database Platform, Reliability and Systems Engineer. Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 
 ---
@@ -18,87 +18,36 @@ date: 2023-02-18T12:27:33-06:00
 > strong commitment to principles, and a passion for sharing knowledge and
 > code with others. 
 >
->Currently, I am a _Database Platform Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com), where I am
->a valued partner, helping customers to design and operate highly
->available and scalable databases.
->
->In addition, I was the founder of [ViaDB](https://viadb.ar), specialized in
->consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
->
->Committed to my principles and values drives my work, and I collaborate
->with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
->[Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
+>Currently, I'm a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
+>Working from platform engineering roles, development, consulting and training.
 >
 >I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies 
 >from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), 
 >to highly tweaked environments for performance and complex setups.
 >
+>Committed to my principles and values drives my work, and I collaborate
+>with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
+>[Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
+>
 > I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
+
+
+>I was the founder of [ViaDB](https://viadb.ar), specialized in
+>consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
 
 ## Skillset
 
 - A considerable experience on scalability, reliability, architecturing and maintaining 
-  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. Extensive experience in modern **SQL**. Knowledge on Postgres Extensions development  Framework.
-- Languages: **Go, Python, C, Bash**.
+  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. 
+  Most of the systems are/were business-critical. Extensive experience in modern **SQL**. Knowledge 
+  on Postgres Extensions development Framework and internals.
+- Most used Languages: **Go, Python, C, Bash**.
 - CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc.
 - Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. 
 - Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
-- A skilled communicator, managing Customer accounts worlwide.
+- A skilled communicator, managing Customer's accounts worldwide.
 - Hard-problem solving, and with aveced dealing of complex Production incidents.
 
-
-> _Before transitioning to a career in IT, between 1998 and 2006, I served
-in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
-Federal) as an officer, managing operational groups at institutions
-ranging from medium to high security._
-
-
-{{< details summary="Positions at SPF" >}}
-
-### Maximum Security Complex (CPF 1)
-> Complejo Penitenciario Federal 1 (CPF1)
->
-> 2005-2006
->
-> Module 6 - Sanctioned Section
-
-- Worked as Internal Shift Manager.
-- Conducted sanction procedures and crime investigations.
-
-### Unit 31 (Woman's Facility)
-> Complejo Penitenciario de Mujeres 
->
-> 2004 - 2005
-
-- Worked as External Shift, Weapon capacity and Storage management.
-- Conducted sanction procedures and crime investigations inside the premises.
-- Cooperated in the design of some of the security and emergency procedures.
-- Member of the Security Counsil.
-
-### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
-> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
->
-> 2003 - 2004
-
-- Internal Shift Manager.
-
-
-### NCO School
-> Escuela de Suboficiales Cnel. Rómulo Páez
->
-> 2002 - 2003
-
-- Instructor
-
-### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
-> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
->
-> January 2000 - 2002
-
-- External Shift, Weapon capacity and Storage Manager. 
-- Cooperated in the design of some of the security and emergency procedures.
-
-{{< /details >}}
 
 ---
 
@@ -133,7 +82,9 @@ Highlighted projects:
 - Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
 - Google Cloud as Partner.
 - **ARM** support and automation implementation.
-- **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) project, as a Developer Advocate for the Open Source version.
+- Worked in the **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) team, as a Developer Advocate for the Open Source version.
+  - Provided patches, building, testing of [Babelfish for Postgres](https://babelfishpg.org).
+  - Lectured training for the team about the Postgres Hook Ecosystem.
 - Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
 - **stcpay** Architecture design and Technical Leader of the Database Project.
 
@@ -356,7 +307,59 @@ Some of the 'extra' task was made some Perl scripts for support area.
 - MOSAIC debugging and support.
 - Customer Correo Argentino / Siemens.
 
+### Pre-IT work
 
+> _Before transitioning to a career in IT, between 1998 and 2006, I served
+in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario
+Federal) as an officer, managing operational groups at institutions
+ranging from medium to high security._
+
+{{< details summary="Positions at SPF" >}}
+
+### Maximum Security Complex (CPF 1)
+> Complejo Penitenciario Federal 1 (CPF1)
+>
+> 2005-2006
+>
+> Module 6 - Sanctioned Section
+
+- Worked as Internal Shift Manager.
+- Conducted sanction procedures and crime investigations.
+
+### Unit 31 (Woman's Facility)
+> Complejo Penitenciario de Mujeres 
+>
+> 2004 - 2005
+
+- Worked as External Shift, Weapon capacity and Storage management.
+- Conducted sanction procedures and crime investigations inside the premises.
+- Cooperated in the design of some of the security and emergency procedures.
+- Member of the Security Counsil.
+
+### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+>
+> 2003 - 2004
+
+- Internal Shift Manager.
+
+
+### NCO School
+> Escuela de Suboficiales Cnel. Rómulo Páez
+>
+> 2002 - 2003
+
+- Instructor
+
+### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+> Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
+>
+> January 2000 - 2002
+
+- External Shift, Weapon capacity and Storage Manager. 
+- Cooperated in the design of some of the security and emergency procedures.
+
+{{< /details >}}
 
 <!-- ## Hobbies
 
