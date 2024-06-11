@@ -88,6 +88,30 @@ function AFuncThatSpawnsSubProcesses() {
 
 ```
 
+## Handling Interruptions
+
+When spawning childs, you need to handle interruptions for controlling the jobs running
+in the process. If you want to handle this nicely, or you have intention to stop only 
+a group of jobs, you need to store the PIDS -- let's say -- in an array for killing 
+them in the interruption handler.
+
+This allows you to implement more complex logic, like having a set of workers that you
+want to kill differently -- storing the state, eg. -- and other group to be killed immediately.
+
+The following definitions are a _lazy_ approach, which just kills all childs and finally, kills
+the parent.
+
+```bash
+trap "ctrlc" SIGINT
+
+ctrlc(){
+   kill $(jobs -p)  # kills childs
+   pkill -P $$      # kills parent
+}
+```
+
+## Reusing functions 
+
 You can use a library style bash script like this [Gist](https://gist.github.com/3manuek/453e7dff8234da19057ad7c59e69eb3e) too.
 
 ```bash
