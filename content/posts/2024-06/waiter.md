@@ -27,12 +27,12 @@ maxJobs=4
 ...
 
 waiter(){
-    while test $(jobs -p | wc -l) -ge $maxJobs ; do wait -n; done
+    while test $(jobs -p | wc -l) -ge $maxJobs ; do sleep 1 ; wait -n; done
 }
 
 
 waitall(){
-  wait -n
+    wait < <(jobs -p)
 }
 
 ```
@@ -48,16 +48,20 @@ The `jobs -p` lists the IDs of the jobs, combined with just a plain `wc -l` that
 IDs, it is possible to coordinate and configuring groups of jobs. Also, `jobs -n` allows you to list only those jobs that have
 changed its status, as a message queue. Check the [man page][1] for more details.
 
+The `waitall` will wait for all pids returned by `jobs -p`. [See this SO thread][3].
 
 The usage is simple, and relies on the concept of code blocks in base. You can use just simple commands too, but organizing
 through bash blocks may encouraged.
 
 ```bash
+...
     waiter
     (
         # operations ...
     ) &
-    waitall # or wait -n
+...
+# once the loop is done, wait for all jobs
+waitall 
 ```
 
 Here is an example implemented in a function. In this case I implement an iteration for spawning jobs, just for the sake of the
@@ -93,3 +97,4 @@ You can use a library style bash script like this [Gist](https://gist.github.com
 
 [1]: https://linuxcommand.org/lc3_man_pages/jobsh.html
 [2]: https://linuxcommand.org/lc3_man_pages/waith.html
+[3]: https://stackoverflow.com/a/36038185/3264121
