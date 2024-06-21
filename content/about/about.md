@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Database Platform, Reliability and Systems Engineer. Software Engineering. IT Consultant._"
+subtitle: "_Database and Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 
 ---
@@ -35,6 +35,7 @@ date: 2023-02-18T12:27:33-06:00
 >I was the founder of [ViaDB](https://viadb.ar), specialized in
 >consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
 
+
 ## Skillset
 
 - A considerable experience on scalability, reliability, architecturing and maintaining 
@@ -47,19 +48,20 @@ date: 2023-02-18T12:27:33-06:00
 - Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
 - A skilled communicator, managing Customer's accounts worldwide.
 - Hard-problem solving, and with aveced dealing of complex Production incidents.
+- Develop engineering tools to ensure seamless operation and maximum efficiency.
 
 
 ---
 
 # Current Positions
 
-### Independent Consultant - Open Source Databases and Architecture
+### Independent Consultant - Open Source Databases and Software Engineer
 > Remote
 
 - Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
 - Automated Cloud Infrastrucures.
 - HA, Performance, Monitoring,Debugging.
-- Development.
+- Go, Python, C, Bash development.
 
 
 ### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
