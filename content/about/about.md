@@ -2,7 +2,6 @@
 title: "Emanuel Calvo"
 subtitle: "_Database and Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
-
 ---
 
 - [Skillset](#skillset)
@@ -11,26 +10,27 @@ date: 2023-02-18T12:27:33-06:00
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
 
+----
+
 # Bio(graffiti) 
 
 
 > I am a multifaceted professional with excellent communication skills, a
-> strong commitment to principles, and a passion for sharing knowledge and
+> strong commitment to principles, and a passion for sharing knowledge, and
 > code with others. 
 >
->Currently, I'm a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
->Working from platform engineering roles, development, consulting and training.
->
->I design reliable, scalable and ready-for-production Database infrastructures for some _top-noch_ companies, based on Open Source Technologies 
->from the ground up. That is, from coding the provisioning and deploy, components integrated in a Continuous Deployment (with Canary support, eg), 
->to highly tweaked environments for performance and complex setups.
->
->Committed to my principles and values drives my work, and I collaborate
->with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
->[Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
+> I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
+> Working from platform engineering roles, development, consulting and training.
+> 
+> I design reliable, scalable, and ready-for-production Database infrastructures for some _top-notch_ companies, based on Open Source Technologies 
+> from the ground up. That is, from coding provisioning, and deploying, components integrated into a Continuous Deployment (with Canary support, eg), 
+> to highly tweaked environments for performance and complex setups.
+> 
+> Committed to my principles and values drives my work, and I collaborate
+> with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
+> [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
 >
 > I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
-
 
 >I was the founder of [ViaDB](https://viadb.ar), specialized in
 >consultancy and tool development for Open Source Databases, using a variety of programming languages including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
@@ -42,8 +42,8 @@ date: 2023-02-18T12:27:33-06:00
   large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. 
   Most of the systems are/were business-critical. Extensive experience in modern **SQL**. Knowledge 
   on Postgres Extensions development Framework and internals.
-- Most used Languages: **Go, Python, C, Bash**.
-- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Kubernetes**, etc.
+- Experience in the following languages: **Go, Python, C, Bash**.
+- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, GH Actions, Gitlab CI, Kubernetes**, etc.
 - Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. 
 - Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
 - A skilled communicator, managing Customer's accounts worldwide.
@@ -362,11 +362,3 @@ ranging from medium to high security._
 - Cooperated in the design of some of the security and emergency procedures.
 
 {{< /details >}}
-
-<!-- ## Hobbies
-
-Other things that I love to do:
-
-- I'm an experienced hydroponics _micro-grower_; DWC and NFT are my favorites.
-- I'm an amateur musician, mostly generic strings and techno jam. Drawing is also a hobby. 
-- Love reading, particularly around polithical, econocomics and social affairs.  -->
