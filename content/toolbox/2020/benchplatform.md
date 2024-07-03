@@ -10,6 +10,8 @@ tags:
   - Python
 ---
 
+### Description
+
 
 > [Source Code](https://gitlab.com/ongresinc/benchplatform)
 
@@ -24,7 +26,7 @@ Relevant and published links:
 - [Benchmark Post](https://www.ongres.com/blog/benchmarking-do-it-with-transparency/)
 - [Results and Notebooks](https://gitlab.com/ongresinc/benchplatform/-/tree/master/notebook?ref_type=heads)
 
-## Personal findings
+### Personal findings
 
 - Postgres is faster than MongoDB on a single node when the _active dataset_ doesn't fit in memory.
 - For datasets that fit in memory, MongoDB performs better, which is no surprise. Unless, you implement a Pooling
@@ -35,7 +37,7 @@ Relevant and published links:
   to reduce the amount of connections if more backends added.
 - Postgres consumes less CPU in all cases than MongoDB.
 
-## Some examples of the collected results
+### Some examples of the collected results
 
 The following shows the results of Mongo, Postgres, and PG+PGBouncer on XFS with 95% of reads and 5% writes:
 ![Fix XFS R95/W5%](/images/benchplatform/fit-xfs-pg-mg.png)

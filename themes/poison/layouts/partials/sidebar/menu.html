@@ -62,8 +62,8 @@
             {{ .Site.Params.tagMenuTitle }}
         </li>
         <ul class="tags">
-          {{ range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $cnt := .Count }}
-            {{ if  compare.Gt $cnt 1  }}
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $cnt := .Count }}
+            {{ if  compare.Gt $cnt  2  }}
             <li class="tag-{{ . }}">
               <a href="{{ "tags/" | absLangURL }}{{ $name | urlize }}"><b>{{ $name | humanize }}</b>  <sup>{{ $cnt }}</sup></a>
             </li>

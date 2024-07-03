@@ -4,7 +4,7 @@ date: 2022-11-01
 layout: single
 ---
 
-# Complex datatype PL/pgsql extension in Postgres
+### Complex datatype PL/pgsql extension in Postgres
 
 > Source [at Github](https://github.com/3manuek/complex_ext)
 

@@ -14,6 +14,8 @@ tags:
 layout: single
 ---
 
+### Description
+
 The [artifact_builder](https://github.com/viadb/artifact_builder) is a tool that converts SQL files 
 into a single-packaged ndjson file. It works as a submodule in the targeted repositories -- eg. [pgqueries](https://github.com/ongres/pgqueries) --
 , and generates a package of the SQL files to be indexed and stored in a database.

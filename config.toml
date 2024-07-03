@@ -11,11 +11,13 @@ Title = "3manuek"
 # NOTE: If using Disqus as commenting engine, uncomment and configure this line
 disqusShortname = "tr3s-ma"
 
+enableRobotsTXT = true
+
 [params]
     brand = "3manuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     brand_image = "/images/profile.png"    # path to the image shown in the sidebar
-    description = "Database and Systems Engineering. IT Consultant." # Used as default meta description if not specified in front matter
+    description = "Database and Systems Engineering. IT Consultant. Database Performance and Reliability Expert." # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     index_brand_image = "/images/profile.gif"
@@ -33,12 +35,14 @@ disqusShortname = "tr3s-ma"
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About ⌘", URL = "/about/", HasChildren = false},
-        {Name = "Posts ↩︎", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 5}, # Pre = "Recent" --removed
+        {Name = "Posts ↩︎", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 3}, # Pre = "Recent" --removed
         {Name = "Toolbox ⚙️", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
 
     ## Custom variables over Poison's. About Page and menu stuff.
     tagMenuTitle = "🏷️"
+    tagMenuWeight = 2 # XXX not implemented 
+                      # Only show tags that have more than N posts. 
     aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires."
     aboutPics = ["/images/profile2.jpg", "/images/profile3.jpg"]
 
