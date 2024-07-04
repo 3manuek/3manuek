@@ -4,6 +4,8 @@ subtitle: "_Database and Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 ---
 
+----
+
 - [Skillset](#skillset)
 - [Current Positions](#current-positions)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
@@ -17,10 +19,10 @@ date: 2023-02-18T12:27:33-06:00
 
 > I am a multifaceted professional with excellent communication skills, a
 > strong commitment to principles, and a passion for sharing knowledge, and
-> code with others. 
+> code with others. Born in 🇦🇷 and 🇪🇸 nationality.
 >
 > I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
-> Working from platform engineering roles, development, consulting and training.
+> Working from platform engineering roles, development, consulting, and training.
 > 
 > I design reliable, scalable, and ready-for-production Database infrastructures for some _top-notch_ companies, based on Open Source Technologies 
 > from the ground up. That is, from coding provisioning, and deploying, components integrated into a Continuous Deployment (with Canary support, eg), 
@@ -39,11 +41,13 @@ date: 2023-02-18T12:27:33-06:00
 ## Skillset
 
 - A considerable experience on scalability, reliability, architecturing and maintaining 
-  large scaled Database systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. 
-  Most of the systems are/were business-critical. Extensive experience in modern **SQL**. Knowledge 
-  on Postgres Extensions development Framework and internals.
+  large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. 
+  Most of the systems are/were business-critical. 
+- Extensive experience in modern **SQL** and custom indexing in Postgres. 
+- Knowledge in Postgres Extensions development Framework and internals.
 - Experience in the following languages: **Go, Python, C, Bash**.
 - CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, GH Actions, Gitlab CI, Kubernetes**, etc.
+- Experience in containerized services as in **Kubernetes, Docker**. Also heavy experience in Virtualization technologies.
 - Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. 
 - Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
 - A skilled communicator, managing Customer's accounts worldwide.
