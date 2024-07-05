@@ -1,6 +1,6 @@
 ---
-title: "Earthly feature --allow-without-earthly-labels"
-subtitle: "Reproducibility in Earthly produced images"
+title: "[Earthly feature]: Disabling Earthly internal labels"
+subtitle: "Reproducibility in Earthly images"
 date: 2024-07-01
 author: "3manuek"
 draft: false
@@ -45,7 +45,7 @@ and avoid duplicated artifacts to be pushed upstream.
 
 That's why I proposed the [flag --allow-without-earthly-labels][3].
 
-## How the Earthly feature works
+## How this feature works?
 
 From Earthly [v0.8.10][1], the `--allow-without-earthly-labels` feature flag has been added.
 _This has not been yet updated in the Earthly documentation, but I'm pretty sure it will be soon
