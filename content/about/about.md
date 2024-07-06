@@ -6,7 +6,6 @@ date: 2023-02-18T12:27:33-06:00
 
 ----
 
-- [Skillset](#skillset)
 - [Current Positions](#current-positions)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 - [Past Experience](#past-experience)
@@ -30,35 +29,37 @@ date: 2023-02-18T12:27:33-06:00
 > Software Engineering for _mainly database_ systems is also one of my core tasks.
 >
 > I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
+>
+
+---
+
+| Technical Skills |
+|----|
+| A considerable experience on scalability, reliability, architecturing and maintaining large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. |
+| Experience in the following languages: **Go, Python, C, Bash**. |
+| Extensive experience in modern **SQL** and custom indexing in Postgres. |
+| Knowledge in Postgres Extensions development Framework and internals.|
+| CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, GH Actions, Gitlab CI, Kubernetes**, etc.|
+| Experience in containerized services as in **Kubernetes, Docker**. Also heavy experience in Virtualization technologies.|
+| Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. |
+| Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.|
+
+| Soft Skills |
+|---|
+| A skilled communicator, managing Customer's accounts worldwide.|
+| Hard-problem solving, and with aveced dealing of complex Production incidents.|
+| Develop engineering tools to ensure seamless operation and maximum efficiency.|
+
+
 
 > I was the founder of [ViaDB](https://viadb.ar), specialized in
 > consultancy and tool development for Open Source Databases, using a variety of programming languages 
 > including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
 
 > Committed to my principles and values drives my work, and I collaborate
-> with non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org) and 
-> [Oportunidades Foundation](https://oportunidades.org.ar) to develop and support their IT ecosystems.
-
-## Skillset
-
-Hard Skills:
-
-- A considerable experience on scalability, reliability, architecturing and maintaining 
-  large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. 
-  Most of the systems are/were business-critical. 
-- Experience in the following languages: **Go, Python, C, Bash**.
-- Extensive experience in modern **SQL** and custom indexing in Postgres. 
-- Knowledge in Postgres Extensions development Framework and internals.
-- CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, GH Actions, Gitlab CI, Kubernetes**, etc.
-- Experience in containerized services as in **Kubernetes, Docker**. Also heavy experience in Virtualization technologies.
-- Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. 
-- Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.
-
-Soft Skills:
-
-- A skilled communicator, managing Customer's accounts worldwide.
-- Hard-problem solving, and with aveced dealing of complex Production incidents.
-- Develop engineering tools to ensure seamless operation and maximum efficiency.
+> with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
+> [Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
+> their IT ecosystems.
 
 
 ---
