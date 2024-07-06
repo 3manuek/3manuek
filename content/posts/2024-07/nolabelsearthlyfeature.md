@@ -11,10 +11,15 @@ tags:
   - Go
 ---
 
+> **NOTE:** _This has not been yet updated in the Earthly documentation, but I'm pretty sure it will be soon
+(and I'll update this post accordingly)_
 
 ## What does labels do to reproducible builds?
 
-By default, Earthly adds `dev.earthly.*` labels in the built image, as follows:
+By default, Earthly adds `dev.earthly.*` labels in the built image. You can find these
+by doing a `docker inspect <imageID> | jq -r '.[].Config.Labels'`.
+
+Here's an example of the image configuration including the `dev.earthly.*` labels:
 
 ```json
     "Config": {
@@ -28,28 +33,33 @@ By default, Earthly adds `dev.earthly.*` labels in the built image, as follows:
     }
 ```
 
-> You can read more information in the [issue][2].
+You may probably infer what's the potential issue with these values.
+
+If any of your execution environment, git-sha, or Earthly version changes, the
+final image checksum changes. Even if the image contents are identically the same.
+
+There are image registry implementations that can handle duplicated checksums with a different
+mechanism, like avoiding to push duplicated images.
 
 Even tho these labels are important in terms of information, certain use-cases
 require including this information (or not) in its own label domain. Labels impact
 on the build reproducibility, cause it _changes the produced hashes_ of the images,
 leading to potentially duplicated images.
 
-If you build an image that contains exactly the same binaries, but your Earthly version
-changes (even if you still have unchanged VERSION in the Earthfiles), this changes the 
-checksum. There are image registry implementations that can handle this with a different
-mechanism, by avoiding to push duplicated hashes.
-
 By stripping out the labels, we can have full control through our custom domain labels,
 and avoid duplicated artifacts to be pushed upstream.
 
-That's why I proposed the [flag --allow-without-earthly-labels][3].
+
+That's why the [flag --allow-without-earthly-labels][3] was proposed by the Earthly Team
+and implemented by myself.
+
+
+> You can read more information in the [issue][2].
+
 
 ## How this feature works?
 
 From Earthly [v0.8.10][1], the `--allow-without-earthly-labels` feature flag has been added.
-_This has not been yet updated in the Earthly documentation, but I'm pretty sure it will be soon
-(and I'll update this post accordingly)_.
 
 The way to use is as follows:
 
