@@ -1,6 +1,6 @@
 ---
 title: "Using parallel with multiple arguments"
-subtitle: "The beauty of parallel"
+subtitle: "Passing multiple arguments in JSON to parallel"
 date: 2024-04-01
 author: "3manuek"
 draft: false
@@ -9,7 +9,6 @@ tags:
   - Bash
   - Parallel
 ---
-
 
 
 ## A handy tool for parallelization
@@ -33,8 +32,7 @@ existing containers (the term GitHub uses for images) across several pages.
 
 My initial approach was straightforward: extract the name and ID of each image, parse the data, perform variable substitution,
 and then scrape and store the image information. However, the entire process was taking **12 minutes** to complete, 
-which was clearly inefficient and unacceptable. I used Codeium to refactor the code, but the output was overly complex 
-and not much of an improvement, which I attribute to the nature of LLMs.
+which was clearly inefficient and unacceptable. 
 
 In the past, I had used parallel processing, but this situation was different since the arguments were not 
 combinations but individual rows of information for each image version.
@@ -43,16 +41,18 @@ Using parallel processing in this case reduced the full execution time to around
 limit of just four concurrent jobs to avoid surpassing the API quota constraints.
 
 
-## Addressing the problem using JSON (jq) and parallel
+## Addressing the problem: passing parameters in JSON to parallel
 
-The below snippet is a part of a function called `index_container_pages` which is a simple extraction of the needed information to scrape image version from the API.
+The below snippet is a part of a function called `index_container_pages` which is a produces the parameters in a 
+JSON format, with the needed information to scrape image ID from the API.
 
 ```bash
   jq -r  '.[] | {id: .id , name: .name , url: .url} | @json' \
     $(get_container_pages) > ${OUTDIR}/paramix.json
 ```
-The `get_container_pages` is a function that just returns all the downloaded pages from the registry. Consider
-that we are talking about around 3k images (containers, OK Github), so this is returning around +30 pages of 
+
+The `get_container_pages` is a function that just returns all the previously downloaded pages from the registry. Consider
+that we are talking about around 4,000 images (containers, as known in Github), so this is returning around +30 pages of 
 JSON files. Within the above command, I was able to combine them all into a the JSON file that serves as 
 parameters for the `parallel` command.
 
