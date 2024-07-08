@@ -24,23 +24,23 @@ cases.
 
 ## My case
 
-One of the projects I've been working on lately, is about building OCI images based on distroless components.
-The amount of generated images is considerably high, counting as of today about 2k images pushed. Let's say
-that they are layers instead of images by themselves, as there is a chain dependency to make a final functional
-image.
+One of the projects I've been working on recently involves building OCI images based on distroless components. 
+The number of generated images is quite high, with around 4,000 images pushed to date. These should be considered 
+layers rather than standalone images, as they form a chain dependency to create a final functional image.
 
-The problem was how I could check the image information across the Github API. So, I build a script that went
-through all the existing containers (that's how GH calls the images) across several pages. 
+The challenge was to check the image information via the GitHub API. To address this, I built a script that traversed all 
+existing containers (the term GitHub uses for images) across several pages.
 
-My initial take was simple: extract the name of the image, the id , parse and do variable substitution for
-scrapping and storing the image information. The whole process was taking **12 minutes** to run, something was
-definitively odd and unacceptable. I used Codeium to refactor the code and the produced output didn't convinced me that much, 
-as it was a complex version of the old code (I guess that's the price of LLMs).
+My initial approach was straightforward: extract the name and ID of each image, parse the data, perform variable substitution,
+and then scrape and store the image information. However, the entire process was taking **12 minutes** to complete, 
+which was clearly inefficient and unacceptable. I used Codeium to refactor the code, but the output was overly complex 
+and not much of an improvement, which I attribute to the nature of LLMs.
 
-I used parallel in the past, but this case was different, as arguments were not a combination, they were rows of information of each image version.
+In the past, I had used parallel processing, but this situation was different since the arguments were not 
+combinations but individual rows of information for each image version.
 
-The full execution with parallel took around **6 minutes** to run, and consider that I stick to just 4 jobs at a time
--- I was on the edge of the API quota. 
+Using parallel processing in this case reduced the full execution time to around **6 minutes**, even with a 
+limit of just four concurrent jobs to avoid surpassing the API quota constraints.
 
 
 ## Addressing the problem using JSON (jq) and parallel
@@ -133,3 +133,4 @@ parallel echo ::: 1 2 3 ::: A B C :::+ T
 The rightmost arguments do have precedence over the leftmost arguments, so keep this in mind when building argument lists.
 
 Thanks for reading!
+
