@@ -1,6 +1,6 @@
 ---
-title: "Building dynamically linked binaries in distroless images"
-subtitle: "A SQLite3/Golang use case example"
+title: "Building dynamically-linked binaries in distroless images"
+subtitle: "SQLite3/Golang use-case example"
 date: 2024-05-14
 author: "3manuek"
 draft: false

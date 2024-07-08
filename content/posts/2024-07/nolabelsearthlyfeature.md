@@ -1,5 +1,5 @@
 ---
-title: "[Earthly feature]: Disabling Earthly internal labels"
+title: "[Earthly +v0.8.10 feature]: Disabling Earthly internal labels"
 subtitle: "Reproducibility in Earthly images"
 date: 2024-07-01
 author: "3manuek"
