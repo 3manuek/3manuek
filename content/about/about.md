@@ -8,9 +8,6 @@ date: 2023-02-18T12:27:33-06:00
 
 <!-- > <a href="/docs/EmanuelCalvo.pdf" download>Download my resume.</a> -->
 
-> {{< a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf" >}}
-Résumé Download
-{{< /a >}}
 
 <!-- résumé, according to Chicago Manual of Style -->
 
@@ -24,7 +21,11 @@ Résumé Download
 
 ----
 
-# Bio(graffiti) 
+## Bio(graffiti) 
+
+> {{< a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf" >}}
+Résumé Download
+{{< /a >}}
 
 
 > I am a multifaceted professional with excellent communication skills, a
@@ -63,10 +64,10 @@ Résumé Download
 | Develop engineering tools to ensure seamless operation and maximum efficiency.|
 
 
-> Committed to my principles and values drives my work, and I collaborate
+> _Committed to my principles and values drives my work, and I collaborate
 > with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
 > [Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
-> their IT ecosystems.
+> their IT ecosystems._
 
 
 ---
