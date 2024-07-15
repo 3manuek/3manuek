@@ -13,6 +13,10 @@ disqusShortname = "tr3s-ma"
 
 enableRobotsTXT = true
 
+# # For allowing downlodeable links
+# [markup.goldmark.renderer]
+# unsafe = true
+
 [params]
     brand = "3manuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file

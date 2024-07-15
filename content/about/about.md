@@ -6,10 +6,21 @@ date: 2023-02-18T12:27:33-06:00
 
 ----
 
+<!-- > <a href="/docs/EmanuelCalvo.pdf" download>Download my resume.</a> -->
+
+> {{< a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf" >}}
+Résumé Download
+{{< /a >}}
+
+<!-- résumé, according to Chicago Manual of Style -->
+
+
 - [Current Positions](#current-positions)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
+
+
 
 ----
 
@@ -18,7 +29,7 @@ date: 2023-02-18T12:27:33-06:00
 
 > I am a multifaceted professional with excellent communication skills, a
 > strong commitment to principles, and a passion for sharing knowledge, and
-> code with others. Born in 🇦🇷 and 🇪🇸 nationality.
+> code with others.
 >
 > I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
 > Working from platform engineering roles, development, consulting, and training.
@@ -26,10 +37,11 @@ date: 2023-02-18T12:27:33-06:00
 > I design and implement Databases in Production for _top-notch_ companies, based on Open Source Technologies.
 > From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
 >
-> Software Engineering for _mainly database_ systems is also one of my core tasks.
+> Software Engineering, _mainly_  for database systems is also one of my core tasks.
 >
 > I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
 >
+> 🇦🇷 🇪🇸
 
 ---
 
@@ -51,11 +63,6 @@ date: 2023-02-18T12:27:33-06:00
 | Develop engineering tools to ensure seamless operation and maximum efficiency.|
 
 
-
-> I was the founder of [ViaDB](https://viadb.ar), specialized in
-> consultancy and tool development for Open Source Databases, using a variety of programming languages 
-> including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
-
 > Committed to my principles and values drives my work, and I collaborate
 > with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
 > [Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
@@ -64,16 +71,7 @@ date: 2023-02-18T12:27:33-06:00
 
 ---
 
-# Current Positions
-
-### Independent Consultant - Open Source Databases and Software Engineer
-> Remote
-
-- Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
-- Automated Cloud Infrastrucures.
-- HA, Performance, Monitoring,Debugging.
-- Go, Python, C, Bash engineering development.
-
+## Current Positions
 
 ### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
 > Remote. New York/Madrid
@@ -109,6 +107,16 @@ Technologies:
 - Main Cloud Providers: Google Cloud, AWS, etc.
 
 
+### Open Source Databases Engineer | Software Engineer
+> Remote
+
+- Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
+- Automated Cloud Infrastrucures.
+- HA, Performance, Monitoring,Debugging.
+- Go, Python, C, Bash engineering development.
+- Cloud and on-premise design and implementation.
+
+
 ---
 
 ## Education
@@ -140,12 +148,16 @@ Other certifications related to DataScience Specialization:
 
 ---
 
-# Past Experience
+## Past Experience
 
 ### ViaDB
 > Buenos Aires, Argentina
 >
 > December, 2021 - November 2023 (closed)
+
+> I was the founder of [ViaDB](https://viadb.ar), specialized in
+> consultancy and tool development for Open Source Databases, using a variety of programming languages 
+> including Go, Python, and Bash. _The shop has been closed its operations in 2023 due to relocation_.
 
 - ViaDB was an Open Source Database Support and System tools development indie-company. Closed due 
 to relocation. See more at [ViaDB](https://viadb.ar).
@@ -185,7 +197,7 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 {{< /details >}}
 
 
-### Percona -  Senior Technical Services Engineer _[main position]_
+### Percona -  Senior Technical Services Engineer 
 > Buenos Aires, Argentina
 >
 > August 2016 - September 2017
