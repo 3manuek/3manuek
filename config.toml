@@ -14,8 +14,8 @@ disqusShortname = "tr3s-ma"
 enableRobotsTXT = true
 
 # # For allowing downlodeable links
-# [markup.goldmark.renderer]
-# unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
     brand = "3manuek"                      # name of your site - appears in the sidebar
