@@ -27,7 +27,7 @@ date: 2023-02-18T12:27:33-06:00
 Résumé Download
 {{< /a >}} -->
 
-> <a href="/docs/EmanuelCalvo.pdf" download>Download my résumé.</a>
+> <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">Download my résumé.</a>
 
 > I am a multifaceted professional with excellent communication skills, a
 > strong commitment to principles, and a passion for sharing knowledge, and
