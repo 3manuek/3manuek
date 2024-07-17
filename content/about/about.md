@@ -6,44 +6,32 @@ date: 2023-02-18T12:27:33-06:00
 
 ----
 
-<!-- > <a href="/docs/EmanuelCalvo.pdf" download>Download my resume.</a> -->
-
-
-<!-- résumé, according to Chicago Manual of Style -->
-
-
 - [Current Positions](#current-positions)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
 
-
-
 ----
 
 ## Bio(graffiti) 
-<!-- 
-> {{< a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf" >}}
-Résumé Download
-{{< /a >}} -->
+
 
 _Download my **résumé**._ <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
 
-> I am a multifaceted professional with excellent communication skills, a
-> strong commitment to principles, and a passion for sharing knowledge, and
-> code with others.
->
-> I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
-> Working from platform engineering roles, development, consulting, and training.
-> 
-> I design and implement Databases in Production for _top-notch_ companies, based on Open Source Technologies.
-> From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
->
-> Software Engineering, _mainly_  for database systems is also one of my core tasks.
->
-> I lectured talks in several Database and non-database related conferences, some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
->
-> 🇦🇷 🇪🇸
+<!-- résumé, according to Chicago Manual of Style -->
+
+
+I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
+Working from platform engineering roles, development, consulting, and training.
+
+I design and implement Databases in Production for _top-notch_ companies, based on Open Source Technologies.
+From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
+Software Engineering, _mainly_  for database systems is also one of my core tasks.
+
+Lectured talks in several Database and non-database related conferences, in various countries. Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
+
+
+🇦🇷 🇪🇸
 
 ---
 
@@ -387,3 +375,11 @@ ranging from medium to high security._
 - Cooperated in the design of some of the security and emergency procedures.
 
 {{< /details >}}
+
+<!-- If you are reading this is because you are looking for easter eggs. -->
+<!-- 3 men climbing a mountain, thousands of pleebs follow them tiresly. -->
+<!-- Hard times ahead, cause the hardest part isn't climbing the mountain, -->
+<!-- but to ask the right questions on why the fuck are we climbing it. -->
+
+<!-- The apocalypse is near, we can all smell it, it's in the air, the news, -->
+<!-- sociology books, manga, and all the holy books, ofc. -->
