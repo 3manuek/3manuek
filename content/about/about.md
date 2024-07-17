@@ -380,6 +380,9 @@ ranging from medium to high security._
 <!-- 3 men climbing a mountain, thousands of pleebs follow them tiresly. -->
 <!-- Hard times ahead, cause the hardest part isn't climbing the mountain, -->
 <!-- but to ask the right questions on why the fuck are we climbing it. -->
+<!-- - Is it just to make a point? -->
+<!-- - Could have been a Twitter Space? -->
+<!-- - Why we didn't build a tunnel here? -->
 
 <!-- The apocalypse is near, we can all smell it, it's in the air, the news, -->
 <!-- sociology books, manga, and all the holy books, ofc. -->
