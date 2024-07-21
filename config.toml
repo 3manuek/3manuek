@@ -47,7 +47,7 @@ unsafe = true
     tagMenuTitle = "🏷️"
     tagMenuWeight = 2 # XXX not implemented 
                       # Only show tags that have more than N posts. 
-    aboutDesc = "My name is Emanuel, commonly named _Tresma_ -- the Spanish short of _3manuek_, my native language. Currently living in Madrid, but still _roundtripping_ to Buenos Aires."
+    aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
     aboutPics = ["/images/profile4.jpeg", "/images/profile3.jpg"]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
