@@ -1,5 +1,5 @@
 ---
-title: "Pooling TDS connections in Babelfish with FreeTDS"
+title: "Pooling TDS connections in BabelfishPG with FreeTDS"
 subtitle: "TDSPool utility"
 date: 2024-08-15
 author: "3manuek"
@@ -13,32 +13,48 @@ tags:
   - MSSQL
 ---
 
+> Next post will cover performance tests using `tdspool`.
+
 ## BabelfishPG connection architecture
 
-Inherited from the postgres architecture, each connection trhough the TDS port will 
+Inherited from Postgres connection architecture, each connection trhough the TDS port will 
 instance a Postgres backend. As in Postgres, BabelfishPG needs a middleware for funnel
-connections through the TDS port.
+connections through the TDS port for avoiding running out of connections and processing capacity
+in the database server.
 
 For Postgres, we have plenty of options, like PGBouncer, Odyssey, pgcat, name it. 
 For T-SQL (read as MSSQL compatible language), there aren't many open sourced solutions.
 
-One of the options we explore here, is from the freetds project.
+One of the options we explore here, is from the FreeTDS project: [`tdspool`](https://www.freetds.org/userguide/tdspool.html),
+part of the `freetds-bin` package.
+
+>
+> Two _very_ important limitations before you consider this in productive environment when using `tdspool`:
+> 
+> - The FreeTDS connection pool currently does not supports TDS version 5.0 (Sybase) and encrypted connections. This restriction applies to both the client-to-pool and pool-to-server connections!
+> - It does not allow to tweak a cap on frontend connections.
+>
+
+If you're new around the BabelfishPG project and you stumbled here for whatever reason, 
+keep in mind that there are two types of [database architectures](https://babelfishpg.org/docs/installation/single-multiple/#single-vs-multiple-instances) -- [`babelfish_tsql.migration_mode`](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqlmigration_mode): `single-db` and `multi-db`.
+
+Generally, most of the cases you may want to choose in between. Here is my personal take:
+
+- If your databases are small and you need to access all of them, maybe `multi-db` is a good choice.
+  However, if this applies to a development environent, but in production you expect each of those databases
+  to be in separated resources keep in mind that the user mapping in the Postgres instance will be different.
+- You want to have large databases each one on dedicated resources, `single-db`. If this is the case, and you
+  want to have a development environment, you may want to stick to this mode instead of using `multi-db` for consolodating.
+
 
 
 ## Pooling with TDSPool (FreeTDS)
 
-
-[`tdspool`](https://www.freetds.org/userguide/tdspool.html) is part of the `freetds-bin` package.
-It relies in 2 configuration files, [freetds.conf](https://www.freetds.org/userguide/freetdsconf.html) and [tdspool.conf](https://www.freetds.org/userguide/tdspool.html).
-
-Two _very_ important limitations:
-
--  The FreeTDS connection pool currently does not supports TDS version 5.0 (Sybase) and encrypted connections. This restriction applies to both the client-to-pool and pool-to-server connections!
-- It does not allow to tweak a cap on frontend connections.
+`tdspool` relies in 2 configuration files, [.freetds.conf](https://www.freetds.org/userguide/freetdsconf.html) and [.pool.conf](https://www.freetds.org/userguide/tdspool.html). By default, it expects those files to be in the user's home directory.
 
 {{< tabs tabTotal="2" >}}
 
-{{% tab tabName="freetds.conf" %}}
+{{% tab tabName=".freetds.conf" %}}
 ```ini
 [global]
         tds version = auto 
@@ -48,12 +64,12 @@ Two _very_ important limitations:
         port = 1433
         database = master
 ```
-```
-    For tds version, Babelfish uses 7.4 if desired to specify the version.
-```
+
+>   Babelfish uses 7.4 if desired to specify the version.
+
 {{% /tab %}}
 
-{{% tab tabName="tdspool.conf" %}}
+{{% tab tabName=".pool.conf" %}}
 
 ```ini
 [global]
@@ -61,7 +77,7 @@ min pool conn = 5
 max pool conn = 30
 max member age = 120
 
-[clientpool]
+[appdbpool]
 server user = babelfish_admin 
 server password = themainuserpassword
 server = babelfish
@@ -70,6 +86,18 @@ database = appdb
 password = apppassoword
 max pool conn = 30
 port = 5000
+
+[appreportpool]
+server user = babelfish_admin 
+server password = themainuserpassword
+server = babelfish
+user = appreport
+database = appdbreport
+password = apppassoword
+max pool conn = 30
+port = 5001
+
+
 ```
 {{% /tab %}}
 
@@ -78,21 +106,41 @@ port = 5000
 
 
 When you start `tdspool`, you need to specify on top of which pool it will serve. The database context
-will change if authorization succeeds.
+will change if authorization succeeds, as the server is connected to `master` in this example case. In production,
+you may want to isolate the access by having different server configurations with their own users and databases.
+
+
+```bash
+tdspool -c .pool.conf appdbpool
+tdspool -c .pool.conf appreportpool
+```
+
+
+The above configuration will configure two pools to serve `appdb` and `appreport` databases, with different users.
+This is, for exampling a case where there are different workloads between both application parts (main application and 
+asynchronous reporting queries). 
 
 <!-- https://somethingstrange.com/posts/hugo-with-fontawesome/ to integrate fontawesome fa-solid fa-database -->
 {{< mermaid >}}
 flowchart TD
-    A[App] -->|Port 5000| B(TDSPool)
-    A -->|Port 5001| F(TDSPool)
-    A -->|Port 5002| G(TDSPool)
-    B -.->|Port 1433| D(Database)
-    F -.->|Port 1433| D
-    G -.->|Port 1433| D
+    A[App] -->|Port 5000| B(fa:fa-filter appdbpool)
+    A -->|Port 5001| F(fa:fa-filter appreportpool)
+    B -.->|Port 1433 \n 5-30 server-side connections| D(fa:fa-database \n BabelfishPG)
+    F -.->|Port 1433 \n 5-30 server-side connections| D
 {{< /mermaid >}}
 
-`tdspool`
 
+### Connecting
 
-## Behavior
+For connecting using `tsql`, which is our available client in the FreeTDS toolset, we need to specify the
+server with the `-S` option:
+
+```bash
+tsql -S babelfish -p 5000 -P ${APPDB_PASS} -D appdb -U appuser
+```
+
+## Considerations
+
+Keep in mind that once you connect through the pool, those connections will live during the frame set by 
+`max member age`, by default is 2 minutes. 
 
