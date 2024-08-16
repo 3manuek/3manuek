@@ -11,6 +11,7 @@ tags:
   - TDS
   - TSQL
   - MSSQL
+  - Pooling
 ---
 
 > Next post will cover performance tests using `tdspool`.
@@ -36,7 +37,8 @@ part of the `freetds-bin` package.
 >
 
 If you're new around the BabelfishPG project and you stumbled here for whatever reason, 
-keep in mind that there are two types of [database architectures](https://babelfishpg.org/docs/installation/single-multiple/#single-vs-multiple-instances) -- [`babelfish_tsql.migration_mode`](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqlmigration_mode): `single-db` and `multi-db`.
+keep in mind that there are two types of [database architectures](https://babelfishpg.org/docs/installation/single-multiple/#single-vs-multiple-instances) set at 
+[`babelfish_tsql.migration_mode`](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqlmigration_mode): `single-db` and `multi-db`.
 
 Generally, most of the cases you may want to choose in between. Here is my personal take:
 
@@ -60,7 +62,6 @@ flowchart TD
     B -.->|Port 1433 \n 5-30 server-side connections| D(fa:fa-database \n BabelfishPG)
     F -.->|Port 1433 \n 5-30 server-side connections| D
 {{< /mermaid >}}
-
 
 
 `tdspool` relies in 2 configuration files, [.freetds.conf](https://www.freetds.org/userguide/freetdsconf.html) and [.pool.conf](https://www.freetds.org/userguide/tdspool.html). By default, it expects those files to be in the user's home directory.
