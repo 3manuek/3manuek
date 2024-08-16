@@ -3,7 +3,7 @@ title: "Pooling TDS connections in BabelfishPG with FreeTDS"
 subtitle: "TDSPool utility"
 date: 2024-08-15
 author: "3manuek"
-draft: true
+draft: false
 series: "BabelfishPG"
 tags:
   - Postgres
@@ -49,6 +49,19 @@ Generally, most of the cases you may want to choose in between. Here is my perso
 
 
 ## Pooling with TDSPool (FreeTDS)
+
+For this example, we are going to configure the following pool architecture:
+
+<!-- https://somethingstrange.com/posts/hugo-with-fontawesome/ to integrate fontawesome fa-solid fa-database -->
+{{< mermaid >}}
+flowchart TD
+    A[App] -->|Port 5000| B(fa:fa-filter appdbpool)
+    A -->|Port 5001| F(fa:fa-filter appreportpool)
+    B -.->|Port 1433 \n 5-30 server-side connections| D(fa:fa-database \n BabelfishPG)
+    F -.->|Port 1433 \n 5-30 server-side connections| D
+{{< /mermaid >}}
+
+
 
 `tdspool` relies in 2 configuration files, [.freetds.conf](https://www.freetds.org/userguide/freetdsconf.html) and [.pool.conf](https://www.freetds.org/userguide/tdspool.html). By default, it expects those files to be in the user's home directory.
 
@@ -97,28 +110,10 @@ password = apppassoword
 max pool conn = 30
 port = 5001
 
-
 ```
 {{% /tab %}}
 
 {{< /tabs >}}
-
-
-
-When you start `tdspool`, you need to specify on top of which pool it will serve. The database context
-will change if authorization succeeds, as the server is connected to `master` in this example case. In production,
-you may want to isolate the access by having different server configurations with their own users and databases.
-
-
-```bash
-tdspool -c .pool.conf appdbpool
-tdspool -c .pool.conf appreportpool
-```
-
-
-The above configuration will configure two pools to serve `appdb` and `appreport` databases, with different users.
-This is, for exampling a case where there are different workloads between both application parts (main application and 
-asynchronous reporting queries). 
 
 <!-- https://somethingstrange.com/posts/hugo-with-fontawesome/ to integrate fontawesome fa-solid fa-database -->
 {{< mermaid >}}
@@ -130,7 +125,30 @@ flowchart TD
 {{< /mermaid >}}
 
 
-### Connecting
+
+Aside the authorization and credentials configuration, the most important settings are:
+
+- `min pool size`: is the number of minimum amount of connections to the server to keep open, so less latency for those
+  queries executed after a period of inactivity.
+- `max pool size`: this value is tied to the CPU capacity and the `max_connections` setting at Postgres level.
+- `max member age`: used to garbage collect connections.
+
+When you start `tdspool`, you need to specify on top of which pool it will serve. The database context
+will change if authorization succeeds, as the server is connected to `master` in this example case. In production,
+you may want to isolate the access by having different server configurations with their own users and databases.
+
+
+Starting the services:
+
+```bash
+tdspool -c .pool.conf appdbpool
+tdspool -c .pool.conf appreportpool
+```
+
+
+The above configuration will configure two pools to serve `appdb` and `appreport` databases, with different users.
+This is, for exampling a case where there are different workloads between both application parts (main application and 
+asynchronous reporting queries). 
 
 For connecting using `tsql`, which is our available client in the FreeTDS toolset, we need to specify the
 server with the `-S` option:
@@ -139,8 +157,4 @@ server with the `-S` option:
 tsql -S babelfish -p 5000 -P ${APPDB_PASS} -D appdb -U appuser
 ```
 
-## Considerations
-
-Keep in mind that once you connect through the pool, those connections will live during the frame set by 
-`max member age`, by default is 2 minutes. 
-
+Thanks for reading, keep tuned for the next post!
