@@ -116,14 +116,7 @@ port = 5001
 
 {{< /tabs >}}
 
-<!-- https://somethingstrange.com/posts/hugo-with-fontawesome/ to integrate fontawesome fa-solid fa-database -->
-{{< mermaid >}}
-flowchart TD
-    A[App] -->|Port 5000| B(fa:fa-filter appdbpool)
-    A -->|Port 5001| F(fa:fa-filter appreportpool)
-    B -.->|Port 1433 \n 5-30 server-side connections| D(fa:fa-database \n BabelfishPG)
-    F -.->|Port 1433 \n 5-30 server-side connections| D
-{{< /mermaid >}}
+
 
 
 
