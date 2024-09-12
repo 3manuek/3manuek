@@ -13,58 +13,59 @@ tags:
 
 
 This post has no intention to discuss what layout might be better in terms of
-efficiency, or effort. There are a considerable amount of great articles related
+efficiency or effort. There are a considerable amount of great articles related
 to all the analisys across different layouts, and even tools for ingesting text 
 and estimate the effort of typing the text for several layouts.
 
-You'll find this article useful if you already decided to switch to Colemak, and
-make in the primary layout. Personally, I have found very comfortable to write 
-with Dvorak, although there are some perks in Colemak regarding shortcut compatibility
+You'll find this article more useful if you already decided to switch to Colemak, and
+make it your primary layout. Personally, I have found very comfortable to write 
+in Dvorak, although there are some perks in Colemak regarding shortcut compatibility
 among other benefits that made me do the choice. You can read a very interesting 
 comparision at this [Xahlee post][1].
 
 ## Ortholinear keyboards: the trigger
 
 Even tho I had in mind to train with other layouts since some time ago, the real
-trigger for the decision, was the acquisition of the [Ergodox No-labeled-keys Split 
+trigger for the decision was the acquisition of the [Ergodox no-labeled-keys Split 
 Keyboard][2]. 
 
-When I started practicing, I niticed that I was doing some sensible extra effort
-to reach some keys. They key arragement and aligment, makes the key area is larger. 
+When I started practicing, I noticed that I was doing some sensible extra effort
+to reach some keys using the QWERTY layout. They key arragement and aligment make the key area larger. 
 That made me start to investigate about the Typing Effort, and I found 
 that there is no much difference between [Dvorak and Colemak][3]. Moreover, there are
 AI generated layouts, which are very interesting, but they don't have a wide support 
 (see [Carplax Optimizer][4]).
 
 Also, it was obvious that I was not using my fingers correctly. I was doing Touch Typing
-in my non-labeled-keys Daskeyboard (standard key dispossision) wrong, I wasn't properly 
-using all my fingers.
+in my non-labeled-keys Daskeyboard (ISO key dispossision) wrong, not using properly 
+all my fingers.
 
 So, it wasn't only an excuse, I found myself on the decision to switch to Colemak on 
 both keyboards. So, I started training the new layout in this aspects:
 
-- Proper 10-finger touch taping in Colemak.
-- Reshape my muscle memory with the qwerty layout, to fix the bad habits.
+- Proper 10-finger + touch typing in Colemak.
+  - 10-finger is the technique you place your fingers and assign keys for each one.
+  - Touch Typing is the technique of writting without looking at the keyboard.
+- Reshape my muscle memory from the qwerty layout, to fix the bad habits.
 
 
-
-## Touch Tapping and the 10-fingers method
+## Touch Typing and the 10-fingers method
 
 Generally, both techniques are mentioned as one, but they are not the same thing. Although,
 using just one wouldn't make sense. The new ortholinear keyboard required to reharse and 
 pulish some skills.
 
-As the keyboard has unlabeled keys, Touch Tapping is needed. Touch Tapping is the techique
+As the keyboard has unlabeled keys, Touch Typing is needed. Touch Typing is the techique
 of no doing visual contact with the keyboard -- it it more complex than that, but you 
 will need to investigate and practice this anyway.
 
 The ortholinear disposition is more optimal for the pinky finger access, and corrects the hand
 position considerably. So training the pinky finger would be crucial to speed up typing.
 
-In my case, it wasn't a huge thing. I was already doing Touch Tapping. But in your case,
+In my case, it wasn't a huge thing. I was already doing Touch Typing. But in your case,
 if you never heard about, I recommend to:
 
-- First, practice Touch Tapping: that is, you don't need to look at the keyboard when tapping.
+- First, practice Touch Typing: that is, you don't need to look at the keyboard when Typing.
   You train your muscle memory to know where the keys are.
 - Practice using the 10-fingers method. This is the huge win. I though I was doing that, until
   I look myself typing. When starting practicing a new layout this is straightforward, so I
@@ -175,14 +176,18 @@ speed before turning into your productive layout. Symbols, and punctuation aren'
 they make your hand to change your hands position. You'll prefer to train code speed later.
 
 
-## _Sensaciones_ 
+## Non-Objetive Opinions 
 
 Switchwhing layouts isn't a thing of weeks, but for months until you get a decent speed to match
 your current. At the begining, it will feel extremely exhausting to _think and type_ in a constant
 manner. 
 
+At the long term, I think it pays off. The first thing you'll notice is that hands do less movement
+over the keyboard, so when doing fast typing the hand-position would not be the same as in QWERTY.
+You'll feel the imperative of placing your fingers in a different disposition. 
 
-
+For those guitar-nerds, this may remind you the Joe Satriani left-hand technique, in which you keep 
+your fingertips close to the strings, so you can make smoother argegios.
 
 
 
