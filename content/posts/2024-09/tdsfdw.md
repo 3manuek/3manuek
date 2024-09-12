@@ -29,6 +29,8 @@ So, as a professional, I asked continuously the corresponding questions:
 
 ![areyousure](/images/tdsfdw/rusure.gif)
 
+The whole concept of Babelfish is to allow a large portion of the MSSQL applications to run under an Open Source license. You may be wondering about the performance impact on doing double-parsing, however 
+
 I won't discuss if Babelfish is good or bad, but there where a few considerations on top of the Postgres standard maintanability:
 
 - Upgrades require some extra steps, whenever the engine and extension version is upgraded.
@@ -137,14 +139,14 @@ sudo apt install freetds-common freetds-dev freetds-bin
 
 The connection configuration for `tds_fdw` resides in the `freetds.conf`:
 
-```conf
+```ini
 [global]
-        tds version = 7.4 
-        dump file = /var/log/tdspool.log 
+  tds version = 7.4 
+  dump file = /var/log/tdspool.log 
 [babelfish]
-        host = localhost
-        port = 1433
-        database = master ; you can stick to a single database if you don't switch between schemas
+  host = localhost
+  port = 1433
+  database = master ; you can stick to a single database if you don't switch between schemas
 ```
 
 > Babelfish won't support `tds version = auto`, use this specific version.
