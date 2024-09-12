@@ -187,9 +187,7 @@ over the keyboard, so when doing fast typing the hand-position would not be the 
 You'll feel the imperative of placing your fingers in a different disposition. 
 
 For those guitar-nerds, this may remind you the Joe Satriani left-hand technique, in which you keep 
-your fingertips close to the strings, so you can make smoother argegios.
-
-
+your fingertips close to the strings, so you can make smoother arpegios.
 
 
 
