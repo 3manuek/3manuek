@@ -9,6 +9,14 @@ https://gohugo.io/content-management/shortcodes/ -->
 {{< twitter user="SanDiegoZoo" id="1453110110599868418" >}}
 {{< gist user 50a7482715eac222e230d1e64dd9a89b >}}
 
+
+## How to add basic info boxes
+
+```markdown
+| ⚠️ | Some serious information. |
+|---|:---|
+```
+
 ## TODO
 
 - https://github.com/3manuek/complex_ext/tree/main blog about this

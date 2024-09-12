@@ -41,6 +41,8 @@ Check out our demo site's [analytics](https://plausible.lukeorth.com/poison.luke
   - [Ported By](#ported-by)
   - [License](#license)
 
+> [PlantUML reference](https://plantuml.com/en-dark/guide)
+
 ## Features
 
 In addition to the standard Built-in templates and shortcodes that come with Hugo, *Poison* offers some unique features of its own.

@@ -14,6 +14,8 @@ tags:
   - Data Integration
 ---
 
+
+
 ## It supports TDS, right?
 
 Some things happen once in a lifetime, and the story around this is quite particular.
@@ -59,6 +61,17 @@ If the case is that you want to migrate from a MSSQL Server to BabelfishPG, the 
 
 ## Using tds_fdw against BabelfishPG
 
+The following steps work in non-initialized databases, that is, outside the BabelfishPG database. For supporting `tds_fdw` in Babelfish +4, you need to compile `babelfishpg_tsql` extension as stated in the package installation instructions:
+
+```bash
+PG_CPPFLAGS='-I/usr/include -DENABLE_TDS_LIB' SHLIB_LINK='-lsybdb -L/usr/lib64' make
+PG_CPPFLAGS='-I/usr/include -DENABLE_TDS_LIB' SHLIB_LINK='-lsybdb -L/usr/lib64' make install
+```
+
+
+| ⚠️ | More information about building and installing the extension can be found [at this link](https://github.com/tds-fdw/tds_fdw/blob/master/README.md). The linked servers feature is supported using the FreeTDS library which is licensed under the GNU LGPL license. See [COPYING_LIB.txt](https://github.com/FreeTDS/freetds/blob/master/COPYING_LIB.txt) for details. |
+|---|:---|
+
 Although it would be faster inserting data directly to Postgres, it is also possible to do so through the TDS protocol. 
 
 You can use this FDW bidirectionally (as most of the FDW out there):
@@ -69,16 +82,52 @@ You can use this FDW bidirectionally (as most of the FDW out there):
 
 In this case, I'll stick to the scenario of moving data from Postgres to BabelfishPG, although we migrated data using vanilla FDW.
 
-{{< mermaid >}}
-flowchart TD
-    INST(fa:fa-database PG Instance)
-    INST --> DEST(fa:fa-database Babelfish Database)
-    INST --> SRC(fa:fa-database PG Database)
-    SRC -.- SRCTable[fa:fa-table Source Table]
-    DEST -.- DESTTable[fa:fa-table Destination Table]
-    SRCTable -.-> Query[[Transform]]
-    Query -.->|Foreign Table tds_fdw| DESTTable
-{{< /mermaid >}}
+
+{{< plantuml >}}
+actor Client
+
+== Request Initialization ==
+
+box "Postgres Engine" #Gray
+
+Client --> Postgres ++ : Request
+
+activate Client
+
+
+Postgres -> Parse --++ #DarkSalmon: Local Query Parsing
+
+deactivate Parse
+Parse -> FDW --++ #LightSalmon: FDW Access
+
+end box
+
+FDW --> MSSQL ++ : TDS Protocol
+
+MSSQL -> MSSQL: Execute query by tds_fdw 
+
+create control CursorIteration
+MSSQL --> CursorIteration
+
+deactivate MSSQL
+CursorIteration --> FDW: Fetch Cursor
+
+
+FDW --> Parse
+deactivate FDW
+
+Parse -> Postgres: Transform Rows
+
+Postgres -> Postgres: Store Data
+Postgres --> Client: ResultSet
+deactivate Postgres
+deactivate Client
+
+== Request Done ==
+{{< /plantuml >}}
+
+
+
 
 Fortunately, `tds_fdw` relies heavily on `FreeTDS`, so you'll need to install the proper dependencies:
 
