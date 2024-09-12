@@ -52,7 +52,7 @@ unsafe = true
 
     # Links to your socials.  Comment or delete any you don't need/use. 
     discord_url = "https://discord.com/3manuek"
-    email_url = "mailto://me@tr3s.ma"
+    email_url = "mailto:me@tr3s.ma"
     # facebook_url = "https://facebook.com"
     # flickr_url = "https://flickr.com"
     github_url = "https://github.com/3manuek"
