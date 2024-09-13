@@ -4,6 +4,9 @@ subtitle: "_Database and Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 ---
 
+### 👉🏻 _Download my **résumé**._ <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
+<!-- résumé, according to Chicago Manual of Style -->
+
 ----
 
 - [Current Positions](#current-positions)
@@ -14,11 +17,6 @@ date: 2023-02-18T12:27:33-06:00
 ----
 
 ## Bio(graffiti) 
-
-
-_Download my **résumé**._ <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
-
-<!-- résumé, according to Chicago Manual of Style -->
 
 
 I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
