@@ -90,7 +90,7 @@ actor Client
 
 == Request Initialization ==
 
-box "Postgres Engine" #Gray
+box "Postgres Engine" #LightBlue
 
 Client --> Postgres ++ : Request
 
