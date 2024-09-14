@@ -15,7 +15,6 @@ tags:
 ---
 
 
-
 ## It supports TDS, right?
 
 Some things happen once in a lifetime, and the story around this is quite particular.
@@ -29,9 +28,9 @@ So, as a professional, I asked continuously the corresponding questions:
 
 ![areyousure](/images/tdsfdw/rusure.gif)
 
-The whole concept of Babelfish is to allow a large portion of the MSSQL applications to run under an Open Source license. You may be wondering about the performance impact on doing double-parsing, however 
+The whole concept of Babelfish is to allow a large portion of the MSSQL applications to run under an Open Source license. You may be wondering about the performance impact on doing double-parsing, but if this is a matter to you, you might reconsider to keep TSQL compatibility.
 
-I won't discuss if Babelfish is good or bad, but there where a few considerations on top of the Postgres standard maintanability:
+But if you don't have too many choices and you decide to use BabelfishPG, here are a few considerations on top of the Postgres standard maintanability:
 
 - Upgrades require some extra steps, whenever the engine and extension version is upgraded.
 - Pool solutions are quite limited in the Open Source field, for leveraging connections through the TDS backend. I covered this in [TDSPool with BabelfishPG](/posts/2024-08/tdsbabelfish).
