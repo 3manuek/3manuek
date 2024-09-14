@@ -3,6 +3,7 @@
 {{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "3000") }}
 <br />
 
+ 
 <div class="posts">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
     {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
