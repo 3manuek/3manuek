@@ -18,15 +18,17 @@ date: 2023-02-18T12:27:33-06:00
 
 ## Bio(graffiti) 
 
-
-I'm currently a _Database Engineer and Professional Services Technical Lead_ at [OnGres](https://ongres.com). 
-Working from platform engineering roles, development, consulting, and training.
+I'm a _Database and Software Engineer_, working from platform engeneering roles, development, consulting, 
+and advanded trainings.
 
 I design and implement Databases in Production for _top-notch_ companies, based on Open Source Technologies.
 From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
 Software Engineering, _mainly_  for database systems is also one of my core tasks.
 
-Lectured talks in several Database and non-database related conferences, in various countries. Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
+I have extensive experience in systems and database performance tunning, optimization and scalability.
+
+Lectured talks in several Database and non-database related conferences, in various countries. 
+Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
 
 
 🇦🇷 🇪🇸
@@ -61,42 +63,10 @@ Lectured talks in several Database and non-database related conferences, in vari
 
 ## Current Positions
 
-### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
-> Remote. New York/Madrid
->
-> Since September 2017 as OnGres, previously working as Consultant in 8kdata
-
-
-As the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, I am currently designing innovative system architectures to implement in our customers' production clusters. In addition, I develop system tools to ensure seamless operation and maximum efficiency.
-
-
-Highlighted projects:
-
-- **BBM** (Blackberry - Emtek - Google Cloud): Live migration from Oracle to full Patroni automated cluster, from a premise
-  based environment to Google Cloud. PgBouncer-Consul-Postgres
-- **Conrad** (Google Cloud Partner): Full implementation of Patroni HA using etcd as consensus cluster, Load Balancing through 
-  Google iLB with API configuration with Patroni, and PgBouncer.
-- **[Gitlab Migration](https://about.gitlab.com/2018/10/11/gitlab-com-stability-post-gcp-migration/)** as part of the Database Reliability Team and Database Architecture design. 
-- **Postmates**: Patroni Mult-project Terraform implementation with a centralized DCS.
-- Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
-- Google Cloud as Partner.
-- **ARM** support and automation implementation.
-- Worked in the **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) team, as a Developer Advocate for the Open Source version.
-  - Provided patches, building, testing of [Babelfish for Postgres](https://babelfishpg.org).
-  - Lectured training for the team about the Postgres Hook Ecosystem.
-- Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
-- **stcpay** Architecture design and Technical Leader of the Database Project.
-
-Technologies:
-
-- Infra and CD/CI: HCL (Terraform, Packer), Ansible, Kubernetes, Docker.
-- Databases: Postgres (and flavours), MySQL, Oracle (to migrate out *wink, wink*)
-- Languages: Golang, Python, C, bash. Time to time I code in NodeJS.
-- Main Cloud Providers: Google Cloud, AWS, etc.
-
 
 ### Open Source Databases Engineer | Software Engineer
-> Remote
+> Remote. Self-employed.
+
 
 - Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
 - Automated Cloud Infrastrucures.
@@ -137,6 +107,39 @@ Other certifications related to DataScience Specialization:
 ---
 
 ## Past Experience
+
+### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
+> Remote. New York/Madrid
+>
+> Since December 2017 as OnGres, previously working as Consultant in 8kdata - September 2024.
+
+
+As the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, I am currently designing innovative system architectures to implement in our customers' production clusters. In addition, I develop system tools to ensure seamless operation and maximum efficiency.
+
+
+Highlighted projects:
+
+- **BBM** (Blackberry - Emtek - Google Cloud): Live migration from Oracle to full Patroni automated cluster, from a premise
+  based environment to Google Cloud. PgBouncer-Consul-Postgres
+- **Conrad** (Google Cloud Partner): Full implementation of Patroni HA using etcd as consensus cluster, Load Balancing through 
+  Google iLB with API configuration with Patroni, and PgBouncer.
+- **[Gitlab Migration](https://about.gitlab.com/2018/10/11/gitlab-com-stability-post-gcp-migration/)** as part of the Database Reliability Team and Database Architecture design. 
+- **Postmates**: Patroni Mult-project Terraform implementation with a centralized DCS.
+- Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
+- Google Cloud as Partner.
+- **ARM** support and automation implementation.
+- Worked in the **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) team, as a Developer Advocate for the Open Source version.
+  - Provided patches, building, testing of [Babelfish for Postgres](https://babelfishpg.org).
+  - Lectured training for the team about the Postgres Hook Ecosystem.
+- Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
+- **stcpay** Architecture design and Technical Leader of the Database Project.
+
+Technologies:
+
+- Infra and CD/CI: HCL (Terraform, Packer), Ansible, Kubernetes, Docker.
+- Databases: Postgres (and flavours), MySQL, Oracle (to migrate out *wink, wink*)
+- Languages: Golang, Python, C, bash. Time to time I code in NodeJS.
+- Main Cloud Providers: Google Cloud, AWS, etc.
 
 ### ViaDB
 > Buenos Aires, Argentina
