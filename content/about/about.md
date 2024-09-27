@@ -37,7 +37,7 @@ Some of the slides can be found at my [slides](https://github.com/3manuek/slides
 
 | Technical Skills |
 |----|
-| A considerable experience on scalability, reliability, architecturing and maintaining large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. |
+| A considerable experience on scalability, reliability, architecturing and maintaining automated large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. |
 | Experience in the following languages: **Go, Python, C, Bash**. |
 | Extensive experience in modern **SQL** and custom indexing in Postgres. |
 | Knowledge in Postgres Extensions development Framework and internals.|
@@ -63,16 +63,13 @@ Some of the slides can be found at my [slides](https://github.com/3manuek/slides
 
 ## Current Positions
 
+### Workato Inc. - Staff Infrastructure Engineer
+> Remote. Madrid, Spain
+>
+> September 2024 - Present
 
-### Open Source Databases Engineer | Software Engineer
-> Remote. Self-employed.
-
-
-- Postgres, MySQL, ClickHouse, Elastic. Extensive experience in production environments, mostly in Linux/Unix environments.
-- Automated Cloud Infrastrucures.
-- HA, Performance, Monitoring,Debugging.
-- Go, Python, C, Bash engineering development.
-- Cloud and on-premise design and implementation.
+- Staff Infrastructure Engineer, Datastores Team.
+- Main techologies: AWS, Kubernetes, Terraform, Ansible, etc.
 
 
 ---
