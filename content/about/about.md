@@ -18,10 +18,10 @@ date: 2023-02-18T12:27:33-06:00
 
 ## Bio(graffiti) 
 
-I'm a _Database and Software Engineer_, working from platform engeneering roles, development, consulting, 
+I'm a _Database Infrastructure and Software Engineer_, working from platform engeneering roles, development, consulting, 
 and advanded trainings.
 
-I design and implement Databases in Production for _top-notch_ companies, based on Open Source Technologies.
+I design and implement Database Infrastructures in Production for _top-notch_ companies, mostly on top of Open Source Technologies.
 From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
 Software Engineering, _mainly_  for database systems is also one of my core tasks.
 
@@ -31,7 +31,7 @@ Lectured talks in several Database and non-database related conferences, in vari
 Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
 
 
-🇦🇷 🇪🇸
+Born in 🇦🇷, and living in 🇪🇸.
 
 ---
 
@@ -69,7 +69,7 @@ Some of the slides can be found at my [slides](https://github.com/3manuek/slides
 > September 2024 - Present
 
 - Staff Infrastructure Engineer, Datastores Team.
-- Main techologies: AWS, Kubernetes, Terraform, Ansible, etc.
+- Main techologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, etc.
 
 
 ---
@@ -89,6 +89,7 @@ Some of the slides can be found at my [slides](https://github.com/3manuek/slides
 - [PostgreSQL 9.4 Associate Certification](http://www.enterprisedb.com/store/products/dba-training/01t50000001Nyi7AAC), `EDB33986`.
 - [PostgreSQL 11 Professional Certification](https://www.youracclaim.com/badges/9ea58cfa-2da5-4614-9d5e-2eb1be46dd95/linked_in_profile)
 - [Azure Data Engineer](https://www.credly.com/badges/004a64e2-d3ef-4f56-96b0-3040f475ef29/linked_in) and [Microsoft Certified Trainer](https://www.credly.com/badges/423cc463-9e30-4adb-9189-0779891c79dc/linked_in).
+- Workato Automation Professional Certificate [I](https://verify.skilljar.com/c/v382wrahq4hu) & [II](https://verify.skilljar.com/c/cr7cvf3gxr5k).
 
 Other certifications related to DataScience Specialization:
 
