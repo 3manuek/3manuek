@@ -1,5 +1,5 @@
 ---
-title: "Emanuel Calvo"
+title: "Emanuel [3manuek] Calvo"
 subtitle: "_Database and Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 ---
@@ -10,9 +10,9 @@ date: 2023-02-18T12:27:33-06:00
 ----
 
 - [Current Positions](#current-positions)
-- [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
+- [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 
 ----
 
@@ -63,50 +63,19 @@ Born in 🇦🇷, and living in 🇪🇸.
 
 ## Current Positions
 
-### Workato Inc. - Staff Infrastructure Engineer
+### Workato Inc. - Staff Infrastructure Engineer | Datastores Team
 > Remote. Madrid, Spain
 >
 > September 2024 - Present
 
-- Staff Infrastructure Engineer, Datastores Team.
 - Main techologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, etc.
 
 
 ---
 
-## Education
-
-- ESBA - Developer Analyst
-- Escuela Penintenciaria de la Nación (Juán José O'Connor) - 2000 - Criminal Sciences Degree 
-
-## External publications
-
-- July 2nd, 2013: [AWS - Postgres in AWS](http://media.amazonwebservices.com/AWS_RDBMS_PostgreSQL.pdf)
-    PostgreSQL running over EC2 instances with EBS/PIOPS storage. Minimum architecture, tips and advises. [Download AWS in Postgres from local](/AWS_RDBMS_PostgreSQL.pdf)
-
-## Certifications
-
-- [PostgreSQL 9.4 Associate Certification](http://www.enterprisedb.com/store/products/dba-training/01t50000001Nyi7AAC), `EDB33986`.
-- [PostgreSQL 11 Professional Certification](https://www.youracclaim.com/badges/9ea58cfa-2da5-4614-9d5e-2eb1be46dd95/linked_in_profile)
-- [Azure Data Engineer](https://www.credly.com/badges/004a64e2-d3ef-4f56-96b0-3040f475ef29/linked_in) and [Microsoft Certified Trainer](https://www.credly.com/badges/423cc463-9e30-4adb-9189-0779891c79dc/linked_in).
-- Workato Automation Professional Certificate [I](https://verify.skilljar.com/c/v382wrahq4hu) & [II](https://verify.skilljar.com/c/cr7cvf3gxr5k).
-
-Other certifications related to DataScience Specialization:
-
-- [Toolbox](https://www.coursera.org/account/accomplishments/certificate/6UUQRK9PCE)
-- [R programming](https://www.coursera.org/account/accomplishments/certificate/T48RRJNPG2)
-- [Getting and Cleaning Data](https://www.coursera.org/account/accomplishments/verify/8AT8J4DK2A)
-- [Exploratory Analysis](https://www.coursera.org/account/accomplishments/verify/PJSGHN7A27)
-- [Reproducible Research](https://www.coursera.org/account/accomplishments/verify/J5VEMAG8TM)
-- [Statistical inference](https://www.coursera.org/account/accomplishments/verify/K59SPFAKW2)
-- [Regression Models](https://www.coursera.org/account/accomplishments/verify/DLH75DKK4U)
-- [Big Data, University of San Diego](https://www.coursera.org/account/accomplishments/verify/TFTDEL6ZYX97)
-
----
-
 ## Past Experience
 
-### Ongres Inc. - Professional Services Tech Lead / Database Platform Engineer  
+### Ongres Inc. - Professional Services Tech Lead | Database Platform Engineer  
 > Remote. New York/Madrid
 >
 > Since December 2017 as OnGres, previously working as Consultant in 8kdata - September 2024.
@@ -211,15 +180,14 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database specialist.
 
 
-### Pythian - Technical Team Lead - ACTG (Advanced Consulting Team Group) Member
+### Pythian - Technical Team Lead | ACTG (Advanced Consulting Team Group) Member
 > Ottawa, Canada
 >
 > January 2015 - June 2016
 
 - Support to Pythian’s External Profile.
-- Member of the Advanced Consulting Team Group (PostgreSQL).
+- Member of the ACTG as the Postgres main consultant.
 - Other Technologies: MySQL/MariaDB, xtraDB, Galera, Docker, Ansible, MongoDB, PostgreSQL, Vertica, Oracle.
-- Part of the ACTG for PostgreSQL implementations, solutions and architecture.
 - Lead Database Consultant at T73.
 
 Some highlighted customers: Microsoft, Beats (Apple), Adobe Echosign, Fitbit, Sendgrid, Mozilla Foundation, Zendesk, SendGrid.
@@ -321,7 +289,41 @@ Some of the 'extra' task was made some Perl scripts for support area.
 - MOSAIC debugging and support.
 - Customer Correo Argentino / Siemens.
 
-### Pre-IT work
+
+---
+
+## Education
+
+- ESBA - Developer Analyst
+- Escuela Penintenciaria de la Nación (Juán José O'Connor) - 2000 - Criminal Sciences Degree 
+
+## External publications
+
+- July 2nd, 2013: [AWS - Postgres in AWS](http://media.amazonwebservices.com/AWS_RDBMS_PostgreSQL.pdf)
+    PostgreSQL running over EC2 instances with EBS/PIOPS storage. Minimum architecture, tips and advises. [Download AWS in Postgres from local](/AWS_RDBMS_PostgreSQL.pdf)
+
+## Certifications
+
+- [PostgreSQL 9.4 Associate Certification](http://www.enterprisedb.com/store/products/dba-training/01t50000001Nyi7AAC), `EDB33986`.
+- [PostgreSQL 11 Professional Certification](https://www.youracclaim.com/badges/9ea58cfa-2da5-4614-9d5e-2eb1be46dd95/linked_in_profile)
+- [Azure Data Engineer](https://www.credly.com/badges/004a64e2-d3ef-4f56-96b0-3040f475ef29/linked_in) and [Microsoft Certified Trainer](https://www.credly.com/badges/423cc463-9e30-4adb-9189-0779891c79dc/linked_in).
+- Workato Automation Professional Certificate [I](https://verify.skilljar.com/c/v382wrahq4hu) & [II](https://verify.skilljar.com/c/cr7cvf3gxr5k).
+
+{{< details summary="Other certifications">}}
+Other certifications related to DataScience Specialization:
+
+- [Toolbox](https://www.coursera.org/account/accomplishments/certificate/6UUQRK9PCE)
+- [R programming](https://www.coursera.org/account/accomplishments/certificate/T48RRJNPG2)
+- [Getting and Cleaning Data](https://www.coursera.org/account/accomplishments/verify/8AT8J4DK2A)
+- [Exploratory Analysis](https://www.coursera.org/account/accomplishments/verify/PJSGHN7A27)
+- [Reproducible Research](https://www.coursera.org/account/accomplishments/verify/J5VEMAG8TM)
+- [Statistical inference](https://www.coursera.org/account/accomplishments/verify/K59SPFAKW2)
+- [Regression Models](https://www.coursera.org/account/accomplishments/verify/DLH75DKK4U)
+- [Big Data, University of San Diego](https://www.coursera.org/account/accomplishments/verify/TFTDEL6ZYX97)
+
+{{< /details >}}
+
+## Pre-IT work
 
 > _Before transitioning to a career in IT, between 1998 and 2006, I served
 in the Argentina's Federal Bureau of Prisons (Servicio Penitenciario

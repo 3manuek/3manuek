@@ -59,8 +59,8 @@ For this example, we are going to configure the following pool architecture:
 flowchart TD
     A[App] -->|Port 5000| B(fa:fa-filter appdbpool)
     A -->|Port 5001| F(fa:fa-filter appreportpool)
-    B -.->|Port 1433 \n 5-30 server-side connections| D(fa:fa-database \n BabelfishPG)
-    F -.->|Port 1433 \n 5-30 server-side connections| D
+    B -.->|Port 1433 <br/> 5-30 server-side conns| D(fa:fa-database <br/> BabelfishPG)
+    F -.->|Port 1433 <br/> 5-30 server-side conns| D
 {{< /mermaid >}}
 
 
