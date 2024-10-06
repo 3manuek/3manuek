@@ -1,5 +1,5 @@
 ---
-title: "Cascading timeouts through Pool"
+title: "Cascading timeouts through Pool (PGBouncer)"
 subtitle: "Pgbouncer query_timeout and Postgres statement_timeout"
 date: 2024-10-02
 author: "3manuek"

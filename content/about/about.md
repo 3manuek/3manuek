@@ -70,6 +70,12 @@ Born in 🇦🇷, and living in 🇪🇸.
 
 - Main techologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, etc.
 
+### Plataform3 SL - Owner
+> Madrid, Spain
+>
+> December 2021 - Present
+
+Software development and engineering firm.
 
 ---
 
