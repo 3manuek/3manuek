@@ -38,9 +38,10 @@ unsafe = true
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "About ⌘", URL = "/about/", HasChildren = false},
-        {Name = "Posts ↩︎", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 3}, # Pre = "Recent" --removed
-        {Name = "Toolbox ⚙️", URL = "/toolbox/", HasChildren = true, Limit = 0},
+        {Name = "🪪 About", URL = "/about/", HasChildren = false},
+        {Name = "📃 Résumé", URL = "/resume/", HasChildren = false},
+        {Name = "📓 Posts", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 3}, # Pre = "Recent" --removed
+        {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
 
     ## Custom variables over Poison's. About Page and menu stuff.
