@@ -28,10 +28,10 @@ Owner at [Plataform3 SL](https://plataform3.com/), a boutique shop for Software 
 Born in 🇦🇷, and living in 🇪🇸.
 
 
-> _Committed to my principles and values that drive my work, I also collaborate
-> with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
-> [Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
-> their IT ecosystems._
+_Committed to my principles and values that drive my work, I also collaborate
+with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
+[Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
+their IT ecosystems._
 
 
 ### 👉🏻 _Download my **résumé**._ <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
