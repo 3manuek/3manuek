@@ -67,14 +67,14 @@ Born in 🇦🇷, and living in 🇪🇸.
 
 ## Current Positions
 
-### Workato Inc. - Staff Infrastructure Engineer | Datastores Team
+### [Workato Inc.](https://workato.com) - Staff Infrastructure Engineer | Datastores Team
 > Remote. Madrid, Spain
 >
 > September 2024 - Present
 
 - Main techologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, etc.
 
-### Plataform3 SL - Owner
+### [Plataform3 SL](https://plataform3.com) - Owner
 > Madrid, Spain
 >
 > December 2021 - Present
@@ -85,7 +85,7 @@ Software Development and Engineering firm.
 
 ## Past Experience
 
-### Ongres Inc. - Professional Services Tech Lead | Database Platform Engineer  
+### [Ongres Inc.](https://ongres.com) - Professional Services Tech Lead | Database Platform Engineer  
 > Remote. New York/Madrid
 >
 > Since December 2017 as OnGres, previously working as Consultant in 8kdata - September 2024.
@@ -118,7 +118,7 @@ Technologies:
 - Languages: Golang, Python, C, bash. Time to time I code in NodeJS.
 - Main Cloud Providers: Google Cloud, AWS, etc.
 
-### ViaDB
+### [ViaDB](https://viadb.ar)
 > Buenos Aires, Argentina
 >
 > December, 2021 - November 2023 (closed)
@@ -165,7 +165,7 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 {{< /details >}}
 
 
-### Percona -  Senior Technical Services Engineer 
+### [Percona](https://percona.com) -  Senior Technical Services Engineer 
 > Buenos Aires, Argentina
 >
 > August 2016 - September 2017
@@ -190,7 +190,7 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database specialist.
 
 
-### Pythian - Technical Team Lead | ACTG (Advanced Consulting Team Group) Member
+### [Pythian](https://pythian.com) - Technical Team Lead | ACTG (Advanced Consulting Team Group) Member
 > Ottawa, Canada
 >
 > January 2015 - June 2016

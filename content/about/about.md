@@ -1,6 +1,6 @@
 ---
 title: "Emanuel [3manuek] Calvo"
-subtitle: "_Database and Software Engineering. IT Consultant._"
+subtitle: "About myself"
 date: 2023-02-18T12:27:33-06:00
 ---
 
