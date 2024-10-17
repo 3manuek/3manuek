@@ -6,33 +6,14 @@ date: 2023-02-18T12:27:33-06:00
 
 
 
-## Bio(graffiti) 
-
-I'm a _Database Infrastructure and Software Engineer_, working from platform engeneering roles, development, consulting, 
-and advanded trainings.
-
-Currently working at [Workato](https://workato.com) as a Staff Infrastructure Engineer.
+## 🧙‍♂️ About me 
 
 
-I design and implement Database Infrastructures in Production for _top-notch_ companies, mostly on top of Open Source Technologies.
-From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
-Software Engineering, _mainly_  for database systems is also one of my core tasks.
+Hail, noble traveler! I be known as _3manuek_, though in the realms of the IT folk, they name me _Tresma_. I hail from the far-off lands of Argentina 🇦🇷 and now dwell within the fair borders of Spain 🇪🇸.
 
-I have extensive experience in systems and database performance tunning, optimization and scalability.
+Aye, I have walked the path of an IT professional since the year of our Lord 2006 ([Résumé](/resume/)), and afore that, I toiled in the field of security.
 
-Lectured talks in several Database and non-database related conferences, in various countries. 
-Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
+Upon this site, thou shalt find snippets of mine work, writings, and sundry other matters.
 
-Owner at [Plataform3 SL](https://plataform3.com/), a boutique shop for Software Development and Engineering.
+Much more shall grace this page anon!
 
-Born in 🇦🇷, and living in 🇪🇸.
-
-
-_Committed to my principles and values that drive my work, I also collaborate
-with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
-[Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
-their IT ecosystems._
-
-
-### 👉🏻 _Download my **résumé**._ <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
-<!-- résumé, according to Chicago Manual of Style -->
