@@ -1,5 +1,5 @@
 ---
-title: "Using tds_fdw to access BabelfishPG"
+title: "[BabelfishPG] Using tds_fdw to access BabelfishPG"
 subtitle: "Querying BabelfishPG/MSSQL Server from Postgres"
 date: 2024-09-06
 author: "3manuek"
@@ -148,7 +148,10 @@ The connection configuration for `tds_fdw` resides in the `freetds.conf`:
   database = master ; you can stick to a single database if you don't switch between schemas
 ```
 
-> Babelfish won't support `tds version = auto`, use this specific version.
+
+| ⚠️ | BabelfishPG doesn't support `tds version = auto`. `7.4` is the default version. See how to control the TDS protocol version through the [babelfishpg_tds.tds_default_protocol_version](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tdstds_default_protocol_version). |
+|---|:---|
+
 
 Installing the extension is properly documented at [Installing in Ubuntu](https://github.com/tds-fdw/tds_fdw/blob/master/InstallUbuntu.md).
 

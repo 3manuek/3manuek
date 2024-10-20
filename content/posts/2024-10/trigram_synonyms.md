@@ -9,8 +9,12 @@ tags:
   - Postgres
 ---
 
-- Misspellings
 
+| ⚠️ | If you have a vanilla or access to Filesystem in your Postgres setup, just use Thesaurus synonyms!  |
+|---|:---|
+
+
+## Synonyms
 
 ```sql
 \c template1
@@ -57,3 +61,5 @@ WHERE ( d.title ilike '%' || (SELECT synonym FROM dictsynonyms WHERE term ilike 
         and d.typ = 'people'
 LIMIT 10;
 ```
+
+## Misspellings

@@ -1,5 +1,5 @@
 ---
-title: "Pooling TDS connections in BabelfishPG with FreeTDS"
+title: "[BabelfishPG] Pooling TDS connections in BabelfishPG with FreeTDS"
 subtitle: "TDSPool utility"
 date: 2024-08-15
 author: "3manuek"
