@@ -18,15 +18,11 @@ date: 2023-02-18T12:27:33-06:00
 
 ## Bio(graffiti) 
 
-I'm a _Database Infrastructure and Software Engineer_, working from platform engeneering roles, development, consulting, 
-and advanded trainings.
+I'm a _Database Infrastructure and Software Engineer_, currently working at [Workato](https://workato.com) as a Staff Infrastructure Engineer.
 
-Currently working at [Workato](https://workato.com) as a Staff Infrastructure Engineer.
-
-
-I design and implement Database Infrastructures in Production for _top-notch_ companies, mostly on top of Open Source Technologies.
-From Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
-Software Engineering, _mainly_  for database systems is also one of my core tasks.
+I design and implement Database Infrastructures and Engineering. I did Production-grade setups for _top-notch_ companies, mostly on top of Open Source Technologies.
+My tasks go through Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
+Software Engineering, _mainly_ for database systems is also one of my core tasks.
 
 I have extensive experience in systems and database performance tunning, optimization and scalability.
 
