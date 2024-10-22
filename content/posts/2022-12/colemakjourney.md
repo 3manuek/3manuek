@@ -176,7 +176,7 @@ speed before turning into your productive layout. Symbols, and punctuation aren'
 they make your hand to change your hands position. You'll prefer to train code speed later.
 
 
-## Non-Objetive Opinions 
+## Biased Opinions 
 
 Switchwhing layouts isn't a thing of weeks, but for months until you get a decent speed to match
 your current. At the begining, it will feel extremely exhausting to _think and type_ in a constant
