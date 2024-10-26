@@ -21,10 +21,11 @@ layout: single
 ## Description
 
 
->
-> To see more details about the code used and the results, see the [code here](https://github.com/3manuek/exhausting_pools).
->
 
+{{< notice "info" >}}
+To see more details about the code used and the results, see the [code here](https://github.com/3manuek/exhausting_pools).
+
+{{< /notice >}}
 
 This laboratory is a hypothetical scenario, whether application does empty transactions
 in order to emulate sort of a DoS attack against the pools. The intention here, was to 
@@ -106,8 +107,11 @@ The technology stack is compoused as:
 
 ## Very Early Conclusions
 
-> See [Docs](https://github.com/3manuek/exhausting_pools/doc/) with the collected stats.
 
+{{< notice "info" >}}
+
+See [Docs](https://github.com/3manuek/exhausting_pools/doc/) with the collected stats.
+{{< /notice>}}
 
 PgBouncer is more perfomant at single-thread, no surprise. However, the stability of Odyssey
 may be relevant to consider. PgBouncer stalls during a certain period, mostly because its mechanism to 

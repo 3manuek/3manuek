@@ -19,8 +19,11 @@ layout: single
 
 ### BabelfishPG Docker files and images
 
-> Repository: [babelfish-on-docker](https://github.com/ongres/babelfish-on-docker)
-> Original work [at Github](https://github.com/babelfish-for-postgresql/babelfish-for-postgresql/pull/5/files).
+
+{{< notice "info" >}}
+Repository: [babelfish-on-docker](https://github.com/plataform3/babelfish-on-docker).
+Original work [at Github](https://github.com/babelfish-for-postgresql/babelfish-for-postgresql/pull/5/files).
+{{< /notice>}}
 
 Babelfish for Postgres is a slightly-modified Postgres distribution that provides
 extensions for supporting TDS protocol and T-SQL language.
@@ -30,7 +33,10 @@ dockerization for the `tdspool` utility, for setting up a pool for the TDS conne
 
 ### BabelfishPG Example Database
 
-> [Original work](https://github.com/babelfish-for-postgresql/babelfish-for-postgresql/pull/6/files).
+
+{{< notice "info" >}}
+[Original work](https://github.com/babelfish-for-postgresql/babelfish-for-postgresql/pull/6/files).
+{{< /notice>}}
 
 BabelfishPG provides a limited set of T-SQL, here is an example of a T-SQL compatible 
 script:
