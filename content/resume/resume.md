@@ -53,11 +53,14 @@ Born in 🇦🇷, and living in 🇪🇸.
 | Develop engineering tools to ensure seamless operation and maximum efficiency.|
 
 
-> _Committed to my principles and values that drive my work, I also collaborate
-> with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
-> [Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
-> their IT ecosystems._
 
+{{< notice "info" >}}
+_Committed to my principles and values that drive my work, I also collaborate
+with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
+[Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
+their IT ecosystems._
+
+{{< /notice >}}
 
 ---
 

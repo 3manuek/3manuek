@@ -48,10 +48,14 @@ In bare-metal setups, that don't use such orchestration, you need to rely on a s
 that are stable and can scale vertically automatically. 
 
 
-> NOTE: The data on this laboratory is outdated, as new versions have been released from both tools,
+
+{{< notice "warning" >}}
+The data on this laboratory is outdated, as new versions have been released from both tools,
 so conclusions may be inaccurate for newer versions. Although, I do not expect much difference
 as the architecture of those components haven't changed radically. The solely purpose of this page,
 is to document the architecture of the benchmark.
+
+{{< /notice >}}
 
 ## Context 
 
