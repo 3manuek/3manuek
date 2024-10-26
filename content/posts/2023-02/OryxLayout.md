@@ -17,7 +17,12 @@ layout: single
 
 ![Ergodox](/images/posts/ergodox.png)
 
-> This is my current [MacOS Layout](https://configure.zsa.io/ergodox-ez/layouts/GLL7M/latest/0).
+
+{{< notice "info" >}}
+
+This is my current [MacOS Layout](https://configure.zsa.io/ergodox-ez/layouts/GLL7M/latest/0).
+
+{{< /notice >}}
 
 A few months ago, I bought the Ergodox OrthoLinear Split Keyboard. After a period of trying it, I've found that 
 the QWERTY layout was considerably uncomfortable to type in the keyboard disposition. I wasn't the only one, of course,

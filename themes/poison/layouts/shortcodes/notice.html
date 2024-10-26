@@ -1,0 +1,9 @@
+<div class="notice {{ .Get 0 | default "info" }}">
+    <span class="notice-emoji">
+        {{ if eq (.Get 0 | lower) "warning" }}⚠️{{ end }}
+        {{ if eq (.Get 0 | lower) "info" }}ℹ️{{ end }}
+        {{ if eq (.Get 0 | lower) "error" }}❌{{ end }}
+        {{ if or (eq (.Get 0 | lower) "warning") (eq (.Get 0 | lower) "info") (eq (.Get 0 | lower) "error") }}&nbsp;{{ end }}
+    </span>
+    {{ .Inner | markdownify }}
+</div>

@@ -1,0 +1,28 @@
+.notice {
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    color: #333333 !important; /* Dark grey color for text */
+}
+
+.notice.info {
+    background-color: #e0f7fa;
+    border: 1px solid #4dd0e1;
+}
+
+.notice.warning {
+    background-color: #fff3e0;
+    border: 1px solid #ffb74d;
+}
+
+.notice.error {
+    background-color: #ffebee;
+    border: 1px solid #e57373;
+}
+
+.notice-emoji {
+    font-size: 1.2em;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}

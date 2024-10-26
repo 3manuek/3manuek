@@ -50,9 +50,13 @@ go test -v ts_test.go
  
 or by executing `./e2e.sh`.
 
+{{< notice "info" >}}
 
-> The laboratory will load and execute the data migration, see the contents of the initialization scripts
+The laboratory will load and execute the data migration, see the contents of the initialization scripts
 inside the `test` folder.
+
+{{< /notice >}}
+
 
 ----
 

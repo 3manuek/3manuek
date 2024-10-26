@@ -69,9 +69,10 @@ PG_CPPFLAGS='-I/usr/include -DENABLE_TDS_LIB' SHLIB_LINK='-lsybdb -L/usr/lib64' 
 PG_CPPFLAGS='-I/usr/include -DENABLE_TDS_LIB' SHLIB_LINK='-lsybdb -L/usr/lib64' make install
 ```
 
+{{< notice "warning" >}}
+More information about building and installing the extension can be found [at this link](https://github.com/tds-fdw/tds_fdw/blob/master/README.md). The linked servers feature is supported using the FreeTDS library which is licensed under the GNU LGPL license. See [COPYING_LIB.txt](https://github.com/FreeTDS/freetds/blob/master/COPYING_LIB.txt) for details.
+{{< /notice >}}
 
-| ⚠️ | More information about building and installing the extension can be found [at this link](https://github.com/tds-fdw/tds_fdw/blob/master/README.md). The linked servers feature is supported using the FreeTDS library which is licensed under the GNU LGPL license. See [COPYING_LIB.txt](https://github.com/FreeTDS/freetds/blob/master/COPYING_LIB.txt) for details. |
-|---|:---|
 
 Although it would be faster inserting data directly to Postgres, it is also possible to do so through the TDS protocol. 
 
@@ -148,9 +149,9 @@ The connection configuration for `tds_fdw` resides in the `freetds.conf`:
   database = master ; you can stick to a single database if you don't switch between schemas
 ```
 
-
-| ⚠️ | BabelfishPG doesn't support `tds version = auto`. `7.4` is the default version. See how to control the TDS protocol version through the [babelfishpg_tds.tds_default_protocol_version](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tdstds_default_protocol_version). |
-|---|:---|
+{{< notice "warning" >}}
+BabelfishPG doesn't support `tds version = auto`. `7.4` is the default version. See how to control the TDS protocol version through the [babelfishpg_tds.tds_default_protocol_version](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tdstds_default_protocol_version). 
+{{< /notice>}}
 
 
 Installing the extension is properly documented at [Installing in Ubuntu](https://github.com/tds-fdw/tds_fdw/blob/master/InstallUbuntu.md).

@@ -203,6 +203,25 @@ This is a code block.
 {{</* /tabs */>}}
 ```
  
+
+### Notice Boxes
+
+```
+{{< notice "warning" >}}
+This is a warning message. Be cautious!
+{{< /notice >}}
+
+{{< notice "info" >}}
+This is an informational message.
+{{< /notice >}}
+
+{{< notice "error" >}}
+This is an error message. Something went wrong.
+{{< /notice >}}
+```
+
+
+
 ### Mermaid diagrams
 You can embed rendered Mermaid diagrams.  
 
