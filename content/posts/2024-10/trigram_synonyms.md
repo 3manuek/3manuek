@@ -10,8 +10,9 @@ tags:
 ---
 
 
-| ⚠️ | If you have a vanilla or access to Filesystem in your Postgres setup, just use Thesaurus synonyms!  |
-|---|:---|
+{{< notice "info">}}
+If you have a vanilla or access to Filesystem in your Postgres setup, just use Thesaurus synonyms! 
+{{< /notice >}}
 
 
 ## Synonyms
