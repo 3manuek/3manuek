@@ -1,6 +1,6 @@
 ---
 title: "Multi source data injection to Postgres RDS with encryption and FTS support"
-subtitle: "Multi source data injection to Postgres RDS with encryption and FTS support."
+subtitle: "HIPAA compliance search"
 excerpt: ""
 date: 2016-03-23
 author: "3manuek"
