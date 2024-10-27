@@ -16,15 +16,13 @@ tags:
 
 Sponsored: [Pythian Inc.](http://pythian.com)
 
-> Note 1:
-> All the of this presentation is published in this [repository](). You will find a lot of folders and information, probably part of a blog series.
+{{< notice "info" >}}
+All the work on this article is a *PoC*.
+{{< /notice >}}
 
-> Note 2:
-> All the work on this article is a **POC** (Proof of concept).
-
-> Note 3:
-> This is something that is related for [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) compliant.
-
+{{< notice "info" >}}
+See [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) compliance.
+{{< /notice >}}
 
 ## [KMS](http://aws.amazon.com/kms/)/[RDS](https://aws.amazon.com/rds/postgresql/)
 
