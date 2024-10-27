@@ -14,50 +14,43 @@ tags:
 
 ## Introduction
 
+{{< notice "info" >}}
+Laboratory for this post can be found at [babelfishpg-lab](https://github.com/Plataform3/babelfishpg-lab).  
+{{< /notice >}}
 
-Even tho BabelfishPG is a Postgres flavor, there are a few configurations that might not
-be as in vanilla. In this post, we focus on how to log query timings and enable showing query
-plans.
+{{< notice "warning" >}}
+In this post, we cover `4.2.0` version. There is a slight difference in the logging settings and format from `4.1.1`.
+{{< /notice >}}
 
-No, [`log_min_duration_statements`](https://postgresqlco.nf/doc/en/param/log_min_duration_statement/16/) does 
-not log TSQL statements. Queries execute through a different backend fork, so targeted statements executed through the TDS protocol, won't we logged.
+Even tho BabelfishPG is a Postgres flavor, the configuration is done through its extensions (babelfish_tds and babelfish_tsql). In this post, we focus on how to log query timings and enable showing query plans.
+
+For Postgres vanilla, you can log slow queries by setting the [`log_min_duration_statements`](https://postgresqlco.nf/doc/en/param/log_min_duration_statement/16/), but this won't log TSQL statements. Queries execute through a different backend fork, so targeted statements executed through the TDS protocol, won't get logged.
 
 However, BabelfishPG does provide a way to log slow statements and, most importantly, Stored Procedures. 
 It is quite detailed, but extremelly verbose.
 
 
-
-{{< notice "info" >}}
-Laboratory of this post is at [babelfishpg-lab](https://github.com/Plataform3/babelfishpg-lab). 
-{{< /notice >}}
-
-{{< notice "warning" >}}
-In this post, we cover `4.2.0`. There is a slight difference in the logging from `4.1.1`.
-{{< /notice >}}
-
 ## Available settings for tracing events
 
-The following variables would allow you to enable the statement trace:
+The following variables from the `babelfish_tsql` extension, would allow you to enable the statement trace:
 
+
+{{< notice "info" >}}
+All these settings can be _reloaded_ without restarting the server.
+{{< /notice >}}
 
 - [babelfishpg_tsql.trace_exec_time](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqltrace_exec_time)
 - [babelfishpg_tsql.trace_tree](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqltrace_tree)
 - [babelfishpg_tsql.trace_exec_nodes](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqltrace_exec_nodes)
 - [babelfishpg_tsql.trace_exec_counts](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqltrace_exec_counts)
 
-The [babelfishpg_tsql.tds_debug_log_level](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tdstds_debug_log_level) allows
-4 levels of debug from 0 to 3. 
-
-{{< notice "info" >}}
-All these settings can be _reloaded_ without restarting the server.
-{{< /notice >}}
-
+The `babelfish_tds` extension controls the verbosity of the log through the [babelfishpg_tds.tds_debug_log_level](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tdstds_debug_log_level) setting, which provides 4 levels of debug, from 0 to 3 and being `1` the default, which is sufficiently verbose for query analysis purposes.
 
 
 ## Log format
 
-At this point, you may think if PGBadger works for parsing logs, and it does for most of the entries. However
-you will see that it adds certain non-vanilla prefixes to the statements. So, it works, but it doesn't filter
+At this point, you may think if [PGBadger](https://pgbadger.darold.net/) works for parsing logs, and it does for most of the entries. However
+you will see that it adds certain non-vanilla prefixes to the statements in the report. So, it works, but it doesn't filter
 the query timing.
 
 The output of the log entry for statements is:
@@ -82,7 +75,7 @@ The output of the log entry for statements is:
 
 ## Query Plans
 
-Variables for configuring the showplan:
+BabelfishPG provides a way te get the Query Plan from the TDS connection. Settings for configuring the showplan:
 
 - [babelfishpg_tsql.showplan_all](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqlshowplan_all)
 - [babelfishpg_tsql.showplan_text](https://babelfishpg.org/docs/internals/configuration/#babelfishpg_tsqlshowplan_text)

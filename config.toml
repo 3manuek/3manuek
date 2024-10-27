@@ -18,10 +18,10 @@ enableRobotsTXT = true
 unsafe = true
 
 [params]
-    brand = "3manuek"                      # name of your site - appears in the sidebar
+    brand = "[3ma]nuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     brand_image = "/images/profile4.jpeg"    # path to the image shown in the sidebar
-    description = "Database and Software Engineering. Performance and Reliability Expert." # Used as default meta description if not specified in front matter
+    description = "Database and Software Engineering." # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
     index_brand_image = "/images/profile.gif"
@@ -40,13 +40,13 @@ unsafe = true
     menu = [
         {Name = "🪪 About", URL = "/about/", HasChildren = false},
         {Name = "📃 Résumé", URL = "/resume/", HasChildren = false},
-        {Name = "📓 Posts", URL = "/posts/", Pre ="Recent:", HasChildren = true, Limit = 3}, # Pre = "Recent" --removed
+        {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4}, # Pre ="Latest:",
         {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
 
     ## Custom variables over Poison's. About Page and menu stuff.
     tagMenuTitle = "🏷️"
-    tagMenuWeight = 2 # XXX not implemented 
+    tagMenuWeight = 4 # XXX not implemented 
                       # Only show tags that have more than N posts. 
     aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
     aboutPics = ["/images/profile4.jpeg", "/images/profile3.jpg"]

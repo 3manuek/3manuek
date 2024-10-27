@@ -1,20 +1,23 @@
 ---
-title: "Emanuel [3manuek] Calvo"
+title: "Emanuel Calvo"
 subtitle: "_Database and Software Engineering. IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 ---
 
-### 👉🏻 _Download my **résumé**._ <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
 <!-- résumé, according to Chicago Manual of Style -->
 
-----
+---
 
 - [Current Positions](#current-positions)
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 
-----
+---
+
+{{< notice "info" >}}
+_Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
+{{< /notice >}}
 
 ## Bio(graffiti) 
 
