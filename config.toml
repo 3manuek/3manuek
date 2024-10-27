@@ -18,7 +18,7 @@ enableRobotsTXT = true
 unsafe = true
 
 [params]
-    brand = "[3ma]nuek"                      # name of your site - appears in the sidebar
+    brand = "3manuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     brand_image = "/images/profile4.jpeg"    # path to the image shown in the sidebar
     description = "Database and Software Engineering." # Used as default meta description if not specified in front matter

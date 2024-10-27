@@ -423,7 +423,7 @@ local_search_host1 | host1  | 563588056
 And, we can't finish the article without showing how to use the ranking (did you see those setweight
 functions used in the function? You got it!):
 
-```
+```sql
 #  SELECT rds.id,
 #  convert_from(pgp_pub_decrypt(fname::bytea, ks.priv,''::text)::bytea,'SQL_ASCII'::name),
 #  convert_from(pgp_pub_decrypt(lname::bytea, ks.priv,''::text)::bytea,'SQL_ASCII'::name),
@@ -447,11 +447,8 @@ functions used in the function? You got it!):
 Remember, think that this query is doing FTS, decryption and ranking in just one query, over a local and
 a remote server. You can't say that PostgreSQL isn't hipster enough!
 
-
 I can't continue the article without showing the query plan executed by the local host (using buffers,
-  analyze and verbose options).
-
-
+analyze and verbose options):
 
 ```sql
 EXPLAIN (buffers,verbose,analyze) SELECT rds.id,
@@ -506,7 +503,7 @@ If I use the _remote estimations_ we can see how the remote SQL changes in the Q
 
 Query Plan (Foreign Scan execution node):
 
-```
+```sql
 ...
 ->  Foreign Scan on public.__person__pgp_rds_ure rds  (cost=100.01..108.21 rows=2 width=1018) (actual time=250.334..250.336 rows=1 loops=31)
       Output: rds.id, rds.source, rds.partial_ssn, rds.ssn, rds.keyid, rds.fname, rds.lname, rds.description, rds.auth_drugs, rds.patology
@@ -653,15 +650,12 @@ LANGUAGE 'sql' VOLATILE;
 
 A very awesome tutorial about FTS for PostgreSQL can be found [here][5].
 
-[Source for drugs list][3]
+- [Source for drugs list][3]
+- [Source for diseases][4]
+- [Getting started with GPG keys](https://www.gnupg.org/gph/en/manual/c14.html)
+- [AWS command line tool](https://aws.amazon.com/cli/)
 
-[Source for diseases][4]
-
-[Getting started with GPG keys](https://www.gnupg.org/gph/en/manual/c14.html)
-
-[AWS command line tool](https://aws.amazon.com/cli/)
-
-Discussion in the community mailing lis [here](http://postgresql.nabble.com/Fast-Search-on-Encrypted-Feild-td1863960.html)
+Discussion in the community mailing list [here](http://postgresql.nabble.com/Fast-Search-on-Encrypted-Feild-td1863960.html).
 
 <!-- {% if page.comments %}
 <div id="disqus_thread"></div>
