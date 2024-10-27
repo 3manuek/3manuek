@@ -7,7 +7,7 @@ draft: false
 series: "Bash"
 tags:
   - Bash
-  - Concurrency
+  - Parallelization
 ---
 
 
