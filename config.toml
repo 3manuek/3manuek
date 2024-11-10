@@ -49,7 +49,7 @@ unsafe = true
     tagMenuWeight = 4 # XXX not implemented 
                       # Only show tags that have more than N posts. 
     aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
-    aboutPics = ["/images/profile4.jpeg", "/images/profile3.jpg"]
+    aboutPics = ["/images/profile_petronas.png","/images/profile_petronas2.png"]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
     discord_url = "https://discord.com/3manuek"

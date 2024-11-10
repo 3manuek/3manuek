@@ -51,7 +51,7 @@ Born in 🇦🇷, and living in 🇪🇸.
 
 | Soft Skills |
 |---|
-| A skilled communicator, managing Customer's accounts worldwide.|
+| A skilled communicator, managing customer's accounts and projects worldwide.|
 | Hard-problem solving, and with aveced dealing of complex Production incidents.|
 | Develop engineering tools to ensure seamless operation and maximum efficiency.|
 
