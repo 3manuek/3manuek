@@ -223,14 +223,16 @@ INSERT INTO tbl_employee_remote
 
 ## Incompatibilities
 
+{{< notice "warning" >}}
+The below statement doesn't work in BabelfishPG due to missing system views when extracting the schema.
+{{< /notice >}}
+
 ```sql
 IMPORT FOREIGN SCHEMA externalTDS
 FROM SERVER babelfish
 INTO extenalTDSSchema
 OPTIONS (import_default 'true');
 ```
-
-The above statement doesn't work in BabelfishPG due to missing system views when extracting the schema.
 
 
 Thanks for reading!
