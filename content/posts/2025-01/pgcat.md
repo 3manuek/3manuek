@@ -98,7 +98,7 @@ it does not have enough flexibility to scale containers that aren't stateless. A
 more dynamic configuration over the same container family. You may find that there is not much difference in between, 
 as the attributes maintain coherence across technologies.
 
-![Asciinema](/images/posts/pgcat.gif)
+[![Asciinema](/images/posts/pgcat.gif)](https://asciinema.org/a/707248)
 
 
 Here are the key parts of the laboratory:
