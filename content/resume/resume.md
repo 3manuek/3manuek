@@ -16,14 +16,14 @@ date: 2023-02-18T12:27:33-06:00
 ---
 
 {{< notice "info" >}}
-_Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a> 
+_Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a>
 {{< /notice >}}
 
 ## Bio(graffiti) 
 
 I'm a _Database Infrastructure and Software Engineer_, currently working at [Workato](https://workato.com) as a Staff Infrastructure Engineer.
 
-I design and implement Database Infrastructures and Engineering. I did Production-grade setups for _top-notch_ companies, mostly on top of Open Source Technologies.
+I design and implement Database Infrastructures and Engineering using mostly Open Source technologies. I did Production-grade setups for _top-notch_ companies, mostly on top of Open Source Technologies.
 My tasks go through Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
 Software Engineering, _mainly_ for database systems is also one of my core tasks.
 
@@ -34,11 +34,11 @@ Some of the slides can be found at my [slides](https://github.com/3manuek/slides
 
 Owner at [Plataform3 SL](https://plataform3.com/), a boutique shop for Software Development and Engineering.
 
-Born in 🇦🇷, and living in 🇪🇸.
+Born in 🇦🇷, and living in 🇪🇸. 
 
 ---
 
-| Technical Skills |
+| Techonologies |
 |----|
 | A considerable experience on scalability, reliability, architecturing and maintaining automated large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. |
 | Experience in the following languages: **Go, Python, C, Bash**. |
@@ -48,6 +48,7 @@ Born in 🇦🇷, and living in 🇪🇸.
 | Experience in containerized services as in **Kubernetes, Docker**. Also heavy experience in Virtualization technologies.|
 | Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. |
 | Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.|
+| **GNU/Linux** |
 
 | Soft Skills |
 |---|
@@ -69,12 +70,13 @@ their IT ecosystems._
 
 ## Current Positions
 
-### [Workato Inc.](https://workato.com) - Staff Infrastructure Engineer | Datastores Team
+### [Workato Inc.](https://workato.com) - Staff Infrastructure Engineer | Data Stores Team
 > Remote. Madrid, Spain
 >
 > September 2024 - Present
 
-- Main techologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, etc.
+- Infrastructure Engineering.
+- Technologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, among many others.
 
 ### [Plataform3 SL](https://plataform3.com) - Owner
 > Madrid, Spain
@@ -394,7 +396,7 @@ ranging from medium to high security._
 <!-- Hard times ahead, cause the hardest part isn't climbing the mountain, -->
 <!-- but to ask the right questions on why the fuck are we climbing it. -->
 <!-- - Is it just to make a point? -->
-<!-- - Could have been a Twitter Space? -->
+<!-- - Could have been an e-mail? -->
 <!-- - Why we didn't build a tunnel here? -->
 
 <!-- The apocalypse is near, we can all smell it, it's in the air, the news, -->
