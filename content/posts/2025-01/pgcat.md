@@ -1,7 +1,7 @@
 ---
 title: "Evaluating PGCat's Sharding by hash"
 subtitle: "Distributing shards across nodes."
-date: 2025-03-10
+date: 2025-03-09
 author: "3manuek"
 draft: false
 series: "Postgres"
@@ -28,8 +28,7 @@ As of today, PGCat supports 2 mechanisms of sharding through extended syntax:
 - Setting `sharding_function` to use one of the available functions: `pg_bigint_hash` and `sha1`. The extended syntax `SET SHARDING KEY TO '<value>';` will calculate the index. Not very clear from docs how `sha1` function is used, so this post will focus on `pg_bigint_hash` case. 
   Shard by hash is a bold strategy, particularly if you expect to have a large workload, and you need to have enough compute across all shards.
   This extended syntax can be done through comments, see [pgcat Sharding documentation](https://github.com/postgresml/pgcat?tab=readme-ov-file#sharding).
-  It is not clear from PGCat's documentation how `sha1` is used for partitioning, so we'll focus the laboratory using 
-  `pg_bigint_hash` instead.
+  In this laboratory, we'll focus on the `pg_bigint_hash` function. It is not clear from PGCat's documentation how `sha1` should be implemented, by I'll extend the laboratory to cover it -- that is, if I overcome my _skill issues_ :P .
 
 At this point, you may be aware of the complexities of implementing sharding, and what limitations we expect from the hashing approach.
 Keep in mind that this PGCat feature is tied to the Postgres partition, based on the same [HASH_PARTITION_SEED](https://github.com/postgres/postgres/blob/27b77ecf9f4d5be211900eda54d8155ada50d696/src/include/catalog/partition.h#L20). 
@@ -319,8 +318,7 @@ ON CONFLICT (username) DO NOTHING;
 END;
 ```
 
-
-The way we connect to the sharded pool is by using the name as the database. For instance, we can execute the test
+The way we connect to the sharded pool is by using its name as the database (`shardpool` in this case). For instance, we can execute the test
 by issuing something like this (I'm using here Postgres.app for Mac, use your local binaries):
 
 ```bash
