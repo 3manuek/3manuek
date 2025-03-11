@@ -45,7 +45,8 @@ The strategy is simple in this laboratory: allocate more than one shard per node
 
 {{< mermaid >}}
 flowchart TD
-    CLIENT(fa:fa-database Client) --> POOL(fa:fa-database PGCat)    
+    POOL(fa:fa-database PGCat/shardpool) 
+    CLIENT(fa:fa-database Client) -. Port 15432 .-> POOL 
     POOL -->|Remainder 0| TABLEP0(fa:fa-table Parent Table)
     POOL -->|Remainder 1| TABLEP1(fa:fa-table Parent Table)
     POOL -->|Remainder 2| TABLEP2(fa:fa-table Parent Table)
@@ -57,7 +58,7 @@ flowchart TD
         TABLEP0 -.-> PART0(fa:fa-table Modulus 0 Partition)
         end
         subgraph Shard3 fa:fa-database
-        TABLEP3 -.-> PART3(fa:fa-table Modulus 0 Partition)
+        TABLEP3 -.-> PART3(fa:fa-table Modulus 3 Partition)
         end
     end
     subgraph Node2
@@ -65,7 +66,7 @@ flowchart TD
         TABLEP1 -.-> PART1(fa:fa-table Modulus 1 Partition)
         end
         subgraph Shard4 fa:fa-database
-        TABLEP4 -.-> PART4(fa:fa-table Modulus 0 Partition)
+        TABLEP4 -.-> PART4(fa:fa-table Modulus 4 Partition)
         end
     end
     subgraph Node3
@@ -73,7 +74,7 @@ flowchart TD
         TABLEP2 -.-> PART2(fa:fa-table Modulus 2 Partition)
         end
         subgraph Shard5 fa:fa-database
-        TABLEP5 -.-> PART5(fa:fa-table Modulus 0 Partition)
+        TABLEP5 -.-> PART5(fa:fa-table Modulus 5 Partition)
         end
     end
 {{< /mermaid >}}
@@ -83,7 +84,13 @@ Within this approach, you can start allocating more than one shard per node, and
 without the need of changing the modulus, which defines the total amount of allowed partitions. 
 
 Each shard holds the same parent table, with only one partition per shard which corresponds with its hash 
-reminder. 
+reminder. This is the only twist, and avoids accidental insertions into the wrong partition. Also, it allows you
+to operate those partitions independently. 
+
+{{< notice "info" >}}
+Note that you could merge partitions in the same shard and let PGCat point to the same node/shard, however the shard naming should be using a different convension. eg. shard_A, shard_B, etc.
+{{< /notice >}}
+
 
 This, combined with Logical Replication and the ability of PGCat for reloading configuration on the fly, will 
 allow to migrate each shard independently.
@@ -109,7 +116,7 @@ Here are the key parts of the laboratory:
 {{% tab tabName="0: Ansible Inventory" %}}
 
 The inventory contains 2 important variables: `shard_factor` and `shard_modulus`, where `shard_modulus` should be
-equal to `shard_factor * shard_factor`.
+divisible by the `shard_factor`.
 
 ```yaml
 all:
@@ -175,7 +182,7 @@ The ansible playbook uses `community.docker.docker_container` module for deployi
 
 {{% /tab %}}
 
-{{% tab tabName="2: Container Scripts" %}}
+{{% tab tabName="2: Model" %}}
 
 Each Postgres node contains a table with a single partition for the corresponding shard's remainder, getting its modulus 
 by extracting the index from the database name. 
@@ -204,9 +211,9 @@ CREATE TABLE users_{{ shard }}_v1 PARTITION OF users FOR VALUES WITH (MODULUS {{
 
 {{% /tab %}}
 
-{{% tab tabName="3: pgcat.toml" %}}
+{{% tab tabName="3: PGCat configuration" %}}
 
-The pgcat.toml is genrated through the following template:
+The `pgcat.toml` is generated through the following jinja template:
 
 ```jinja
 [pools.shardpool.users.0]
@@ -277,13 +284,15 @@ pipenv install
 export DOCKER_HOST=$(docker context inspect $(docker context show) | jq -r '.[].Endpoints.docker.Host')
 
 ansible-playbook main.yaml
+```
 
-# For cleaning up
+For cleaning up:
+
+```bash
 ansible-playbook main.yaml --tags clean
 ```
 
-
-A basic pgbench benchmark would like this:
+Now, for running basic benchmarks, we'll reuse the original tests and port them into pgbench format (see [pgbench-shard.sql](https://github.com/3manuek/lab_pgcat/blob/main/pgbench-shard.sql)):
 
 ```sql
 \set key random(1, 10000 * :scale)
@@ -301,7 +310,7 @@ SELECT * FROM users WHERE email = :key || '@example.com';
 END;
 ```
 
-Chaging the ID of rows requires some additional work, but PGCat allows this by doing:
+Chaging the ID of rows requires some additional work, but PGCat allows this by doing (that will migrate the row across remote partitions -- cool!):
 
 ```sql
 \set newkey random(1, 10000 * :scale)
