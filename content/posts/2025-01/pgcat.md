@@ -88,7 +88,7 @@ reminder. This is the only twist, and avoids accidental insertions into the wron
 to operate those partitions independently. 
 
 {{< notice "info" >}}
-Note that you could merge partitions in the same shard and let PGCat point to the same node/shard, however the shard naming should be using a different convension. eg. shard_A, shard_B, etc.
+Note that you could merge partitions in the same shard and let PGCat point to the same node/shard, however the shard naming should be using a different convension. eg. `shard_A`, `shard_B`, etc.
 {{< /notice >}}
 
 
@@ -327,8 +327,11 @@ ON CONFLICT (username) DO NOTHING;
 END;
 ```
 
-The way we connect to the sharded pool is by using its name as the database (`shardpool` in this case). For instance, we can execute the test
-by issuing something like this (I'm using here Postgres.app for Mac, use your local binaries):
+{{< notice "info" >}}
+The playbook executes a quick benchmark using a custom docker image. It is intended to extend this for running during period of time for gathering metrics.
+{{< /notice >}}
+
+The way we connect to the sharded pool is by using its name as the database (`shardpool` in this case). For instance, we can execute the test locally by issuing something like this (I'm using here Postgres.app for Mac, use your local binaries):
 
 ```bash
 PGBIN=/Applications/Postgres.app/Contents/Versions/17/bin/
