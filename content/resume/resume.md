@@ -23,11 +23,11 @@ _Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelC
 
 I'm a _Database Infrastructure and Software Engineer_, currently working at [Workato](https://workato.com) as a Staff Infrastructure Engineer.
 
-I design and implement Database Infrastructures and Engineering using mostly Open Source technologies. I did Production-grade setups for _top-notch_ companies, mostly on top of Open Source Technologies.
+I design and implement Database Infrastructures and Systems' Engineering using Open Source based technologies. I do Production-grade setups for _top-notch_ companies.
 My tasks go through Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
 Software Engineering, _mainly_ for database systems is also one of my core tasks.
 
-I have extensive experience in systems and database performance tunning, optimization and scalability.
+I have extensive experience in Systems and Database performance tunning, optimization and scalability.
 
 Lectured talks in several Database and non-database related conferences, in various countries. 
 Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
@@ -76,7 +76,8 @@ their IT ecosystems._
 > September 2024 - Present
 
 - Infrastructure Engineering.
-- Technologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, among many others.
+- Technologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, ArgoCD, Aurora, among many others.
+
 
 ### [Plataform3 SL](https://plataform3.com) - Owner
 > Madrid, Spain
@@ -251,7 +252,7 @@ Some of the highlighted customers: Adobe Echosign, Fitbit, Zendesk, Chegg, SendG
 > July 2009 - July 2010
 
 - Provided traning and support to national universities (as UNLP, UNC, UNNE, UNNOBA, UNCU, UNPA, UNR, etc), 
-support developers in DB modeling and administration of Postgresql-Informix-Mysql databases.
+support developers in DB modeling and administration of Postgresql-Informix-MySQL databases.
 - Data Architect tasks and server revisions. Planning migrations and future strategies to board new releases.
 - Coordinated teams for database support to enhance the compliant between apps of SIU.
 - Developing the production and pre-prod following plan for all the SIU apps. Server metrics and other stuff for high performance servers.
@@ -264,7 +265,7 @@ support developers in DB modeling and administration of Postgresql-Informix-Mysq
 - SysAdmin Unix at EA (Electronic Arts) Hydra - GOP project.
 - Maintained platform consisted in Oracle database 10, Apaches and Tomcats (VAP, VCM) Clustered, with several stages of deploy.
 - Main tasks were relate to deploys, environment configuration, VMWare Infraestructure Client maintenance and monitoring.
-- I did Mysql DBA tasks on Prod, Pre-Production and Development Servers for a Forums project. Fixing some character set problems and DDL, backups, restores, check, performance and others.
+- I did MySQL DBA tasks on Prod, Pre-Production and Development Servers for a Forums project. Fixing some character set problems and DDL, backups, restores, check, performance and others.
 - Basic knowledge on deployment / process with Maven - Ant - Hudson.
 - Assigned 50% to another project to provide Engineering Support at EA over Python scripting.
 
