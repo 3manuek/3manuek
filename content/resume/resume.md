@@ -8,16 +8,16 @@ date: 2023-02-18T12:27:33-06:00
 
 ---
 
+{{< notice "info" >}}
+_Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a>
+{{< /notice >}}
+
 - [Current Positions](#current-positions)
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
 - [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
 
 ---
-
-{{< notice "info" >}}
-_Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelCalvo.pdf">📎</a>
-{{< /notice >}}
 
 ## Bio(graffiti) 
 
@@ -44,7 +44,7 @@ Born in 🇦🇷, and living in 🇪🇸.
 | Experience in the following languages: **Go, Python, C, Bash**. |
 | Extensive experience in modern **SQL** and custom indexing in Postgres. |
 | Knowledge in Postgres Extensions development Framework and internals.|
-| CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, GH Actions, Gitlab CI, Kubernetes**, etc.|
+| CI/CD for deploying Production Cloud-based and bare-metal infrastructure using **Terraform/Packer, Ansible, Earthly, GH Actions, Gitlab CI, Kubernetes**, etc.|
 | Experience in containerized services as in **Kubernetes, Docker**. Also heavy experience in Virtualization technologies.|
 | Low-level knowledge of container technologies and programmatic image building with **Earthly** language, among other tooling. |
 | Consistent experience in almost every mayor Cloud provider. **Azure certified, GCloud, and AWS**.|
@@ -279,17 +279,19 @@ _The following roles were at Correo Argentino, under different administrative un
 > August 2008  -  February 2009
 
 - Managed production platform at Correo Argentino (over 400 terms with local Postgres databases and Linux enviroment).
+  Developed a custom deployer tool, speeding up workstations upgrade from days to less than 2 hours.
 - Some machines was enlaced with a Active Directory throw WinBind.
 - Created an improved deploy tool for scripts, database recovery, control and monitoring, etc.
 - Also managed servers over Centos 5 for the support area's knowledge-base application  (7 DB MySQL 5.1)
+
 
 #### Siemens - PHP developer
 > Monte Grande, Argentina
 >
 > January - August 2008
 
-- Admitel Platform developer. Consists in  PHP + (Javascript, Ajax, x/Html, xml) - Oracle 8i.
-Some of the 'extra' task was made some Perl scripts for support area.
+- Admitel Platform developer. Technologies: PHP + (Javascript, AJAX, x/HTML, XML) - Oracle 8i.
+- Perl scripting
 
 
 #### Huenei - Application Support

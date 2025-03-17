@@ -19,5 +19,8 @@ https://gohugo.io/content-management/shortcodes/ -->
 
 ## TODO
 
-- https://github.com/3manuek/complex_ext/tree/main blog about this
-- Search bar https://ruddra.com/add-search-functionality-hugo/
+- https://github.com/3manuek/complex_ext/tree/main Post about this for explaining the extension.
+
+
+
+- Search bar implemented following this:https://ruddra.com/add-search-functionality-hugo/

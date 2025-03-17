@@ -338,7 +338,11 @@ PGBIN=/Applications/Postgres.app/Contents/Versions/17/bin/
 PGPASSWORD=password ${PGBIN}/pgbench -h localhost -p 15432 -U shard_user -d shardpool -f pgbench-shard.sql -c 10 -T 10 
 ```
 
-In the next posts, I'll run stress benchmarks with different shard modulus and doing shard migrations combining Logical Replication 
-and PGCat hot-reloading.
+## What's next?
+
+- Conducting a stress benchmark might need some resources, and it is not probably the point of this investigation. 
+- The point here is to combine both logical migration and pgcat capability for managing the entire process of switching endpoints.  
+- Also, the laboratory was kind of an experimental try on Ansible modules for managing docker containers, due that I had experienced limitations with compose/stack templating stateful services and rendered configuration. 
+  So I tried Ansible and all those limitations were gone, not without some work and extra typing as you need sort of reproduce all objects creation through different tasks (ofc). But, I found it much more easy to manage, extend and fix. I'm able to have, let's say, different stacks using the same core infrastructure. 
 
 Thanks for reading!
