@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Database and Software Engineering. IT Consultant._"
+subtitle: "_Database and Software Engineering -- Open Source Contributor -- IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 ---
 
@@ -20,21 +20,18 @@ _Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelC
 ---
 
 ## Bio(graffiti) 
+I'm a _Database Infrastructure and Software Engineer_, with a passion for Open Source technologies, and a strong focus in _scalability_, _reliability_, and _performance_.
 
-I'm a _Database Infrastructure and Software Engineer_, currently working at [Workato](https://workato.com) as a Staff Infrastructure Engineer.
+Currently, I'm working at [Workato](https://workato.com) as a Staff Infrastructure Engineer in the Data Stores team, where I'm responsible for designing and implementing Database Infrastructures and Systems' Engineering.
 
-I design and implement Database Infrastructures and Systems' Engineering using Open Source based technologies. I do Production-grade setups for _top-notch_ companies.
-My tasks go through Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance.
-Software Engineering, _mainly_ for database systems is also one of my core tasks.
+My tasks involve Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance. I also have a strong focus on Software Engineering, _mainly_ for database systems.
 
-I have extensive experience in Systems and Database performance tunning, optimization and scalability.
+Open Source is a key part of my work, and I'm an active contributor to several projects, such as [Babelfish for Postgres](https://github.com/babelfish-for-postgres), 
+[Earthly](https://earthly.io), among others. Check [toolbox](/toolbox) for some of my contributions.
 
-Lectured talks in several Database and non-database related conferences, in various countries. 
-Some of the slides can be found at my [slides](https://github.com/3manuek/slides) repository.
+I'm also a speaker at conferences and meetups, where I share my knowledge and experiences in the field of Database and Systems Engineering. You can find some of my talks at my [slides](https://github.com/3manuek/slides) repository.
 
-Owner at [Plataform3 SL](https://plataform3.com/), a boutique shop for Software Development and Engineering.
-
-Born in 🇦🇷, and living in 🇪🇸. 
+I was born in 🇦🇷, and I'm currently living in 🇪🇸.
 
 ---
 
@@ -78,14 +75,6 @@ their IT ecosystems._
 - Infrastructure Engineering.
 - Technologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, ArgoCD, Aurora, among many others.
 
-
-### [Plataform3 SL](https://plataform3.com) - Owner
-> Madrid, Spain
->
-> December 2021 - Present
-
-Software Development and Engineering firm.
-
 ---
 
 ## Past Experience
@@ -123,10 +112,10 @@ Technologies:
 - Languages: Golang, Python, C, bash. Time to time I code in NodeJS.
 - Main Cloud Providers: Google Cloud, AWS, etc.
 
-### [ViaDB](https://viadb.ar)
-> Buenos Aires, Argentina
+### [ViaDB](https://viadb.ar) / [Plataform3 SL](https://plataform3.com) - Founder
+> Buenos Aires, Argentina / Madrid, España
 >
-> December, 2021 - November 2023 (closed)
+> December, 2021 - February 2025
 
 > I was the founder of [ViaDB](https://viadb.ar), specialized in
 > consultancy and tool development for Open Source Databases, using a variety of programming languages 
@@ -136,12 +125,15 @@ Technologies:
 to relocation. See more at [ViaDB](https://viadb.ar).
 
 
-{{< details summary="ViaDB Customers" >}}
+{{< details summary="ViaDB/Plataform Customers" >}}
 
+- FreebieFlow (US)
+- GrupoTX (Panama)
 - Maper (Argentina) 
 - Openpass (Argentina) 
 - Mural (Argentina) 
 - Frávega (Argentina) 
+- OnGres (Spain)
 - iMedicare (USA)
 - Eloquentix (US)
 - 8kdata (Madrid)
@@ -150,8 +142,6 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 - Scienza (Argentina)
 - Syscope (Argentina)
 - Mexane (Argentina) 
-- Contenta Mobile (Argentina)
-- Slots Machines (Argentina) 
 - TreeLogic (Asturias) 
 - BTS (Usa - Zaragoza) 
 - LCRCOM.net (Madrid)  

@@ -21,6 +21,6 @@ https://gohugo.io/content-management/shortcodes/ -->
 
 - https://github.com/3manuek/complex_ext/tree/main Post about this for explaining the extension.
 
-
+- PEV2 integration https://github.com/dalibo/pev2/ , see `layouts/shortcodes/pev2.html`
 
 - Search bar implemented following this:https://ruddra.com/add-search-functionality-hugo/

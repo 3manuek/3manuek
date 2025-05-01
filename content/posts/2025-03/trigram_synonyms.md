@@ -10,6 +10,8 @@ tags:
   - RDS
 ---
 
+<!-- See shortcodes/pev2.html, not working. head.tml, see PEV2 -->
+<!-- {{< pev2 plan="Seq Scan on foo  (cost=0.00..155.00 rows=10000 width=4)" >}} -->
 
 {{< notice "info">}}
 If you have a vanilla or access to Filesystem in your Postgres setup, just use Thesaurus synonyms! 
