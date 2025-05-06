@@ -374,7 +374,7 @@ ranging from medium to high security._
 
 - Instructor
 
-### Young-Adult Complex (Unit 24,26 and Drog-Addiction Rehab Facility)
+### Young-Adult Complex (Unit 24,26 and Drugaddiction Rehab Facility)
 > Complejo Penitenciario de Jóvenes Adultos de Marcos Paz (CPFA)
 >
 > January 2000 - 2002
