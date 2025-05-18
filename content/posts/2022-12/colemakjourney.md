@@ -158,7 +158,7 @@ Another nice exercise is to type variants of the following sentence:
 > The quick brown fox; jumps, over the lazy -- dog.
 
 The weird punctuation is on purpose: you may want to add symbols in your exercises oftenly.
-But at this point I guess you get the point. This is a little harder than you think, but not
+But at this point, I guess you get the point. This is a little harder than you think, but not
 harder than typing the alphabet. But I think that this is a very good exercise, as you don't 
 miss any letter.
 
