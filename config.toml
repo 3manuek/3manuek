@@ -20,7 +20,7 @@ unsafe = true
 [params]
     brand = "3manuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-    brand_image = "/images/profile4.jpeg"    # path to the image shown in the sidebar
+    brand_image = "/images/profile5.jpg"    # path to the image shown in the sidebar
     description = "Emanuel Calvo" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
@@ -50,7 +50,7 @@ unsafe = true
     TagMenuWeight = 3 # Only show tags that have more than N posts. 
 
     aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
-    aboutPics = ["/images/profile_petronas.png","/images/profile_petronas2.png"]
+    aboutPics = ["/images/profile_petronas2.png","/images/profile4.jpeg"]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
     discord_url = "https://discord.com/3manuek"
