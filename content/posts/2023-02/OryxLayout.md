@@ -37,7 +37,7 @@ both hands. Whether in Dorak, your left hand will work slightly more than your r
 ## First of all, does the Ergodox Keyboard pays-off?
 
 Yes. Even tho, I saw some other interesting options such as [UHK60](https://ultimatehackingkeyboard.com/product/uhk60v2),
-which is not Ortholinear, but it is a slipt keyboard. But the Ortholinear Keyboard was something that I wanted to give a try.
+which is not Ortholinear, but it is a _split keyboard_. But, the Ortholinear Keyboard was something that I wanted to give a try.
 It was a bold move, cause at that time the price was easily over the 350USD (no cap keys, and cherry switches bloated the price).
 
 The design is stern, the overall quality is good, although from outside it doesn't seem a sophisticated keyboard. Probably
