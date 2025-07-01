@@ -15,7 +15,7 @@ layout: single
 
 {{< notice "info" >}}
 More information, see [the versioning page](https://www.postgresql.org/support/versioning/).
-Why upgrade? More detailed feature diss at [Depesz](https://why-upgrade.depesz.com/).
+Why upgrade? More detailed feature diff at [Depesz](https://why-upgrade.depesz.com/).
 
 {{< /notice >}}
 
