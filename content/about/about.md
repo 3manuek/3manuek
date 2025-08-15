@@ -18,10 +18,3 @@ Upon this site, thou shalt find snippets of mine work, writings, and sundry othe
 Much more shall grace this page anon!
 
 ---
-
-> Se preguntarán los hispano parlantes, que caraj*s hago escribiendo sólo en Inglés. Pues, si bien verán
-> varios typos y errores gramaticales, lo cierto es que el mejor lenguaje para documentación técnica es el 
-> Inglés. Por eso, también verán que los artículos utilizan un vocabulario y una semántica bastante plana,
-> casi rudimentaria. Esto es intencional. La intención es que quién lea, no tenga que enredarse con el idioma.
-
----

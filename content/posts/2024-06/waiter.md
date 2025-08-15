@@ -11,7 +11,7 @@ tags:
 ---
 
 
-If you're in this post, is because you need to implement a consistent way to add concurrency to your scripts.
+If you're in this post, is because you need to implement a consistent way to add parallelization to your scripts.
 This implementation is limited, as it does not contemplates grouping jobs for setting different process
 groups with different settings or priorities.
 
@@ -37,7 +37,7 @@ waitall(){
 
 ```
 
-The `waiter` function does the check that the current number of jobs spawned _currently_ by the process do not exceed
+The `waiter` function does the check that the current number of jobs _currently_ spawned by the main process do not exceed
 the `maxJobs` value using the standard [`wait`][2] call. 
 
 The `wait -n` command waits the next job to terminate. This is for all the jobs that are running at that point in time.

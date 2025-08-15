@@ -31,7 +31,7 @@ Open Source is a key part of my work, and I'm an active contributor to several p
 
 I'm also a speaker at conferences and meetups, where I share my knowledge and experiences in the field of Database and Systems Engineering. You can find some of my talks at my [slides](https://github.com/3manuek/slides) repository.
 
-I was born in 🇦🇷, and I'm currently living in 🇪🇸.
+Born in 🇦🇷, living in 🇪🇸.
 
 ---
 
@@ -77,6 +77,23 @@ I practice [Radical Candor](https://www.radicalcandor.com/), and I’m just as m
 
 - Infrastructure Engineering.
 - Technologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, ArgoCD, Aurora, among many others.
+- See [GH profile](https://github.com/ecalvo-workato).
+
+### Independent Consultant
+> Remote. Madrid, Spain
+>
+
+Services include, but not limited to:
+
+- Infrastructure Engineering.
+- Database Engineering.
+- Systems development.
+
+{{< details summary="Customers" >}}
+- Leonardo247 (US)
+- Wipshub (Mexico)
+- Bitscrunch (Germany)
+{{< /details >}}
 
 ---
 
@@ -387,13 +404,3 @@ ranging from medium to high security._
 
 {{< /details >}}
 
-<!-- If you are reading this is because you are looking for easter eggs. -->
-<!-- 3 men climbing a mountain, thousands of pleebs follow them tiresly. -->
-<!-- Hard times ahead, cause the hardest part isn't climbing the mountain, -->
-<!-- but to ask the right questions on why the fuck are we climbing it. -->
-<!-- - Is it just to make a point? -->
-<!-- - Could have been an e-mail? -->
-<!-- - Why we didn't build a tunnel here? -->
-
-<!-- The apocalypse is near, we can all smell it, it's in the air, the news, -->
-<!-- sociology books, manga, and all the holy books, ofc. -->
