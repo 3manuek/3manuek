@@ -20,7 +20,7 @@ unsafe = true
 [params]
     brand = "3manuek"                      # name of your site - appears in the sidebar
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
-    brand_image = "/images/profile5.jpg"    # path to the image shown in the sidebar
+    brand_image = "/images/profile5.png"    # path to the image shown in the sidebar
     description = "Emanuel Calvo" # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)

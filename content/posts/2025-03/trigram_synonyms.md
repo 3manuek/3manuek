@@ -30,6 +30,8 @@ implemetation.
 The first iteration is quite simple. One table for entries, one for synonyms. Then, we do a proximity search with the proper
 indexes using Trigram operators.
 
+> Additional read: [Semantic Search in Postgres from Cybertec post](https://www.cybertec-postgresql.com/en/semantic-search-in-postgresql-an-overview/).
+
 
 {{< tabs tabTotal="3" >}}
 
