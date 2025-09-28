@@ -25,12 +25,6 @@ Those situations could be:
 {{< /notice >}}
 
 
-
-Here, you can explore the original threads about this topic:
-
-- [Original Thread](https://github.com/pgbackrest/pgbackrest/issues/1031)
-- [Comment from `sean0101n`](https://github.com/pgbackrest/pgbackrest/issues/900#issuecomment-580910343)
-
 ## Configuration
 
 Configuration on your `postgresql.conf`:
@@ -58,4 +52,16 @@ In your `pgbackrest` command, you need to add the `--archive-check=n` option:
 The `--archive-check=n` option avoids pre-checking the archive status. This makes the command not to fail if archives are not being stored.
 
 The `archive_command` shown above, will only store archives _if backup is running_, checking if the pgbackrest lock file exists.
+
+## Ups, I wan't archives now
+
+If you want to re-enable archives, you need to run a full backup after changing your `archive_command`, otherwise, those stored archives would be useless for PITR.
+
+
+## References
+
+Here, you can explore the original threads about this topic:
+
+- [Original Thread](https://github.com/pgbackrest/pgbackrest/issues/1031)
+- [Comment from `sean0101n`](https://github.com/pgbackrest/pgbackrest/issues/900#issuecomment-580910343)
 
