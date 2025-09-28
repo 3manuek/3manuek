@@ -1,5 +1,5 @@
 ---
-title: "Postgres State Partitioning for Dispatcher/Conductor in Transactional Outbox Pattern"
+title: "Postgres Partitioning Strategies for Transactional Outbox Pattern"
 subtitle: "Just another modeling strategy for outbox pattern"
 date: 2025-07-01
 author: "3manuek"
@@ -124,4 +124,5 @@ Recursive trick:
 
 
 [1]: https://www.rudderstack.com/blog/scaling-postgres-queue/
-
+[2]: https://github.com/3manuek/txoutbox
+[3]: https://aws.amazon.com/blogs/database/archive-and-purge-data-for-amazon-rds-for-postgresql-and-amazon-aurora-with-postgresql-compatibility-using-pg_partman-and-amazon-s3/
