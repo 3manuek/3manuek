@@ -1,0 +1,79 @@
+{{/* Usage:
+{{< popup title="Welcome!" >}}
+Your HTML or Markdown content here.
+{{< /popup >}}
+*/}}
+
+{{ $title := .Get "title" | default "Heads up!" }}
+
+<dialog id="auto-popup" class="auto-popup">
+  <h3>{{ $title }}</h3>
+  <div class="content">
+    {{ .Inner | markdownify }}
+  </div>
+  <form method="dialog">
+    <button class="close-btn">Close</button>
+  </form>
+</dialog>
+
+<script>
+(function(){
+  const dlg = document.getElementById("auto-popup");
+  if (!dlg) return;
+
+  // Open automatically after short delay
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      dlg.showModal();
+    }, 1000); // delay 1 second (adjust as needed)
+  });
+
+  // Close when clicking outside the dialog area
+  dlg.addEventListener("click", (e) => {
+    const rect = dlg.getBoundingClientRect();
+    const clickedOutside =
+      e.clientX < rect.left ||
+      e.clientX > rect.right ||
+      e.clientY < rect.top ||
+      e.clientY > rect.bottom;
+    if (clickedOutside) dlg.close();
+  });
+})();
+</script>
+
+<style>
+.auto-popup {
+  border: none;
+  border-radius: 14px;
+  padding: 20px 24px;
+  max-width: 500px;
+  width: 90vw;
+  box-shadow: 0 10px 40px rgba(0,0,0,.3);
+  font-family: system-ui, sans-serif;
+}
+.auto-popup::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+.auto-popup h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+.auto-popup .close-btn {
+  margin-top: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+.auto-popup .close-btn:hover {
+  opacity: 0.9;
+}
+@media (prefers-color-scheme: dark) {
+  .auto-popup {
+    background: #111;
+    color: #e5e7eb;
+  }
+}
+</style>

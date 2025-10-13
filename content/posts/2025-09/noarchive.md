@@ -10,6 +10,8 @@ tags:
   - PGBackRest
 ---
 
+
+
 Even tho is not documented in the official documentation, it is possible to avoid storing archives on PGBackRest setups. In certain scenarios, you may want to disregard storing archives for reducing costs, specially if you are using cloud storage for your backups.
 
 Those situations could be:
