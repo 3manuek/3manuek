@@ -4,14 +4,18 @@ languageCode = "en-us"
 theme = "poison"
 ## 
 author = "Emanuel"
-paginate = 7
+#paginate = 7
+pagination.pagerSize = 7
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 Title = "3manuek"
 
-# NOTE: If using Disqus as commenting engine, uncomment and configure this line
+# NOTE: If using Disqus as commenting engine, configure this line
 disqusShortname = "tr3s-ma"
 
 enableRobotsTXT = true
+
+[services.disqus]
+    shortname = "tr3s-ma"
 
 # # For allowing downlodeable links
 [markup.goldmark.renderer]
@@ -117,6 +121,7 @@ unsafe = true
     text_color_dark = "#EEE"                        # default is #EEE
 
     bullet = "●"
+    
     # NOTE: If using Remark42 as commenting engine, uncomment and configure these lines
     # remark42 = true
     # remark42_host = "https://yourhost.com"
