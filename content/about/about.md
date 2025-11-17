@@ -6,7 +6,7 @@ date: 2023-02-18T12:27:33-06:00
 
 > Profile pic credits 🙌🏻 to [Alex Efimov](https://www.playbook.com/s/alexefimov/rMzzQ9dzy3nLQFSShdKVrUx2?assetToken=xsRF9kW8vxwdwcwsq2XERjiv). 
 
-{{< popup title="🎉 I'll be speaking at Nerdearla.es!" >}}
+<!-- {{< popup title="🎉 I'll be speaking at Nerdearla.es!" >}}
 Seré parte de #Nerdearla España 2025 🎉
 Es el evento gratuito de tecnología y open source más grande en español.
 📍 13 al 15 de noviembre - Madrid + streaming
@@ -14,7 +14,7 @@ Conecta con 100+ speakers de todo el mundo, aprende y comparte con la comunidad.
 
 [![Nerdearlaes](/images/nerdearlaes.jpg)](https://nerdearla.es)
 
-{{< /popup >}}
+{{< /popup >}} -->
 
 ---
 
