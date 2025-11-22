@@ -9,6 +9,10 @@ tags:
     - Postgres
     - Labs
     - Docker
+    - Patroni
+    - Debezium
+    - Airflow
+    - Sharding
 ---
 
 ## Description
