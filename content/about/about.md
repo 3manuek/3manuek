@@ -29,3 +29,14 @@ Much more shall grace this page anon!
 
 
 ---
+
+{{< notice "info" >}}
+_Committed to my principles and values that drive my work, I also collaborated
+with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
+[Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
+their IT ecosystems._
+{{< /notice >}}
+
+{{< notice "warning" >}}
+I practice [Radical Candor](https://www.radicalcandor.com/), and I’m just as much a fan of Colemak.
+{{< /notice >}}

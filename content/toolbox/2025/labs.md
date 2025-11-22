@@ -1,5 +1,5 @@
 ---
-title: "Postgres on Docker laboratories"
+title: "Postgres, Databases and integration laboratories"
 subtitle: "HA, CDC and other laboratories for Postgres"
 date: 2025-11-01
 author: "3manuek"
@@ -35,8 +35,9 @@ Some of them are focused on High Availability, others are focused on Change Data
 - [Sharding with PGCat](https://github.com/3manuek/labs/tree/main/pgcat_hash_sharding)
   - Implementation of a Hash-Sharding based using PgCat. Potentially reusable with PgDog.
 - [Patroni on Swarm](https://github.com/3manuek/labs/tree/main/swarm)
-  - Implementing a Patroni cluster over Docker Swarm.
-  - Several solutions are present in this laboratory. Currently WIP.
+  - Implementing a Patroni cluster over Docker Swarm in AWS EC2 machines.
+  - Several solutions are present in this laboratory: Timescale HA, and Patroni/Citus, among others. 
+  - _Currently WIP_.
 
 Other laboratories contain Transactional Outbox strategies, Debezium and Airflow integrations, which would be used in future posts.  
 

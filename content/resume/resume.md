@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Database and Software Engineering -- Open Source Contributor -- IT Consultant._"
+subtitle: "_Database Infrastructure and Software Engineering -- Open Source Contributor -- IT Consultant._"
 date: 2023-02-18T12:27:33-06:00
 ---
 
@@ -20,13 +20,14 @@ _Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelC
 ---
 
 ## Bio(graffiti) 
+
 I'm a _Database Infrastructure and Software Engineer_, with a passion for Open Source technologies, and a strong focus in _scalability_, _reliability_, and _performance_.
 
 Currently, I'm working at [Workato](https://workato.com) as a Staff Infrastructure Engineer in the Data Stores team, where I'm responsible for designing and implementing Database Infrastructures and Systems' Engineering.
 
 My tasks involve Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance. I also have a strong focus on Software Engineering, _mainly_ for database systems.
 
-Open Source is a key part of my work, and I'm an active contributor to several projects, such as [Babelfish for Postgres](https://github.com/babelfish-for-postgres), 
+Open Source is a key part of my work, and I'm an active and past contributor to several projects, such as [Babelfish for Postgres](https://github.com/babelfish-for-postgres), 
 [Earthly](https://earthly.io), among others. Check [toolbox](/toolbox) for some of my contributions.
 
 I'm also a speaker at conferences and meetups, where I share my knowledge and experiences in the field of Database and Systems Engineering. You can find some of my talks at my [slides](https://github.com/3manuek/slides) repository.
@@ -54,17 +55,6 @@ Born in 🇦🇷, living in 🇪🇸.
 | Develop engineering tools to ensure seamless operation and maximum efficiency.|
 
 
-
-{{< notice "info" >}}
-_Committed to my principles and values that drive my work, I also collaborate
-with Argentinian non-profit organizations such as [Apolo Foundation](https://fundacionapolo.org), 
-[Oportunidades Foundation](https://oportunidades.org.ar) among others to develop and support 
-their IT ecosystems._
-{{< /notice >}}
-
-{{< notice "warning" >}}
-I practice [Radical Candor](https://www.radicalcandor.com/), and I’m just as much a fan of Colemak.
-{{< /notice >}}
 
 ---
 
@@ -308,7 +298,6 @@ _The following roles were at Correo Argentino, under different administrative un
 > Monte Grande , Argentina
 >
 > October 2007 - January 2008
-
 
 - Terminal administration in W/NT and 2K remote servers. Configuration, control, monitoring. Attend Remedy tickets for fix problems and others.
 - The application was in Paradox and Oracle databases, in which my tasks consisted in repair tables, fix some wrong data and others.
