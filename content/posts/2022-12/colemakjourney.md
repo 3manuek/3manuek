@@ -56,7 +56,7 @@ using just one wouldn't make sense. The new ortholinear keyboard required to reh
 pulish some skills.
 
 As the keyboard has unlabeled keys, Touch Typing is needed. Touch Typing is the techique
-of no doing visual contact with the keyboard -- it it more complex than that, but you 
+of no doing visual contact with the keyboard -- it's more complex than that, but you 
 will need to investigate and practice this anyway.
 
 The ortholinear disposition is more optimal for the pinky finger access, and corrects the hand
@@ -76,7 +76,7 @@ The best sites to start with proper Touch Typing are:
 - [typingstudy.com][8]
 - [keybr.com][9]
 
-## Accuracy and Speed: to different methods to practice
+## Accuracy and Speed: 2 different methods to practice
 
 For accuracy training, the best way is to train _consistency_. That is, keep as much as
 possible the writting speed through a period of time. Larger texts or above the minute
@@ -93,14 +93,15 @@ For practicing speed, you'll need to use tools that allow you to rewrite the wor
 That is, avoid the usage of the backspace key. 
 
 In my case, I rather prefer to work on accuracy. The whole point of switching layouts was to 
-reduce the typing effort. The fastest the speed, the lower the accuracy in most of the times.
+reduce the typing effort. The fastest the speed, the lower the accuracy most of the times.
 Although, I train speed oftenly, and I like the online competitions as they use to be customized
 for ignoring or reducing the usage of the backspace.
 
 
 ## N-grams
 
-One thing that seems easy but it might be harder than you expect, is to train with sets of 2 and 3 grams. Any tool that allows you to set your text may serve the purpose.
+One thing that seems easy but it might be harder than you expect, is to train with sets of 2 and 3 grams. 
+Any tool that allows you to set your text may serve the purpose.
 
 
 {{< tabs tabTotal="2">}}
