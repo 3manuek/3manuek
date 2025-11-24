@@ -23,7 +23,7 @@ _Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelC
 
 I'm a _Database Infrastructure and Software Engineer_, with a passion for Open Source technologies, and a strong focus in _scalability_, _reliability_, and _performance_.
 
-Currently, I'm working at [Workato](https://workato.com) as a Staff Infrastructure Engineer in the Data Stores team, where I'm responsible for designing and implementing Database Infrastructures and Systems' Engineering.
+Currently, I'm working at [Workato](https://workato.com) as a **Staff Infrastructure Engineer** in the Data Stores team, where I'm responsible for designing and implementing Database Infrastructures and Systems' Engineering.
 
 My tasks involve Development, Deployment, Provisioning, CD/CI, and 2nd Day Operations to scalability, and performance. I also have a strong focus on Software Engineering, _mainly_ for database systems.
 

@@ -1,0 +1,29 @@
+# Spanish translations
+
+[menu_about]
+other = "🪪 Acerca de"
+
+[menu_resume]
+other = "📃 Currículum"
+
+[menu_posts]
+other = "📓 Publicaciones"
+
+[menu_toolbox]
+other = "⚙️ Herramientas"
+
+[menu_tags]
+other = "🏷️"
+
+[language_switcher]
+other = "Idioma"
+
+[read_more]
+other = "Leer más"
+
+[page_not_found]
+other = "Página no encontrada"
+
+[go_home]
+other = "Ir al inicio"
+

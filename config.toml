@@ -1,5 +1,6 @@
 baseURL = "https://tr3s.ma"
-languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 ## Using a modified version of <a href="https://poison.lukeorth.com/posts/introducing-poison/">Poison</a>.
 theme = "poison"
 ## 
@@ -51,7 +52,7 @@ unsafe = true
     ## Custom variables over Poison's. About Page and menu stuff.
     ## TODO: make tags part of the menu instead of being configured differently (theme partials/sidebar/menu.html)
     tagMenuTitle = "🏷️"
-    TagMenuWeight = 3 # Only show tags that have more than N posts. 
+    TagMenuWeight = 6 # Only show tags that have more than N posts. 
 
     aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
     aboutPics = ["/images/profile_petronas2.png","/images/profile4.jpeg"]
@@ -147,3 +148,43 @@ unsafe = true
 ## Custom variables over Poison's. For searcher.
 [outputs]
     home = ["HTML", "RSS", "JSON"]
+
+# Multilingual configuration
+[languages]
+[languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+    title = "3manuek"
+    contentDir = "content"
+    
+    [languages.en.params]
+        description = "Emanuel Calvo"
+        brand = "3manuek"
+        menu = [
+            {Name = "🪪 About", URL = "/about/", HasChildren = false},
+            {Name = "📃 Résumé", URL = "/resume/", HasChildren = false},
+            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 3},
+            {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
+        ]
+        tagMenuTitle = "🏷️"
+        aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
+    
+[languages.es]
+    languageName = "Español"
+    languageCode = "es-es"
+    weight = 2
+    title = "3manuek"
+    contentDir = "content/es"
+    
+    [languages.es.params]
+        description = "Emanuel Calvo"
+        brand = "3manuek"
+        menu = [
+            {Name = "🪪 Acerca de", URL = "/about/", HasChildren = false},
+            {Name = "📃 Currículum", URL = "/resume/", HasChildren = false},
+            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 3},
+            {Name = "⚙️ Herramientas", URL = "/toolbox/", HasChildren = true, Limit = 0},
+        ]
+        tagMenuTitle = "🏷️"
+        aboutDesc = "Mi nombre es Emanuel \"_Tresma_\" -- el apodo español de _3manuek_ (Ema), mi idioma nativo. Actualmente viviendo en Madrid 🇪🇸, pero aún haciendo _roundtripping_ a Buenos Aires 🇦🇷 ."
