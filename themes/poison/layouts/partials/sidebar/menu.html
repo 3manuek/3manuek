@@ -5,11 +5,21 @@
         {{ $taxonomies := .Site.Taxonomies }}
         {{ range .Site.Params.menu }}
         {{ $menu_item := . }}
+            {{ $menuName := $menu_item.Name }}
+            {{ if eq $menu_item.URL "/about/" }}
+                {{ $menuName = i18n "menu_about" }}
+            {{ else if eq $menu_item.URL "/resume/" }}
+                {{ $menuName = i18n "menu_resume" }}
+            {{ else if eq $menu_item.URL "/posts/" }}
+                {{ $menuName = i18n "menu_posts" }}
+            {{ else if eq $menu_item.URL "/toolbox/" }}
+                {{ $menuName = i18n "menu_toolbox" }}
+            {{ end }}
             {{ if eq (len $menu_item.URL) 0 }}
-                <li class="heading">{{ $menu_item.Name }}</li>
+                <li class="heading">{{ $menuName }}</li>
             {{ else if $menu_item.External }}
                 <li class="bullet">
-                    <a href="{{ $menu_item.URL }}" target="_blank" rel="noopener noreferrer">{{ $menu_item.Name }}</a>
+                    <a href="{{ $menu_item.URL }}" target="_blank" rel="noopener noreferrer">{{ $menuName }}</a>
                 </li>
             {{ end }}
 
@@ -17,7 +27,7 @@
                 {{ $trimmedURL := (lower (strings.TrimSuffix "/" (strings.TrimPrefix "/" $menu_item.URL))) }}
                 {{ if eq (lower .Title) (replace $trimmedURL "-" " ") }}
                     <li class="heading">
-                        <a href="{{ $menu_item.URL }}">{{ $menu_item.Name }}</a>
+                        <a href="{{ $menu_item.URL | relLangURL }}">{{ $menuName }}</a>
                     </li>
                     {{ if $menu_item.HasChildren }}
                         <li class="sub-heading">
@@ -34,13 +44,13 @@
             {{ range $name, $taxonomy := $taxonomies }}
                 {{ if eq (lower $name) (lower $menu_item.Name) }}
                     <li class="heading">
-                        <a href="{{$menu_item.URL }}">{{ $menu_item.Name }}</a>
+                        <a href="{{$menu_item.URL | relLangURL }}">{{ $menuName }}</a>
                     </li>
                 {{ end }}
                 {{ range $term, $page := $taxonomy }}
                         {{ if eq (lower $term) (lower $menu_item.Name) }}
                             <li class="heading">
-                                <a href="{{$menu_item.URL }}">{{ $menu_item.Name }}</a>
+                                <a href="{{$menu_item.URL | relLangURL }}">{{ $menuName }}</a>
                             </li>
                             {{ if $menu_item.HasChildren }}
                             <li class="sub-heading">
@@ -59,7 +69,7 @@
         
         <!-- Menu Tags -->
         <li class="heading">
-            {{ .Site.Params.tagMenuTitle }}
+            {{ i18n "menu_tags" }}
         </li>
         <ul class="tags">
             {{ $weight := .Site.Params.TagMenuWeight }}

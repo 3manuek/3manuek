@@ -1,0 +1,29 @@
+# English translations
+
+[menu_about]
+other = "🪪 About"
+
+[menu_resume]
+other = "📃 Résumé"
+
+[menu_posts]
+other = "📓 Posts"
+
+[menu_toolbox]
+other = "⚙️ Toolbox"
+
+[menu_tags]
+other = "🏷️"
+
+[language_switcher]
+other = "Language"
+
+[read_more]
+other = "Read more"
+
+[page_not_found]
+other = "Page not found"
+
+[go_home]
+other = "Go home"
+

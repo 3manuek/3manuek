@@ -69,6 +69,36 @@
 <meta name="twitter:url" content="{{ .Permalink }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
+<!-- Multilingual hreflang tags for SEO -->
+{{ if hugo.IsMultilingual }}
+  {{ range .Site.Languages }}
+    {{ $lang := . }}
+    {{ if eq $lang.Lang $.Site.Language.Lang }}
+      <link rel="alternate" hreflang="{{ $lang.Lang }}" href="{{ $.Permalink }}" />
+    {{ else }}
+      {{ $translatedPage := false }}
+      {{ range $.Page.Translations }}
+        {{ if eq .Lang $lang.Lang }}
+          {{ $translatedPage = . }}
+        {{ end }}
+      {{ end }}
+      {{ if $translatedPage }}
+        <link rel="alternate" hreflang="{{ $lang.Lang }}" href="{{ $translatedPage.Permalink }}" />
+      {{ else }}
+        {{ $currentRelPermalink := $.RelPermalink }}
+        {{ $translatedRelPermalink := $currentRelPermalink | strings.TrimPrefix (printf "/%s/" $.Site.Language.Lang) }}
+        {{ if eq $translatedRelPermalink $currentRelPermalink }}
+          {{ $translatedRelPermalink = printf "/%s%s" $lang.Lang $currentRelPermalink }}
+        {{ else }}
+          {{ $translatedRelPermalink = printf "/%s%s" $lang.Lang $translatedRelPermalink }}
+        {{ end }}
+        <link rel="alternate" hreflang="{{ $lang.Lang }}" href="{{ $translatedRelPermalink | absURL }}" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{ end }}
+
 <!-- Date Tags -->
 <meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
 

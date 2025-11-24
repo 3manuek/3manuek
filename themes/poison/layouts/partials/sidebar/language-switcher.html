@@ -1,0 +1,33 @@
+{{ if hugo.IsMultilingual }}
+<div class="language-switcher">
+    <label for="language-select" style="display: none;">{{ i18n "language_switcher" }}</label>
+    <select id="language-select" onchange="window.location.href=this.value" style="background-color: {{ .Site.Params.sidebar_bg_color }}; color: {{ .Site.Params.sidebar_a_color }}; border: 1px solid {{ .Site.Params.sidebar_img_border_color }}; padding: 5px; border-radius: 3px; margin-bottom: 10px; width: 100%;">
+        {{ range .Site.Languages }}
+            {{ $lang := . }}
+            {{ if eq $lang.Lang $.Site.Language.Lang }}
+                <option value="{{ $.Permalink }}" selected>{{ $lang.LanguageName }}</option>
+            {{ else }}
+                {{ $translatedPage := false }}
+                {{ range $.Page.Translations }}
+                    {{ if eq .Lang $lang.Lang }}
+                        {{ $translatedPage = . }}
+                    {{ end }}
+                {{ end }}
+                {{ if $translatedPage }}
+                    <option value="{{ $translatedPage.Permalink }}">{{ $lang.LanguageName }}</option>
+                {{ else }}
+                    {{ $currentRelPermalink := $.RelPermalink }}
+                    {{ $translatedRelPermalink := $currentRelPermalink | strings.TrimPrefix (printf "/%s/" $.Site.Language.Lang) }}
+                    {{ if eq $translatedRelPermalink $currentRelPermalink }}
+                        {{ $translatedRelPermalink = printf "/%s%s" $lang.Lang $currentRelPermalink }}
+                    {{ else }}
+                        {{ $translatedRelPermalink = printf "/%s%s" $lang.Lang $translatedRelPermalink }}
+                    {{ end }}
+                    <option value="{{ $translatedRelPermalink | absURL }}">{{ $lang.LanguageName }}</option>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </select>
+</div>
+{{ end }}
+
