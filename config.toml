@@ -183,7 +183,7 @@ unsafe = true
         menu = [
             {Name = "🪪 Acerca de", URL = "/about/", HasChildren = false},
             {Name = "📃 Currículum", URL = "/resume/", HasChildren = false},
-            {Name = "📓 Publicaciones", URL = "/posts/",  HasChildren = true, Limit = 3},
+            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 3},
             {Name = "⚙️ Herramientas", URL = "/toolbox/", HasChildren = true, Limit = 0},
         ]
         tagMenuTitle = "🏷️"

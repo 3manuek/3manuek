@@ -21,9 +21,9 @@ _Descargar currículum_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="Eman
 
 ## Bio(graffiti) 
 
-Soy un _Ingeniero de Infraestructura de Bases de Datos e Ingeniero de Software_, con pasión por las tecnologías Open Source, y un fuerte enfoque en _escalabilidad_, _confiabilidad_ y _rendimiento_.
+Soy un profesional del área de _Ingeniería de Infraestructura de Bases de Datos y Software_, con pasión por las tecnologías Open Source, y un fuerte enfoque en _escalabilidad_, _confiabilidad_ y _rendimiento_.
 
-Actualmente, trabajo en [Workato](https://workato.com) como Staff Infrastructure Engineer en el equipo Data Stores, donde soy responsable de diseñar e implementar Infraestructuras de Bases de Datos e Ingeniería de Sistemas.
+Actualmente, trabajo en [Workato](https://workato.com) como **Staff Infrastructure Engineer** en el equipo Data Stores, donde soy responsable de diseñar e implementar Infraestructuras de Bases de Datos e Ingeniería de Sistemas.
 
 Mis tareas involucran Desarrollo, Despliegue, Provisionamiento, CD/CI y Operaciones de 2do Día para escalabilidad y rendimiento. También tengo un fuerte enfoque en Ingeniería de Software, _principalmente_ para sistemas de bases de datos.
 
