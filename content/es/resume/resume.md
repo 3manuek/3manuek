@@ -1,6 +1,6 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Ingeniería de Infraestructura de Bases de Datos e Ingeniería de Software -- Contribuidor Open Source -- Consultor TI._"
+subtitle: "_Ingeniería de Infraestructura de Bases de Datos y Software -- Contribuidor Open Source -- Consultor TI._"
 date: 2023-02-18T12:27:33-06:00
 ---
 

@@ -18,9 +18,9 @@ Conecta con 100+ speakers de todo el mundo, aprende y comparte con la comunidad.
 
 ---
 
-¡Salve, noble viajero! Me conocen como _3manuek_, aunque en los reinos de la gente de TI, me llaman _Tresma_. Provengo de las lejanas tierras de Argentina 🇦🇷 y ahora habito dentro de las justas fronteras de España 🇪🇸.
+¡Salve, noble viajero! Me conocen como _3manuek_, aunque en los reinos de la gente de TI, me llaman _Tresma_. Provengo de las lejanas tierras de Argentina 🇦🇷 y ahora habito dentro de las fronteras de España 🇪🇸.
 
-Sí, he caminado en los senderos de la carrera de TI desde el año de nuestro Señor MMVI ([Currículum](/resume/)), y antes de eso, trabajé en el campo de la seguridad.
+He caminado en los senderos de la carrera de TI desde el año de nuestro Señor MMVI ([Currículum](/resume/)), y antes de eso, trabajé en el campo de la seguridad.
 
 En este sitio, encontrarás fragmentos de mi trabajo, escritos y otros asuntos diversos.
 
