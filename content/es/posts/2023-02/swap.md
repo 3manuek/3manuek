@@ -40,4 +40,3 @@ int main(int argc, char *argv[])
 
 La explicación de lo anterior es bastante simple. Usamos registros para asignar los valores y los llamamos en un orden diferente
 usando la instrucción `movl`. El `main` es solo un wrapper que pasa argumentos.
-
