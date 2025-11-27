@@ -33,6 +33,7 @@ unsafe = true
 
     ## Custom variables over Poison's. Implemented carousel.
     carousel = true # enables data/carousel.yaml
+    carousel_duration = 5000 # milliseconds between auto-advancing slides (default: 3000)
     
     front_page_content = ["posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
 

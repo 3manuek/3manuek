@@ -15,7 +15,7 @@
     </ul>
     <ol>
       {{ range $index, $page := .context.Site.Data.carousel.images }}
-        <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
+        <li><a href="javascript:void(0)" data-slide-index="{{ add $index 1 }}"></a></li>
       {{ end }}
     </ol>
     <div class="prev">&lsaquo;</div>
