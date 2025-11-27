@@ -9,13 +9,22 @@
           <li id="c10_slide{{ add $index 1}}" 
             style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); 
                 padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
+            {{ if $slide.content_link }}
+            <a href="{{ $slide.content_link }}" style="display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
+              <img src="{{ $slide.image }}" alt="" />
+            </a>
+            {{ else }}
             <img src="{{ $slide.image }}" alt="" />
-            <div><div><a href="{{ $slide.content_link }}">{{ $slide.content_html }}</a></div></div></li>
+            {{ end }}
+            {{ if $slide.content_html }}
+            <div><div><a href="{{ $slide.content_link }}">{{ $slide.content_html }}</a></div></div>
+            {{ end }}
+          </li>
         {{ end }}
     </ul>
     <ol>
       {{ range $index, $page := .context.Site.Data.carousel.images }}
-        <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
+        <li><a href="javascript:void(0)" data-slide-index="{{ add $index 1 }}"></a></li>
       {{ end }}
     </ol>
     <div class="prev">&lsaquo;</div>

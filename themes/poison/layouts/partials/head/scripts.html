@@ -21,7 +21,7 @@
 
 {{/* Enable carousel */}}
 {{ if .Site.Params.carousel }}
-{{ $js := $js | append (resources.Get "js/carousel.js")  }}
+{{ $js = $js | append (resources.Get "js/carousel.js")  }}
 {{ end }}
 
 {{/* Enable searcher */}}

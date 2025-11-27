@@ -1,6 +1,7 @@
 {{ define "main" -}}
 
-{{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "3000") }}
+{{ $duration := default 3000 .Site.Params.carousel_duration }}
+{{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" (string $duration)) }}
 <br />
 
  
