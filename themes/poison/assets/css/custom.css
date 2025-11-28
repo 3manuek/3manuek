@@ -1,1 +1,81 @@
 /* Empty css file that users can override in their own /assets/css/custom.css file */
+
+.contact-btn-wrapper {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #218838; /* Darker green */
+    color: white;
+    text-decoration: none;
+}
+
+/* Contact Form Styles */
+.content form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.content form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.content form input[type="text"],
+.content form textarea {
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    min-height: 200px;      /* Make the textarea noticeably taller */
+    min-width: 100%;        /* Make textarea stretch to container width */
+    box-sizing: border-box; /* Avoid overflow due to padding */
+}
+
+.content form input[type="email"],
+.content form input[type="email"] {
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.content form button[type="submit"] {
+    padding: 0.75rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.content form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.g-recaptcha {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
