@@ -1,5 +1,5 @@
 ---
-title: "Postgres in Docker Swarm"
+title: "Postgres/Patroni in Docker Swarm"
 subtitle: "Do not ask why."
 date: 2025-05-30
 author: "3manuek"
@@ -26,7 +26,9 @@ In the case you're not familiar with the Docker terminology, here it is a brief 
 - [Container](https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/#images-and-containers): A process that runs on a node in a swarm.
 - [Swarm](https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/): A cluster of Docker Engines that are joined together to run services.
 
+## Architecture
 
+The following are the required ports to be enabled for cluster communication:
 
 | Port  | Protocol | Description                                                                                 |
 |-------|----------|---------------------------------------------------------------------------------------------|

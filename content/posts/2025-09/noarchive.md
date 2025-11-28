@@ -17,6 +17,7 @@ Even tho is not documented in the official documentation, it is possible to avoi
 Those situations could be:
 
 - Tests environments, whether you run intensive tests but you don't need or care about PITR (Point in Time Recovery).
+  - Also, you want to test your backup configuration rather than just having logical dumps in test environments. 
 - Highly updated Postgres databases, where you can recover changes by other means, such as scrapping or restoring from external sources.
 
 

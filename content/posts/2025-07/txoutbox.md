@@ -14,7 +14,10 @@ tags:
 
 ## Introduction
 
-The Transactional Outbox Pattern (**TOP** from now on) is a design approach used to reliably manage distributed transactions in event-driven architectures. It addresses the challenge of maintaining consistency between a database transaction and the subsequent publishing of related events or messages. 
+The Transactional Outbox Pattern (**TOP** from now on) is a design approach used to reliably manage distributed 
+transactions in event-driven architectures. It addresses the challenge of maintaining consistency between a database 
+transaction and the subsequent publishing of related events or messages. 
+
 See [Microservices Patterns](https://microservices.io/patterns/data/transactional-outbox.html) for a more detailed reading about the pattern. 
 
 With the TOP, messages are initially stored in an outbox table as part of the same transaction that modifies business data. 
@@ -64,6 +67,14 @@ sequenceDiagram
 
 In the current post, we're going to customize the model implementation towards better maintanability and performance, using the latest Postgres features.
 There are many custom implementations for this pattern, and you may found optimizations for your particular use case. 
+
+The approach expanded here, has the following caveats:
+
+- Each row migration across partitions, would generate the corresponding WAL record entries. **This amplifies writes**, so it won't be recommended
+  if write performance is a requirement.
+- This approach considers a certain retention of records in the table, that's why we keep the state of _orders_, even if _archived_. This is due that 
+  you may want to query orders on a single query instead of relying on the external service, specially if you need to _join_ orders with other tables
+  in the database. 
 
 ## Event State under Outbox strategy 
 
