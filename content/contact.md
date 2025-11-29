@@ -6,7 +6,7 @@ noSummary: true
 ---
 
 
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form action="https://formspree.io/f/xldyyvyl" method="POST">
   <label>
     Your email:
     <input type="email" name="email">
@@ -20,9 +20,8 @@ noSummary: true
   
   <!-- Honeypot field -->
   <input type="text" name="_gotcha" style="display:none">
-  
 
-  <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+  <div class="g-recaptcha" data-sitekey="6Lc8khssAAAAAM1COzbwT9DE3bsjJTVxyWjIlfIz"></div>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
   <button type="submit">Send</button>
