@@ -157,7 +157,7 @@ unsafe = true
 # Multilingual configuration
 [languages]
 [languages.en]
-    languageName = "English"
+    languageName = "🇬🇧 English"
     languageCode = "en-us"
     weight = 1
     title = "3manuek"
@@ -176,7 +176,7 @@ unsafe = true
         aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
     
 [languages.es]
-    languageName = "Español"
+    languageName = "🇪🇸 Español"
     languageCode = "es-es"
     weight = 2
     title = "3manuek"
