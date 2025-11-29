@@ -21,8 +21,10 @@ noSummary: true
   <!-- Campo honeypot  -->
   <input type="text" name="_gotcha" style="display:none">
 
-  <div class="g-recaptcha" data-sitekey="6Lc8khssAAAAAM1COzbwT9DE3bsjJTVxyWjIlfIz"></div>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <div class="g-recaptcha" data-sitekey="6Lc8khssAAAAAM1COzbwT9DE3bsjJTVxyWjIlfIz" data-action="login"></div>
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
   
   <button type="submit">Enviar</button>
 </form>
