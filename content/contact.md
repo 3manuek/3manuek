@@ -6,7 +6,6 @@ noSummary: true
 ---
 
 
-<!-- You can add a contact form here later if you want, e.g. using Formspree -->
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
   <label>
     Your email:
@@ -19,10 +18,10 @@ noSummary: true
     </textarea>
   </label>
   
-  <!-- Honeypot field to prevent spam -->
+  <!-- Honeypot field -->
   <input type="text" name="_gotcha" style="display:none">
   
-  <!-- Google reCAPTCHA -->
+
   <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
