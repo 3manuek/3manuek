@@ -27,3 +27,5 @@ other = "Página no encontrada"
 [go_home]
 other = "Ir al inicio"
 
+[contact_btn]
+other = "Contacto"

@@ -75,6 +75,10 @@ unsafe = true
     # xmpp_url = "https://xmpp.org"
     # youtube_url = "https://youtube.com"
 
+    # Contact form 
+    formspree_id = "xldyyvyl"
+    recaptcha_site_key = "6Lc8khssAAAAAM1COzbwT9DE3bsjJTVxyWjIlfIz"
+
     ## XXX Enable when ready
     # soundcloud_url = "https://soundcloud.com/tr3sma"
 

@@ -6,6 +6,11 @@
         {{ partial "sidebar/language-switcher.html" . }}
 
         {{ partial "sidebar/searcher.html" . }}
+        
+        <div class="contact-btn-wrapper">
+            <a href="{{ "contact/" | relLangURL }}" class="btn-contact">{{ i18n "contact_btn" }}</a>
+        </div>
+
         {{ partial "sidebar/menu.html" . }}
         {{ partial "sidebar/copyright.html" . }}
   </div>
