@@ -3,3 +3,4 @@ resources/
 static-site/
 .vscode/
 .DS_Store
+.ansible/
