@@ -47,9 +47,9 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
-      <content:encoded>{{ .Content | replaceRE "src=\"/" (printf "src=\"%s/" .Site.BaseURL) | replaceRE "href=\"/" (printf "href=\"%s/" .Site.BaseURL) | html }}</content:encoded>
+      <!-- <content:encoded>{{ .Content | replaceRE "src=\"/" (printf "src=\"%s/" .Site.BaseURL) | replaceRE "href=\"/" (printf "href=\"%s/" .Site.BaseURL) | html }}</content:encoded> -->
       {{ range .Params.tags }}
-      <category>{{ . }}</category>
+      <!-- <category>{{ . }}</category> -->
       {{ end }}
     </item>
     {{ end }}
