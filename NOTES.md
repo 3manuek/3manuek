@@ -22,6 +22,19 @@ Your HTML or Markdown content here.
 |---|:---|
 ```
 
+## RSS by tags
+
+```
+https://tr3s.ma/tags/<tag>/index.xml
+https://tr3s.ma/<lang>/tags/<tag>/index.xml
+```
+
+eg. 
+
+```
+https://tr3s.ma/tags/postgres/index.xml
+```
+
 ## TODO
 
 - https://github.com/3manuek/complex_ext/tree/main Post about this for explaining the extension.
@@ -29,3 +42,4 @@ Your HTML or Markdown content here.
 - PEV2 integration https://github.com/dalibo/pev2/ , see `layouts/shortcodes/pev2.html`
 
 - Search bar implemented following this:https://ruddra.com/add-search-functionality-hugo/
+
