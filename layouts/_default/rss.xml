@@ -18,6 +18,9 @@
       {{- $exclude = true -}}
     {{- end -}}
   {{- end -}}
+  {{- if eq .Section "toolbox" -}}
+    {{- $exclude = true -}}
+  {{- end -}}
   {{- if not $exclude -}}
     {{- $filteredPages = $filteredPages | append . -}}
   {{- end -}}
