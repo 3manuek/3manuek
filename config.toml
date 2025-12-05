@@ -178,6 +178,11 @@ unsafe = true
         ]
         tagMenuTitle = "🏷️"
         aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
+        contact_motives = [
+            { value = "Service Request", text = "Service Request" },
+            { value = "Offering Services", text = "Offering Services" },
+            { value = "General contact", text = "General contact" },
+        ]
     
 [languages.es]
     languageName = "🇪🇸 Español"
@@ -197,3 +202,8 @@ unsafe = true
         ]
         tagMenuTitle = "🏷️"
         aboutDesc = "Mi nombre es Emanuel \"_Tresma_\" -- el apodo español de _3manuek_ (Ema), mi idioma nativo. Actualmente viviendo en Madrid 🇪🇸, pero aún haciendo _roundtripping_ a Buenos Aires 🇦🇷 ."
+        contact_motives = [
+            { value = "Service Request", text = "Solicitud de Servicio" },
+            { value = "Offering Services", text = "Ofreciendo Servicios" },
+            { value = "General contact", text = "Contacto General" },
+        ]

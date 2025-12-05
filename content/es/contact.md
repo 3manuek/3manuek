@@ -8,13 +8,17 @@ noSummary: true
 
 <form action="https://formspree.io/f/xldyyvyl" method="POST">
   <label>
-    Tu email:
-    <input type="email" name="email">
+    Tu email: <input type="email" name="email">
+  </label>
+  <label>
+    Motivo de contacto:
+    <select name="motive">
+      {{< contact_motives >}}
+    </select>
   </label>
   <label>
     Mensaje:
     <textarea name="message">
-    Describe tu solicitud aquí.
     </textarea>
   </label>
   

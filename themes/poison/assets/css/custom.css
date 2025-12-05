@@ -50,11 +50,11 @@
 }
 
 .content form input[type="email"],
-.content form input[type="email"] {
+.content form select {
     padding: 0.5rem;
     margin-top: 0.25rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: inherit;
 }
 
