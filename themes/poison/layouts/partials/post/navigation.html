@@ -5,21 +5,22 @@
     {{ $postTitle := .Title }}
     <p>
     This is a post in the <b><a href="{{ $Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a></b> series.
-        <br>Other posts in this series:
-        <ul class="series">
+        <!-- <br>Other posts in this series: -->
+        <!-- <ul class="series">
             {{ $seriesUrl := print "series/" (.Params.series | urlize) }}
-            {{ $series := .Site.GetPage $seriesUrl }}
-            {{ range $series.Pages }}
-            <li>
-                {{ .Date | time.Format ":date_long" }} -
-                {{ if ne .Title $postTitle }}
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                {{ else }}
-                    {{ .Title }}
+            {{ with .Site.GetPage $seriesUrl }}
+                {{ range (where (where .Pages "Lang" $.Lang) "Section" "ne" "toolbox") }}
+                    <li>
+                        {{ .Date | time.Format ":date_long" }} -
+                        {{ if ne .Title $postTitle }}
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        {{ else }}
+                            {{ .Title }}
+                        {{ end }}
+                    </li>
                 {{ end }}
-            </li>
             {{ end }}
-        </ul>
+        </ul> -->
     </p>
     {{ else }}
 	    {{ if .PrevInSection }}
