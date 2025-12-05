@@ -13,14 +13,13 @@ noSummary: true
   </label>
   <label>
     Reason for contacting:
-    <select name="motive">
+    <select name="motive" required>
       {{< contact_motives >}}
     </select>
   </label>
   <label>
     Message:
-    <textarea name="message">
-    </textarea>
+    <textarea name="message"></textarea>
   </label>
   
   <!-- Honeypot field -->

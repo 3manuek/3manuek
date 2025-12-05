@@ -1,4 +1,4 @@
+<option value="" disabled selected hidden>{{ .Site.Params.contact_motive_placeholder | default "Select..." }}</option>
 {{ range .Site.Params.contact_motives }}
   <option value="{{ .value }}">{{ .text }}</option>
 {{ end }}
-
