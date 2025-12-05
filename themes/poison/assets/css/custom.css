@@ -1,5 +1,76 @@
 /* Empty css file that users can override in their own /assets/css/custom.css file */
 
+/* Profile picture animation */
+/* Mask animation to reveal the gradient border */
+@keyframes draw-gradient-circle {
+    0% {
+        clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+        transform: rotate(0deg);
+    }
+    25% {
+        clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 50%, 100% 50%, 100% 50%, 100% 50%);
+        transform: rotate(30deg);
+    }
+    50% {
+        clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 100%, 50% 100%);
+        transform: rotate(60deg);
+    }
+    75% {
+        clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%, 0% 50%);
+        transform: rotate(90deg);
+    }
+    100% {
+        clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+        transform: rotate(120deg);
+    }
+}
+
+/* Container setup for the profile picture animation */
+.sidebar-about .brand .brand-image-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+}
+
+/* Remove default border from image and ensure it fits the container */
+.sidebar-about .brand-image-wrapper img {
+    border: none !important; /* Override poison.css default border */
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+    display: block;
+    padding: 0;
+    position: relative;
+    z-index: 1; /* Image stays below the border overlay */
+}
+
+/* The gradient border pseudo-element */
+.sidebar-about .brand .brand-image-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    /* Gradient: Yellow -> Green -> Purple -> Yellow */
+    background: conic-gradient(#f1c40f, #2ecc71, #9b59b6, #f1c40f);
+    z-index: 2; /* Sit on top of the image */
+    
+    /* Mask: Transparent circle in the middle, Opaque ring on the outside */
+    /* calc(100% - 5px) creates a 5px border ring */
+    -webkit-mask: radial-gradient(closest-side circle, transparent calc(100% - 5px), white calc(100% - 5px));
+    mask: radial-gradient(closest-side circle, transparent calc(100% - 5px), white calc(100% - 5px));
+    
+    /* Animate the reveal */
+    clip-path: polygon(50% 50%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+    animation: draw-gradient-circle 1s linear forwards;
+}
+
 .contact-btn-wrapper {
     text-align: center;
     margin: 1rem 0;
