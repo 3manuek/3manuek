@@ -12,10 +12,14 @@ noSummary: true
     <input type="email" name="email">
   </label>
   <label>
+    Reason for contacting:
+    <select name="motive" required>
+      {{< contact_motives >}}
+    </select>
+  </label>
+  <label>
     Message:
-    <textarea name="message">
-    Describe your  request here. 
-    </textarea>
+    <textarea name="message"></textarea>
   </label>
   
   <!-- Honeypot field -->
