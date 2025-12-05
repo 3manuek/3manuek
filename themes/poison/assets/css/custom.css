@@ -71,6 +71,42 @@
     animation: draw-gradient-circle 1s linear forwards;
 }
 
+
+/* Sidebar buttons container */
+.sidebar-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5em; /* Less kerning */
+    padding-right: 1em; /* Add some padding from the right edge */
+}
+
+/* Magic Button for Profile Switch */
+.btn-magic {
+    padding: 0;
+    margin: 0; /* Remove margin to let flex gap handle spacing */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--moon-sun-background-color);
+}
+
+/* Ensure the theme button behaves similarly */
+.btn-light-dark {
+    margin: 0 !important; /* Override default margin */
+}
+
+.btn-magic svg {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    color: var(--moon-sun-color);
+}
+
 .contact-btn-wrapper {
     text-align: center;
     margin: 1rem 0;
