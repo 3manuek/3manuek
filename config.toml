@@ -3,9 +3,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 ## Using a modified version of <a href="https://poison.lukeorth.com/posts/introducing-poison/">Poison</a>.
 theme = "poison"
-## 
 author = "Emanuel"
-#paginate = 7
 pagination.pagerSize = 7
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 Title = "3manuek"
@@ -90,28 +88,28 @@ unsafe = true
     rss_section = "posts"
 
     # Hex colors for your sidebar.
-    moon_sun_background_color = "#515151"   # default is #515151
-    moon_sun_color = "#FFF"                 # default is #FFF
-    sidebar_a_color = "#FFF"                # default is #FFF
-    sidebar_bg_color = "#202020"            # default is #202020
-    sidebar_h1_color = "#FFF"               # default is #FFF
-    sidebar_img_border_color = "#515151"    # default is #515151
-    sidebar_p_color = "#909090"             # default is #909090
-    sidebar_socials_color = "#FFF"          # default is #FFF
+    moon_sun_background_color = "#515151"           # default is #515151
+    moon_sun_color = "#FFF"                         # default is #FFF
+    sidebar_a_color = "#FFF"                        # default is #FFF
+    sidebar_bg_color = "#202020"                    # default is #202020
+    sidebar_h1_color = "#FFF"                       # default is #FFF
+    sidebar_img_border_color = "#515151"            # default is #515151
+    sidebar_p_color = "#909090"                     # default is #909090
+    sidebar_socials_color = "#FFF"                  # default is #FFF
 
     # Hex colors for your content in light mode.
-    code_color = "#000"                     # default is #000
-    code_background_color = "#E5E5E5"       # default is #E5E5E5
-    code_block_color = "#FFF"               # default is #FFF
-    code_block_background_color = "#272822" # default is #272822
-    content_bg_color = "#FAF9F6"            # default is #FAF9F6  # QR
-    date_color = "#515151"                  # default is #515151
-    link_color = "#268BD2"                  # default is #268BD2
-    list_color = "#5A5A5A"                  # default is #5A5A5A
-    post_title_color = "#303030"            # default is #303030
-    table_border_color = "#E5E5E5"          # default is #E5E5E5
-    table_stripe_color = "#F9F9F9"          # default is #F9F9F9
-    text_color = "#222"                     # default is #222
+    code_color = "#000"                             # default is #000
+    code_background_color = "#E5E5E5"               # default is #E5E5E5
+    code_block_color = "#FFF"                       # default is #FFF
+    code_block_background_color = "#272822"         # default is #272822
+    content_bg_color = "#FAF9F6"                    # default is #FAF9F6  # QR
+    date_color = "#515151"                          # default is #515151
+    link_color = "#268BD2"                          # default is #268BD2
+    list_color = "#5A5A5A"                          # default is #5A5A5A
+    post_title_color = "#303030"                    # default is #303030
+    table_border_color = "#E5E5E5"                  # default is #E5E5E5
+    table_stripe_color = "#F9F9F9"                  # default is #F9F9F9
+    text_color = "#222"                             # default is #222
 
     # Hex colors for your content in dark mode
     code_color_dark = "#FFF"                        # default is #FFF
@@ -135,11 +133,12 @@ unsafe = true
     # remark42_site_id = "your_site_id"
 
     # NOTE: The following three params are optional and are used to create meta tags + enhance SEO.
-    og_image = "/images/profile6.png"                       # path to social icon - front matter: image takes precedent, then og_image, then brand_url
+    og_image = "/images/profile6.png"     # path to social icon - front matter: image takes precedent, then og_image, then brand_url
                                           # this is also used in the schema output as well. Image is resized to max 1200x630
                                           # For this to work though og_image and brand_url must be a path inside the assets directory
                                           # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
-    publisher_icon = "/favicon.png"                 # path to publisher icon - defaults to favicon, used in schema
+    publisher_icon = "/favicon.png"       # path to publisher icon - defaults to favicon, used in schema
+
     keywords = ["tech", "blog", "devops", "database", "postgres", "linux", 
                 "3manuek", "mysql", "clickhouse", "golang", "bash", "kubernetes", 
                 "docker", "terraform", "ansible", "aws", "gcp", "colemak", "programming",
