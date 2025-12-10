@@ -1,10 +1,10 @@
 # English translations
 
-[menu_about]
-other = "🪪 About"
+# [menu_about]
+# other = "🪪 About"
 
 [menu_resume]
-other = "📃 Résumé"
+other = "📃 About"
 
 [menu_posts]
 other = "📓 Posts"

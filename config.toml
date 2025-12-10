@@ -43,9 +43,9 @@ unsafe = true
         # HasChildren:  If the directory's files should be listed.  Default is true.
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
-        {Name = "🪪 About", URL = "/about/", HasChildren = false},
-        {Name = "📃 Résumé", URL = "/resume/", HasChildren = false},
-        {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 3}, # Pre ="Latest:",
+        # {Name = "🪪 About", URL = "/about/", HasChildren = false},
+        {Name = "📃 About", URL = "/resume/", HasChildren = false},
+        {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4}, # Pre ="Latest:",
         {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
 
@@ -171,9 +171,9 @@ unsafe = true
         description = "Emanuel Calvo"
         brand = "3manuek"
         menu = [
-            {Name = "🪪 About", URL = "/about/", HasChildren = false},
-            {Name = "📃 Résumé", URL = "/resume/", HasChildren = false},
-            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 3},
+            # {Name = "🪪 About", URL = "/about/", HasChildren = false},
+            {Name = "📃 About", URL = "/resume/", HasChildren = false},
+            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4},
             {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
         ]
         tagMenuTitle = "🏷️"
@@ -196,9 +196,9 @@ unsafe = true
         description = "Emanuel Calvo"
         brand = "3manuek"
         menu = [
-            {Name = "🪪 Acerca de", URL = "/about/", HasChildren = false},
-            {Name = "📃 Currículum", URL = "/resume/", HasChildren = false},
-            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 3},
+            # {Name = "🪪 Acerca de", URL = "/about/", HasChildren = false},
+            {Name = "📃 Acerca de", URL = "/resume/", HasChildren = false},
+            {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4},
             {Name = "⚙️ Herramientas", URL = "/toolbox/", HasChildren = true, Limit = 0},
         ]
         tagMenuTitle = "🏷️"

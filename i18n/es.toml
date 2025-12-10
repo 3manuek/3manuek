@@ -1,10 +1,10 @@
 # Spanish translations
 
-[menu_about]
-other = "🪪 Acerca de"
+# [menu_about]
+# other = "🪪 Acerca de"
 
 [menu_resume]
-other = "📃 Currículum"
+other = "📃 Acerca de"
 
 [menu_posts]
 other = "📓 Publicaciones"
