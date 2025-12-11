@@ -61,12 +61,13 @@ Nacido en 🇦🇷, viviendo en 🇪🇸.
 ## Current Positions
 
 ### [Workato Inc.](https://workato.com) - Staff Infrastructure Engineer | Data Stores Team
-> Remoto. Madrid, España
+> 100% Remoto desde Madrid, España
 >
 > Septiembre 2024 - Presente
 
 - Ingeniería de Infraestructura.
 - Tecnologías: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, ArgoCD, Aurora, entre muchas otras.
+- Lenguajes: Go, Python, Bash.
 - Ver [perfil GH](https://github.com/ecalvo-workato).
 
 ### Consultor Independiente
@@ -108,7 +109,7 @@ Proyectos destacados:
 - Benchmark automatizado Postgres vs MongoDB de `10k U$S`, IaaC (ecosistema Hashicorp, basado en proveedor AWS).
 - Google Cloud como Partner.
 - Soporte **ARM** e implementación de automatización.
-- Trabajé en el equipo de [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) de **AWS**, como Developer Advocate para la versión Open Source.
+- Trabajé en el equipo de [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) de **AWS**, como _Developer Advocate_ para la versión Open Source.
   - Proporcioné parches, construcción, pruebas de [Babelfish for Postgres](https://babelfishpg.org).
   - Impartí entrenamiento al equipo sobre el Ecosistema de Hooks de Postgres.
 - También proporcioné entrenamientos y consultoría en una variedad de clientes como **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, y **Postmates**.
@@ -184,13 +185,6 @@ Tecnologías:
 > Enero 2016 - Septiembre 2017
 
 - Asesor técnico externo y consultor para Postgres y otras tecnologías relacionadas.
-
-### UDE - Profesor Asociado de Grado Universitario en Open Source
-> La Plata, Argentina
->
-> Junio 2016
-
-Profesor Asociado de Grado Universitario en Open Source, especialista en Bases de Datos PostgreSQL.
 
 
 ### [Pythian](https://pythian.com) - Technical Team Lead | Miembro ACTG (Advanced Consulting Team Group)
@@ -337,12 +331,11 @@ Otras certificaciones relacionadas con Especialización en DataScience:
 
 {{< /details >}}
 
-## Pre-IT work
+## Trabajos Pre-IT
 
 > _Antes de hacer la transición a una carrera en TI, entre 1998 y 2006, serví
-en la Oficina Federal de Prisiones de Argentina (Servicio Penitenciario
-Federal) como oficial, gestionando grupos operativos en instituciones
-que van desde seguridad media a alta._
+en el Servicio Penitenciario
+Federal (SPF) como oficial, gestionando grupos operativos en instituciones y complejos que van desde seguridad media a alta._
 
 {{< details summary="Posiciones en SPF" >}}
 
@@ -353,15 +346,15 @@ que van desde seguridad media a alta._
 >
 > Módulo 6 - Sección de Sanciones
 
-- Trabajé como Gerente de Turno Interno.
-- Realicé procedimientos de sanción e investigaciones de delitos.
+- Trabajé como Jefe de Turno Interno.
+- Realicé procedimientos de sanción e investigaciones de delitos (Sumarios Preventivos).
 
 ### Unidad 31 (Instalación de Mujeres)
 > Complejo Penitenciario de Mujeres 
 >
 > 2004 - 2005
 
-- Trabajé como Turno Externo, capacidad de armas y gestión de almacenamiento.
+- Trabajé como Jefe de Turno Externo, capacidad de armas y gestión de almacenamiento.
 - Realicé procedimientos de sanción e investigaciones de delitos dentro de las instalaciones.
 - Cooperé en el diseño de algunos de los procedimientos de seguridad y emergencia.
 - Miembro del Consejo de Seguridad.
@@ -371,7 +364,7 @@ que van desde seguridad media a alta._
 >
 > 2003 - 2004
 
-- Gerente de Turno Interno.
+- Jefe de Turno Interno.
 
 
 ### Escuela de Suboficiales
@@ -386,7 +379,7 @@ que van desde seguridad media a alta._
 >
 > Enero 2000 - 2002
 
-- Turno Externo, capacidad de armas y Gerente de Almacenamiento. 
+- Jefe de Turno Externo, capacidad de armas y Gerente de Almacenamiento. 
 - Cooperé en el diseño de algunos de los procedimientos de seguridad y emergencia.
 
 {{< /details >}}

@@ -61,16 +61,17 @@ Born in 🇦🇷, living in 🇪🇸.
 ## Current Positions
 
 ### [Workato Inc.](https://workato.com) - Staff Infrastructure Engineer | Data Stores Team
-> Remote. Madrid, Spain
+> Full Remote from Madrid, Spain.
 >
 > September 2024 - Present
 
 - Infrastructure Engineering.
 - Technologies: AWS, Kubernetes, Terraform, Ansible, PostgreSQL, ArgoCD, Aurora, among many others.
+- Languages: Go, Python, Bash.
 - See [GH profile](https://github.com/ecalvo-workato).
 
 ### Independent Consultant
-> Remote. Madrid, Spain
+> Full Remote. Madrid, Spain.
 >
 
 Services include, but not limited to:
@@ -90,7 +91,7 @@ Services include, but not limited to:
 ## Past Experience
 
 ### [Ongres Inc.](https://ongres.com) - Professional Services Tech Lead | Database Platform Engineer  
-> Remote. New York/Madrid
+> Full Remote from Madrid, Spain.
 >
 > Since December 2017 as OnGres, previously working as Consultant in 8kdata - September 2024.
 
@@ -109,7 +110,7 @@ Highlighted projects:
 - Postgres vs MongoDB `10k U$S` automated benchmark, IaaC (Hashicorp echosystem, AWS provider based).
 - Google Cloud as Partner.
 - **ARM** support and automation implementation.
-- Worked in the **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) team, as a Developer Advocate for the Open Source version.
+- Worked in the **AWS**'s [Babelfish for Postgres](https://github.com/babelfish-for-postgresql) team, as a _Developer Advocate_ for the Open Source version.
   - Provided patches, building, testing of [Babelfish for Postgres](https://babelfishpg.org).
   - Lectured training for the team about the Postgres Hook Ecosystem.
 - Also provided trainings, and consultancy in a variety of customers such as  **Gitlab**, **American Express**, **Nutanix**, **BBM (Blackberry)**, **Conrad Electronics**, **ARM**, **Microsoft**, and **Postmates**.
@@ -186,13 +187,6 @@ to relocation. See more at [ViaDB](https://viadb.ar).
 > January 2016 - September 2017
 
 - External technical advisor and consultant for Postgres and other related technologies.
-
-### UDE - Open Source Source Undergraduate Degree Associate Professor
-> La Plata, Argentina
->
-> June 2016
-
-Open Source Source Undergraduate Degree Associate Professor, PostgreSQL Database specialist.
 
 
 ### [Pythian](https://pythian.com) - Technical Team Lead | ACTG (Advanced Consulting Team Group) Member
