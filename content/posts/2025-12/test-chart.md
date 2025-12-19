@@ -2,6 +2,7 @@
 title: "Test ChartJS Shortcode"
 date: 2025-12-19
 draft: true
+author: "3manuek"
 ---
 
 Testing the new chart shortcode.
