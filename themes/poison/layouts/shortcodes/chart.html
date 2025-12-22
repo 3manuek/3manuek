@@ -1,0 +1,32 @@
+{{ if ne (.Page.Scratch.Get "hasChartJS") true }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+{{ .Page.Scratch.Set "hasChartJS" true }}
+{{ end }}
+
+{{ $id := .Get "id" | default (printf "chart-%v" .Ordinal) }}
+{{ $height := .Get "height" | default "400px" }}
+{{ $width := .Get "width" | default "100%" }}
+
+<div class="chart-container" style="position: relative; height: {{ $height }}; width: {{ $width }}; margin: 2rem auto;">
+    <canvas id="{{ $id }}"></canvas>
+</div>
+
+<script>
+    (function() {
+        const init = () => {
+            {{ $inner := .Inner }}
+            {{/* Replace 'chart' ID with the actual generated ID to allow multiple charts and copy-pasting */}}
+            {{ $inner = replace $inner "document.getElementById('chart')" (printf "document.getElementById('%s')" $id) }}
+            {{ $inner = replace $inner "document.getElementById(\"chart\")" (printf "document.getElementById('%s')" $id) }}
+            
+            {{ $inner | safeJS }}
+        };
+
+        if (document.readyState === 'complete' || document.readyState === 'interactive') {
+            init();
+        } else {
+            document.addEventListener('DOMContentLoaded', init);
+        }
+    })();
+</script>
+
