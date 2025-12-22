@@ -56,7 +56,7 @@ The `--archive-check=n` option avoids pre-checking the archive status. This make
 
 The `archive_command` shown above, will only store archives _if backup is running_, checking if the pgbackrest lock file exists.
 
-## Ups, I wan't archives now
+## Ups, I want archives now
 
 If you want to re-enable archives, you need to run a full backup after changing your `archive_command`, otherwise, those stored archives would be useless for PITR.
 
