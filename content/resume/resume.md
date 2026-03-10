@@ -79,8 +79,10 @@ Services include, but not limited to:
 - Infrastructure Engineering.
 - Database Engineering.
 - Systems development.
+- Database Migration. CDC.
 
 {{< details summary="Customers" >}}
+- JobAndTalent (Spain)
 - Leonardo247 (US)
 - Wipshub (Mexico)
 - Bitscrunch (Germany)
