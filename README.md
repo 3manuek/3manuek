@@ -13,3 +13,22 @@ For inquiries or to review my resume, you can follow my [LinkedIn](https://www.l
 
 
 
+
+## Website content and SEO
+
+The homepage introductions live in `content/_index.md` and `content/es/_index.md`.
+Curated reading paths live under each language's `guides/` directory. Keep the
+English and Spanish versions aligned, linking only to published articles.
+
+Set `description` in page front matter for a custom search/social summary. Other
+pages fall back to a plain-text summary, then the language's site description.
+The site-wide author identity is configured with `params.author`.
+
+Math rendering is opt-in: add `math: true` to a page's front matter to load
+KaTeX JavaScript and CSS. SQL dollar quoting does not need math rendering.
+
+Build locally without modifying the checkout's generated output:
+
+```sh
+hugo --destination /tmp/tr3s-preview --environment production --minify
+```

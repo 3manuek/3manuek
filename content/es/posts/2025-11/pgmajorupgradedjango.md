@@ -1,4 +1,5 @@
 ---
+description: "Un caso de replicación lógica de PostgreSQL para actualizar Aurora y migrar un modelo Django con restricciones de tiempo de inactividad."
 title: "Actualización Mayor de Postgres y Modelo Django con Replicación Lógica"
 subtitle: "La Replicación Lógica puede ser más flexible de lo que parece"
 date: 2025-11-15

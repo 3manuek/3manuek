@@ -1,6 +1,7 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Ingeniería de Infraestructura de Bases de Datos y Software -- Contribuidor Open Source -- Consultor TI._"
+subtitle: "Staff Infrastructure Engineer · Plataformas de datos y almacenamiento · Sistemas distribuidos"
+description: "Experiencia de Emanuel Calvo, Staff Infrastructure Engineer en Workato, especializado en PostgreSQL, plataformas de datos y sistemas distribuidos."
 date: 2023-02-18T12:27:33-06:00
 ---
 
@@ -16,6 +17,17 @@ _Descargar currículum_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="Eman
 - [Experiencia Pasada](#past-experience)
 - [Portafolio](/toolbox)
 - [Educación](#education), [Publicaciones](#external-publications), y [Certificaciones](#certifications)
+
+---
+
+## Trabajos seleccionados
+
+Casos técnicos que muestran mi enfoque en plataformas de datos, sistemas distribuidos y PostgreSQL:
+
+- [Timeouts de PgBouncer y PostgreSQL](/es/posts/2024-10/pgbouncer/)
+- [Actualización de Aurora y migración del modelo Django](/es/posts/2025-11/pgmajorupgradedjango/)
+- [Proyectos open source](/es/toolbox/)
+- [Charlas y apariciones públicas](/es/public-appearances/)
 
 ---
 
@@ -97,7 +109,7 @@ Servicios incluyen, pero no limitados a:
 > Desde Diciembre 2017 como OnGres, previamente trabajando como Consultor en 8kdata - Septiembre 2024.
 
 
-Como Technical Lead de Professional Services e Ingeniería de Plataforma de Bases de Datos y Sistemas en OnGres, actualmente diseño arquitecturas de sistemas innovadoras para implementar en los clústeres de producción de nuestros clientes. Además, desarrollo herramientas de sistema para asegurar operación sin interrupciones y máxima eficiencia.
+Como Technical Lead de Professional Services e Ingeniería de Plataforma de Bases de Datos y Sistemas en OnGres, diseñé arquitecturas de sistemas innovadoras para implementar en los clústeres de producción de nuestros clientes. Además, desarrollé herramientas de sistema para asegurar operación sin interrupciones y máxima eficiencia.
 
 
 Proyectos destacados:

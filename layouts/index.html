@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" (.Site.Params.front_page_content | default (slice "posts"))) }}
+{{ if eq $paginator.PageNumber 1 }}
+<section class="home-intro" aria-labelledby="emanuel-calvo">
+<p class="intro-eyebrow">{{ if eq .Lang "es" }}Sobre mí{{ else }}About me{{ end }}</p>
+{{ .Content }}
+</section>
+{{ end }}
+<section aria-labelledby="latest-articles">
+<h2 id="latest-articles">{{ if eq .Lang "es" }}Artículos recientes{{ else }}Latest articles{{ end }}</h2>
+<div class="posts">
+{{ range $paginator.Pages }}
+<article class="post post-preview">
+<h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+<p class="post-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time></p>
+<p>{{ .Description | default (.Summary | plainify | htmlUnescape | truncate 240) }}</p>
+</article>
+{{ end }}
+</div>
+</section>
+{{ partial "pagination.html" . }}
+{{ end }}

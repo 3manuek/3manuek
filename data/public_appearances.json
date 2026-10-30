@@ -1,0 +1,89 @@
+[
+  {
+    "year": 2026,
+    "title": "Postgres me queda chico, ¿qué hago?",
+    "event": "Nerdearla Argentina",
+    "description": {
+      "en": "A conversation with José Sahad about what to do when PostgreSQL does not provide the features your environment needs. Presented in Spanish.",
+      "es": "Conversación con José Sahad sobre qué hacer cuando PostgreSQL no ofrece las funcionalidades que necesita tu entorno."
+    },
+    "links": [
+      {
+        "kind": "video",
+        "url": "https://nerdearla.com/nerdflix/aP7L92kK_Y4/"
+      },
+      {
+        "kind": "event",
+        "url": "https://nerdearla.com/argentina/schedule/postgres-me-queda-chico-que-hago/?lang=es"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "title": "Ecosistemas modernos sobre Postgres en producción",
+    "event": "Nerdearla España",
+    "description": {
+      "en": "Production PostgreSQL tooling: connection pools, backups, Patroni, and extensions, with a focus on resilience and performance. Presented in Spanish.",
+      "es": "Herramientas para PostgreSQL en producción: pools de conexiones, backups, Patroni y extensiones, con foco en resiliencia y rendimiento."
+    },
+    "links": [
+      {
+        "kind": "video",
+        "url": "https://www.nerdearla.com/nerdflix/sqAgMUIUTB4/"
+      },
+      {
+        "kind": "slides",
+        "url": "https://github.com/3manuek/slides/tree/master/2025/Nerdearla.es"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "title": "Pattern-matching in LISTEN/NOTIFY",
+    "event": "Postgres Ibiza (PGIBZ)",
+    "description": {
+      "en": "An exploration of a proposed pattern-matching extension to LISTEN/NOTIFY and its potential use for transactional messaging.",
+      "es": "Exploración de una propuesta de búsqueda por patrones en LISTEN/NOTIFY y sus posibles aplicaciones en mensajería transaccional."
+    },
+    "links": [
+      {
+        "kind": "event",
+        "url": "https://www.pgibz.io/talks.html"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "title": "Bases de datos relacionales: lo bueno, lo malo y lo feo",
+    "event": "Nerdearla Argentina",
+    "description": {
+      "en": "An earlier technical talk on relational databases, including PostgreSQL and MySQL. Presented in Spanish.",
+      "es": "Una charla técnica sobre bases de datos relacionales, incluyendo PostgreSQL y MySQL."
+    },
+    "links": [
+      {
+        "kind": "video",
+        "url": "https://www.nerdearla.com/nerdflix/J3Aw2qJ-470/"
+      }
+    ]
+  },
+  {
+    "year": 2017,
+    "title": "Demystifying Postgres Logical Replication",
+    "event": "Percona webinar",
+    "description": {
+      "en": "Logical decoding, replication concepts, and streaming changes to other data systems. Historical material from the PostgreSQL 10 development period.",
+      "es": "Decodificación lógica, conceptos de replicación y transmisión de cambios a otros sistemas. Material histórico del período de desarrollo de PostgreSQL 10."
+    },
+    "links": [
+      {
+        "kind": "slides",
+        "url": "https://www.percona.com/sites/default/files/presentations/Demystifying-Postgres-Logical-Replication.pdf"
+      },
+      {
+        "kind": "event",
+        "url": "https://www.percona.com/blog/webinar-thursday-june-15-2017-demystifying-postgres-logical-replication/"
+      }
+    ]
+  }
+]

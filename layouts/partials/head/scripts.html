@@ -1,0 +1,61 @@
+{{/* Personal/custom script for light/dark mode and tabs */}}
+{{ $js := slice
+      (resources.Get "js/light_dark.js")
+      (resources.Get "js/tabs.js") }}
+
+{{ if .Params.math }}
+{{ $js = $js | append (resources.Get "js/lib/katex.js") (resources.Get "js/lib/auto-render.js") (resources.Get "js/katex.js") }}
+{{ end }}
+
+{{/* Personal/custom scripts for table of contents */}}
+{{ if not .Site.Params.hideToc }}
+    {{ $js = $js | append (resources.Get "js/toc.js") }}
+{{ end }}
+
+{{/* Personal/custom scripts for codeblocks */}}
+{{ $js = $js | append (resources.Get "js/codeblock.js") }}
+
+{{/* Enable carousel */}}
+{{ if .Site.Params.carousel }}
+{{ $js = $js | append (resources.Get "js/carousel.js")  }}
+{{ end }}
+
+{{/* Enable searcher */}}
+{{ $js = $js | append (resources.Get "js/searcher.js") }}
+
+
+{{ $js_bundle := $js | resources.Concat "js/bundle.js" | minify | fingerprint }}
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+<script defer language="javascript" type="text/javascript" src="{{ $js_bundle.RelPermalink }}"></script>
+
+
+{{ if .Site.Params.plausible }}
+<script defer data-domain="{{ .Site.Params.plausible_domain }}" src="{{ .Site.Params.plausible_script }}"></script>
+{{ end }}
+
+{{ if hugo.IsProduction -}}
+  {{ template "_internal/google_analytics.html" . -}}
+{{ end -}}
+
+{{ if hugo.IsProduction }}
+{{ if .Site.Params.gtag }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtag_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', "{{ .Site.Params.gtag_id }}");
+</script>
+{{ end }}
+{{ end }}
+
+{{ if .Site.Params.adsense }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.adsense_id }}"
+     crossorigin="anonymous"></script>
+{{ end }}
+
+<!-- layouts/partials/head.html or layouts/_default/baseof.html -->
+
+

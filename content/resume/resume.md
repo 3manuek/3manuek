@@ -1,6 +1,7 @@
 ---
 title: "Emanuel Calvo"
-subtitle: "_Database Infrastructure and Software Engineering -- Open Source Contributor -- IT Consultant._"
+subtitle: "Staff Infrastructure Engineer · Database & Storage Platforms · Distributed Systems"
+description: "Emanuel Calvo: Staff Infrastructure Engineer at Workato, specializing in database and storage platforms, PostgreSQL, and distributed systems."
 date: 2023-02-18T12:27:33-06:00
 ---
 
@@ -15,7 +16,18 @@ _Download résumé_ 👉🏻 <a href="/docs/EmanuelCalvo.pdf" download="EmanuelC
 - [Current Positions](#current-positions)
 - [Past Experience](#past-experience)
 - [Portfolio](/toolbox)
-- [Education](#education), [Publications](#external-publications), and [Cerfitications](#certifications)
+- [Education](#education), [Publications](#external-publications), and [Certifications](#certifications)
+
+---
+
+## Selected work
+
+Technical case studies showing my work on database platforms, distributed systems, and PostgreSQL:
+
+- [PgBouncer and PostgreSQL timeouts](/posts/2024-10/pgbouncer/)
+- [Aurora major upgrade and Django model migration](/posts/2025-11/pgmajorupgradedjango/)
+- [Open-source projects](/toolbox/)
+- [Public appearances and talks](/public-appearances/)
 
 ---
 
@@ -36,7 +48,7 @@ Born in 🇦🇷, living in 🇪🇸.
 
 ---
 
-| Techonologies |
+| Technologies |
 |----|
 | A considerable experience on scalability, reliability, architecturing and maintaining automated large-scaled Database Systems, including but not limited to **Postgres, MySQL, ClickHouse, and Elastic**. Most of the systems are/were business-critical. |
 | Experience in the following languages: **Go, Python, C, Bash**. |
@@ -51,7 +63,7 @@ Born in 🇦🇷, living in 🇪🇸.
 | Soft Skills |
 |---|
 | A skilled communicator, managing customer's accounts and projects worldwide.|
-| Hard-problem solving, and with aveced dealing of complex Production incidents.|
+| Hard-problem solving, and experienced in handling complex production incidents.|
 | Develop engineering tools to ensure seamless operation and maximum efficiency.|
 
 
@@ -98,7 +110,7 @@ Services include, but not limited to:
 > Since December 2017 as OnGres, previously working as Consultant in 8kdata - September 2024.
 
 
-As the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, I am currently designing innovative system architectures to implement in our customers' production clusters. In addition, I develop system tools to ensure seamless operation and maximum efficiency.
+As the Professional Services Technical Lead and Database Platform and Systems Engineering at OnGres, I designed system architectures to implement in our customers' production clusters. In addition, I developed system tools to ensure seamless operation and maximum efficiency.
 
 
 Highlighted projects:

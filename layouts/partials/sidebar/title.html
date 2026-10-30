@@ -1,22 +1,22 @@
 <div class="sidebar-about">
-    <h1 class="brand">
+    <div class="brand">
         {{ if .Site.Params.remote_brand_image }}
-            <a href="{{ .Site.BaseURL }}" class="brand-image-wrapper">
-                <img src="{{ .Site.Params.remote_brand_image }}" alt="brand image">
+            <a href="{{ .Site.Home.RelPermalink }}" class="brand-image-wrapper">
+                <img src="{{ .Site.Params.remote_brand_image }}" alt="Emanuel Calvo">
             </a>
         {{ else if .Site.Params.brand_image }}
-            <a href="{{ .Site.BaseURL }}" class="brand-image-wrapper">
-                <img src="{{ .Site.Params.brand_image }}" alt="brand image">
+            <a href="{{ .Site.Home.RelPermalink }}" class="brand-image-wrapper">
+                <img src="{{ .Site.Params.brand_image }}" alt="Emanuel Calvo">
             </a>
         {{ end }}
         {{ if .Site.Params.brand }}
-            <a href="{{ .Site.BaseURL }}">
-                <h1>{{ .Site.Params.brand }}</h1>
+            <a href="{{ .Site.Home.RelPermalink }}">
+                <p class="sidebar-brand-name">{{ .Site.Params.brand }}</p>
             </a>
         {{ end }}
-    </h1>
+    </div>
     <p class="lead">
-    {{ with .Site.Params.description }}{{. | safeHTML}}{{end}}
+    {{ with .Site.Params.sidebar_description }}{{. | safeHTML}}{{end}}
     </p>
 
 </div>
