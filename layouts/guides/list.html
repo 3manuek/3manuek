@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ range .Pages.ByTitle }}
+<article class="post post-preview">
+  <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p>{{ .Description }}</p>
+</article>
+{{ end }}
+{{ end }}

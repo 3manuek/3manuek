@@ -1,0 +1,88 @@
+<nav>
+    <ul class="sidebar-nav">
+
+        {{ $sections := .Site.Sections.ByTitle }}
+        {{ $taxonomies := .Site.Taxonomies }}
+        {{ range .Site.Params.menu }}
+        {{ $menu_item := . }}
+            {{ $menuName := $menu_item.Name }}
+            {{ if eq $menu_item.URL "/about/" }}
+                {{ $menuName = i18n "menu_about" }}
+            {{ else if eq $menu_item.URL "/resume/" }}
+                {{ $menuName = i18n "menu_resume" }}
+            {{ else if eq $menu_item.URL "/posts/" }}
+                {{ $menuName = i18n "menu_posts" }}
+            {{ else if eq $menu_item.URL "/toolbox/" }}
+                {{ $menuName = i18n "menu_toolbox" }}
+            {{ end }}
+            {{ if eq (len $menu_item.URL) 0 }}
+                <li class="heading">{{ $menuName }}</li>
+            {{ else if $menu_item.External }}
+                <li class="bullet">
+                    <a href="{{ $menu_item.URL }}" target="_blank" rel="noopener noreferrer">{{ $menuName }}</a>
+                </li>
+            {{ end }}
+
+            {{ range $sections }}
+                {{ $trimmedURL := (lower (strings.TrimSuffix "/" (strings.TrimPrefix "/" $menu_item.URL))) }}
+                {{ if eq .Section $trimmedURL }}
+                    <li class="heading">
+                        <a href="{{ $menu_item.URL | relLangURL }}">{{ $menuName }}</a>
+                    </li>
+                    {{ if $menu_item.HasChildren }}
+                        <li class="sub-heading">
+                            {{ $menu_item.Pre }}
+                        </li>
+                        {{ range (first $menu_item.Limit .Pages) }}
+                            <li class="bullet">
+                                {{ .Site.Params.bullet }} <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ range $name, $taxonomy := $taxonomies }}
+                {{ if eq (lower $name) (lower $menu_item.Name) }}
+                    <li class="heading">
+                        <a href="{{$menu_item.URL | relLangURL }}">{{ $menuName }}</a>
+                    </li>
+                {{ end }}
+                {{ range $term, $page := $taxonomy }}
+                        {{ if eq (lower $term) (lower $menu_item.Name) }}
+                            <li class="heading">
+                                <a href="{{$menu_item.URL | relLangURL }}">{{ $menuName }}</a>
+                            </li>
+                            {{ if $menu_item.HasChildren }}
+                            <li class="sub-heading">
+                                {{ $menu_item.Pre }}
+                            </li>
+                            {{ range (first $menu_item.Limit .Pages) }}
+                                <li class="bullet">
+                                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                </li>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        
+        <!-- Menu Tags -->
+        <li class="heading">
+            {{ i18n "menu_tags" }}
+        </li>
+        <ul class="tags">
+            {{ $weight := .Site.Params.TagMenuWeight }}
+
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $cnt := .Count }}
+            {{ if  compare.Gt $cnt  $weight  }}
+            <li class="tag-{{ . }}">
+              <a href="{{ "tags/" | absLangURL }}{{ $name | urlize }}"><b>{{ $name | humanize }}</b>  <sup>{{ $cnt }}</sup></a>
+            </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+        <!-- Menu Tags -->
+        
+    </ul>
+</nav>

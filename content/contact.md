@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+description: "Contact Emanuel Calvo about database infrastructure, PostgreSQL, open-source projects, or technical speaking."
 date: 2025-11-28
 draft: false
 noSummary: true
@@ -9,7 +10,7 @@ noSummary: true
 <form action="https://formspree.io/f/xldyyvyl" method="POST">
   <label>
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" autocomplete="email" required>
   </label>
   <label>
     Reason for contacting:
@@ -19,7 +20,7 @@ noSummary: true
   </label>
   <label>
     Message:
-    <textarea name="message"></textarea>
+    <textarea name="message" required></textarea>
   </label>
   
   <!-- Honeypot field -->

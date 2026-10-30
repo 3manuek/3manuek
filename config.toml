@@ -25,13 +25,15 @@ unsafe = true
     # remote_brand_image = 'https://github.com/USERNAME.png' # path to a remote file
     brand_image = "/images/profile6.png"    # path to the image shown in the sidebar
     brand_image_magic = "/images/profile7.png" # path to the alternative image
-    description = "Emanuel Calvo" # Used as default meta description if not specified in front matter
+    author = "Emanuel Calvo"
+    description = "Database and storage infrastructure engineer focused on PostgreSQL, distributed systems, performance, and reliability."
+    sidebar_description = "Emanuel Calvo"
     dark_mode = true                      # optional - defaults to false
-    # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
+    favicon = "/favicon.svg"
     index_brand_image = "/images/profile.gif"
 
     ## Custom variables over Poison's. Implemented carousel.
-    carousel = true # enables data/carousel.yaml
+    carousel = false # enables data/carousel.yaml
     carousel_duration = 3000 # milliseconds between auto-advancing slides (default: 3000)
     
     front_page_content = ["posts"] # Equivalent to the default value, add page bundle names to include them on the front page.
@@ -45,6 +47,7 @@ unsafe = true
     menu = [
         # {Name = "🪪 About", URL = "/about/", HasChildren = false},
         {Name = "📃 About", URL = "/resume/", HasChildren = false},
+        {Name = "🎤 Public Appearances", URL = "/public-appearances/", HasChildren = false},
         {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4}, # Pre ="Latest:",
         {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
     ]
@@ -137,7 +140,7 @@ unsafe = true
                                           # this is also used in the schema output as well. Image is resized to max 1200x630
                                           # For this to work though og_image and brand_url must be a path inside the assets directory
                                           # e.g. /assets/images/site/og-image.png becomes images/site/og-image.png
-    publisher_icon = "/favicon.png"       # path to publisher icon - defaults to favicon, used in schema
+    publisher_icon = "/favicon.svg"       # path to publisher icon - defaults to favicon, used in schema
 
     keywords = ["tech", "blog", "devops", "database", "postgres", "linux", 
                 "3manuek", "mysql", "clickhouse", "golang", "bash", "kubernetes", 
@@ -168,13 +171,15 @@ unsafe = true
     contentDir = "content"
     
     [languages.en.params]
-        description = "Emanuel Calvo"
+        description = "Database and storage infrastructure engineer focused on PostgreSQL, distributed systems, performance, and reliability."
         brand = "3manuek"
         menu = [
             # {Name = "🪪 About", URL = "/about/", HasChildren = false},
             {Name = "📃 About", URL = "/resume/", HasChildren = false},
+            {Name = "🎤 Public Appearances", URL = "/public-appearances/", HasChildren = false},
             {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4},
             {Name = "⚙️ Toolbox", URL = "/toolbox/", HasChildren = true, Limit = 0},
+            {Name = "Guides", URL = "/guides/", HasChildren = false},
         ]
         tagMenuTitle = "🏷️"
         aboutDesc = "My name is Emanuel \"_Tresma_\" -- the Spanish short of _3manuek_ (Ema), my native language. Currently living in Madrid 🇪🇸, but still _roundtripping_ to Buenos Aires 🇦🇷 ."
@@ -193,13 +198,15 @@ unsafe = true
     contentDir = "content/es"
     
     [languages.es.params]
-        description = "Emanuel Calvo"
+        description = "Ingeniero de infraestructura de bases de datos y almacenamiento, especializado en PostgreSQL, sistemas distribuidos, rendimiento y confiabilidad."
         brand = "3manuek"
         menu = [
             # {Name = "🪪 Acerca de", URL = "/about/", HasChildren = false},
             {Name = "📃 Acerca de", URL = "/resume/", HasChildren = false},
+            {Name = "🎤 Apariciones públicas", URL = "/public-appearances/", HasChildren = false},
             {Name = "📓 Posts", URL = "/posts/",  HasChildren = true, Limit = 4},
             {Name = "⚙️ Herramientas", URL = "/toolbox/", HasChildren = true, Limit = 0},
+            {Name = "Guías", URL = "/guides/", HasChildren = false},
         ]
         tagMenuTitle = "🏷️"
         aboutDesc = "Mi nombre es Emanuel \"_Tresma_\" -- el apodo español de _3manuek_ (Ema), mi idioma nativo. Actualmente viviendo en Madrid 🇪🇸, pero aún haciendo _roundtripping_ a Buenos Aires 🇦🇷 ."

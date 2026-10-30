@@ -1,4 +1,5 @@
 ---
+description: "Cómo interactúan query_timeout de PgBouncer y statement_timeout de PostgreSQL, y qué considerar para configurar los timeouts según la carga."
 title: "Timeouts en cascada a través del Pool (PGBouncer)"
 subtitle: "query_timeout de Pgbouncer y statement_timeout de Postgres"
 date: 2024-10-02
@@ -13,7 +14,7 @@ tags:
 
 ## Combinando `query_timeout` y `statement_timeout`
 
-En la [documentación de pgbouncer]() se establece que el `query_timeout` debería configurarse ligeramente 
+En la [documentación de PgBouncer](https://www.pgbouncer.org/config.html#query_timeout) se establece que el `query_timeout` debería configurarse ligeramente
 más alto que el `statement_timeout` de Postgres. Aunque esto aplica en la mayoría de los casos, depende
 de los requisitos del negocio.
 
@@ -21,7 +22,7 @@ Generalmente, el `statement_timeout` debería configurarse al percentil 99 de la
 Sin embargo, hay casos donde ciertos statements requieren timeouts más largos, debido a particularidades como
 un conjunto grande de clientes, o campos más grandes, como en casos de compresión TOAST.
 
-La siguiente secuencia describe lo que sucedería si el `query_timeout` se configura a un valor ligeramente 
+La siguiente secuencia describe lo que sucedería si el `query_timeout` se configura a un valor ligeramente
 más alto que el `statement_timeout`:
 
 {{< mermaid >}}

@@ -1,0 +1,17 @@
+{{ $lang := .Page.Lang }}
+{{ $labels := dict "video" "Watch recording" "slides" "View slides" "event" "Event details" }}
+{{ if eq $lang "es" }}{{ $labels = dict "video" "Ver grabación" "slides" "Ver diapositivas" "event" "Información del evento" }}{{ end }}
+<div class="public-appearances">
+{{ range sort .Site.Data.public_appearances "year" "desc" }}
+  <article class="appearance-card">
+    <p class="appearance-meta"><span>{{ .year }}</span> · {{ .event }}</p>
+    <h2>{{ .title }}</h2>
+    <p>{{ index .description $lang }}</p>
+    <ul class="appearance-links" aria-label="{{ if eq $lang "es" }}Recursos:{{ else }}Resources:{{ end }} {{ .title }}">
+    {{ range .links }}
+      <li><a href="{{ .url }}">{{ index $labels .kind }}</a></li>
+    {{ end }}
+    </ul>
+  </article>
+{{ end }}
+</div>

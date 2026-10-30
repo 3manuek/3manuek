@@ -1,0 +1,5 @@
+<div class="search-container" id="search-container">
+  <label class="visually-hidden" for="search-input">{{ if eq .Lang "es" }}Buscar artículos{{ else }}Search articles{{ end }}</label>
+  <input class="search-input" type="search" id="search-input" placeholder="{{ if eq .Lang "es" }}Buscar…{{ else }}Search…{{ end }}" data-index-url="{{ "index.json" | relLangURL }}" aria-controls="search-results">
+  <div id="search-results" aria-live="polite"></div>
+</div>

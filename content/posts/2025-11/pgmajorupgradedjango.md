@@ -1,4 +1,5 @@
 ---
+description: "A case study using PostgreSQL logical replication for an Aurora major version upgrade alongside a Django model migration with downtime constraints."
 title: "Upgrading Postgres Major, and Django model with Logical Replication."
 subtitle: "Logical Replication can be more flexible than it seems."
 date: 2025-11-15

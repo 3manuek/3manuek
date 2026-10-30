@@ -1,42 +1,22 @@
 
 {{ "<!-- El estado es el mayor enemigo del hombre libre. Emanuel Calvo -->" | safeHTML }}
 
-{{ .Scratch.Set "title" .Site.Title }}
-
-{{ .Scratch.Set "publisherIcon" .Site.Params.favicon }}
-{{ if .Site.Params.publisherIcon }}
-    {{ .Scratch.Set "publisherIcon" .Site.Params.publisher_icon }}
-{{ end }}
-
-{{ if eq .Kind "home" }}
-  {{ .Scratch.Set "title" $.Site.Params.brand }}
-  {{ .Scratch.Set "description" .Site.Params.Description }}
-{{ else }}
-  {{ .Scratch.Set "description" .Description }}
-{{ end }}
-
-{{ if .IsSection }}
-  {{ .Scratch.Set "title" ($.Site.Params.brand) }}
-  {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .LinkTitle }}
-{{ end }}
-
-{{ if .IsPage }}
-  {{ .Scratch.Set "title" ($.Site.Params.brand) }}
-  {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .LinkTitle }}
-{{ end }}
+{{ $title := printf "%s | %s" .Title .Site.Params.author }}
+{{ if .IsHome }}{{ $title = .Title }}{{ end }}
+{{ $description := .Description | default (.Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 160) | default .Site.Params.description }}
+{{ .Scratch.Set "title" $title }}
+{{ .Scratch.Set "description" $description }}
 
 {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
 {{ $image_path := .Params.image | default .Site.Params.og_image -}}
 {{ if $image_path }}
   {{ $image_resource := resources.Get $image_path }}
   {{ if $image_resource }}
-    <meta property="og:image" content="{{ $image_resource.RelPermalink }}" />
+    <meta property="og:image" content="{{ $image_resource.Permalink }}" />
     {{ $image_ext := trim (path.Ext $image_path | lower) "." }}
     {{ if ne $image_ext "svg" }}
       {{ if (and (gt $image_resource.Width 144) (gt $image_resource.Height 144)) }}
-        <meta name="twitter:image" content="{{ $image_resource.RelPermalink }}"/>
+        <meta name="twitter:image" content="{{ $image_resource.Permalink }}"/>
         <meta name="twitter:card" content="summary{{ if (and (gt $image_resource.Width 300) (gt $image_resource.Height 157) (not (eq $image_resource.Width $image_resource.Height))) }}_large_image{{ end }}">
       {{ end }}
       <meta property="og:image:width" content="{{ $image_resource.Width }}">
@@ -51,7 +31,7 @@
 {{ end }}
 
 <!-- Title Tags -->
-<title itemprop="name">{{ .Scratch.Get "title" }} {{ .Scratch.Get "description" }}</title>
+<title itemprop="name">{{ .Scratch.Get "title" }}</title>
 <meta property="og:title" content={{ .Scratch.Get "title" }} />
 <meta name="twitter:title" content={{ .Scratch.Get "title" }} />
 <meta itemprop="name" content={{ .Scratch.Get "title" }} />
@@ -64,11 +44,7 @@
 <meta property="og:description" content="{{ .Scratch.Get "description" }}" />
 <meta name="twitter:description" content="{{ .Scratch.Get "description" }}" />
 
-<!-- Keywords -->
-<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}" />
-
 <!-- Link Tags -->
-<base href="{{ .Permalink }}" />
 <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
 <meta name="url" content="{{ .Permalink }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
@@ -76,36 +52,18 @@
 
 <!-- Multilingual hreflang tags for SEO -->
 {{ if hugo.IsMultilingual }}
-  {{ range .Site.Languages }}
-    {{ $lang := . }}
-    {{ if eq $lang.Lang $.Site.Language.Lang }}
-      <link rel="alternate" hreflang="{{ $lang.Lang }}" href="{{ $.Permalink }}" />
-    {{ else }}
-      {{ $translatedPage := false }}
-      {{ range $.Page.Translations }}
-        {{ if eq .Lang $lang.Lang }}
-          {{ $translatedPage = . }}
-        {{ end }}
-      {{ end }}
-      {{ if $translatedPage }}
-        <link rel="alternate" hreflang="{{ $lang.Lang }}" href="{{ $translatedPage.Permalink }}" />
-      {{ else }}
-        {{ $currentRelPermalink := $.RelPermalink }}
-        {{ $translatedRelPermalink := $currentRelPermalink | strings.TrimPrefix (printf "/%s/" $.Site.Language.Lang) }}
-        {{ if eq $translatedRelPermalink $currentRelPermalink }}
-          {{ $translatedRelPermalink = printf "/%s%s" $lang.Lang $currentRelPermalink }}
-        {{ else }}
-          {{ $translatedRelPermalink = printf "/%s%s" $lang.Lang $translatedRelPermalink }}
-        {{ end }}
-        <link rel="alternate" hreflang="{{ $lang.Lang }}" href="{{ $translatedRelPermalink | absURL }}" />
-      {{ end }}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+    {{ if eq .Language.Lang "en" }}
+      <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
     {{ end }}
   {{ end }}
-  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
 {{ end }}
 
 <!-- Date Tags -->
+{{ if not .Lastmod.IsZero }}
 <meta property="og:updated_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{ end }}
 
 <!-- Sitemap & Alternate Outputs -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href='{{ "sitemap.xml" | absURL }}' />
@@ -118,8 +76,8 @@
 <meta name="googlebot" content="{{ if .Params.robots }}{{ .Params.robots }}{{ else }}index,follow{{ end }}" />
 
 <!-- Social Media Tags -->
-<meta name="twitter:site" content="{{ .Site.Params.twitter_url }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.twitter_url }}" />
+<meta name="twitter:site" content="@3manuek" />
+<meta name="twitter:creator" content="@3manuek" />
 <meta property="fb:admins" content="{{ .Site.Params.fb.admins }}" />
 
 <!-- Other Tags -->
@@ -127,39 +85,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-<!-- Article Specific Tags -->
-<!-- To make sure this renders only in the article page, we check the section -->
-{{ if and (eq .Section "posts") (.Page.IsNode) }}
-<!-- Pagination meta tags for list pages only -->
-{{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-{{ if $paginator }}
-  <link rel="first" href="{{ $paginator.First.URL }}" />
-  <link rel="last" href="{{ $paginator.Last.URL }}" />
-  {{ if $paginator.HasPrev }}
-    <link rel="prev" href="{{ $paginator.Prev.URL }}" />
-  {{end }}
-  {{ if $paginator.HasNext }}
-    <link rel="next" href="{{ $paginator.Next.URL }}" />
-  {{end }}
-{{end }}
-
+{{ if and .IsPage (eq .Type "posts") }}
 <meta property="og:type" content="article" />
-<meta property="article:publisher" content="{{ .Site.Params.facebook_url }}" />
-<meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
-<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00"  }}" />
-
-{{ with (or (.Params.Author) (.Site.Language.Params.Author.Name)) }}
-  <meta property="og:article:author" content="{{ . }}" />
-  <meta property="article:author" content="{{ . }}" />
-  <meta name="author" content="{{ . }}" />
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+<meta property="article:author" content="{{ "resume/" | absLangURL }}" />
+{{ else }}
+<meta property="og:type" content="website" />
 {{ end }}
-
-{{ with.Params.category }}
-  <meta name="news_keywords" content="{{ index . 0 }}" />
-  <meta property="article:section" content="{{ index . 0 }}" />
-{{ end }}
-
-{{ end }}
+<meta name="author" content="{{ .Site.Params.author }}" />
 
 <!-- Hugo Generator Attribution -->
 {{ hugo.Generator }}
